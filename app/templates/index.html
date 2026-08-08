@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support Ticket Routing System using NLP</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-light">
+
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+                <i class="fa-solid fa-headset text-primary me-2 fs-4"></i>
+                <span>Smart Routing System</span>
+                <span class="badge bg-primary ms-2 fs-6 fw-normal">NLP & ML</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav-pills me-3" id="mainTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active rounded-pill px-3 me-2" id="customer-tab" data-bs-toggle="tab" data-bs-target="#customer-pane" type="button">
+                            <i class="fa-solid fa-ticket me-1"></i> Customer Portal
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-pill px-3" id="admin-tab" data-bs-toggle="tab" data-bs-target="#admin-pane" type="button" onclick="loadAdminStats()">
+                            <i class="fa-solid fa-chart-line me-1"></i> Admin Dashboard
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container py-4">
+        <div class="tab-content" id="mainTabContent">
+
+            <!-- ==================== 1. CUSTOMER PORTAL PANE ==================== -->
+            <div class="tab-pane fade show active" id="customer-pane" role="tabpanel">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow-sm rounded-4 mb-4">
+                            <div class="card-body p-4 p-md-5">
+                                <h3 class="card-title fw-bold text-dark mb-2">
+                                    <i class="fa-solid fa-paper-plane text-primary me-2"></i>Submit Support Ticket
+                                </h3>
+                                <p class="text-muted mb-4">Describe your issue in detail. Our NLP Machine Learning model will automatically categorize, prioritize, and assign your ticket to the correct department team.</p>
+                                
+                                <!-- Quick Sample Buttons -->
+                                <div class="mb-3">
+                                    <label class="form-label text-secondary small fw-semibold">Quick Sample Prompts:</label>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill sample-btn" data-sample="My credit card was charged twice for transaction #9048.">Billing Issue</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill sample-btn" data-sample="My internet is not working and the router red light is blinking.">Tech Support</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill sample-btn" data-sample="I need a refund for item received yesterday. It was damaged.">Refund Request</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill sample-btn" data-sample="Where is my package? Tracking shows no movement for 5 days.">Shipping Track</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill sample-btn" data-sample="I cannot log into my account despite entering correct password.">Account Access</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill sample-btn" data-sample="I want to cancel my subscription effective immediately.">Cancellation</button>
+                                    </div>
+                                </div>
+
+                                <!-- Ticket Form -->
+                                <form id="ticketForm">
+                                    <div class="mb-4">
+                                        <label for="ticketText" class="form-label fw-semibold">Ticket Description <span class="text-danger">*</span></label>
+                                        <textarea class="form-control rounded-3 p-3" id="ticketText" rows="5" placeholder="Explain what problem you are experiencing..." required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-lg rounded-pill w-100 fw-semibold shadow-sm" id="submitBtn">
+                                        <i class="fa-solid fa-robot me-2"></i>Analyze & Submit Ticket
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Ticket Output Result Card -->
+                        <div id="resultCard" class="card border-0 shadow-lg rounded-4 overflow-hidden d-none">
+                            <div class="card-header bg-dark text-white p-3 d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0 fw-bold"><i class="fa-solid fa-circle-check text-success me-2"></i>Ticket Successfully Processed</h5>
+                                <span class="badge bg-success" id="ticketStatus">Open</span>
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="row align-items-center g-3 mb-4">
+                                    <div class="col-md-6">
+                                        <div class="p-3 bg-light rounded-3 border">
+                                            <small class="text-uppercase text-secondary fw-bold d-block mb-1">Ticket Reference ID</small>
+                                            <span class="fs-4 fw-bold text-primary font-monospace" id="resTicketId">TICK-XXXXXX</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 bg-light rounded-3 border">
+                                            <small class="text-uppercase text-secondary fw-bold d-block mb-1">Assigned Department</small>
+                                            <span class="fs-5 fw-bold text-dark" id="resDepartment">--</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-6">
+                                        <div class="p-3 bg-light rounded-3 border">
+                                            <small class="text-uppercase text-secondary fw-bold d-block mb-1">Predicted Category</small>
+                                            <span class="badge bg-info text-dark fs-6 px-3 py-2" id="resCategory">--</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="p-3 bg-light rounded-3 border">
+                                            <small class="text-uppercase text-secondary fw-bold d-block mb-1">Predicted Priority</small>
+                                            <span class="badge bg-warning text-dark fs-6 px-3 py-2" id="resPriority">--</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p-3 bg-light rounded-3 border">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <small class="text-uppercase text-secondary fw-bold">NLP Classification Confidence</small>
+                                        <small class="fw-bold text-primary" id="resConfidence">0%</small>
+                                    </div>
+                                    <div class="progress rounded-pill" style="height: 10px;">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" id="confidenceBar" role="progressbar" style="width: 0%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== 2. ADMIN DASHBOARD PANE ==================== -->
+            <div class="tab-pane fade" id="admin-pane" role="tabpanel">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h3 class="fw-bold text-dark mb-0"><i class="fa-solid fa-chart-pie text-primary me-2"></i>Analytics & Model Dashboard</h3>
+                        <p class="text-muted mb-0">Real-time statistics, ticket distribution, and model metrics</p>
+                    </div>
+                    <button class="btn btn-outline-primary rounded-pill fw-semibold" onclick="retrainModels()" id="retrainBtn">
+                        <i class="fa-solid fa-arrows-rotate me-2"></i>Retrain ML Models
+                    </button>
+                </div>
+
+                <!-- Metrics Overview Cards -->
+                <div class="row g-3 mb-4">
+                    <div class="col-md-3">
+                        <div class="card border-0 shadow-sm rounded-4 p-3 bg-white border-start border-primary border-4">
+                            <small class="text-muted fw-bold text-uppercase">Total Tickets</small>
+                            <h2 class="fw-bold text-dark mb-0 mt-1" id="statTotalTickets">0</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 shadow-sm rounded-4 p-3 bg-white border-start border-success border-4">
+                            <small class="text-muted fw-bold text-uppercase">Active Model</small>
+                            <h5 class="fw-bold text-dark mb-0 mt-1" id="statActiveModel">--</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 shadow-sm rounded-4 p-3 bg-white border-start border-info border-4">
+                            <small class="text-muted fw-bold text-uppercase">Category F1-Score</small>
+                            <h2 class="fw-bold text-dark mb-0 mt-1" id="statCategoryF1">0.00</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card border-0 shadow-sm rounded-4 p-3 bg-white border-start border-warning border-4">
+                            <small class="text-muted fw-bold text-uppercase">Priority Accuracy</small>
+                            <h2 class="fw-bold text-dark mb-0 mt-1" id="statPriorityAcc">0.00</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts Row -->
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-sm rounded-4 p-4 bg-white h-100">
+                            <h6 class="fw-bold text-dark mb-3"><i class="fa-solid fa-list text-primary me-2"></i>Category Statistics</h6>
+                            <div class="chart-container" style="position: relative; height:260px;">
+                                <canvas id="categoryChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-sm rounded-4 p-4 bg-white h-100">
+                            <h6 class="fw-bold text-dark mb-3"><i class="fa-solid fa-triangle-exclamation text-warning me-2"></i>Priority Statistics</h6>
+                            <div class="chart-container" style="position: relative; height:260px;">
+                                <canvas id="priorityChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-sm rounded-4 p-4 bg-white h-100">
+                            <h6 class="fw-bold text-dark mb-3"><i class="fa-solid fa-building-user text-success me-2"></i>Department Workload</h6>
+                            <div class="chart-container" style="position: relative; height:260px;">
+                                <canvas id="departmentChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Tickets Table -->
+                <div class="card border-0 shadow-sm rounded-4 mb-4 bg-white">
+                    <div class="card-header bg-white border-0 p-4 pb-0">
+                        <h5 class="fw-bold text-dark mb-0"><i class="fa-solid fa-clock-rotate-left me-2 text-primary"></i>Recent Submitted Tickets</h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Ticket ID</th>
+                                        <th>Description</th>
+                                        <th>Category</th>
+                                        <th>Priority</th>
+                                        <th>Assigned Department</th>
+                                        <th>Confidence</th>
+                                        <th>Submitted At</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="recentTicketsBody">
+                                    <tr><td colspan="7" class="text-center text-muted">Loading recent tickets...</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

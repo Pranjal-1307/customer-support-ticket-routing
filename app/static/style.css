@@ -1,0 +1,61 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #2b3445;
+    background-color: #f4f6f9;
+}
+
+/* Navbar Customizations */
+.navbar {
+    background-color: #1e293b !important;
+}
+
+.nav-pills .nav-link {
+    color: #94a3b8;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #2563eb;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Card Improvements */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sample-btn {
+    font-size: 0.82rem;
+    transition: all 0.2s;
+}
+
+.sample-btn:hover {
+    background-color: #e2e8f0;
+    color: #0f172a;
+}
+
+/* Custom Table Styling */
+.table th {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #64748b;
+}
+
+.table td {
+    font-size: 0.9rem;
+}
+
+/* Custom Badge Colors */
+.badge-low { background-color: #10b981; color: white; }
+.badge-medium { background-color: #f59e0b; color: white; }
+.badge-high { background-color: #ef4444; color: white; }
+.badge-critical { background-color: #881337; color: white; }
+
+/* Progress Bar */
+.progress {
+    background-color: #e2e8f0;
+}

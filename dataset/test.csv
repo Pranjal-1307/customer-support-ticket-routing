@@ -1,0 +1,1041 @@
+ticket_id,ticket_text,category,priority,department
+TICK-004072,I cannot log into my account despite entering correct password. Urgent attention required.,Account,Medium,Account Support Team
+TICK-005274,What are the hardware specifications required to run this software? Appreciate a quick update on this.,Product Inquiry,Low,Product Support Team
+TICK-003477,My order 60111 was shipped to wrong delivery address. Urgent attention required.,Shipping,Medium,Logistics Team
+TICK-001520,"My payment failed yesterday, but money was deducted from my bank account. Thank you for your assistance.",Billing,Medium,Billing Team
+TICK-003097,"Tracking indicates delivered, but package is missing from my doorstep. Appreciate a quick update on this.",Shipping,Low,Logistics Team
+TICK-001688,My internet is not working and the router LED is blinking red. Contact me via email or phone.,Technical Support,High,Technical Support Team
+TICK-001360,Double charge observed on my bank statement for invoice 32983. Please advise as soon as possible.,Billing,Critical,Billing Team
+TICK-003118,Customs clearance is delaying package shipment at border transit. Looking forward to your prompt response.,Shipping,High,Logistics Team
+TICK-004616,Formal complaint regarding poor product build quality and support delay. Thank you for your assistance.,Complaint,Medium,Customer Care Team
+TICK-005277,Where can I find user manuals and documentation for model PRO-642? Contact me via email or phone.,Product Inquiry,Low,Product Support Team
+TICK-004230,My profile settings fail to save changes. Please advise as soon as possible.,Account,High,Account Support Team
+TICK-003292,Estimated delivery date has passed but package has not arrived. Urgent attention required.,Shipping,High,Logistics Team
+TICK-001097,"My payment failed yesterday, but money was deducted from my bank account. Contact me via email or phone.",Billing,Critical,Billing Team
+TICK-003271,Delivery courier left parcel in rain without notification. Appreciate a quick update on this.,Shipping,Medium,Logistics Team
+TICK-001457,I need an official tax invoice and payment receipt for order 43901. Looking forward to your prompt response.,Billing,High,Billing Team
+TICK-005036,Is this product compatible with macOS Sequoia and Apple Silicon? Urgent attention required.,Product Inquiry,Low,Product Support Team
+TICK-001234,I need an official tax invoice and payment receipt for order 86434. Urgent attention required.,Billing,High,Billing Team
+TICK-004481,Misleading advertising regarding feature capabilities on sales page. Please advise as soon as possible.,Complaint,Medium,Customer Care Team
+TICK-004422,No response to urgent tickets for 72 hours despite premium support SLA. Kindly look into this matter promptly.,Complaint,High,Customer Care Team
+TICK-003794,My account has been locked due to multiple failed login attempts. Urgent attention required.,Account,Critical,Account Support Team
+TICK-002322,The product quality is sub-par and does not match description. Please refund. Kindly look into this matter promptly.,Refund,Medium,Refund Team
+TICK-004370,Repeatedly transferred between agents without any resolution.,Complaint,High,Customer Care Team
+TICK-004597,Formal complaint regarding poor product build quality and support delay. Appreciate a quick update on this.,Complaint,Low,Customer Care Team
+TICK-002324,"Charged after cancellation request, need immediate reimbursement. Urgent attention required.",Refund,Low,Refund Team
+TICK-003972,Single Sign-On (SSO) integration is failing for company domain. Kindly look into this matter promptly.,Account,High,Account Support Team
+TICK-005151,Where can I find user manuals and documentation for model PRO-544? Please advise as soon as possible.,Product Inquiry,Medium,Product Support Team
+TICK-003838,I cannot log into my account despite entering correct password. Kindly look into this matter promptly.,Account,Low,Account Support Team
+TICK-001917,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Kindly look into this matter promptly.,Technical Support,Medium,Technical Support Team
+TICK-006064,I want to cancel my subscription effective immediately. Kindly look into this matter promptly.,Cancellation,High,Retention Team
+TICK-003704,Account permissions are misconfigured and user cannot access dashboard. Thank you for your assistance.,Account,High,Account Support Team
+TICK-005294,What is the warranty period and coverage for international orders? Appreciate a quick update on this.,Product Inquiry,Low,Product Support Team
+TICK-003989,My profile settings fail to save changes.,Account,High,Account Support Team
+TICK-004983,Does the cloud platform comply with SOC2 and HIPAA standards? Appreciate a quick update on this.,Product Inquiry,Medium,Product Support Team
+TICK-004520,Appalled by lack of response to critical security vulnerability report. Contact me via email or phone.,Complaint,High,Customer Care Team
+TICK-005967,Subscription cancellation button is missing from account settings page. Please advise as soon as possible.,Cancellation,Low,Retention Team
+TICK-002664,I requested a refund for order 71481 two weeks ago but haven't received it.,Refund,Medium,Refund Team
+TICK-001916,System crashed completely during export task showing error code SOCKET_TIMEOUT.,Technical Support,High,Technical Support Team
+TICK-006090,I want to cancel my subscription effective immediately. Contact me via email or phone.,Cancellation,Medium,Retention Team
+TICK-002338,Returned package was delivered to warehouse. When will refund be processed? Thank you for your assistance.,Refund,Medium,Refund Team
+TICK-002439,The product quality is sub-par and does not match description. Please refund. Please advise as soon as possible.,Refund,Low,Refund Team
+TICK-002484,Item arrived damaged in transit. I want an immediate full refund.,Refund,Low,Refund Team
+TICK-004645,Agent closed my support ticket without resolving the actual issue. Please advise as soon as possible.,Complaint,High,Customer Care Team
+TICK-002237,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Kindly look into this matter promptly.,Technical Support,Critical,Technical Support Team
+TICK-002934,I requested a refund for order 70746 two weeks ago but haven't received it. Contact me via email or phone.,Refund,Low,Refund Team
+TICK-003220,Customs clearance is delaying package shipment at border transit.,Shipping,Medium,Logistics Team
+TICK-004816,System downtime caused business revenue loss for our team. Looking forward to your prompt response.,Complaint,Critical,Customer Care Team
+TICK-005734,I want to cancel my subscription effective immediately. Contact me via email or phone.,Cancellation,High,Retention Team
+TICK-003023,"Express shipping paid, but package sent via standard economy post. Please advise as soon as possible.",Shipping,Medium,Logistics Team
+TICK-005148,Looking for comparison between standard and professional tiers.,Product Inquiry,Low,Product Support Team
+TICK-006144,Canceling contract due to budget constraints in our organization. Looking forward to your prompt response.,Cancellation,High,Retention Team
+TICK-001248,"My payment failed yesterday, but money was deducted from my bank account. Contact me via email or phone.",Billing,Low,Billing Team
+TICK-004641,Misleading advertising regarding feature capabilities on sales page. Thank you for your assistance.,Complaint,Medium,Customer Care Team
+TICK-001865,Bluetooth sync is failing between the hardware device and dashboard.,Technical Support,Critical,Technical Support Team
+TICK-004358,Worst service experience ever! Unprofessional support team. Kindly look into this matter promptly.,Complaint,High,Customer Care Team
+TICK-004417,Misleading advertising regarding feature capabilities on sales page.,Complaint,High,Customer Care Team
+TICK-005744,Please confirm cancellation of recurring billing for account 31469. Urgent attention required.,Cancellation,Critical,Retention Team
+TICK-003332,"Express shipping paid, but package sent via standard economy post. Appreciate a quick update on this.",Shipping,High,Logistics Team
+TICK-002040,My internet is not working and the router LED is blinking red. Contact me via email or phone.,Technical Support,High,Technical Support Team
+TICK-004627,Escalating issue: product failed during critical presentation. Please advise as soon as possible.,Complaint,High,Customer Care Team
+TICK-001605,My credit card was charged twice for transaction 29054. Please advise as soon as possible.,Billing,Medium,Billing Team
+TICK-002546,Partial refund missing from my previous dispute case 35249.,Refund,Medium,Refund Team
+TICK-002135,Bluetooth sync is failing between the hardware device and dashboard. Please advise as soon as possible.,Technical Support,Medium,Technical Support Team
+TICK-002191,The web application keeps throwing 500 internal server errors when submitting forms. Please advise as soon as possible.,Technical Support,High,Technical Support Team
+TICK-004388,Appalled by lack of response to critical security vulnerability report. Urgent attention required.,Complaint,Low,Customer Care Team
+TICK-004941,Looking for comparison between standard and professional tiers. Kindly look into this matter promptly.,Product Inquiry,Low,Product Support Team
+TICK-004030,Received suspicious password reset email without requesting it. Kindly look into this matter promptly.,Account,Medium,Account Support Team
+TICK-004157,I need to update my registered email address and phone number.,Account,High,Account Support Team
+TICK-005090,Looking for comparison between standard and professional tiers. Please advise as soon as possible.,Product Inquiry,Low,Product Support Team
+TICK-004490,No response to urgent tickets for 72 hours despite premium support SLA. Urgent attention required.,Complaint,High,Customer Care Team
+TICK-001510,Double charge observed on my bank statement for invoice 26809. Kindly look into this matter promptly.,Billing,Medium,Billing Team
+TICK-005296,What are the hardware specifications required to run this software? Please advise as soon as possible.,Product Inquiry,Low,Product Support Team
+TICK-003660,Received suspicious password reset email without requesting it. Contact me via email or phone.,Account,High,Account Support Team
+TICK-005752,I want to cancel my subscription effective immediately. Appreciate a quick update on this.,Cancellation,High,Retention Team
+TICK-001913,VPN connection drops every 5 minutes unexpectedly.,Technical Support,Medium,Technical Support Team
+TICK-001334,I need an official tax invoice and payment receipt for order 70807. Contact me via email or phone.,Billing,Medium,Billing Team
+TICK-005668,Requesting account closure and deletion of stored customer data. Urgent attention required.,Cancellation,High,Retention Team
+TICK-005697,Please confirm cancellation of recurring billing for account 17541.,Cancellation,Medium,Retention Team
+TICK-001020,Double charge observed on my bank statement for invoice 82603. Please advise as soon as possible.,Billing,Medium,Billing Team
+TICK-003825,I cannot log into my account despite entering correct password. Kindly look into this matter promptly.,Account,Medium,Account Support Team
+TICK-004573,Escalating issue: product failed during critical presentation. Contact me via email or phone.,Complaint,High,Customer Care Team
+TICK-005586,Canceling contract due to budget constraints in our organization. Contact me via email or phone.,Cancellation,Medium,Retention Team
+TICK-003939,Unable to reset password via email link; link expired immediately. Appreciate a quick update on this.,Account,Medium,Account Support Team
+TICK-005785,Need assistance closing and permanently deleting my account. Please advise as soon as possible.,Cancellation,Low,Retention Team
+TICK-001751,Page load times are extremely slow and API calls are timing out. Appreciate a quick update on this.,Technical Support,Medium,Technical Support Team
+TICK-001081,Can you update my credit card billing address and tax ID for billing? Please advise as soon as possible.,Billing,Medium,Billing Team
+TICK-003474,I need to change shipping address for order 16896 before dispatch. Appreciate a quick update on this.,Shipping,Medium,Logistics Team
+TICK-002530,Item arrived damaged in transit. I want an immediate full refund. Looking forward to your prompt response.,Refund,Low,Refund Team
+TICK-005941,Canceling contract due to budget constraints in our organization. Appreciate a quick update on this.,Cancellation,Medium,Retention Team
+TICK-003614,My account has been locked due to multiple failed login attempts. Kindly look into this matter promptly.,Account,High,Account Support Team
+TICK-005768,We are switching to an alternative solution and wish to terminate service. Please advise as soon as possible.,Cancellation,Medium,Retention Team
+TICK-005417,Looking for comparison between standard and professional tiers. Please advise as soon as possible.,Product Inquiry,Medium,Product Support Team
+TICK-001379,Double charge observed on my bank statement for invoice 23133. Looking forward to your prompt response.,Billing,Medium,Billing Team
+TICK-005254,Is this product compatible with macOS Sequoia and Apple Silicon? Thank you for your assistance.,Product Inquiry,Low,Product Support Team
+TICK-005356,Can you provide information on bulk licensing discounts for 500+ users? Kindly look into this matter promptly.,Product Inquiry,Low,Product Support Team
+TICK-003295,"Express shipping paid, but package sent via standard economy post. Thank you for your assistance.",Shipping,Low,Logistics Team
+TICK-002498,I requested a refund for order 80030 two weeks ago but haven't received it. Please advise as soon as possible.,Refund,High,Refund Team
+TICK-003594,Customs clearance is delaying package shipment at border transit. Kindly look into this matter promptly.,Shipping,Medium,Logistics Team
+TICK-003524,Where is my package? Tracking number 41471 shows no movement for 5 days. Urgent attention required.,Shipping,Critical,Logistics Team
+TICK-004894,Agent closed my support ticket without resolving the actual issue. Appreciate a quick update on this.,Complaint,High,Customer Care Team
+TICK-001563,I am being billed for a service that was supposed to be free during trial. Urgent attention required.,Billing,Medium,Billing Team
+TICK-004697,Agent closed my support ticket without resolving the actual issue.,Complaint,Medium,Customer Care Team
+TICK-003333,Estimated delivery date has passed but package has not arrived.,Shipping,Medium,Logistics Team
+TICK-003396,"Express shipping paid, but package sent via standard economy post. Please advise as soon as possible.",Shipping,Low,Logistics Team
+TICK-001851,Software installation fails due to missing DLL files on Windows 11.,Technical Support,Low,Technical Support Team
+TICK-006063,Requesting account closure and deletion of stored customer data. Kindly look into this matter promptly.,Cancellation,Low,Retention Team
+TICK-002930,Service was down during our event. Requesting credit refund to account. Please advise as soon as possible.,Refund,Medium,Refund Team
+TICK-004764,Worst service experience ever! Unprofessional support team. Please advise as soon as possible.,Complaint,High,Customer Care Team
+TICK-004298,Repeatedly transferred between agents without any resolution. Contact me via email or phone.,Complaint,High,Customer Care Team
+TICK-005370,Can you provide information on bulk licensing discounts for 500+ users? Appreciate a quick update on this.,Product Inquiry,High,Product Support Team
+TICK-001953,Bluetooth sync is failing between the hardware device and dashboard. Thank you for your assistance.,Technical Support,Low,Technical Support Team
+TICK-004872,Misleading advertising regarding feature capabilities on sales page. Contact me via email or phone.,Complaint,Critical,Customer Care Team
+TICK-004051,My profile settings fail to save changes. Thank you for your assistance.,Account,High,Account Support Team
+TICK-001409,"My payment failed yesterday, but money was deducted from my bank account. Please advise as soon as possible.",Billing,Low,Billing Team
+TICK-003000,Delivery courier left parcel in rain without notification. Please advise as soon as possible.,Shipping,Medium,Logistics Team
+TICK-001983,Bluetooth sync is failing between the hardware device and dashboard. Contact me via email or phone.,Technical Support,High,Technical Support Team
+TICK-004102,My profile settings fail to save changes. Kindly look into this matter promptly.,Account,Medium,Account Support Team
+TICK-003265,I need to change shipping address for order 10800 before dispatch. Contact me via email or phone.,Shipping,Low,Logistics Team
+TICK-005078,What are the hardware specifications required to run this software? Thank you for your assistance.,Product Inquiry,Medium,Product Support Team
+TICK-002353,Item arrived damaged in transit. I want an immediate full refund. Appreciate a quick update on this.,Refund,High,Refund Team
+TICK-001336,"My payment failed yesterday, but money was deducted from my bank account. Urgent attention required.",Billing,High,Billing Team
+TICK-002585,Item arrived damaged in transit. I want an immediate full refund. Contact me via email or phone.,Refund,High,Refund Team
+TICK-002478,I demand a prompt refund for defective goods received yesterday. Please advise as soon as possible.,Refund,High,Refund Team
+TICK-002334,Service was down during our event. Requesting credit refund to account. Urgent attention required.,Refund,Medium,Refund Team
+TICK-001937,Page load times are extremely slow and API calls are timing out. Kindly look into this matter promptly.,Technical Support,High,Technical Support Team
+TICK-005536,Is this product compatible with macOS Sequoia and Apple Silicon? Thank you for your assistance.,Product Inquiry,Medium,Product Support Team
+TICK-003279,International shipment stuck at distribution center for over a week. Looking forward to your prompt response.,Shipping,Medium,Logistics Team
+TICK-004259,Misleading advertising regarding feature capabilities on sales page. Kindly look into this matter promptly.,Complaint,High,Customer Care Team
+TICK-002296,The desktop application freezes every time I click the save button. Kindly look into this matter promptly.,Technical Support,High,Technical Support Team
+TICK-006044,Closing subscription due to missing essential features. Appreciate a quick update on this.,Cancellation,Medium,Retention Team
+TICK-003040,"Tracking indicates delivered, but package is missing from my doorstep. Please advise as soon as possible.",Shipping,High,Logistics Team
+TICK-002059,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Appreciate a quick update on this.,Technical Support,High,Technical Support Team
+TICK-004932,Is this product compatible with macOS Sequoia and Apple Silicon? Kindly look into this matter promptly.,Product Inquiry,Medium,Product Support Team
+TICK-004226,Single Sign-On (SSO) integration is failing for company domain.,Account,High,Account Support Team
+TICK-005391,Looking for comparison between standard and professional tiers. Contact me via email or phone.,Product Inquiry,Low,Product Support Team
+TICK-005641,Subscription cancellation button is missing from account settings page. Looking forward to your prompt response.,Cancellation,Low,Retention Team
+TICK-004898,Very dissatisfied with rude customer service representative on call. Appreciate a quick update on this.,Complaint,High,Customer Care Team
+TICK-005009,What is the warranty period and coverage for international orders? Kindly look into this matter promptly.,Product Inquiry,Medium,Product Support Team
+TICK-003222,Package arrived with crushed outer box and broken contents. Urgent attention required.,Shipping,Low,Logistics Team
+TICK-001374,Double charge observed on my bank statement for invoice 39820.,Billing,High,Billing Team
+TICK-002099,Bluetooth sync is failing between the hardware device and dashboard. Thank you for your assistance.,Technical Support,High,Technical Support Team
+TICK-003525,Package arrived with crushed outer box and broken contents. Looking forward to your prompt response.,Shipping,Medium,Logistics Team
+TICK-004765,Worst service experience ever! Unprofessional support team. Contact me via email or phone.,Complaint,High,Customer Care Team
+TICK-004484,Formal complaint regarding poor product build quality and support delay. Kindly look into this matter promptly.,Complaint,High,Customer Care Team
+TICK-005806,Canceling contract due to budget constraints in our organization. Appreciate a quick update on this.,Cancellation,Medium,Retention Team
+TICK-005076,Looking for comparison between standard and professional tiers. Contact me via email or phone.,Product Inquiry,Medium,Product Support Team
+TICK-002072,The web application keeps throwing 500 internal server errors when submitting forms. Kindly look into this matter promptly.,Technical Support,Low,Technical Support Team
+TICK-004564,Appalled by lack of response to critical security vulnerability report.,Complaint,High,Customer Care Team
+TICK-001891,The web application keeps throwing 500 internal server errors when submitting forms. Kindly look into this matter promptly.,Technical Support,Critical,Technical Support Team
+TICK-005741,Please turn off auto-renewal for my annual membership plan. Please advise as soon as possible.,Cancellation,High,Retention Team
+TICK-002737,Service was down during our event. Requesting credit refund to account.,Refund,Low,Refund Team
+TICK-001308,There is a billing discrepancy on my recent statement for billing period Q1 2026. Kindly look into this matter promptly.,Billing,High,Billing Team
+TICK-002425,Item arrived damaged in transit. I want an immediate full refund. Please advise as soon as possible.,Refund,Medium,Refund Team
+TICK-001130,Can you update my credit card billing address and tax ID for billing? Kindly look into this matter promptly.,Billing,Medium,Billing Team
+TICK-001770,Unable to connect to remote database server from IP address 192.168.240.145. Please advise as soon as possible.,Technical Support,High,Technical Support Team
+TICK-003929,Two-factor authentication code is not being received on my phone. Thank you for your assistance.,Account,High,Account Support Team
+TICK-001372,I received a late payment penalty charge even though I paid on time.,Billing,Medium,Billing Team
+TICK-002037,System crashed completely during export task showing error code SOCKET_TIMEOUT.,Technical Support,High,Technical Support Team
+TICK-005157,What is the warranty period and coverage for international orders? Kindly look into this matter promptly.,Product Inquiry,Medium,Product Support Team
+TICK-002607,Partial refund missing from my previous dispute case 93656. Contact me via email or phone.,Refund,Low,Refund Team
+TICK-002041,Software installation fails due to missing DLL files on Windows 11. Looking forward to your prompt response.,Technical Support,Medium,Technical Support Team
+TICK-002183,The desktop application freezes every time I click the save button.,Technical Support,Critical,Technical Support Team
+TICK-003875,Unable to reset password via email link; link expired immediately. Please advise as soon as possible.,Account,Low,Account Support Team
+TICK-001931,VPN connection drops every 5 minutes unexpectedly.,Technical Support,Medium,Technical Support Team
+TICK-002163,The web application keeps throwing 500 internal server errors when submitting forms. Looking forward to your prompt response.,Technical Support,High,Technical Support Team
+TICK-004646,Worst service experience ever! Unprofessional support team. Looking forward to your prompt response.,Complaint,Low,Customer Care Team
+TICK-003373,"Tracking indicates delivered, but package is missing from my doorstep. Looking forward to your prompt response.",Shipping,Critical,Logistics Team
+TICK-004881,Worst service experience ever! Unprofessional support team. Please advise as soon as possible.,Complaint,Medium,Customer Care Team
+TICK-001141,There is a billing discrepancy on my recent statement for billing period Jan 2026. Please advise as soon as possible.,Billing,High,Billing Team
+TICK-005232,Can you provide information on bulk licensing discounts for 500+ users? Thank you for your assistance.,Product Inquiry,High,Product Support Team
+TICK-003905,Two-factor authentication code is not being received on my phone. Contact me via email or phone.,Account,High,Account Support Team
+TICK-003348,I need to change shipping address for order 53103 before dispatch. Looking forward to your prompt response.,Shipping,Medium,Logistics Team
+TICK-002432,The product quality is sub-par and does not match description. Please refund. Kindly look into this matter promptly.,Refund,High,Refund Team
+TICK-004371,Appalled by lack of response to critical security vulnerability report. Contact me via email or phone.,Complaint,Medium,Customer Care Team
+TICK-002473,I accidentally purchased the wrong subscription tier and need money back.,Refund,High,Refund Team
+TICK-001394,Double charge observed on my bank statement for invoice 62965. Appreciate a quick update on this.,Billing,Critical,Billing Team
+TICK-005876,Closing subscription due to missing essential features. Please advise as soon as possible.,Cancellation,Low,Retention Team
+TICK-002220,My internet is not working and the router LED is blinking red.,Technical Support,Medium,Technical Support Team
+TICK-004912,Does the cloud platform comply with SOC2 and HIPAA standards? Please advise as soon as possible.,Product Inquiry,Low,Product Support Team
+TICK-002079,Bluetooth sync is failing between the hardware device and dashboard. Kindly look into this matter promptly.,Technical Support,Low,Technical Support Team
+TICK-002890,I accidentally purchased the wrong subscription tier and need money back. Please advise as soon as possible.,Refund,High,Refund Team
+TICK-001739,Software installation fails due to missing DLL files on Windows 11. Please advise as soon as possible.,Technical Support,High,Technical Support Team
+TICK-001264,I noticed an unauthorized charge of $99.99 on my monthly invoice. Kindly look into this matter promptly.,Billing,Low,Billing Team
+TICK-003821,How do I transfer account ownership to another administrator? Please advise as soon as possible.,Account,High,Account Support Team
+TICK-003255,International shipment stuck at distribution center for over a week. Appreciate a quick update on this.,Shipping,High,Logistics Team
+TICK-002002,Software installation fails due to missing DLL files on Windows 11. Contact me via email or phone.,Technical Support,Low,Technical Support Team
+TICK-002913,Item arrived damaged in transit. I want an immediate full refund. Contact me via email or phone.,Refund,Low,Refund Team
+TICK-003588,International shipment stuck at distribution center for over a week. Kindly look into this matter promptly.,Shipping,Medium,Logistics Team
+TICK-004994,Looking for comparison between standard and professional tiers. Looking forward to your prompt response.,Product Inquiry,Low,Product Support Team
+TICK-005228,Are there any upcoming features planned for mobile tablet views? Kindly look into this matter promptly.,Product Inquiry,Medium,Product Support Team
+TICK-004317,No response to urgent tickets for 72 hours despite premium support SLA. Contact me via email or phone.,Complaint,Low,Customer Care Team
+TICK-004962,Can you provide information on bulk licensing discounts for 500+ users? Urgent attention required.,Product Inquiry,Low,Product Support Team
+TICK-004158,Two-factor authentication code is not being received on my phone. Urgent attention required.,Account,High,Account Support Team
+TICK-001807,Bluetooth sync is failing between the hardware device and dashboard.,Technical Support,High,Technical Support Team
+TICK-004789,No response to urgent tickets for 72 hours despite premium support SLA.,Complaint,Low,Customer Care Team
+TICK-003769,Single Sign-On (SSO) integration is failing for company domain. Urgent attention required.,Account,High,Account Support Team
+TICK-001942,My internet is not working and the router LED is blinking red. Please advise as soon as possible.,Technical Support,Critical,Technical Support Team
+TICK-005445,Can you provide information on bulk licensing discounts for 500+ users? Kindly look into this matter promptly.,Product Inquiry,Low,Product Support Team
+TICK-002283,Unable to connect to remote database server from IP address 192.168.168.103. Appreciate a quick update on this.,Technical Support,Critical,Technical Support Team
+TICK-003466,Customs clearance is delaying package shipment at border transit. Contact me via email or phone.,Shipping,High,Logistics Team
+TICK-004156,I need to update my registered email address and phone number.,Account,High,Account Support Team
+TICK-004922,Does your enterprise plan support custom API integrations?,Product Inquiry,Low,Product Support Team
+TICK-004837,Appalled by lack of response to critical security vulnerability report.,Complaint,High,Customer Care Team
+TICK-003815,Two-factor authentication code is not being received on my phone. Appreciate a quick update on this.,Account,High,Account Support Team
+TICK-005377,Looking for comparison between standard and professional tiers. Thank you for your assistance.,Product Inquiry,Low,Product Support Team
+TICK-001912,The web application keeps throwing 500 internal server errors when submitting forms. Kindly look into this matter promptly.,Technical Support,High,Technical Support Team
+TICK-001419,Can you update my credit card billing address and tax ID for billing? Urgent attention required.,Billing,Medium,Billing Team
+TICK-002760,Item arrived damaged in transit. I want an immediate full refund. Urgent attention required.,Refund,Medium,Refund Team
+TICK-003935,Two-factor authentication code is not being received on my phone. Urgent attention required.,Account,Medium,Account Support Team
+TICK-001224,My credit card was charged twice for transaction 49110.,Billing,High,Billing Team
+TICK-005253,Can you provide information on bulk licensing discounts for 500+ users? Looking forward to your prompt response.,Product Inquiry,Medium,Product Support Team
+TICK-005759,Requesting account closure and deletion of stored customer data. Kindly look into this matter promptly.,Cancellation,Low,Retention Team
+TICK-001753,My internet is not working and the router LED is blinking red. Kindly look into this matter promptly.,Technical Support,Medium,Technical Support Team
+TICK-005411,What are the hardware specifications required to run this software? Kindly look into this matter promptly.,Product Inquiry,High,Product Support Team
+TICK-003817,I need to update my registered email address and phone number. Contact me via email or phone.,Account,Critical,Account Support Team
+TICK-003708,Two-factor authentication code is not being received on my phone. Looking forward to your prompt response.,Account,Medium,Account Support Team
+TICK-005470,Can you provide information on bulk licensing discounts for 500+ users? Looking forward to your prompt response.,Product Inquiry,Low,Product Support Team
+TICK-004735,No response to urgent tickets for 72 hours despite premium support SLA. Thank you for your assistance.,Complaint,Medium,Customer Care Team
+TICK-004081,I cannot log into my account despite entering correct password. Please advise as soon as possible.,Account,Medium,Account Support Team
+TICK-001192,Can you update my credit card billing address and tax ID for billing? Thank you for your assistance.,Billing,Medium,Billing Team
+TICK-002995,I need to change shipping address for order 93303 before dispatch. Contact me via email or phone.,Shipping,Medium,Logistics Team
+TICK-004451,No response to urgent tickets for 72 hours despite premium support SLA. Kindly look into this matter promptly.,Complaint,High,Customer Care Team
+TICK-004734,System downtime caused business revenue loss for our team. Thank you for your assistance.,Complaint,Critical,Customer Care Team
+TICK-005119,Can I try out premium features during a free trial demo? Appreciate a quick update on this.,Product Inquiry,Low,Product Support Team
+TICK-003239,Estimated delivery date has passed but package has not arrived. Kindly look into this matter promptly.,Shipping,Medium,Logistics Team
+TICK-001551,Why was I billed $99.99 when my plan is $29.99? Thank you for your assistance.,Billing,Low,Billing Team
+TICK-005688,Please confirm cancellation of recurring billing for account 87225. Urgent attention required.,Cancellation,High,Retention Team
+TICK-002886,Order was canceled by system but refund has not posted to my account. Looking forward to your prompt response.,Refund,Medium,Refund Team
+TICK-002678,I demand a prompt refund for defective goods received yesterday. Appreciate a quick update on this.,Refund,Medium,Refund Team
+TICK-005765,Please confirm cancellation of recurring billing for account 57439. Looking forward to your prompt response.,Cancellation,High,Retention Team
+TICK-003386,Delivery courier left parcel in rain without notification. Thank you for your assistance.,Shipping,Medium,Logistics Team
+TICK-005677,Need assistance closing and permanently deleting my account. Please advise as soon as possible.,Cancellation,Low,Retention Team
+TICK-003403,"Tracking indicates delivered, but package is missing from my doorstep. Contact me via email or phone.",Shipping,Medium,Logistics Team
+TICK-001561,Can you update my credit card billing address and tax ID for billing? Please advise as soon as possible.,Billing,High,Billing Team
+TICK-001044,I noticed an unauthorized charge of $49.0 on my monthly invoice. Kindly look into this matter promptly.,Billing,High,Billing Team
+TICK-001059,Double charge observed on my bank statement for invoice 12560. Looking forward to your prompt response.,Billing,High,Billing Team
+TICK-003367,"Tracking indicates delivered, but package is missing from my doorstep. Appreciate a quick update on this.",Shipping,Critical,Logistics Team
+TICK-004140,How do I transfer account ownership to another administrator? Looking forward to your prompt response.,Account,High,Account Support Team
+TICK-002252,System crashed completely during export task showing error code NULL_POINTER_EXC. Appreciate a quick update on this.,Technical Support,Medium,Technical Support Team
+TICK-002309,Service was down during our event. Requesting credit refund to account. Kindly look into this matter promptly.,Refund,High,Refund Team
+TICK-003606,I need to update my registered email address and phone number.,Account,Medium,Account Support Team
+TICK-002062,Unable to connect to remote database server from IP address 192.168.40.115. Looking forward to your prompt response.,Technical Support,Medium,Technical Support Team
+TICK-002417,Order was canceled by system but refund has not posted to my account. Contact me via email or phone.,Refund,Medium,Refund Team
+TICK-004301,Escalating issue: product failed during critical presentation. Kindly look into this matter promptly.,Complaint,Medium,Customer Care Team
+TICK-001071,I am being billed for a service that was supposed to be free during trial. Thank you for your assistance.,Billing,Medium,Billing Team
+TICK-005213,Can I try out premium features during a free trial demo? Thank you for your assistance.,Product Inquiry,Low,Product Support Team
+TICK-005987,Please turn off auto-renewal for my annual membership plan.,Cancellation,Medium,Retention Team
+TICK-002963,Delivery courier left parcel in rain without notification. Thank you for your assistance.,Shipping,Medium,Logistics Team
+TICK-004843,System downtime caused business revenue loss for our team. Thank you for your assistance.,Complaint,High,Customer Care Team
+TICK-006085,How do I cancel my order before it enters fulfillment phase? Contact me via email or phone.,Cancellation,Low,Retention Team
+TICK-005489,Can you provide information on bulk licensing discounts for 500+ users? Looking forward to your prompt response.,Product Inquiry,Low,Product Support Team
+TICK-001804,The web application keeps throwing 500 internal server errors when submitting forms. Urgent attention required.,Technical Support,High,Technical Support Team
+TICK-001153,Can you update my credit card billing address and tax ID for billing? Thank you for your assistance.,Billing,High,Billing Team
+TICK-005748,Please turn off auto-renewal for my annual membership plan. Appreciate a quick update on this.,Cancellation,High,Retention Team
+TICK-002783,I requested a refund for order 45102 two weeks ago but haven't received it. Please advise as soon as possible.,Refund,Medium,Refund Team
+TICK-002753,Partial refund missing from my previous dispute case 53703. Urgent attention required.,Refund,Medium,Refund Team
+TICK-001824,Unable to connect to remote database server from IP address 192.168.167.62. Contact me via email or phone.,Technical Support,Low,Technical Support Team
+TICK-005701,Need assistance closing and permanently deleting my account. Looking forward to your prompt response.,Cancellation,Medium,Retention Team
+TICK-002078,Unable to connect to remote database server from IP address 192.168.137.138. Contact me via email or phone.,Technical Support,Medium,Technical Support Team
+TICK-005854,Closing subscription due to missing essential features.,Cancellation,Medium,Retention Team
+TICK-002317,The product quality is sub-par and does not match description. Please refund. Please advise as soon as possible.,Refund,Low,Refund Team
+TICK-001944,My internet is not working and the router LED is blinking red. Thank you for your assistance.,Technical Support,Low,Technical Support Team
+TICK-006147,Subscription cancellation button is missing from account settings page. Thank you for your assistance.,Cancellation,Critical,Retention Team
+TICK-003148,"Tracking indicates delivered, but package is missing from my doorstep. Thank you for your assistance.",Shipping,Low,Logistics Team
+TICK-003655,My profile settings fail to save changes. Contact me via email or phone.,Account,High,Account Support Team
+TICK-004268,No response to urgent tickets for 72 hours despite premium support SLA. Thank you for your assistance.,Complaint,Medium,Customer Care Team
+TICK-004747,System downtime caused business revenue loss for our team. Urgent attention required.,Complaint,High,Customer Care Team
+TICK-002797,I accidentally purchased the wrong subscription tier and need money back.,Refund,High,Refund Team
+TICK-002302,Service was down during our event. Requesting credit refund to account. Thank you for your assistance.,Refund,High,Refund Team
+TICK-001041,I need an official tax invoice and payment receipt for order 44970.,Billing,Medium,Billing Team
+TICK-005458,Does your enterprise plan support custom API integrations?,Product Inquiry,Medium,Product Support Team
+TICK-001127,There is a billing discrepancy on my recent statement for billing period Jan 2026. Looking forward to your prompt response.,Billing,High,Billing Team
+TICK-006047,Requesting account closure and deletion of stored customer data. Contact me via email or phone.,Cancellation,High,Retention Team
+TICK-002207,Page load times are extremely slow and API calls are timing out. Thank you for your assistance.,Technical Support,High,Technical Support Team
+TICK-004036,Received suspicious password reset email without requesting it. Kindly look into this matter promptly.,Account,Medium,Account Support Team
+TICK-004288,Agent closed my support ticket without resolving the actual issue. Appreciate a quick update on this.,Complaint,Medium,Customer Care Team
+TICK-006122,Need assistance closing and permanently deleting my account.,Cancellation,Low,Retention Team
+TICK-003037,My order 54849 was shipped to wrong delivery address. Urgent attention required.,Shipping,Medium,Logistics Team
+TICK-005648,Please confirm cancellation of recurring billing for account 62691. Thank you for your assistance.,Cancellation,Medium,Retention Team
+TICK-004394,System downtime caused business revenue loss for our team. Kindly look into this matter promptly.,Complaint,High,Customer Care Team
+TICK-004410,No response to urgent tickets for 72 hours despite premium support SLA. Urgent attention required.,Complaint,Medium,Customer Care Team
+TICK-002277,Page load times are extremely slow and API calls are timing out. Please advise as soon as possible.,Technical Support,Medium,Technical Support Team
+TICK-003130,My order 62166 was shipped to wrong delivery address. Contact me via email or phone.,Shipping,Low,Logistics Team
+TICK-004638,Formal complaint regarding poor product build quality and support delay. Kindly look into this matter promptly.,Complaint,High,Customer Care Team
+TICK-003561,My order 88941 was shipped to wrong delivery address. Please advise as soon as possible.,Shipping,Medium,Logistics Team
+TICK-005160,What is the warranty period and coverage for international orders? Looking forward to your prompt response.,Product Inquiry,Low,Product Support Team
+TICK-002046,System crashed completely during export task showing error code SOCKET_TIMEOUT. Appreciate a quick update on this.,Technical Support,Critical,Technical Support Team
+TICK-001263,I received a late payment penalty charge even though I paid on time.,Billing,Medium,Billing Team
+TICK-005786,We are switching to an alternative solution and wish to terminate service. Looking forward to your prompt response.,Cancellation,Medium,Retention Team
+TICK-005001,Does the cloud platform comply with SOC2 and HIPAA standards? Urgent attention required.,Product Inquiry,Low,Product Support Team
+TICK-004528,No response to urgent tickets for 72 hours despite premium support SLA. Contact me via email or phone.,Complaint,High,Customer Care Team
+TICK-001328,Double charge observed on my bank statement for invoice 92251. Urgent attention required.,Billing,Medium,Billing Team
+TICK-003928,Unable to reset password via email link; link expired immediately. Looking forward to your prompt response.,Account,High,Account Support Team
+TICK-005413,Is this product compatible with macOS Sequoia and Apple Silicon?,Product Inquiry,Medium,Product Support Team
+TICK-006140,I want to cancel my subscription effective immediately. Appreciate a quick update on this.,Cancellation,Low,Retention Team
+TICK-006072,Canceling contract due to budget constraints in our organization. Kindly look into this matter promptly.,Cancellation,Low,Retention Team
+TICK-004334,Very dissatisfied with rude customer service representative on call. Please advise as soon as possible.,Complaint,Medium,Customer Care Team
+TICK-002676,Returned package was delivered to warehouse. When will refund be processed?,Refund,Medium,Refund Team
+TICK-004918,Are there any upcoming features planned for mobile tablet views? Please advise as soon as possible.,Product Inquiry,Low,Product Support Team
+TICK-004323,Escalating issue: product failed during critical presentation. Contact me via email or phone.,Complaint,Medium,Customer Care Team
+TICK-002576,I accidentally purchased the wrong subscription tier and need money back. Thank you for your assistance.,Refund,Medium,Refund Team
+TICK-003673,My profile settings fail to save changes. Looking forward to your prompt response.,Account,High,Account Support Team
+TICK-004448,Formal complaint regarding poor product build quality and support delay. Urgent attention required.,Complaint,High,Customer Care Team
+TICK-002489,I demand a prompt refund for defective goods received yesterday. Kindly look into this matter promptly.,Refund,Medium,Refund Team
+TICK-003128,"Tracking indicates delivered, but package is missing from my doorstep.",Shipping,Medium,Logistics Team
+TICK-005644,Requesting account closure and deletion of stored customer data. Kindly look into this matter promptly.,Cancellation,Low,Retention Team
+TICK-002169,Bluetooth sync is failing between the hardware device and dashboard. Urgent attention required.,Technical Support,Medium,Technical Support Team
+TICK-005762,Please confirm cancellation of recurring billing for account 51219. Looking forward to your prompt response.,Cancellation,Medium,Retention Team
+TICK-001376,Can you update my credit card billing address and tax ID for billing? Looking forward to your prompt response.,Billing,Medium,Billing Team
+TICK-003319,International shipment stuck at distribution center for over a week. Appreciate a quick update on this.,Shipping,Low,Logistics Team
+TICK-002599,Returned package was delivered to warehouse. When will refund be processed? Appreciate a quick update on this.,Refund,Low,Refund Team
+TICK-001547,Can you update my credit card billing address and tax ID for billing? Kindly look into this matter promptly.,Billing,Medium,Billing Team
+TICK-005081,What are the hardware specifications required to run this software? Looking forward to your prompt response.,Product Inquiry,Medium,Product Support Team
+TICK-003209,International shipment stuck at distribution center for over a week. Kindly look into this matter promptly.,Shipping,Medium,Logistics Team
+TICK-003198,Delivery courier left parcel in rain without notification. Thank you for your assistance.,Shipping,High,Logistics Team
+TICK-001420,My credit card was charged twice for transaction 30892.,Billing,Medium,Billing Team
+TICK-002068,My internet is not working and the router LED is blinking red.,Technical Support,Critical,Technical Support Team
+TICK-004435,System downtime caused business revenue loss for our team. Looking forward to your prompt response.,Complaint,Medium,Customer Care Team
+TICK-003090,Delivery courier left parcel in rain without notification. Urgent attention required.,Shipping,High,Logistics Team
+TICK-001053,I noticed an unauthorized charge of $49.0 on my monthly invoice. Thank you for your assistance.,Billing,Medium,Billing Team
+TICK-003382,Delivery courier left parcel in rain without notification. Please advise as soon as possible.,Shipping,Critical,Logistics Team
+TICK-005457,Is this product compatible with macOS Sequoia and Apple Silicon? Thank you for your assistance.,Product Inquiry,Medium,Product Support Team
+TICK-003138,Estimated delivery date has passed but package has not arrived.,Shipping,Medium,Logistics Team
+TICK-003789,Unable to reset password via email link; link expired immediately. Kindly look into this matter promptly.,Account,High,Account Support Team
+TICK-003152,Estimated delivery date has passed but package has not arrived. Looking forward to your prompt response.,Shipping,Medium,Logistics Team
+TICK-001728,VPN connection drops every 5 minutes unexpectedly. Contact me via email or phone.,Technical Support,Low,Technical Support Team
+TICK-001103,Can you update my credit card billing address and tax ID for billing? Appreciate a quick update on this.,Billing,Medium,Billing Team
+TICK-003757,I need to update my registered email address and phone number. Looking forward to your prompt response.,Account,Critical,Account Support Team
+TICK-004365,Appalled by lack of response to critical security vulnerability report. Contact me via email or phone.,Complaint,Low,Customer Care Team
+TICK-005276,Is this product compatible with macOS Sequoia and Apple Silicon? Appreciate a quick update on this.,Product Inquiry,Low,Product Support Team
+TICK-001727,The desktop application freezes every time I click the save button. Urgent attention required.,Technical Support,Medium,Technical Support Team
+TICK-003362,"Express shipping paid, but package sent via standard economy post. Urgent attention required.",Shipping,Medium,Logistics Team
+TICK-001507,I need an official tax invoice and payment receipt for order 40783. Kindly look into this matter promptly.,Billing,Medium,Billing Team
+TICK-003891,Unable to reset password via email link; link expired immediately. Kindly look into this matter promptly.,Account,Critical,Account Support Team
+TICK-006016,How do I cancel my order before it enters fulfillment phase? Contact me via email or phone.,Cancellation,Medium,Retention Team
+TICK-002300,Software installation fails due to missing DLL files on Windows 11. Kindly look into this matter promptly.,Technical Support,High,Technical Support Team
+TICK-002917,"Charged after cancellation request, need immediate reimbursement. Urgent attention required.",Refund,Medium,Refund Team
+TICK-001583,"My payment failed yesterday, but money was deducted from my bank account. Please advise as soon as possible.",Billing,Critical,Billing Team
+TICK-004698,Escalating issue: product failed during critical presentation. Looking forward to your prompt response.,Complaint,High,Customer Care Team
+TICK-001660,System crashed completely during export task showing error code ERR_502. Looking forward to your prompt response.,Technical Support,Low,Technical Support Team
+TICK-002383,The product quality is sub-par and does not match description. Please refund. Kindly look into this matter promptly.,Refund,High,Refund Team
+TICK-003483,My order 70262 was shipped to wrong delivery address. Looking forward to your prompt response.,Shipping,High,Logistics Team
+TICK-003832,Single Sign-On (SSO) integration is failing for company domain. Thank you for your assistance.,Account,High,Account Support Team
+TICK-003284,Estimated delivery date has passed but package has not arrived. Appreciate a quick update on this.,Shipping,Medium,Logistics Team
+TICK-005150,What are the hardware specifications required to run this software? Thank you for your assistance.,Product Inquiry,Low,Product Support Team
+TICK-003541,International shipment stuck at distribution center for over a week. Appreciate a quick update on this.,Shipping,Medium,Logistics Team
+TICK-003810,Single Sign-On (SSO) integration is failing for company domain. Thank you for your assistance.,Account,Medium,Account Support Team
+TICK-005295,Is this product compatible with macOS Sequoia and Apple Silicon? Please advise as soon as possible.,Product Inquiry,Low,Product Support Team
+TICK-004907,What are the hardware specifications required to run this software?,Product Inquiry,Low,Product Support Team
+TICK-001242,I noticed an unauthorized charge of $19.99 on my monthly invoice. Looking forward to your prompt response.,Billing,Medium,Billing Team
+TICK-002957,Delivery courier left parcel in rain without notification. Urgent attention required.,Shipping,Medium,Logistics Team
+TICK-004309,Agent closed my support ticket without resolving the actual issue. Looking forward to your prompt response.,Complaint,High,Customer Care Team
+TICK-004361,Worst service experience ever! Unprofessional support team. Appreciate a quick update on this.,Complaint,Critical,Customer Care Team
+TICK-005171,Can you provide information on bulk licensing discounts for 500+ users? Please advise as soon as possible.,Product Inquiry,Medium,Product Support Team
+TICK-001545,Why was I billed $19.99 when my plan is $9.99? Kindly look into this matter promptly.,Billing,High,Billing Team
+TICK-004039,Account permissions are misconfigured and user cannot access dashboard. Looking forward to your prompt response.,Account,High,Account Support Team
+TICK-004046,My profile settings fail to save changes. Thank you for your assistance.,Account,Medium,Account Support Team
+TICK-001026,Can you update my credit card billing address and tax ID for billing? Appreciate a quick update on this.,Billing,Critical,Billing Team
+TICK-002335,The product quality is sub-par and does not match description. Please refund. Thank you for your assistance.,Refund,High,Refund Team
+TICK-005031,Are there any upcoming features planned for mobile tablet views? Urgent attention required.,Product Inquiry,Low,Product Support Team
+TICK-004127,Two-factor authentication code is not being received on my phone. Contact me via email or phone.,Account,High,Account Support Team
+TICK-005178,Does your enterprise plan support custom API integrations? Looking forward to your prompt response.,Product Inquiry,Low,Product Support Team
+TICK-005196,Can I try out premium features during a free trial demo? Appreciate a quick update on this.,Product Inquiry,High,Product Support Team
+TICK-004725,Formal complaint regarding poor product build quality and support delay. Appreciate a quick update on this.,Complaint,High,Customer Care Team
+TICK-003305,Delivery courier left parcel in rain without notification. Appreciate a quick update on this.,Shipping,Low,Logistics Team
+TICK-002806,I requested a refund for order 48528 two weeks ago but haven't received it. Kindly look into this matter promptly.,Refund,High,Refund Team
+TICK-004153,Received suspicious password reset email without requesting it. Looking forward to your prompt response.,Account,High,Account Support Team
+TICK-003364,I need to change shipping address for order 55344 before dispatch. Please advise as soon as possible.,Shipping,Medium,Logistics Team
+TICK-004497,Appalled by lack of response to critical security vulnerability report. Kindly look into this matter promptly.,Complaint,High,Customer Care Team
+TICK-001648,I noticed an unauthorized charge of $499.0 on my monthly invoice. Please advise as soon as possible.,Billing,Medium,Billing Team
+TICK-002385,I demand a prompt refund for defective goods received yesterday. Contact me via email or phone.,Refund,Medium,Refund Team
+TICK-003006,International shipment stuck at distribution center for over a week. Kindly look into this matter promptly.,Shipping,Medium,Logistics Team
+TICK-003826,Single Sign-On (SSO) integration is failing for company domain. Urgent attention required.,Account,Low,Account Support Team
+TICK-003706,Two-factor authentication code is not being received on my phone. Appreciate a quick update on this.,Account,Medium,Account Support Team
+TICK-001155,Can you update my credit card billing address and tax ID for billing? Kindly look into this matter promptly.,Billing,Critical,Billing Team
+TICK-002393,Service was down during our event. Requesting credit refund to account. Contact me via email or phone.,Refund,Medium,Refund Team
+TICK-003447,Where is my package? Tracking number 30180 shows no movement for 5 days. Thank you for your assistance.,Shipping,Medium,Logistics Team
+TICK-005143,What are the hardware specifications required to run this software?,Product Inquiry,Medium,Product Support Team
+TICK-002752,I demand a prompt refund for defective goods received yesterday.,Refund,High,Refund Team
+TICK-001758,VPN connection drops every 5 minutes unexpectedly. Urgent attention required.,Technical Support,High,Technical Support Team
+TICK-005871,Please confirm cancellation of recurring billing for account 71157.,Cancellation,Low,Retention Team
+TICK-004065,My account has been locked due to multiple failed login attempts. Appreciate a quick update on this.,Account,Medium,Account Support Team
+TICK-002987,"Tracking indicates delivered, but package is missing from my doorstep.",Shipping,Medium,Logistics Team
+TICK-003151,"Tracking indicates delivered, but package is missing from my doorstep.",Shipping,Low,Logistics Team
+TICK-004329,Formal complaint regarding poor product build quality and support delay. Contact me via email or phone.,Complaint,Low,Customer Care Team
+TICK-001842,Software installation fails due to missing DLL files on Windows 11. Thank you for your assistance.,Technical Support,Low,Technical Support Team
+TICK-004600,Misleading advertising regarding feature capabilities on sales page. Contact me via email or phone.,Complaint,High,Customer Care Team
+TICK-002461,Item arrived damaged in transit. I want an immediate full refund. Please advise as soon as possible.,Refund,Medium,Refund Team
+TICK-002096,System crashed completely during export task showing error code ERR_502. Contact me via email or phone.,Technical Support,Critical,Technical Support Team
+TICK-006106,Requesting account closure and deletion of stored customer data. Thank you for your assistance.,Cancellation,Medium,Retention Team
+TICK-004470,Repeatedly transferred between agents without any resolution. Urgent attention required.,Complaint,Medium,Customer Care Team
+TICK-002189,Bluetooth sync is failing between the hardware device and dashboard. Looking forward to your prompt response.,Technical Support,Medium,Technical Support Team
+TICK-005519,Does your enterprise plan support custom API integrations? Appreciate a quick update on this.,Product Inquiry,Low,Product Support Team
+TICK-001886,Bluetooth sync is failing between the hardware device and dashboard. Appreciate a quick update on this.,Technical Support,High,Technical Support Team
+TICK-001516,My credit card was charged twice for transaction 33148. Appreciate a quick update on this.,Billing,High,Billing Team
+TICK-005246,Is this product compatible with macOS Sequoia and Apple Silicon? Appreciate a quick update on this.,Product Inquiry,Medium,Product Support Team
+TICK-004659,Formal complaint regarding poor product build quality and support delay. Urgent attention required.,Complaint,Low,Customer Care Team
+TICK-004653,Formal complaint regarding poor product build quality and support delay.,Complaint,Critical,Customer Care Team
+TICK-004428,Appalled by lack of response to critical security vulnerability report. Urgent attention required.,Complaint,Medium,Customer Care Team
+TICK-004098,My account has been locked due to multiple failed login attempts. Contact me via email or phone.,Account,Medium,Account Support Team
+TICK-005660,Subscription cancellation button is missing from account settings page. Appreciate a quick update on this.,Cancellation,High,Retention Team
+TICK-005500,Are there any upcoming features planned for mobile tablet views? Contact me via email or phone.,Product Inquiry,Low,Product Support Team
+TICK-003674,My profile settings fail to save changes.,Account,High,Account Support Team
+TICK-003042,Estimated delivery date has passed but package has not arrived. Kindly look into this matter promptly.,Shipping,Medium,Logistics Team
+TICK-001388,I noticed an unauthorized charge of $19.99 on my monthly invoice. Contact me via email or phone.,Billing,High,Billing Team
+TICK-001066,I need an official tax invoice and payment receipt for order 70952. Appreciate a quick update on this.,Billing,Medium,Billing Team
+TICK-005357,Does your enterprise plan support custom API integrations? Thank you for your assistance.,Product Inquiry,Medium,Product Support Team
+TICK-005898,We are switching to an alternative solution and wish to terminate service. Please advise as soon as possible.,Cancellation,Medium,Retention Team
+TICK-004701,Very dissatisfied with rude customer service representative on call. Looking forward to your prompt response.,Complaint,Critical,Customer Care Team
+TICK-002496,Order was canceled by system but refund has not posted to my account. Looking forward to your prompt response.,Refund,Medium,Refund Team
+TICK-004496,No response to urgent tickets for 72 hours despite premium support SLA. Please advise as soon as possible.,Complaint,Low,Customer Care Team
+TICK-005312,Where can I find user manuals and documentation for model PRO-642? Looking forward to your prompt response.,Product Inquiry,Low,Product Support Team
+TICK-005601,How do I cancel my order before it enters fulfillment phase? Thank you for your assistance.,Cancellation,Low,Retention Team
+TICK-005827,Closing subscription due to missing essential features. Thank you for your assistance.,Cancellation,Medium,Retention Team
+TICK-004623,Repeatedly transferred between agents without any resolution. Urgent attention required.,Complaint,Critical,Customer Care Team
+TICK-001221,Can you update my credit card billing address and tax ID for billing?,Billing,Medium,Billing Team
+TICK-002931,Item arrived damaged in transit. I want an immediate full refund. Looking forward to your prompt response.,Refund,Medium,Refund Team
+TICK-002582,"Charged after cancellation request, need immediate reimbursement. Appreciate a quick update on this.",Refund,Medium,Refund Team
+TICK-002459,I demand a prompt refund for defective goods received yesterday.,Refund,Medium,Refund Team
+TICK-003069,Delivery courier left parcel in rain without notification. Contact me via email or phone.,Shipping,Critical,Logistics Team
+TICK-001766,The web application keeps throwing 500 internal server errors when submitting forms. Contact me via email or phone.,Technical Support,High,Technical Support Team
+TICK-005239,Does the cloud platform comply with SOC2 and HIPAA standards? Urgent attention required.,Product Inquiry,High,Product Support Team
+TICK-005603,We are switching to an alternative solution and wish to terminate service. Urgent attention required.,Cancellation,Low,Retention Team
+TICK-001822,System crashed completely during export task showing error code AUTH_DENIED.,Technical Support,Medium,Technical Support Team
+TICK-003984,Received suspicious password reset email without requesting it. Kindly look into this matter promptly.,Account,Medium,Account Support Team
+TICK-003959,My account has been locked due to multiple failed login attempts. Looking forward to your prompt response.,Account,High,Account Support Team
+TICK-004860,Repeatedly transferred between agents without any resolution. Urgent attention required.,Complaint,High,Customer Care Team
+TICK-001761,Page load times are extremely slow and API calls are timing out. Contact me via email or phone.,Technical Support,High,Technical Support Team
+TICK-001051,I need an official tax invoice and payment receipt for order 36100. Thank you for your assistance.,Billing,Medium,Billing Team
+TICK-004953,Is this product compatible with macOS Sequoia and Apple Silicon?,Product Inquiry,Low,Product Support Team
+TICK-004879,Formal complaint regarding poor product build quality and support delay. Contact me via email or phone.,Complaint,High,Customer Care Team
+TICK-002173,The web application keeps throwing 500 internal server errors when submitting forms.,Technical Support,Medium,Technical Support Team
+TICK-005289,Does your enterprise plan support custom API integrations? Kindly look into this matter promptly.,Product Inquiry,Low,Product Support Team
+TICK-001601,Why was I billed $49.0 when my plan is $9.99?,Billing,Medium,Billing Team
+TICK-001557,Why was I billed $499.0 when my plan is $29.99? Kindly look into this matter promptly.,Billing,High,Billing Team
+TICK-002115,My internet is not working and the router LED is blinking red. Contact me via email or phone.,Technical Support,High,Technical Support Team
+TICK-001411,My credit card was charged twice for transaction 49467. Urgent attention required.,Billing,Medium,Billing Team
+TICK-001230,I received a late payment penalty charge even though I paid on time. Kindly look into this matter promptly.,Billing,High,Billing Team
+TICK-001750,Page load times are extremely slow and API calls are timing out. Appreciate a quick update on this.,Technical Support,High,Technical Support Team
+TICK-004077,Account permissions are misconfigured and user cannot access dashboard. Appreciate a quick update on this.,Account,Medium,Account Support Team
+TICK-002114,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Looking forward to your prompt response.,Technical Support,Medium,Technical Support Team
+TICK-001422,Can you update my credit card billing address and tax ID for billing? Contact me via email or phone.,Billing,Critical,Billing Team
+TICK-005749,How do I cancel my order before it enters fulfillment phase? Urgent attention required.,Cancellation,Medium,Retention Team
+TICK-004328,Misleading advertising regarding feature capabilities on sales page. Looking forward to your prompt response.,Complaint,High,Customer Care Team
+TICK-004866,Misleading advertising regarding feature capabilities on sales page. Appreciate a quick update on this.,Complaint,High,Customer Care Team
+TICK-002456,I demand a prompt refund for defective goods received yesterday. Kindly look into this matter promptly.,Refund,Medium,Refund Team
+TICK-001235,Can you update my credit card billing address and tax ID for billing? Appreciate a quick update on this.,Billing,High,Billing Team
+TICK-002346,Order was canceled by system but refund has not posted to my account. Appreciate a quick update on this.,Refund,Low,Refund Team
+TICK-006142,Need assistance closing and permanently deleting my account. Looking forward to your prompt response.,Cancellation,Low,Retention Team
+TICK-004817,Very dissatisfied with rude customer service representative on call. Kindly look into this matter promptly.,Complaint,High,Customer Care Team
+TICK-003552,"Express shipping paid, but package sent via standard economy post. Please advise as soon as possible.",Shipping,Medium,Logistics Team
+TICK-002547,"Charged after cancellation request, need immediate reimbursement. Appreciate a quick update on this.",Refund,Low,Refund Team
+TICK-002673,Service was down during our event. Requesting credit refund to account.,Refund,Low,Refund Team
+TICK-004408,Formal complaint regarding poor product build quality and support delay. Kindly look into this matter promptly.,Complaint,Medium,Customer Care Team
+TICK-002818,Service was down during our event. Requesting credit refund to account. Appreciate a quick update on this.,Refund,Low,Refund Team
+TICK-003759,My account has been locked due to multiple failed login attempts. Kindly look into this matter promptly.,Account,Medium,Account Support Team
+TICK-001744,The web application keeps throwing 500 internal server errors when submitting forms. Thank you for your assistance.,Technical Support,High,Technical Support Team
+TICK-005959,How do I cancel my order before it enters fulfillment phase?,Cancellation,Medium,Retention Team
+TICK-004254,Escalating issue: product failed during critical presentation. Please advise as soon as possible.,Complaint,High,Customer Care Team
+TICK-002376,I requested a refund for order 48399 two weeks ago but haven't received it.,Refund,Medium,Refund Team
+TICK-003979,I cannot log into my account despite entering correct password. Kindly look into this matter promptly.,Account,High,Account Support Team
+TICK-002514,Item arrived damaged in transit. I want an immediate full refund. Kindly look into this matter promptly.,Refund,Low,Refund Team
+TICK-001366,There is a billing discrepancy on my recent statement for billing period Feb 2026. Thank you for your assistance.,Billing,High,Billing Team
+TICK-003105,I need to change shipping address for order 95792 before dispatch. Please advise as soon as possible.,Shipping,Medium,Logistics Team
+TICK-001611,Why was I billed $49.0 when my plan is $79.99?,Billing,High,Billing Team
+TICK-003116,"Express shipping paid, but package sent via standard economy post. Urgent attention required.",Shipping,Medium,Logistics Team
+TICK-005940,Requesting account closure and deletion of stored customer data. Kindly look into this matter promptly.,Cancellation,Medium,Retention Team
+TICK-001084,I noticed an unauthorized charge of $49.0 on my monthly invoice. Thank you for your assistance.,Billing,Medium,Billing Team
+TICK-002573,Returned package was delivered to warehouse. When will refund be processed? Please advise as soon as possible.,Refund,High,Refund Team
+TICK-001302,Why was I billed $49.0 when my plan is $9.99? Urgent attention required.,Billing,Medium,Billing Team
+TICK-001212,Double charge observed on my bank statement for invoice 59832. Thank you for your assistance.,Billing,Medium,Billing Team
+TICK-003201,"Express shipping paid, but package sent via standard economy post. Appreciate a quick update on this.",Shipping,Medium,Logistics Team
+TICK-002419,"Charged after cancellation request, need immediate reimbursement. Please advise as soon as possible.",Refund,High,Refund Team
+TICK-002480,I requested a refund for order 88346 two weeks ago but haven't received it.,Refund,Medium,Refund Team
+TICK-002807,Returned package was delivered to warehouse. When will refund be processed? Please advise as soon as possible.,Refund,Medium,Refund Team
+TICK-003430,Customs clearance is delaying package shipment at border transit. Thank you for your assistance.,Shipping,High,Logistics Team
+TICK-004915,Where can I find user manuals and documentation for model PRO-790? Kindly look into this matter promptly.,Product Inquiry,Low,Product Support Team
+TICK-005917,I want to cancel my subscription effective immediately. Contact me via email or phone.,Cancellation,Medium,Retention Team
+TICK-003522,Estimated delivery date has passed but package has not arrived. Thank you for your assistance.,Shipping,High,Logistics Team
+TICK-005919,Need assistance closing and permanently deleting my account. Please advise as soon as possible.,Cancellation,Low,Retention Team
+TICK-004556,Misleading advertising regarding feature capabilities on sales page. Contact me via email or phone.,Complaint,High,Customer Care Team
+TICK-001463,I need an official tax invoice and payment receipt for order 90856. Please advise as soon as possible.,Billing,High,Billing Team
+TICK-005459,Looking for comparison between standard and professional tiers.,Product Inquiry,Low,Product Support Team
+TICK-001477,I received a late payment penalty charge even though I paid on time. Please advise as soon as possible.,Billing,High,Billing Team
+TICK-006192,How do I cancel my order before it enters fulfillment phase?,Cancellation,Low,Retention Team
+TICK-002239,Software installation fails due to missing DLL files on Windows 11. Kindly look into this matter promptly.,Technical Support,Critical,Technical Support Team
+TICK-003091,Where is my package? Tracking number 26722 shows no movement for 5 days. Urgent attention required.,Shipping,Medium,Logistics Team
+TICK-001712,Unable to connect to remote database server from IP address 192.168.91.73. Urgent attention required.,Technical Support,High,Technical Support Team
+TICK-002006,System crashed completely during export task showing error code AUTH_DENIED. Thank you for your assistance.,Technical Support,Medium,Technical Support Team
+TICK-003977,My account has been locked due to multiple failed login attempts. Contact me via email or phone.,Account,Low,Account Support Team
+TICK-005425,Can you provide information on bulk licensing discounts for 500+ users? Looking forward to your prompt response.,Product Inquiry,Low,Product Support Team
+TICK-004934,Can you provide information on bulk licensing discounts for 500+ users? Thank you for your assistance.,Product Inquiry,Low,Product Support Team
+TICK-003819,Received suspicious password reset email without requesting it. Appreciate a quick update on this.,Account,High,Account Support Team
+TICK-004397,Formal complaint regarding poor product build quality and support delay. Urgent attention required.,Complaint,Critical,Customer Care Team
+TICK-001982,Mobile app keeps crashing on launch after updating to latest iOS/Android version.,Technical Support,High,Technical Support Team
+TICK-004863,Agent closed my support ticket without resolving the actual issue. Contact me via email or phone.,Complaint,High,Customer Care Team
+TICK-005841,Please confirm cancellation of recurring billing for account 97141. Kindly look into this matter promptly.,Cancellation,Low,Retention Team
+TICK-002487,I requested a refund for order 89450 two weeks ago but haven't received it. Please advise as soon as possible.,Refund,Low,Refund Team
+TICK-001095,Can you update my credit card billing address and tax ID for billing? Please advise as soon as possible.,Billing,High,Billing Team
+TICK-005620,We are switching to an alternative solution and wish to terminate service. Urgent attention required.,Cancellation,Medium,Retention Team
+TICK-003101,Where is my package? Tracking number 49740 shows no movement for 5 days. Looking forward to your prompt response.,Shipping,Medium,Logistics Team
+TICK-003078,International shipment stuck at distribution center for over a week. Contact me via email or phone.,Shipping,Medium,Logistics Team
+TICK-004085,How do I transfer account ownership to another administrator? Looking forward to your prompt response.,Account,High,Account Support Team
+TICK-005053,Can you provide information on bulk licensing discounts for 500+ users? Looking forward to your prompt response.,Product Inquiry,Medium,Product Support Team
+TICK-003879,How do I transfer account ownership to another administrator? Please advise as soon as possible.,Account,High,Account Support Team
+TICK-004048,I need to update my registered email address and phone number. Kindly look into this matter promptly.,Account,Medium,Account Support Team
+TICK-002789,I requested a refund for order 34456 two weeks ago but haven't received it. Urgent attention required.,Refund,Medium,Refund Team
+TICK-001850,Bluetooth sync is failing between the hardware device and dashboard. Urgent attention required.,Technical Support,High,Technical Support Team
+TICK-003917,My profile settings fail to save changes. Kindly look into this matter promptly.,Account,High,Account Support Team
+TICK-002223,The web application keeps throwing 500 internal server errors when submitting forms. Contact me via email or phone.,Technical Support,Medium,Technical Support Team
+TICK-002029,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Kindly look into this matter promptly.,Technical Support,Critical,Technical Support Team
+TICK-004812,Appalled by lack of response to critical security vulnerability report. Kindly look into this matter promptly.,Complaint,Critical,Customer Care Team
+TICK-001535,"My payment failed yesterday, but money was deducted from my bank account. Please advise as soon as possible.",Billing,Medium,Billing Team
+TICK-002379,I demand a prompt refund for defective goods received yesterday. Appreciate a quick update on this.,Refund,Medium,Refund Team
+TICK-003543,Customs clearance is delaying package shipment at border transit.,Shipping,Medium,Logistics Team
+TICK-005879,Canceling contract due to budget constraints in our organization. Appreciate a quick update on this.,Cancellation,Medium,Retention Team
+TICK-001835,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Appreciate a quick update on this.,Technical Support,Critical,Technical Support Team
+TICK-003142,I need to change shipping address for order 63087 before dispatch. Please advise as soon as possible.,Shipping,Critical,Logistics Team
+TICK-002982,Customs clearance is delaying package shipment at border transit. Looking forward to your prompt response.,Shipping,Medium,Logistics Team
+TICK-001585,Double charge observed on my bank statement for invoice 30021. Contact me via email or phone.,Billing,High,Billing Team
+TICK-004383,Formal complaint regarding poor product build quality and support delay. Kindly look into this matter promptly.,Complaint,Medium,Customer Care Team
+TICK-001387,Can you update my credit card billing address and tax ID for billing? Appreciate a quick update on this.,Billing,High,Billing Team
+TICK-005488,Does your enterprise plan support custom API integrations? Thank you for your assistance.,Product Inquiry,Low,Product Support Team
+TICK-003263,Where is my package? Tracking number 43897 shows no movement for 5 days. Kindly look into this matter promptly.,Shipping,Medium,Logistics Team
+TICK-005830,Please confirm cancellation of recurring billing for account 85252.,Cancellation,Medium,Retention Team
+TICK-002887,"Charged after cancellation request, need immediate reimbursement.",Refund,High,Refund Team
+TICK-002941,"Charged after cancellation request, need immediate reimbursement.",Refund,Low,Refund Team
+TICK-001452,Double charge observed on my bank statement for invoice 91412. Thank you for your assistance.,Billing,Medium,Billing Team
+TICK-003868,Two-factor authentication code is not being received on my phone. Appreciate a quick update on this.,Account,Medium,Account Support Team
+TICK-005995,Requesting account closure and deletion of stored customer data. Looking forward to your prompt response.,Cancellation,Low,Retention Team
+TICK-001670,VPN connection drops every 5 minutes unexpectedly. Please advise as soon as possible.,Technical Support,High,Technical Support Team
+TICK-004010,Single Sign-On (SSO) integration is failing for company domain. Looking forward to your prompt response.,Account,High,Account Support Team
+TICK-004303,Misleading advertising regarding feature capabilities on sales page. Please advise as soon as possible.,Complaint,Critical,Customer Care Team
+TICK-001732,The desktop application freezes every time I click the save button. Urgent attention required.,Technical Support,High,Technical Support Team
+TICK-005297,Does your enterprise plan support custom API integrations? Kindly look into this matter promptly.,Product Inquiry,Low,Product Support Team
+TICK-001167,Why was I billed $249.5 when my plan is $79.99?,Billing,High,Billing Team
+TICK-001528,Why was I billed $49.0 when my plan is $79.99? Looking forward to your prompt response.,Billing,High,Billing Team
+TICK-003557,Estimated delivery date has passed but package has not arrived. Kindly look into this matter promptly.,Shipping,Low,Logistics Team
+TICK-004828,Repeatedly transferred between agents without any resolution. Contact me via email or phone.,Complaint,Medium,Customer Care Team
+TICK-001307,I noticed an unauthorized charge of $99.99 on my monthly invoice. Contact me via email or phone.,Billing,Medium,Billing Team
+TICK-002506,I demand a prompt refund for defective goods received yesterday. Looking forward to your prompt response.,Refund,Medium,Refund Team
+TICK-004236,I need to update my registered email address and phone number. Appreciate a quick update on this.,Account,Low,Account Support Team
+TICK-005511,Looking for comparison between standard and professional tiers. Please advise as soon as possible.,Product Inquiry,Low,Product Support Team
+TICK-003730,Unable to reset password via email link; link expired immediately. Looking forward to your prompt response.,Account,High,Account Support Team
+TICK-003451,Customs clearance is delaying package shipment at border transit. Looking forward to your prompt response.,Shipping,Medium,Logistics Team
+TICK-002722,I requested a refund for order 69363 two weeks ago but haven't received it. Kindly look into this matter promptly.,Refund,High,Refund Team
+TICK-002766,Order was canceled by system but refund has not posted to my account. Please advise as soon as possible.,Refund,Low,Refund Team
+TICK-003822,My account has been locked due to multiple failed login attempts. Kindly look into this matter promptly.,Account,High,Account Support Team
+TICK-003669,My profile settings fail to save changes. Contact me via email or phone.,Account,Medium,Account Support Team
+TICK-002474,Order was canceled by system but refund has not posted to my account. Looking forward to your prompt response.,Refund,High,Refund Team
+TICK-002105,Unable to connect to remote database server from IP address 192.168.120.120.,Technical Support,Medium,Technical Support Team
+TICK-003739,Two-factor authentication code is not being received on my phone. Looking forward to your prompt response.,Account,High,Account Support Team
+TICK-005418,Does your enterprise plan support custom API integrations? Urgent attention required.,Product Inquiry,Medium,Product Support Team
+TICK-002778,I requested a refund for order 88539 two weeks ago but haven't received it. Kindly look into this matter promptly.,Refund,High,Refund Team
+TICK-005732,Canceling contract due to budget constraints in our organization.,Cancellation,Low,Retention Team
+TICK-003584,Where is my package? Tracking number 16493 shows no movement for 5 days.,Shipping,Medium,Logistics Team
+TICK-004333,No response to urgent tickets for 72 hours despite premium support SLA. Looking forward to your prompt response.,Complaint,Medium,Customer Care Team
+TICK-002801,Service was down during our event. Requesting credit refund to account. Contact me via email or phone.,Refund,Medium,Refund Team
+TICK-005878,Please confirm cancellation of recurring billing for account 17191. Looking forward to your prompt response.,Cancellation,Medium,Retention Team
+TICK-003073,"Tracking indicates delivered, but package is missing from my doorstep. Please advise as soon as possible.",Shipping,Medium,Logistics Team
+TICK-003634,My account has been locked due to multiple failed login attempts. Kindly look into this matter promptly.,Account,Medium,Account Support Team
+TICK-001294,There is a billing discrepancy on my recent statement for billing period Feb 2026. Urgent attention required.,Billing,Medium,Billing Team
+TICK-003110,I need to change shipping address for order 45006 before dispatch. Appreciate a quick update on this.,Shipping,Medium,Logistics Team
+TICK-006137,I want to cancel my subscription effective immediately.,Cancellation,Medium,Retention Team
+TICK-002952,Estimated delivery date has passed but package has not arrived. Please advise as soon as possible.,Shipping,High,Logistics Team
+TICK-001870,Unable to connect to remote database server from IP address 192.168.244.30. Please advise as soon as possible.,Technical Support,Medium,Technical Support Team
+TICK-006180,Canceling contract due to budget constraints in our organization. Thank you for your assistance.,Cancellation,Low,Retention Team
+TICK-003337,Package arrived with crushed outer box and broken contents. Kindly look into this matter promptly.,Shipping,Medium,Logistics Team
+TICK-001377,Why was I billed $99.99 when my plan is $29.99? Looking forward to your prompt response.,Billing,High,Billing Team
+TICK-003392,Delivery courier left parcel in rain without notification.,Shipping,Medium,Logistics Team
+TICK-005932,I want to cancel my subscription effective immediately. Please advise as soon as possible.,Cancellation,Low,Retention Team
+TICK-004519,No response to urgent tickets for 72 hours despite premium support SLA.,Complaint,Medium,Customer Care Team
+TICK-003157,Package arrived with crushed outer box and broken contents. Urgent attention required.,Shipping,Low,Logistics Team
+TICK-005394,Does your enterprise plan support custom API integrations? Urgent attention required.,Product Inquiry,Medium,Product Support Team
+TICK-004690,Escalating issue: product failed during critical presentation. Please advise as soon as possible.,Complaint,Low,Customer Care Team
+TICK-005885,Need assistance closing and permanently deleting my account. Looking forward to your prompt response.,Cancellation,High,Retention Team
+TICK-003842,I cannot log into my account despite entering correct password. Thank you for your assistance.,Account,High,Account Support Team
+TICK-003693,Single Sign-On (SSO) integration is failing for company domain.,Account,High,Account Support Team
+TICK-002910,Item arrived damaged in transit. I want an immediate full refund. Urgent attention required.,Refund,High,Refund Team
+TICK-004599,System downtime caused business revenue loss for our team. Contact me via email or phone.,Complaint,High,Customer Care Team
+TICK-003141,"Tracking indicates delivered, but package is missing from my doorstep. Urgent attention required.",Shipping,Low,Logistics Team
+TICK-004210,Account permissions are misconfigured and user cannot access dashboard. Thank you for your assistance.,Account,Medium,Account Support Team
+TICK-001056,I am being billed for a service that was supposed to be free during trial. Appreciate a quick update on this.,Billing,Medium,Billing Team
+TICK-005309,Does the cloud platform comply with SOC2 and HIPAA standards? Urgent attention required.,Product Inquiry,High,Product Support Team
+TICK-004611,Misleading advertising regarding feature capabilities on sales page. Please advise as soon as possible.,Complaint,Low,Customer Care Team
+TICK-006069,Closing subscription due to missing essential features. Urgent attention required.,Cancellation,High,Retention Team
+TICK-001480,Why was I billed $249.5 when my plan is $9.99? Urgent attention required.,Billing,Medium,Billing Team
+TICK-001428,My credit card was charged twice for transaction 21913. Contact me via email or phone.,Billing,High,Billing Team
+TICK-002298,The desktop application freezes every time I click the save button.,Technical Support,Low,Technical Support Team
+TICK-004068,Two-factor authentication code is not being received on my phone.,Account,Medium,Account Support Team
+TICK-005462,Where can I find user manuals and documentation for model PRO-993? Kindly look into this matter promptly.,Product Inquiry,Low,Product Support Team
+TICK-005435,Can you provide information on bulk licensing discounts for 500+ users?,Product Inquiry,Low,Product Support Team
+TICK-006179,Please confirm cancellation of recurring billing for account 57706. Thank you for your assistance.,Cancellation,Medium,Retention Team
+TICK-005911,Please confirm cancellation of recurring billing for account 46604. Contact me via email or phone.,Cancellation,Low,Retention Team
+TICK-002331,Returned package was delivered to warehouse. When will refund be processed? Contact me via email or phone.,Refund,High,Refund Team
+TICK-004152,How do I transfer account ownership to another administrator?,Account,Medium,Account Support Team
+TICK-006164,Canceling contract due to budget constraints in our organization. Appreciate a quick update on this.,Cancellation,High,Retention Team
+TICK-006186,Canceling contract due to budget constraints in our organization.,Cancellation,High,Retention Team
+TICK-004771,No response to urgent tickets for 72 hours despite premium support SLA. Kindly look into this matter promptly.,Complaint,Medium,Customer Care Team
+TICK-005351,Can I try out premium features during a free trial demo? Kindly look into this matter promptly.,Product Inquiry,Low,Product Support Team
+TICK-005236,Where can I find user manuals and documentation for model PRO-366? Looking forward to your prompt response.,Product Inquiry,Medium,Product Support Team
+TICK-006149,Closing subscription due to missing essential features. Contact me via email or phone.,Cancellation,Medium,Retention Team
+TICK-004553,Repeatedly transferred between agents without any resolution.,Complaint,High,Customer Care Team
+TICK-004919,Does the cloud platform comply with SOC2 and HIPAA standards? Urgent attention required.,Product Inquiry,High,Product Support Team
+TICK-004154,I need to update my registered email address and phone number. Kindly look into this matter promptly.,Account,High,Account Support Team
+TICK-005895,Canceling contract due to budget constraints in our organization. Contact me via email or phone.,Cancellation,High,Retention Team
+TICK-001923,VPN connection drops every 5 minutes unexpectedly. Looking forward to your prompt response.,Technical Support,Medium,Technical Support Team
+TICK-004244,Unable to reset password via email link; link expired immediately. Urgent attention required.,Account,Critical,Account Support Team
+TICK-004793,Appalled by lack of response to critical security vulnerability report. Contact me via email or phone.,Complaint,Critical,Customer Care Team
+TICK-001505,My credit card was charged twice for transaction 44517. Kindly look into this matter promptly.,Billing,Low,Billing Team
+TICK-003266,International shipment stuck at distribution center for over a week. Thank you for your assistance.,Shipping,Critical,Logistics Team
+TICK-001555,My credit card was charged twice for transaction 90862. Contact me via email or phone.,Billing,Critical,Billing Team
+TICK-003150,"Express shipping paid, but package sent via standard economy post. Urgent attention required.",Shipping,Low,Logistics Team
+TICK-002424,I accidentally purchased the wrong subscription tier and need money back. Contact me via email or phone.,Refund,Medium,Refund Team
+TICK-001368,I received a late payment penalty charge even though I paid on time. Appreciate a quick update on this.,Billing,High,Billing Team
+TICK-001425,Why was I billed $249.5 when my plan is $29.99? Contact me via email or phone.,Billing,High,Billing Team
+TICK-002394,"Charged after cancellation request, need immediate reimbursement. Kindly look into this matter promptly.",Refund,Medium,Refund Team
+TICK-001861,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Kindly look into this matter promptly.,Technical Support,High,Technical Support Team
+TICK-005773,Need assistance closing and permanently deleting my account. Please advise as soon as possible.,Cancellation,Medium,Retention Team
+TICK-005293,Can you provide information on bulk licensing discounts for 500+ users? Appreciate a quick update on this.,Product Inquiry,Low,Product Support Team
+TICK-005091,Looking for comparison between standard and professional tiers. Kindly look into this matter promptly.,Product Inquiry,Low,Product Support Team
+TICK-005676,Please turn off auto-renewal for my annual membership plan.,Cancellation,Medium,Retention Team
+TICK-001902,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Kindly look into this matter promptly.,Technical Support,High,Technical Support Team
+TICK-003168,Customs clearance is delaying package shipment at border transit. Thank you for your assistance.,Shipping,Medium,Logistics Team
+TICK-004800,Appalled by lack of response to critical security vulnerability report. Contact me via email or phone.,Complaint,Low,Customer Care Team
+TICK-003075,Where is my package? Tracking number 84883 shows no movement for 5 days. Looking forward to your prompt response.,Shipping,Medium,Logistics Team
+TICK-003329,Where is my package? Tracking number 17855 shows no movement for 5 days. Please advise as soon as possible.,Shipping,Low,Logistics Team
+TICK-003322,"Tracking indicates delivered, but package is missing from my doorstep.",Shipping,Low,Logistics Team
+TICK-002171,System crashed completely during export task showing error code AUTH_DENIED. Contact me via email or phone.,Technical Support,High,Technical Support Team
+TICK-002624,Item arrived damaged in transit. I want an immediate full refund. Looking forward to your prompt response.,Refund,Low,Refund Team
+TICK-002483,I accidentally purchased the wrong subscription tier and need money back. Thank you for your assistance.,Refund,Medium,Refund Team
+TICK-005828,How do I cancel my order before it enters fulfillment phase?,Cancellation,High,Retention Team
+TICK-004876,System downtime caused business revenue loss for our team. Please advise as soon as possible.,Complaint,Critical,Customer Care Team
+TICK-003086,International shipment stuck at distribution center for over a week.,Shipping,High,Logistics Team
+TICK-003413,Package arrived with crushed outer box and broken contents. Please advise as soon as possible.,Shipping,Medium,Logistics Team
+TICK-001380,Can you update my credit card billing address and tax ID for billing? Looking forward to your prompt response.,Billing,Low,Billing Team
+TICK-004059,Unable to reset password via email link; link expired immediately. Thank you for your assistance.,Account,Medium,Account Support Team
+TICK-003200,I need to change shipping address for order 82456 before dispatch.,Shipping,High,Logistics Team
+TICK-002821,I accidentally purchased the wrong subscription tier and need money back. Please advise as soon as possible.,Refund,Critical,Refund Team
+TICK-005857,Please confirm cancellation of recurring billing for account 80917. Urgent attention required.,Cancellation,Medium,Retention Team
+TICK-003953,I need to update my registered email address and phone number. Thank you for your assistance.,Account,High,Account Support Team
+TICK-004354,No response to urgent tickets for 72 hours despite premium support SLA. Urgent attention required.,Complaint,Medium,Customer Care Team
+TICK-002074,Page load times are extremely slow and API calls are timing out.,Technical Support,High,Technical Support Team
+TICK-004075,How do I transfer account ownership to another administrator? Urgent attention required.,Account,Medium,Account Support Team
+TICK-005594,I want to cancel my subscription effective immediately. Urgent attention required.,Cancellation,Medium,Retention Team
+TICK-003855,My account has been locked due to multiple failed login attempts. Appreciate a quick update on this.,Account,Medium,Account Support Team
+TICK-004286,Agent closed my support ticket without resolving the actual issue. Kindly look into this matter promptly.,Complaint,High,Customer Care Team
+TICK-003248,Customs clearance is delaying package shipment at border transit. Urgent attention required.,Shipping,Medium,Logistics Team
+TICK-005149,Looking for comparison between standard and professional tiers. Appreciate a quick update on this.,Product Inquiry,Medium,Product Support Team
+TICK-005179,What is the warranty period and coverage for international orders? Appreciate a quick update on this.,Product Inquiry,Medium,Product Support Team
+TICK-001404,I am being billed for a service that was supposed to be free during trial. Kindly look into this matter promptly.,Billing,Medium,Billing Team
+TICK-004721,Misleading advertising regarding feature capabilities on sales page. Appreciate a quick update on this.,Complaint,Medium,Customer Care Team
+TICK-002479,I demand a prompt refund for defective goods received yesterday. Appreciate a quick update on this.,Refund,Critical,Refund Team
+TICK-002836,Order was canceled by system but refund has not posted to my account. Thank you for your assistance.,Refund,High,Refund Team
+TICK-002679,I requested a refund for order 15768 two weeks ago but haven't received it. Looking forward to your prompt response.,Refund,High,Refund Team
+TICK-005912,Need assistance closing and permanently deleting my account. Contact me via email or phone.,Cancellation,Low,Retention Team
+TICK-005740,Please confirm cancellation of recurring billing for account 11934. Looking forward to your prompt response.,Cancellation,Medium,Retention Team
+TICK-001454,I noticed an unauthorized charge of $49.0 on my monthly invoice. Contact me via email or phone.,Billing,High,Billing Team
+TICK-001740,The web application keeps throwing 500 internal server errors when submitting forms. Thank you for your assistance.,Technical Support,Medium,Technical Support Team
+TICK-002200,Bluetooth sync is failing between the hardware device and dashboard. Appreciate a quick update on this.,Technical Support,Low,Technical Support Team
+TICK-005527,Can I try out premium features during a free trial demo? Appreciate a quick update on this.,Product Inquiry,Medium,Product Support Team
+TICK-005523,What is the warranty period and coverage for international orders? Urgent attention required.,Product Inquiry,Medium,Product Support Team
+TICK-004264,Escalating issue: product failed during critical presentation. Thank you for your assistance.,Complaint,Medium,Customer Care Team
+TICK-004403,Agent closed my support ticket without resolving the actual issue. Kindly look into this matter promptly.,Complaint,Medium,Customer Care Team
+TICK-001327,Why was I billed $19.99 when my plan is $9.99? Appreciate a quick update on this.,Billing,High,Billing Team
+TICK-005298,Is this product compatible with macOS Sequoia and Apple Silicon? Kindly look into this matter promptly.,Product Inquiry,Low,Product Support Team
+TICK-006129,We are switching to an alternative solution and wish to terminate service. Kindly look into this matter promptly.,Cancellation,Low,Retention Team
+TICK-002131,Page load times are extremely slow and API calls are timing out. Thank you for your assistance.,Technical Support,Medium,Technical Support Team
+TICK-003587,I need to change shipping address for order 79388 before dispatch. Urgent attention required.,Shipping,High,Logistics Team
+TICK-004887,Very dissatisfied with rude customer service representative on call. Kindly look into this matter promptly.,Complaint,Medium,Customer Care Team
+TICK-004198,Single Sign-On (SSO) integration is failing for company domain. Urgent attention required.,Account,High,Account Support Team
+TICK-001209,Double charge observed on my bank statement for invoice 51750.,Billing,High,Billing Team
+TICK-004608,Very dissatisfied with rude customer service representative on call. Appreciate a quick update on this.,Complaint,High,Customer Care Team
+TICK-005021,Are there any upcoming features planned for mobile tablet views? Contact me via email or phone.,Product Inquiry,Medium,Product Support Team
+TICK-003132,Where is my package? Tracking number 88765 shows no movement for 5 days. Urgent attention required.,Shipping,High,Logistics Team
+TICK-001090,"My payment failed yesterday, but money was deducted from my bank account. Looking forward to your prompt response.",Billing,High,Billing Team
+TICK-004014,Unable to reset password via email link; link expired immediately. Thank you for your assistance.,Account,Medium,Account Support Team
+TICK-004168,Received suspicious password reset email without requesting it. Contact me via email or phone.,Account,High,Account Support Team
+TICK-004038,I cannot log into my account despite entering correct password. Contact me via email or phone.,Account,High,Account Support Team
+TICK-004695,Misleading advertising regarding feature capabilities on sales page.,Complaint,Medium,Customer Care Team
+TICK-004724,Misleading advertising regarding feature capabilities on sales page. Please advise as soon as possible.,Complaint,Critical,Customer Care Team
+TICK-005903,Subscription cancellation button is missing from account settings page. Urgent attention required.,Cancellation,Medium,Retention Team
+TICK-001682,My internet is not working and the router LED is blinking red. Appreciate a quick update on this.,Technical Support,High,Technical Support Team
+TICK-004928,Is this product compatible with macOS Sequoia and Apple Silicon? Urgent attention required.,Product Inquiry,Low,Product Support Team
+TICK-001523,I received a late payment penalty charge even though I paid on time. Please advise as soon as possible.,Billing,Medium,Billing Team
+TICK-003863,Account permissions are misconfigured and user cannot access dashboard. Appreciate a quick update on this.,Account,High,Account Support Team
+TICK-003692,I need to update my registered email address and phone number.,Account,Critical,Account Support Team
+TICK-005853,I want to cancel my subscription effective immediately.,Cancellation,Low,Retention Team
+TICK-005206,Does the cloud platform comply with SOC2 and HIPAA standards? Kindly look into this matter promptly.,Product Inquiry,Low,Product Support Team
+TICK-005520,Can you provide information on bulk licensing discounts for 500+ users? Kindly look into this matter promptly.,Product Inquiry,Low,Product Support Team
+TICK-002192,Software installation fails due to missing DLL files on Windows 11. Urgent attention required.,Technical Support,Medium,Technical Support Team
+TICK-003202,"Tracking indicates delivered, but package is missing from my doorstep. Urgent attention required.",Shipping,Critical,Logistics Team
+TICK-004013,I need to update my registered email address and phone number. Kindly look into this matter promptly.,Account,High,Account Support Team
+TICK-004845,Appalled by lack of response to critical security vulnerability report. Please advise as soon as possible.,Complaint,Medium,Customer Care Team
+TICK-002570,I accidentally purchased the wrong subscription tier and need money back. Urgent attention required.,Refund,Medium,Refund Team
+TICK-006053,Closing subscription due to missing essential features. Appreciate a quick update on this.,Cancellation,Critical,Retention Team
+TICK-006176,We are switching to an alternative solution and wish to terminate service. Thank you for your assistance.,Cancellation,Medium,Retention Team
+TICK-003943,I cannot log into my account despite entering correct password.,Account,High,Account Support Team
+TICK-003792,I need to update my registered email address and phone number. Please advise as soon as possible.,Account,Medium,Account Support Team
+TICK-005546,Is this product compatible with macOS Sequoia and Apple Silicon? Looking forward to your prompt response.,Product Inquiry,Low,Product Support Team
+TICK-002613,Item arrived damaged in transit. I want an immediate full refund. Please advise as soon as possible.,Refund,Medium,Refund Team
+TICK-005198,Are there any upcoming features planned for mobile tablet views? Contact me via email or phone.,Product Inquiry,Low,Product Support Team
+TICK-005471,Is this product compatible with macOS Sequoia and Apple Silicon? Please advise as soon as possible.,Product Inquiry,Low,Product Support Team
+TICK-005891,Need assistance closing and permanently deleting my account. Thank you for your assistance.,Cancellation,High,Retention Team
+TICK-001726,System crashed completely during export task showing error code AUTH_DENIED. Appreciate a quick update on this.,Technical Support,Critical,Technical Support Team
+TICK-004674,Escalating issue: product failed during critical presentation. Urgent attention required.,Complaint,Medium,Customer Care Team
+TICK-004194,I cannot log into my account despite entering correct password. Urgent attention required.,Account,High,Account Support Team
+TICK-003640,I cannot log into my account despite entering correct password.,Account,Medium,Account Support Team
+TICK-004977,Are there any upcoming features planned for mobile tablet views? Kindly look into this matter promptly.,Product Inquiry,Low,Product Support Team
+TICK-006132,Please confirm cancellation of recurring billing for account 67109. Appreciate a quick update on this.,Cancellation,Medium,Retention Team
+TICK-006096,Closing subscription due to missing essential features. Looking forward to your prompt response.,Cancellation,Medium,Retention Team
+TICK-004782,No response to urgent tickets for 72 hours despite premium support SLA. Looking forward to your prompt response.,Complaint,High,Customer Care Team
+TICK-006049,How do I cancel my order before it enters fulfillment phase? Looking forward to your prompt response.,Cancellation,Medium,Retention Team
+TICK-003385,Where is my package? Tracking number 25527 shows no movement for 5 days.,Shipping,Low,Logistics Team
+TICK-004174,My profile settings fail to save changes. Kindly look into this matter promptly.,Account,High,Account Support Team
+TICK-001239,I am being billed for a service that was supposed to be free during trial. Please advise as soon as possible.,Billing,Critical,Billing Team
+TICK-003520,Package arrived with crushed outer box and broken contents. Please advise as soon as possible.,Shipping,Medium,Logistics Team
+TICK-003508,Delivery courier left parcel in rain without notification. Urgent attention required.,Shipping,Medium,Logistics Team
+TICK-001855,Software installation fails due to missing DLL files on Windows 11. Urgent attention required.,Technical Support,Critical,Technical Support Team
+TICK-005008,Can I try out premium features during a free trial demo? Looking forward to your prompt response.,Product Inquiry,Medium,Product Support Team
+TICK-001484,I am being billed for a service that was supposed to be free during trial. Thank you for your assistance.,Billing,Medium,Billing Team
+TICK-002468,I demand a prompt refund for defective goods received yesterday. Please advise as soon as possible.,Refund,Low,Refund Team
+TICK-006117,Requesting account closure and deletion of stored customer data. Contact me via email or phone.,Cancellation,Low,Retention Team
+TICK-002227,Unable to connect to remote database server from IP address 192.168.242.94. Appreciate a quick update on this.,Technical Support,Critical,Technical Support Team
+TICK-003656,Account permissions are misconfigured and user cannot access dashboard.,Account,Low,Account Support Team
+TICK-003859,Account permissions are misconfigured and user cannot access dashboard. Kindly look into this matter promptly.,Account,High,Account Support Team
+TICK-001423,There is a billing discrepancy on my recent statement for billing period Q1 2026. Contact me via email or phone.,Billing,Medium,Billing Team
+TICK-005822,Need assistance closing and permanently deleting my account. Contact me via email or phone.,Cancellation,Low,Retention Team
+TICK-003464,Package arrived with crushed outer box and broken contents. Urgent attention required.,Shipping,Medium,Logistics Team
+TICK-002870,I accidentally purchased the wrong subscription tier and need money back. Thank you for your assistance.,Refund,Medium,Refund Team
+TICK-003642,Received suspicious password reset email without requesting it.,Account,Medium,Account Support Team
+TICK-003469,Estimated delivery date has passed but package has not arrived. Kindly look into this matter promptly.,Shipping,Low,Logistics Team
+TICK-002635,Partial refund missing from my previous dispute case 77763. Appreciate a quick update on this.,Refund,Medium,Refund Team
+TICK-003720,How do I transfer account ownership to another administrator? Urgent attention required.,Account,High,Account Support Team
+TICK-005637,I want to cancel my subscription effective immediately. Kindly look into this matter promptly.,Cancellation,High,Retention Team
+TICK-003453,"Express shipping paid, but package sent via standard economy post. Looking forward to your prompt response.",Shipping,Low,Logistics Team
+TICK-005279,Is this product compatible with macOS Sequoia and Apple Silicon? Looking forward to your prompt response.,Product Inquiry,Low,Product Support Team
+TICK-002113,Bluetooth sync is failing between the hardware device and dashboard. Urgent attention required.,Technical Support,Medium,Technical Support Team
+TICK-001971,The web application keeps throwing 500 internal server errors when submitting forms. Looking forward to your prompt response.,Technical Support,High,Technical Support Team
+TICK-001644,Double charge observed on my bank statement for invoice 65797. Looking forward to your prompt response.,Billing,Medium,Billing Team
+TICK-005300,Can you provide information on bulk licensing discounts for 500+ users? Kindly look into this matter promptly.,Product Inquiry,Low,Product Support Team
+TICK-002449,Partial refund missing from my previous dispute case 65215. Please advise as soon as possible.,Refund,Low,Refund Team
+TICK-001569,Double charge observed on my bank statement for invoice 85399. Urgent attention required.,Billing,Medium,Billing Team
+TICK-003404,Customs clearance is delaying package shipment at border transit. Thank you for your assistance.,Shipping,High,Logistics Team
+TICK-003650,How do I transfer account ownership to another administrator? Appreciate a quick update on this.,Account,Medium,Account Support Team
+TICK-002293,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Thank you for your assistance.,Technical Support,Critical,Technical Support Team
+TICK-006012,Need assistance closing and permanently deleting my account. Please advise as soon as possible.,Cancellation,High,Retention Team
+TICK-001398,I need an official tax invoice and payment receipt for order 50250. Thank you for your assistance.,Billing,Medium,Billing Team
+TICK-004591,Repeatedly transferred between agents without any resolution. Thank you for your assistance.,Complaint,Low,Customer Care Team
+TICK-003196,Delivery courier left parcel in rain without notification. Thank you for your assistance.,Shipping,Low,Logistics Team
+TICK-005174,Are there any upcoming features planned for mobile tablet views? Thank you for your assistance.,Product Inquiry,Medium,Product Support Team
+TICK-002377,Item arrived damaged in transit. I want an immediate full refund. Looking forward to your prompt response.,Refund,High,Refund Team
+TICK-004648,Agent closed my support ticket without resolving the actual issue. Appreciate a quick update on this.,Complaint,Critical,Customer Care Team
+TICK-004959,Where can I find user manuals and documentation for model PRO-475? Thank you for your assistance.,Product Inquiry,Low,Product Support Team
+TICK-001207,I noticed an unauthorized charge of $99.99 on my monthly invoice. Looking forward to your prompt response.,Billing,High,Billing Team
+TICK-002253,The web application keeps throwing 500 internal server errors when submitting forms. Contact me via email or phone.,Technical Support,Critical,Technical Support Team
+TICK-005750,Closing subscription due to missing essential features.,Cancellation,High,Retention Team
+TICK-006194,We are switching to an alternative solution and wish to terminate service. Please advise as soon as possible.,Cancellation,Low,Retention Team
+TICK-001249,I received a late payment penalty charge even though I paid on time. Contact me via email or phone.,Billing,Medium,Billing Team
+TICK-005743,Need assistance closing and permanently deleting my account. Kindly look into this matter promptly.,Cancellation,High,Retention Team
+TICK-005330,What are the hardware specifications required to run this software?,Product Inquiry,Low,Product Support Team
+TICK-003902,My profile settings fail to save changes. Thank you for your assistance.,Account,High,Account Support Team
+TICK-001063,I received a late payment penalty charge even though I paid on time. Appreciate a quick update on this.,Billing,High,Billing Team
+TICK-003951,Unable to reset password via email link; link expired immediately. Please advise as soon as possible.,Account,High,Account Support Team
+TICK-003147,Package arrived with crushed outer box and broken contents. Appreciate a quick update on this.,Shipping,Medium,Logistics Team
+TICK-005803,How do I cancel my order before it enters fulfillment phase?,Cancellation,Critical,Retention Team
+TICK-003658,Unable to reset password via email link; link expired immediately. Please advise as soon as possible.,Account,High,Account Support Team
+TICK-005079,Is this product compatible with macOS Sequoia and Apple Silicon? Urgent attention required.,Product Inquiry,Low,Product Support Team
+TICK-006105,Need assistance closing and permanently deleting my account. Thank you for your assistance.,Cancellation,Low,Retention Team
+TICK-005115,Where can I find user manuals and documentation for model PRO-772? Urgent attention required.,Product Inquiry,Low,Product Support Team
+TICK-003479,Where is my package? Tracking number 72128 shows no movement for 5 days. Kindly look into this matter promptly.,Shipping,Low,Logistics Team
+TICK-002915,Order was canceled by system but refund has not posted to my account. Please advise as soon as possible.,Refund,Medium,Refund Team
+TICK-005625,Closing subscription due to missing essential features. Contact me via email or phone.,Cancellation,High,Retention Team
+TICK-001933,Page load times are extremely slow and API calls are timing out. Please advise as soon as possible.,Technical Support,High,Technical Support Team
+TICK-001128,I noticed an unauthorized charge of $249.5 on my monthly invoice. Please advise as soon as possible.,Billing,High,Billing Team
+TICK-002830,The product quality is sub-par and does not match description. Please refund. Thank you for your assistance.,Refund,Critical,Refund Team
+TICK-003598,Delivery courier left parcel in rain without notification. Urgent attention required.,Shipping,Critical,Logistics Team
+TICK-002535,I accidentally purchased the wrong subscription tier and need money back.,Refund,Low,Refund Team
+TICK-004921,What are the hardware specifications required to run this software?,Product Inquiry,Low,Product Support Team
+TICK-006086,I want to cancel my subscription effective immediately. Urgent attention required.,Cancellation,Critical,Retention Team
+TICK-002601,Returned package was delivered to warehouse. When will refund be processed? Urgent attention required.,Refund,Medium,Refund Team
+TICK-002634,"Charged after cancellation request, need immediate reimbursement.",Refund,Critical,Refund Team
+TICK-004338,Formal complaint regarding poor product build quality and support delay. Thank you for your assistance.,Complaint,Medium,Customer Care Team
+TICK-001286,Why was I billed $99.99 when my plan is $29.99?,Billing,Low,Billing Team
+TICK-001553,I am being billed for a service that was supposed to be free during trial. Thank you for your assistance.,Billing,Low,Billing Team
+TICK-005349,What is the warranty period and coverage for international orders? Appreciate a quick update on this.,Product Inquiry,Low,Product Support Team
+TICK-006061,I want to cancel my subscription effective immediately. Kindly look into this matter promptly.,Cancellation,High,Retention Team
+TICK-001220,Double charge observed on my bank statement for invoice 86917. Thank you for your assistance.,Billing,Medium,Billing Team
+TICK-003895,I cannot log into my account despite entering correct password. Urgent attention required.,Account,High,Account Support Team
+TICK-006111,Canceling contract due to budget constraints in our organization. Please advise as soon as possible.,Cancellation,Medium,Retention Team
+TICK-001193,I am being billed for a service that was supposed to be free during trial. Looking forward to your prompt response.,Billing,High,Billing Team
+TICK-002586,Service was down during our event. Requesting credit refund to account. Appreciate a quick update on this.,Refund,Medium,Refund Team
+TICK-002336,The product quality is sub-par and does not match description. Please refund.,Refund,Medium,Refund Team
+TICK-005393,What is the warranty period and coverage for international orders?,Product Inquiry,Low,Product Support Team
+TICK-001883,Bluetooth sync is failing between the hardware device and dashboard. Please advise as soon as possible.,Technical Support,Medium,Technical Support Team
+TICK-002085,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Please advise as soon as possible.,Technical Support,High,Technical Support Team
+TICK-002552,Item arrived damaged in transit. I want an immediate full refund. Kindly look into this matter promptly.,Refund,Medium,Refund Team
+TICK-005061,Does your enterprise plan support custom API integrations? Urgent attention required.,Product Inquiry,Medium,Product Support Team
+TICK-001283,Double charge observed on my bank statement for invoice 15806. Looking forward to your prompt response.,Billing,Medium,Billing Team
+TICK-001972,My internet is not working and the router LED is blinking red. Looking forward to your prompt response.,Technical Support,High,Technical Support Team
+TICK-004610,Agent closed my support ticket without resolving the actual issue. Contact me via email or phone.,Complaint,High,Customer Care Team
+TICK-002110,The web application keeps throwing 500 internal server errors when submitting forms. Contact me via email or phone.,Technical Support,High,Technical Support Team
+TICK-003402,Where is my package? Tracking number 72959 shows no movement for 5 days. Appreciate a quick update on this.,Shipping,High,Logistics Team
+TICK-002832,I requested a refund for order 16280 two weeks ago but haven't received it. Thank you for your assistance.,Refund,Medium,Refund Team
+TICK-004136,Received suspicious password reset email without requesting it. Contact me via email or phone.,Account,Medium,Account Support Team
+TICK-002066,Software installation fails due to missing DLL files on Windows 11. Please advise as soon as possible.,Technical Support,High,Technical Support Team
+TICK-004582,Appalled by lack of response to critical security vulnerability report. Contact me via email or phone.,Complaint,High,Customer Care Team
+TICK-005163,Are there any upcoming features planned for mobile tablet views? Kindly look into this matter promptly.,Product Inquiry,Low,Product Support Team
+TICK-002195,The web application keeps throwing 500 internal server errors when submitting forms. Appreciate a quick update on this.,Technical Support,Critical,Technical Support Team
+TICK-005409,What is the warranty period and coverage for international orders? Looking forward to your prompt response.,Product Inquiry,Low,Product Support Team
+TICK-004886,System downtime caused business revenue loss for our team. Contact me via email or phone.,Complaint,High,Customer Care Team
+TICK-002651,Order was canceled by system but refund has not posted to my account. Kindly look into this matter promptly.,Refund,Medium,Refund Team
+TICK-004000,How do I transfer account ownership to another administrator? Looking forward to your prompt response.,Account,Low,Account Support Team
+TICK-003631,Unable to reset password via email link; link expired immediately.,Account,High,Account Support Team
+TICK-004426,Escalating issue: product failed during critical presentation. Urgent attention required.,Complaint,High,Customer Care Team
+TICK-003988,I need to update my registered email address and phone number. Contact me via email or phone.,Account,Critical,Account Support Team
+TICK-005687,We are switching to an alternative solution and wish to terminate service.,Cancellation,High,Retention Team
+TICK-001236,I need an official tax invoice and payment receipt for order 85800. Please advise as soon as possible.,Billing,Critical,Billing Team
+TICK-002325,"Charged after cancellation request, need immediate reimbursement. Appreciate a quick update on this.",Refund,Medium,Refund Team
+TICK-004377,System downtime caused business revenue loss for our team. Appreciate a quick update on this.,Complaint,Medium,Customer Care Team
+TICK-004671,Very dissatisfied with rude customer service representative on call. Contact me via email or phone.,Complaint,High,Customer Care Team
+TICK-001173,"My payment failed yesterday, but money was deducted from my bank account. Thank you for your assistance.",Billing,High,Billing Team
+TICK-002923,Order was canceled by system but refund has not posted to my account. Urgent attention required.,Refund,Low,Refund Team
+TICK-002102,VPN connection drops every 5 minutes unexpectedly. Urgent attention required.,Technical Support,High,Technical Support Team
+TICK-003639,Single Sign-On (SSO) integration is failing for company domain. Appreciate a quick update on this.,Account,High,Account Support Team
+TICK-002007,Software installation fails due to missing DLL files on Windows 11.,Technical Support,Low,Technical Support Team
+TICK-002403,Service was down during our event. Requesting credit refund to account. Please advise as soon as possible.,Refund,Medium,Refund Team
+TICK-002549,I accidentally purchased the wrong subscription tier and need money back. Appreciate a quick update on this.,Refund,Medium,Refund Team
+TICK-004044,Unable to reset password via email link; link expired immediately. Contact me via email or phone.,Account,High,Account Support Team
+TICK-005344,What is the warranty period and coverage for international orders? Urgent attention required.,Product Inquiry,Low,Product Support Team
+TICK-002557,The product quality is sub-par and does not match description. Please refund. Contact me via email or phone.,Refund,Low,Refund Team
+TICK-003835,I need to update my registered email address and phone number. Kindly look into this matter promptly.,Account,Low,Account Support Team
+TICK-002900,The product quality is sub-par and does not match description. Please refund. Appreciate a quick update on this.,Refund,Medium,Refund Team
+TICK-002003,Unable to connect to remote database server from IP address 192.168.168.191. Thank you for your assistance.,Technical Support,High,Technical Support Team
+TICK-005892,We are switching to an alternative solution and wish to terminate service. Thank you for your assistance.,Cancellation,Medium,Retention Team
+TICK-001856,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Please advise as soon as possible.,Technical Support,High,Technical Support Team
+TICK-001778,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Urgent attention required.,Technical Support,Medium,Technical Support Team
+TICK-002397,Service was down during our event. Requesting credit refund to account. Contact me via email or phone.,Refund,Medium,Refund Team
+TICK-002308,"Charged after cancellation request, need immediate reimbursement.",Refund,Medium,Refund Team
+TICK-005484,Can I try out premium features during a free trial demo? Thank you for your assistance.,Product Inquiry,Low,Product Support Team
+TICK-004794,Escalating issue: product failed during critical presentation. Thank you for your assistance.,Complaint,Medium,Customer Care Team
+TICK-002848,Partial refund missing from my previous dispute case 41854. Contact me via email or phone.,Refund,Medium,Refund Team
+TICK-001613,I need an official tax invoice and payment receipt for order 46913. Please advise as soon as possible.,Billing,Medium,Billing Team
+TICK-004673,Misleading advertising regarding feature capabilities on sales page. Looking forward to your prompt response.,Complaint,Critical,Customer Care Team
+TICK-001281,I received a late payment penalty charge even though I paid on time. Looking forward to your prompt response.,Billing,High,Billing Team
+TICK-003944,Received suspicious password reset email without requesting it. Thank you for your assistance.,Account,Low,Account Support Team
+TICK-001610,Double charge observed on my bank statement for invoice 91689.,Billing,Medium,Billing Team
+TICK-001298,"My payment failed yesterday, but money was deducted from my bank account.",Billing,High,Billing Team
+TICK-002628,Item arrived damaged in transit. I want an immediate full refund. Looking forward to your prompt response.,Refund,High,Refund Team
+TICK-002458,Partial refund missing from my previous dispute case 53100.,Refund,Medium,Refund Team
+TICK-003904,How do I transfer account ownership to another administrator? Contact me via email or phone.,Account,Medium,Account Support Team
+TICK-003154,"Express shipping paid, but package sent via standard economy post. Please advise as soon as possible.",Shipping,Medium,Logistics Team
+TICK-005712,How do I cancel my order before it enters fulfillment phase? Appreciate a quick update on this.,Cancellation,High,Retention Team
+TICK-001782,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Appreciate a quick update on this.,Technical Support,Medium,Technical Support Team
+TICK-001083,I received a late payment penalty charge even though I paid on time. Please advise as soon as possible.,Billing,High,Billing Team
+TICK-002271,The web application keeps throwing 500 internal server errors when submitting forms. Appreciate a quick update on this.,Technical Support,High,Technical Support Team
+TICK-001633,I received a late payment penalty charge even though I paid on time. Kindly look into this matter promptly.,Billing,High,Billing Team
+TICK-002876,Partial refund missing from my previous dispute case 22763. Appreciate a quick update on this.,Refund,Critical,Refund Team
+TICK-001667,The web application keeps throwing 500 internal server errors when submitting forms.,Technical Support,Medium,Technical Support Team
+TICK-003399,Estimated delivery date has passed but package has not arrived.,Shipping,Medium,Logistics Team
+TICK-003710,Two-factor authentication code is not being received on my phone. Please advise as soon as possible.,Account,Medium,Account Support Team
+TICK-005968,We are switching to an alternative solution and wish to terminate service. Contact me via email or phone.,Cancellation,Medium,Retention Team
+TICK-004458,Misleading advertising regarding feature capabilities on sales page. Kindly look into this matter promptly.,Complaint,High,Customer Care Team
+TICK-003160,Delivery courier left parcel in rain without notification.,Shipping,Medium,Logistics Team
+TICK-001568,Double charge observed on my bank statement for invoice 29605. Looking forward to your prompt response.,Billing,Critical,Billing Team
+TICK-002073,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Kindly look into this matter promptly.,Technical Support,High,Technical Support Team
+TICK-005608,Please turn off auto-renewal for my annual membership plan. Thank you for your assistance.,Cancellation,Medium,Retention Team
+TICK-005814,Closing subscription due to missing essential features. Kindly look into this matter promptly.,Cancellation,High,Retention Team
+TICK-003507,Where is my package? Tracking number 19139 shows no movement for 5 days. Urgent attention required.,Shipping,High,Logistics Team
+TICK-001479,I noticed an unauthorized charge of $49.0 on my monthly invoice.,Billing,Medium,Billing Team
+TICK-005805,Requesting account closure and deletion of stored customer data. Contact me via email or phone.,Cancellation,Low,Retention Team
+TICK-004826,Formal complaint regarding poor product build quality and support delay. Thank you for your assistance.,Complaint,High,Customer Care Team
+TICK-002909,Service was down during our event. Requesting credit refund to account. Kindly look into this matter promptly.,Refund,Low,Refund Team
+TICK-004683,Formal complaint regarding poor product build quality and support delay.,Complaint,High,Customer Care Team
+TICK-005507,Can I try out premium features during a free trial demo? Appreciate a quick update on this.,Product Inquiry,Low,Product Support Team
+TICK-004827,No response to urgent tickets for 72 hours despite premium support SLA. Urgent attention required.,Complaint,High,Customer Care Team
+TICK-005085,Does your enterprise plan support custom API integrations? Kindly look into this matter promptly.,Product Inquiry,Medium,Product Support Team
+TICK-005812,Need assistance closing and permanently deleting my account. Please advise as soon as possible.,Cancellation,Critical,Retention Team
+TICK-001888,Page load times are extremely slow and API calls are timing out. Please advise as soon as possible.,Technical Support,Critical,Technical Support Team
+TICK-001284,I noticed an unauthorized charge of $49.0 on my monthly invoice.,Billing,High,Billing Team
+TICK-006094,Requesting account closure and deletion of stored customer data. Contact me via email or phone.,Cancellation,Medium,Retention Team
+TICK-003119,Customs clearance is delaying package shipment at border transit. Contact me via email or phone.,Shipping,Medium,Logistics Team
+TICK-001834,My internet is not working and the router LED is blinking red. Please advise as soon as possible.,Technical Support,Critical,Technical Support Team
+TICK-004718,System downtime caused business revenue loss for our team. Kindly look into this matter promptly.,Complaint,High,Customer Care Team
+TICK-002047,The web application keeps throwing 500 internal server errors when submitting forms. Thank you for your assistance.,Technical Support,High,Technical Support Team
+TICK-002408,Item arrived damaged in transit. I want an immediate full refund. Thank you for your assistance.,Refund,Medium,Refund Team
+TICK-003942,Received suspicious password reset email without requesting it. Looking forward to your prompt response.,Account,Low,Account Support Team
+TICK-004629,Appalled by lack of response to critical security vulnerability report. Please advise as soon as possible.,Complaint,Medium,Customer Care Team
+TICK-001596,"My payment failed yesterday, but money was deducted from my bank account.",Billing,Low,Billing Team
+TICK-005561,I want to cancel my subscription effective immediately. Appreciate a quick update on this.,Cancellation,Medium,Retention Team
+TICK-002852,The product quality is sub-par and does not match description. Please refund.,Refund,Critical,Refund Team
+TICK-003912,I need to update my registered email address and phone number. Contact me via email or phone.,Account,Critical,Account Support Team
+TICK-001180,I received a late payment penalty charge even though I paid on time. Appreciate a quick update on this.,Billing,High,Billing Team
+TICK-003653,Single Sign-On (SSO) integration is failing for company domain. Appreciate a quick update on this.,Account,High,Account Support Team
+TICK-006073,Requesting account closure and deletion of stored customer data. Please advise as soon as possible.,Cancellation,Medium,Retention Team
+TICK-003226,Delivery courier left parcel in rain without notification. Looking forward to your prompt response.,Shipping,Medium,Logistics Team
+TICK-004331,System downtime caused business revenue loss for our team. Urgent attention required.,Complaint,High,Customer Care Team
+TICK-004293,Agent closed my support ticket without resolving the actual issue. Contact me via email or phone.,Complaint,Low,Customer Care Team
+TICK-002406,I requested a refund for order 96431 two weeks ago but haven't received it. Looking forward to your prompt response.,Refund,Low,Refund Team
+TICK-004755,System downtime caused business revenue loss for our team. Please advise as soon as possible.,Complaint,Low,Customer Care Team
+TICK-003920,Single Sign-On (SSO) integration is failing for company domain. Looking forward to your prompt response.,Account,Critical,Account Support Team
+TICK-002000,Unable to connect to remote database server from IP address 192.168.174.202. Urgent attention required.,Technical Support,Medium,Technical Support Team
+TICK-001954,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Contact me via email or phone.,Technical Support,Critical,Technical Support Team
+TICK-004739,Formal complaint regarding poor product build quality and support delay. Urgent attention required.,Complaint,Medium,Customer Care Team
+TICK-005183,Is this product compatible with macOS Sequoia and Apple Silicon? Appreciate a quick update on this.,Product Inquiry,Low,Product Support Team
+TICK-002665,The product quality is sub-par and does not match description. Please refund. Urgent attention required.,Refund,Low,Refund Team
+TICK-005270,Does the cloud platform comply with SOC2 and HIPAA standards? Urgent attention required.,Product Inquiry,Low,Product Support Team
+TICK-001537,Can you update my credit card billing address and tax ID for billing? Please advise as soon as possible.,Billing,Medium,Billing Team
+TICK-001795,Unable to connect to remote database server from IP address 192.168.22.3. Urgent attention required.,Technical Support,Critical,Technical Support Team
+TICK-002978,My order 60002 was shipped to wrong delivery address. Please advise as soon as possible.,Shipping,Medium,Logistics Team
+TICK-002914,I demand a prompt refund for defective goods received yesterday. Thank you for your assistance.,Refund,Low,Refund Team
+TICK-005088,Does your enterprise plan support custom API integrations? Please advise as soon as possible.,Product Inquiry,Medium,Product Support Team
+TICK-003633,Received suspicious password reset email without requesting it. Looking forward to your prompt response.,Account,High,Account Support Team
+TICK-004064,How do I transfer account ownership to another administrator? Thank you for your assistance.,Account,High,Account Support Team
+TICK-002512,The product quality is sub-par and does not match description. Please refund.,Refund,Low,Refund Team
+TICK-004593,Misleading advertising regarding feature capabilities on sales page. Contact me via email or phone.,Complaint,Medium,Customer Care Team
+TICK-005096,Are there any upcoming features planned for mobile tablet views? Please advise as soon as possible.,Product Inquiry,Low,Product Support Team
+TICK-001025,I noticed an unauthorized charge of $499.0 on my monthly invoice. Contact me via email or phone.,Billing,Medium,Billing Team
+TICK-005492,Are there any upcoming features planned for mobile tablet views? Kindly look into this matter promptly.,Product Inquiry,Medium,Product Support Team
+TICK-005796,Need assistance closing and permanently deleting my account. Contact me via email or phone.,Cancellation,Low,Retention Team
+TICK-003408,Customs clearance is delaying package shipment at border transit. Looking forward to your prompt response.,Shipping,High,Logistics Team
+TICK-004940,Can you provide information on bulk licensing discounts for 500+ users? Appreciate a quick update on this.,Product Inquiry,Medium,Product Support Team
+TICK-002668,I accidentally purchased the wrong subscription tier and need money back. Looking forward to your prompt response.,Refund,Medium,Refund Team
+TICK-002321,I requested a refund for order 38511 two weeks ago but haven't received it. Contact me via email or phone.,Refund,High,Refund Team
+TICK-003949,Account permissions are misconfigured and user cannot access dashboard. Looking forward to your prompt response.,Account,High,Account Support Team
+TICK-004216,Received suspicious password reset email without requesting it. Looking forward to your prompt response.,Account,Medium,Account Support Team
+TICK-004076,How do I transfer account ownership to another administrator? Kindly look into this matter promptly.,Account,Low,Account Support Team
+TICK-001200,There is a billing discrepancy on my recent statement for billing period Feb 2026. Thank you for your assistance.,Billing,Medium,Billing Team
+TICK-004654,System downtime caused business revenue loss for our team. Urgent attention required.,Complaint,Medium,Customer Care Team
+TICK-003407,International shipment stuck at distribution center for over a week. Please advise as soon as possible.,Shipping,High,Logistics Team
+TICK-004402,Misleading advertising regarding feature capabilities on sales page. Contact me via email or phone.,Complaint,High,Customer Care Team
+TICK-003351,"Tracking indicates delivered, but package is missing from my doorstep. Please advise as soon as possible.",Shipping,Medium,Logistics Team
+TICK-002069,The desktop application freezes every time I click the save button. Thank you for your assistance.,Technical Support,Low,Technical Support Team
+TICK-002412,I demand a prompt refund for defective goods received yesterday. Please advise as soon as possible.,Refund,Critical,Refund Team
+TICK-001076,I am being billed for a service that was supposed to be free during trial. Appreciate a quick update on this.,Billing,Medium,Billing Team
+TICK-004818,Escalating issue: product failed during critical presentation. Urgent attention required.,Complaint,Critical,Customer Care Team
+TICK-005870,Requesting account closure and deletion of stored customer data. Looking forward to your prompt response.,Cancellation,Low,Retention Team
+TICK-001399,Double charge observed on my bank statement for invoice 86062. Looking forward to your prompt response.,Billing,High,Billing Team
+TICK-005560,Subscription cancellation button is missing from account settings page. Urgent attention required.,Cancellation,Low,Retention Team
+TICK-003440,International shipment stuck at distribution center for over a week. Kindly look into this matter promptly.,Shipping,High,Logistics Team
+TICK-005095,Can I try out premium features during a free trial demo? Urgent attention required.,Product Inquiry,Low,Product Support Team
+TICK-005051,Does your enterprise plan support custom API integrations? Kindly look into this matter promptly.,Product Inquiry,Low,Product Support Team
+TICK-002680,The product quality is sub-par and does not match description. Please refund. Urgent attention required.,Refund,High,Refund Team
+TICK-003031,Estimated delivery date has passed but package has not arrived.,Shipping,Medium,Logistics Team
+TICK-005956,I want to cancel my subscription effective immediately. Contact me via email or phone.,Cancellation,High,Retention Team
+TICK-002118,Mobile app keeps crashing on launch after updating to latest iOS/Android version.,Technical Support,High,Technical Support Team
+TICK-004752,Escalating issue: product failed during critical presentation. Kindly look into this matter promptly.,Complaint,High,Customer Care Team
+TICK-003934,Unable to reset password via email link; link expired immediately.,Account,High,Account Support Team
+TICK-002499,Order was canceled by system but refund has not posted to my account. Contact me via email or phone.,Refund,Low,Refund Team
+TICK-005495,Does your enterprise plan support custom API integrations? Thank you for your assistance.,Product Inquiry,Low,Product Support Team
+TICK-002827,I accidentally purchased the wrong subscription tier and need money back. Urgent attention required.,Refund,High,Refund Team
+TICK-003605,I cannot log into my account despite entering correct password. Appreciate a quick update on this.,Account,Medium,Account Support Team
+TICK-003155,I need to change shipping address for order 85599 before dispatch. Kindly look into this matter promptly.,Shipping,Medium,Logistics Team
+TICK-001156,I noticed an unauthorized charge of $49.0 on my monthly invoice. Urgent attention required.,Billing,Medium,Billing Team
+TICK-002042,The web application keeps throwing 500 internal server errors when submitting forms. Looking forward to your prompt response.,Technical Support,Low,Technical Support Team
+TICK-001287,Can you update my credit card billing address and tax ID for billing? Thank you for your assistance.,Billing,High,Billing Team
+TICK-005994,Requesting account closure and deletion of stored customer data. Urgent attention required.,Cancellation,Low,Retention Team
+TICK-003416,"Express shipping paid, but package sent via standard economy post. Urgent attention required.",Shipping,Medium,Logistics Team
+TICK-001616,I received a late payment penalty charge even though I paid on time. Contact me via email or phone.,Billing,High,Billing Team
+TICK-003441,"Express shipping paid, but package sent via standard economy post.",Shipping,Medium,Logistics Team
+TICK-003071,I need to change shipping address for order 39494 before dispatch. Urgent attention required.,Shipping,Medium,Logistics Team
+TICK-003033,Package arrived with crushed outer box and broken contents. Thank you for your assistance.,Shipping,Medium,Logistics Team
+TICK-001771,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Kindly look into this matter promptly.,Technical Support,Critical,Technical Support Team
+TICK-005893,Please confirm cancellation of recurring billing for account 87347. Kindly look into this matter promptly.,Cancellation,Medium,Retention Team
+TICK-005877,Need assistance closing and permanently deleting my account.,Cancellation,Medium,Retention Team
+TICK-005444,Looking for comparison between standard and professional tiers. Kindly look into this matter promptly.,Product Inquiry,Low,Product Support Team
+TICK-001138,I am being billed for a service that was supposed to be free during trial. Appreciate a quick update on this.,Billing,Low,Billing Team
+TICK-005699,Please turn off auto-renewal for my annual membership plan. Please advise as soon as possible.,Cancellation,Low,Retention Team
+TICK-001117,I am being billed for a service that was supposed to be free during trial. Kindly look into this matter promptly.,Billing,High,Billing Team
+TICK-001040,Why was I billed $49.0 when my plan is $9.99? Looking forward to your prompt response.,Billing,High,Billing Team
+TICK-003615,How do I transfer account ownership to another administrator? Urgent attention required.,Account,Low,Account Support Team
+TICK-005567,We are switching to an alternative solution and wish to terminate service. Kindly look into this matter promptly.,Cancellation,Low,Retention Team
+TICK-005390,Does your enterprise plan support custom API integrations? Kindly look into this matter promptly.,Product Inquiry,Medium,Product Support Team
+TICK-005916,Need assistance closing and permanently deleting my account. Contact me via email or phone.,Cancellation,Low,Retention Team
+TICK-002013,Unable to connect to remote database server from IP address 192.168.152.92. Urgent attention required.,Technical Support,High,Technical Support Team
+TICK-001719,The web application keeps throwing 500 internal server errors when submitting forms. Appreciate a quick update on this.,Technical Support,Medium,Technical Support Team
+TICK-003622,Account permissions are misconfigured and user cannot access dashboard. Kindly look into this matter promptly.,Account,Medium,Account Support Team
+TICK-005524,What is the warranty period and coverage for international orders? Please advise as soon as possible.,Product Inquiry,Medium,Product Support Team
+TICK-002243,My internet is not working and the router LED is blinking red. Thank you for your assistance.,Technical Support,Medium,Technical Support Team
+TICK-005578,Need assistance closing and permanently deleting my account. Thank you for your assistance.,Cancellation,Medium,Retention Team
+TICK-004751,System downtime caused business revenue loss for our team. Thank you for your assistance.,Complaint,High,Customer Care Team
+TICK-005475,Can I try out premium features during a free trial demo? Kindly look into this matter promptly.,Product Inquiry,High,Product Support Team
+TICK-002619,I demand a prompt refund for defective goods received yesterday. Please advise as soon as possible.,Refund,Medium,Refund Team
+TICK-004005,Single Sign-On (SSO) integration is failing for company domain. Urgent attention required.,Account,Medium,Account Support Team
+TICK-002880,Order was canceled by system but refund has not posted to my account.,Refund,Medium,Refund Team
+TICK-002090,System crashed completely during export task showing error code NULL_POINTER_EXC. Thank you for your assistance.,Technical Support,Medium,Technical Support Team
+TICK-003763,My account has been locked due to multiple failed login attempts. Kindly look into this matter promptly.,Account,High,Account Support Team
+TICK-005240,Can you provide information on bulk licensing discounts for 500+ users? Please advise as soon as possible.,Product Inquiry,Medium,Product Support Team
+TICK-002414,Partial refund missing from my previous dispute case 24723. Contact me via email or phone.,Refund,High,Refund Team
+TICK-005742,Please turn off auto-renewal for my annual membership plan. Please advise as soon as possible.,Cancellation,Medium,Retention Team
+TICK-002001,Page load times are extremely slow and API calls are timing out. Please advise as soon as possible.,Technical Support,Medium,Technical Support Team
+TICK-002476,Item arrived damaged in transit. I want an immediate full refund.,Refund,Medium,Refund Team
+TICK-003282,I need to change shipping address for order 16902 before dispatch. Please advise as soon as possible.,Shipping,Medium,Logistics Team
+TICK-005886,How do I cancel my order before it enters fulfillment phase? Please advise as soon as possible.,Cancellation,Medium,Retention Team
+TICK-003275,Estimated delivery date has passed but package has not arrived.,Shipping,Medium,Logistics Team
+TICK-005146,Does the cloud platform comply with SOC2 and HIPAA standards? Kindly look into this matter promptly.,Product Inquiry,Medium,Product Support Team
+TICK-003843,Account permissions are misconfigured and user cannot access dashboard. Looking forward to your prompt response.,Account,Low,Account Support Team
+TICK-003149,I need to change shipping address for order 53246 before dispatch. Contact me via email or phone.,Shipping,Medium,Logistics Team
+TICK-004472,System downtime caused business revenue loss for our team.,Complaint,Critical,Customer Care Team
+TICK-004546,Formal complaint regarding poor product build quality and support delay. Looking forward to your prompt response.,Complaint,High,Customer Care Team
+TICK-001034,I am being billed for a service that was supposed to be free during trial. Appreciate a quick update on this.,Billing,Medium,Billing Team
+TICK-002065,Unable to connect to remote database server from IP address 192.168.117.233. Looking forward to your prompt response.,Technical Support,Medium,Technical Support Team
+TICK-005558,I want to cancel my subscription effective immediately. Looking forward to your prompt response.,Cancellation,Low,Retention Team
+TICK-006181,I want to cancel my subscription effective immediately. Contact me via email or phone.,Cancellation,Medium,Retention Team
+TICK-002977,Where is my package? Tracking number 24502 shows no movement for 5 days.,Shipping,Critical,Logistics Team
+TICK-002968,My order 63396 was shipped to wrong delivery address. Kindly look into this matter promptly.,Shipping,Low,Logistics Team
+TICK-003908,My profile settings fail to save changes. Appreciate a quick update on this.,Account,Medium,Account Support Team
+TICK-005693,Please turn off auto-renewal for my annual membership plan. Contact me via email or phone.,Cancellation,Medium,Retention Team
+TICK-001509,There is a billing discrepancy on my recent statement for billing period Q1 2026. Appreciate a quick update on this.,Billing,Medium,Billing Team
+TICK-003262,"Tracking indicates delivered, but package is missing from my doorstep. Appreciate a quick update on this.",Shipping,Medium,Logistics Team
+TICK-005583,How do I cancel my order before it enters fulfillment phase? Thank you for your assistance.,Cancellation,High,Retention Team
+TICK-004041,Received suspicious password reset email without requesting it. Thank you for your assistance.,Account,High,Account Support Team
+TICK-001697,Page load times are extremely slow and API calls are timing out. Please advise as soon as possible.,Technical Support,High,Technical Support Team
+TICK-005438,Looking for comparison between standard and professional tiers. Please advise as soon as possible.,Product Inquiry,Low,Product Support Team
+TICK-004012,I cannot log into my account despite entering correct password. Thank you for your assistance.,Account,Low,Account Support Team
+TICK-001801,The desktop application freezes every time I click the save button. Urgent attention required.,Technical Support,High,Technical Support Team
+TICK-001672,My internet is not working and the router LED is blinking red. Kindly look into this matter promptly.,Technical Support,High,Technical Support Team
+TICK-004282,Agent closed my support ticket without resolving the actual issue. Urgent attention required.,Complaint,High,Customer Care Team
+TICK-005120,What is the warranty period and coverage for international orders? Kindly look into this matter promptly.,Product Inquiry,Low,Product Support Team
+TICK-002851,Order was canceled by system but refund has not posted to my account. Kindly look into this matter promptly.,Refund,Medium,Refund Team
+TICK-002380,"Charged after cancellation request, need immediate reimbursement. Kindly look into this matter promptly.",Refund,High,Refund Team
+TICK-002010,My internet is not working and the router LED is blinking red. Looking forward to your prompt response.,Technical Support,Critical,Technical Support Team
+TICK-005875,Need assistance closing and permanently deleting my account. Thank you for your assistance.,Cancellation,Medium,Retention Team
+TICK-002707,I requested a refund for order 69631 two weeks ago but haven't received it. Please advise as soon as possible.,Refund,Medium,Refund Team
+TICK-002205,Page load times are extremely slow and API calls are timing out. Thank you for your assistance.,Technical Support,High,Technical Support Team
+TICK-004805,No response to urgent tickets for 72 hours despite premium support SLA. Contact me via email or phone.,Complaint,Medium,Customer Care Team
+TICK-005109,Does the cloud platform comply with SOC2 and HIPAA standards? Appreciate a quick update on this.,Product Inquiry,Medium,Product Support Team
+TICK-004709,Formal complaint regarding poor product build quality and support delay. Appreciate a quick update on this.,Complaint,Low,Customer Care Team
+TICK-003572,Estimated delivery date has passed but package has not arrived. Urgent attention required.,Shipping,Low,Logistics Team
+TICK-003738,Account permissions are misconfigured and user cannot access dashboard. Thank you for your assistance.,Account,Critical,Account Support Team
+TICK-005613,I want to cancel my subscription effective immediately. Thank you for your assistance.,Cancellation,Medium,Retention Team
+TICK-003611,Single Sign-On (SSO) integration is failing for company domain.,Account,Low,Account Support Team
+TICK-002075,The desktop application freezes every time I click the save button.,Technical Support,High,Technical Support Team
+TICK-003335,"Tracking indicates delivered, but package is missing from my doorstep. Appreciate a quick update on this.",Shipping,High,Logistics Team
+TICK-005273,Does the cloud platform comply with SOC2 and HIPAA standards? Urgent attention required.,Product Inquiry,Low,Product Support Team
+TICK-005027,What is the warranty period and coverage for international orders? Urgent attention required.,Product Inquiry,Medium,Product Support Team
+TICK-002889,Service was down during our event. Requesting credit refund to account. Thank you for your assistance.,Refund,High,Refund Team
+TICK-005465,Is this product compatible with macOS Sequoia and Apple Silicon?,Product Inquiry,Low,Product Support Team
+TICK-003315,My order 81876 was shipped to wrong delivery address. Contact me via email or phone.,Shipping,Medium,Logistics Team
+TICK-005348,What is the warranty period and coverage for international orders?,Product Inquiry,Low,Product Support Team
+TICK-005559,Need assistance closing and permanently deleting my account. Appreciate a quick update on this.,Cancellation,Low,Retention Team
