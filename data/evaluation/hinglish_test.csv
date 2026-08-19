@@ -1,0 +1,11 @@
+ticket_id,ticket_text,category,priority,source
+HING_001,mera payment do baar deduct ho gaya,Billing,High,hinglish_eval
+HING_002,app login nahi ho raha hai error aa raha hai,Technical Support,High,hinglish_eval
+HING_003,order abhi tak deliver nahi hua kitna time lagega,Shipping,Medium,hinglish_eval
+HING_004,refund kab milega do hafte ho gaye,Refund,High,hinglish_eval
+HING_005,password reset link email pe nahi aaya,Account,Medium,hinglish_eval
+HING_006,subscription cancel karna hai please help karo,Cancellation,Medium,hinglish_eval
+HING_007,ye product me sso support hai kya?,Product Inquiry,Low,hinglish_eval
+HING_008,customer care wale koi phone nahi utha rahe,Complaint,High,hinglish_eval
+HING_009,bank statement me extra charge kyu dikha raha hai,Billing,High,hinglish_eval
+HING_100,courier wala parcel galat jagah deke chala gaya,Shipping,Critical,hinglish_eval

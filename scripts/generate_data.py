@@ -203,7 +203,8 @@ def generate_tickets(target_count=5200):
                 "ticket_text": full_text,
                 "category": category,
                 "priority": priority,
-                "department": department
+                "department": department,
+                "source": "synthetic"
             })
 
     # Shuffle
@@ -213,16 +214,23 @@ def generate_tickets(target_count=5200):
 
 
 def main():
-    dataset_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "dataset")
+    base_dir = os.path.dirname(os.path.dirname(__file__))
+    dataset_dir = os.path.join(base_dir, "dataset")
+    raw_dir = os.path.join(base_dir, "data", "raw")
     os.makedirs(dataset_dir, exist_ok=True)
+    os.makedirs(raw_dir, exist_ok=True)
 
     print("Generating synthetic dataset (5200 samples)...")
     df = generate_tickets(5200)
 
-    # Save complete dataset
+    # Save to raw directory and legacy dataset directory
+    raw_synthetic_path = os.path.join(raw_dir, "synthetic_tickets.csv")
+    df.to_csv(raw_synthetic_path, index=False)
+    print(f"Saved raw synthetic dataset to {raw_synthetic_path} (Shape: {df.shape})")
+
     tickets_path = os.path.join(dataset_dir, "tickets.csv")
     df.to_csv(tickets_path, index=False)
-    print(f"Saved full dataset to {tickets_path} (Shape: {df.shape})")
+    print(f"Saved dataset copy to {tickets_path} (Shape: {df.shape})")
 
     # Stratified Train/Test split (80% train, 20% test)
     train_df, test_df = train_test_split(

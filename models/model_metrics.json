@@ -1,80 +1,80 @@
 {
     "best_category_model_name": "Logistic Regression",
-    "best_category_f1": 1.0,
-    "priority_accuracy": 0.4663,
-    "priority_f1": 0.4452,
+    "best_category_f1": 0.9918,
+    "priority_accuracy": 0.2927,
+    "priority_f1": 0.2765,
     "models_comparison": {
         "Logistic Regression": {
-            "accuracy": 1.0,
-            "precision": 1.0,
-            "recall": 1.0,
-            "f1_score": 1.0,
+            "accuracy": 0.9919,
+            "precision": 0.9923,
+            "recall": 0.9919,
+            "f1_score": 0.9918,
             "classification_report": {
                 "Account": {
                     "precision": 1.0,
                     "recall": 1.0,
                     "f1-score": 1.0,
-                    "support": 130.0
+                    "support": 15.0
                 },
                 "Billing": {
                     "precision": 1.0,
                     "recall": 1.0,
                     "f1-score": 1.0,
-                    "support": 130.0
+                    "support": 17.0
                 },
                 "Cancellation": {
                     "precision": 1.0,
                     "recall": 1.0,
                     "f1-score": 1.0,
-                    "support": 130.0
+                    "support": 15.0
                 },
                 "Complaint": {
                     "precision": 1.0,
                     "recall": 1.0,
                     "f1-score": 1.0,
-                    "support": 130.0
+                    "support": 14.0
                 },
                 "Product Inquiry": {
                     "precision": 1.0,
-                    "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 130.0
+                    "recall": 0.9285714285714286,
+                    "f1-score": 0.9629629629629629,
+                    "support": 14.0
                 },
                 "Refund": {
                     "precision": 1.0,
                     "recall": 1.0,
                     "f1-score": 1.0,
-                    "support": 130.0
+                    "support": 15.0
                 },
                 "Shipping": {
                     "precision": 1.0,
                     "recall": 1.0,
                     "f1-score": 1.0,
-                    "support": 130.0
+                    "support": 15.0
                 },
                 "Technical Support": {
-                    "precision": 1.0,
+                    "precision": 0.9473684210526315,
                     "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 130.0
+                    "f1-score": 0.972972972972973,
+                    "support": 18.0
                 },
-                "accuracy": 1.0,
+                "accuracy": 0.991869918699187,
                 "macro avg": {
-                    "precision": 1.0,
-                    "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 1040.0
+                    "precision": 0.993421052631579,
+                    "recall": 0.9910714285714286,
+                    "f1-score": 0.991991991991992,
+                    "support": 123.0
                 },
                 "weighted avg": {
-                    "precision": 1.0,
-                    "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 1040.0
+                    "precision": 0.9922978177150192,
+                    "recall": 0.991869918699187,
+                    "f1-score": 0.9918292276015853,
+                    "support": 123.0
                 }
             },
             "confusion_matrix": [
                 [
-                    130,
+                    15,
                     0,
                     0,
                     0,
@@ -85,7 +85,7 @@
                 ],
                 [
                     0,
-                    130,
+                    17,
                     0,
                     0,
                     0,
@@ -96,7 +96,7 @@
                 [
                     0,
                     0,
-                    130,
+                    15,
                     0,
                     0,
                     0,
@@ -107,7 +107,7 @@
                     0,
                     0,
                     0,
-                    130,
+                    14,
                     0,
                     0,
                     0,
@@ -118,8 +118,18 @@
                     0,
                     0,
                     0,
-                    130,
+                    13,
                     0,
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    15,
                     0,
                     0
                 ],
@@ -129,18 +139,8 @@
                     0,
                     0,
                     0,
-                    130,
                     0,
-                    0
-                ],
-                [
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    130,
+                    15,
                     0
                 ],
                 [
@@ -151,81 +151,81 @@
                     0,
                     0,
                     0,
-                    130
+                    18
                 ]
             ]
         },
         "Naive Bayes": {
-            "accuracy": 1.0,
-            "precision": 1.0,
-            "recall": 1.0,
-            "f1_score": 1.0,
+            "accuracy": 0.9837,
+            "precision": 0.9847,
+            "recall": 0.9837,
+            "f1_score": 0.9837,
             "classification_report": {
                 "Account": {
                     "precision": 1.0,
                     "recall": 1.0,
                     "f1-score": 1.0,
-                    "support": 130.0
+                    "support": 15.0
                 },
                 "Billing": {
                     "precision": 1.0,
                     "recall": 1.0,
                     "f1-score": 1.0,
-                    "support": 130.0
+                    "support": 17.0
                 },
                 "Cancellation": {
                     "precision": 1.0,
                     "recall": 1.0,
                     "f1-score": 1.0,
-                    "support": 130.0
+                    "support": 15.0
                 },
                 "Complaint": {
-                    "precision": 1.0,
+                    "precision": 0.9333333333333333,
                     "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 130.0
+                    "f1-score": 0.9655172413793104,
+                    "support": 14.0
                 },
                 "Product Inquiry": {
                     "precision": 1.0,
-                    "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 130.0
+                    "recall": 0.9285714285714286,
+                    "f1-score": 0.9629629629629629,
+                    "support": 14.0
                 },
                 "Refund": {
                     "precision": 1.0,
-                    "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 130.0
+                    "recall": 0.9333333333333333,
+                    "f1-score": 0.9655172413793104,
+                    "support": 15.0
                 },
                 "Shipping": {
                     "precision": 1.0,
                     "recall": 1.0,
                     "f1-score": 1.0,
-                    "support": 130.0
+                    "support": 15.0
                 },
                 "Technical Support": {
-                    "precision": 1.0,
+                    "precision": 0.9473684210526315,
                     "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 130.0
+                    "f1-score": 0.972972972972973,
+                    "support": 18.0
                 },
-                "accuracy": 1.0,
+                "accuracy": 0.983739837398374,
                 "macro avg": {
-                    "precision": 1.0,
-                    "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 1040.0
+                    "precision": 0.9850877192982457,
+                    "recall": 0.9827380952380953,
+                    "f1-score": 0.9833713023368196,
+                    "support": 123.0
                 },
                 "weighted avg": {
-                    "precision": 1.0,
-                    "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 1040.0
+                    "precision": 0.9847097418342604,
+                    "recall": 0.983739837398374,
+                    "f1-score": 0.9836991463007725,
+                    "support": 123.0
                 }
             },
             "confusion_matrix": [
                 [
-                    130,
+                    15,
                     0,
                     0,
                     0,
@@ -236,7 +236,7 @@
                 ],
                 [
                     0,
-                    130,
+                    17,
                     0,
                     0,
                     0,
@@ -247,7 +247,7 @@
                 [
                     0,
                     0,
-                    130,
+                    15,
                     0,
                     0,
                     0,
@@ -258,7 +258,7 @@
                     0,
                     0,
                     0,
-                    130,
+                    14,
                     0,
                     0,
                     0,
@@ -269,8 +269,18 @@
                     0,
                     0,
                     0,
-                    130,
+                    13,
                     0,
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    14,
                     0,
                     0
                 ],
@@ -280,18 +290,8 @@
                     0,
                     0,
                     0,
-                    130,
                     0,
-                    0
-                ],
-                [
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    130,
+                    15,
                     0
                 ],
                 [
@@ -302,81 +302,81 @@
                     0,
                     0,
                     0,
-                    130
+                    18
                 ]
             ]
         },
         "Random Forest": {
-            "accuracy": 1.0,
-            "precision": 1.0,
-            "recall": 1.0,
-            "f1_score": 1.0,
+            "accuracy": 0.9593,
+            "precision": 0.9658,
+            "recall": 0.9593,
+            "f1_score": 0.9598,
             "classification_report": {
                 "Account": {
                     "precision": 1.0,
                     "recall": 1.0,
                     "f1-score": 1.0,
-                    "support": 130.0
+                    "support": 15.0
                 },
                 "Billing": {
                     "precision": 1.0,
-                    "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 130.0
+                    "recall": 0.8823529411764706,
+                    "f1-score": 0.9375,
+                    "support": 17.0
                 },
                 "Cancellation": {
                     "precision": 1.0,
                     "recall": 1.0,
                     "f1-score": 1.0,
-                    "support": 130.0
+                    "support": 15.0
                 },
                 "Complaint": {
-                    "precision": 1.0,
+                    "precision": 0.9333333333333333,
                     "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 130.0
+                    "f1-score": 0.9655172413793104,
+                    "support": 14.0
                 },
                 "Product Inquiry": {
                     "precision": 1.0,
-                    "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 130.0
+                    "recall": 0.8571428571428571,
+                    "f1-score": 0.9230769230769231,
+                    "support": 14.0
                 },
                 "Refund": {
                     "precision": 1.0,
-                    "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 130.0
+                    "recall": 0.9333333333333333,
+                    "f1-score": 0.9655172413793104,
+                    "support": 15.0
                 },
                 "Shipping": {
                     "precision": 1.0,
                     "recall": 1.0,
                     "f1-score": 1.0,
-                    "support": 130.0
+                    "support": 15.0
                 },
                 "Technical Support": {
-                    "precision": 1.0,
+                    "precision": 0.8181818181818182,
                     "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 130.0
+                    "f1-score": 0.9,
+                    "support": 18.0
                 },
-                "accuracy": 1.0,
+                "accuracy": 0.959349593495935,
                 "macro avg": {
-                    "precision": 1.0,
-                    "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 1040.0
+                    "precision": 0.968939393939394,
+                    "recall": 0.9591036414565826,
+                    "f1-score": 0.961451425729443,
+                    "support": 123.0
                 },
                 "weighted avg": {
-                    "precision": 1.0,
-                    "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 1040.0
+                    "precision": 0.9658043853165803,
+                    "recall": 0.959349593495935,
+                    "f1-score": 0.9598420888055035,
+                    "support": 123.0
                 }
             },
             "confusion_matrix": [
                 [
-                    130,
+                    15,
                     0,
                     0,
                     0,
@@ -387,8 +387,18 @@
                 ],
                 [
                     0,
-                    130,
+                    15,
                     0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    2
+                ],
+                [
+                    0,
+                    0,
+                    15,
                     0,
                     0,
                     0,
@@ -398,18 +408,8 @@
                 [
                     0,
                     0,
-                    130,
                     0,
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                [
-                    0,
-                    0,
-                    0,
-                    130,
+                    14,
                     0,
                     0,
                     0,
@@ -419,11 +419,11 @@
                     0,
                     0,
                     0,
+                    1,
+                    12,
                     0,
-                    130,
                     0,
-                    0,
-                    0
+                    1
                 ],
                 [
                     0,
@@ -431,9 +431,9 @@
                     0,
                     0,
                     0,
-                    130,
+                    14,
                     0,
-                    0
+                    1
                 ],
                 [
                     0,
@@ -442,7 +442,7 @@
                     0,
                     0,
                     0,
-                    130,
+                    15,
                     0
                 ],
                 [
@@ -453,81 +453,81 @@
                     0,
                     0,
                     0,
-                    130
+                    18
                 ]
             ]
         },
         "Linear SVM": {
-            "accuracy": 1.0,
-            "precision": 1.0,
-            "recall": 1.0,
-            "f1_score": 1.0,
+            "accuracy": 0.9837,
+            "precision": 0.9847,
+            "recall": 0.9837,
+            "f1_score": 0.9837,
             "classification_report": {
                 "Account": {
                     "precision": 1.0,
                     "recall": 1.0,
                     "f1-score": 1.0,
-                    "support": 130.0
+                    "support": 15.0
                 },
                 "Billing": {
                     "precision": 1.0,
                     "recall": 1.0,
                     "f1-score": 1.0,
-                    "support": 130.0
+                    "support": 17.0
                 },
                 "Cancellation": {
                     "precision": 1.0,
                     "recall": 1.0,
                     "f1-score": 1.0,
-                    "support": 130.0
+                    "support": 15.0
                 },
                 "Complaint": {
-                    "precision": 1.0,
+                    "precision": 0.9333333333333333,
                     "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 130.0
+                    "f1-score": 0.9655172413793104,
+                    "support": 14.0
                 },
                 "Product Inquiry": {
                     "precision": 1.0,
-                    "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 130.0
+                    "recall": 0.9285714285714286,
+                    "f1-score": 0.9629629629629629,
+                    "support": 14.0
                 },
                 "Refund": {
                     "precision": 1.0,
-                    "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 130.0
+                    "recall": 0.9333333333333333,
+                    "f1-score": 0.9655172413793104,
+                    "support": 15.0
                 },
                 "Shipping": {
                     "precision": 1.0,
                     "recall": 1.0,
                     "f1-score": 1.0,
-                    "support": 130.0
+                    "support": 15.0
                 },
                 "Technical Support": {
-                    "precision": 1.0,
+                    "precision": 0.9473684210526315,
                     "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 130.0
+                    "f1-score": 0.972972972972973,
+                    "support": 18.0
                 },
-                "accuracy": 1.0,
+                "accuracy": 0.983739837398374,
                 "macro avg": {
-                    "precision": 1.0,
-                    "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 1040.0
+                    "precision": 0.9850877192982457,
+                    "recall": 0.9827380952380953,
+                    "f1-score": 0.9833713023368196,
+                    "support": 123.0
                 },
                 "weighted avg": {
-                    "precision": 1.0,
-                    "recall": 1.0,
-                    "f1-score": 1.0,
-                    "support": 1040.0
+                    "precision": 0.9847097418342604,
+                    "recall": 0.983739837398374,
+                    "f1-score": 0.9836991463007725,
+                    "support": 123.0
                 }
             },
             "confusion_matrix": [
                 [
-                    130,
+                    15,
                     0,
                     0,
                     0,
@@ -538,7 +538,7 @@
                 ],
                 [
                     0,
-                    130,
+                    17,
                     0,
                     0,
                     0,
@@ -549,7 +549,7 @@
                 [
                     0,
                     0,
-                    130,
+                    15,
                     0,
                     0,
                     0,
@@ -560,7 +560,7 @@
                     0,
                     0,
                     0,
-                    130,
+                    14,
                     0,
                     0,
                     0,
@@ -571,8 +571,18 @@
                     0,
                     0,
                     0,
-                    130,
+                    13,
                     0,
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    14,
                     0,
                     0
                 ],
@@ -582,18 +592,8 @@
                     0,
                     0,
                     0,
-                    130,
                     0,
-                    0
-                ],
-                [
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    130,
+                    15,
                     0
                 ],
                 [
@@ -604,7 +604,7 @@
                     0,
                     0,
                     0,
-                    130
+                    18
                 ]
             ]
         }

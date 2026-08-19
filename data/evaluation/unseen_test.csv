@@ -1,0 +1,16 @@
+ticket_id,ticket_text,category,priority,source
+UNSEEN_001,I can see two identical transactions on my card for one purchase.,Billing,High,unseen_eval
+UNSEEN_002,The application shuts down immediately after I enter my password.,Technical Support,High,unseen_eval
+UNSEEN_003,"I cancelled my plan last week, but another renewal payment has been taken.",Billing,Critical,unseen_eval
+UNSEEN_004,Our entire office has lost access to the service.,Technical Support,Critical,unseen_eval
+UNSEEN_005,My parcel was supposed to arrive last Friday and there is still no update.,Shipping,High,unseen_eval
+UNSEEN_006,I need help understanding why an extra amount was added to my invoice.,Billing,Medium,unseen_eval
+UNSEEN_007,"Sent the returned item back 3 weeks ago, when is my cash returning?",Refund,High,unseen_eval
+UNSEEN_008,I want to shut down my company account forever.,Cancellation,High,unseen_eval
+UNSEEN_009,Is your platform compliant with HIPAA regulations for medical data?,Product Inquiry,Low,unseen_eval
+UNSEEN_010,Your representative hung up on me while I was explaining my problem!,Complaint,Critical,unseen_eval
+UNSEEN_011,Forgot my master password and backup keys are not working.,Account,Critical,unseen_eval
+UNSEEN_012,Courier driver left box outside in torrential rain storm.,Shipping,High,unseen_eval
+UNSEEN_013,Web portal throws 404 page not found when accessing user profile.,Technical Support,Medium,unseen_eval
+UNSEEN_014,Can I upgrade from monthly to annual billing and get a discount?,Billing,Low,unseen_eval
+UNSEEN_015,Product arrived with shattered glass casing.,Refund,High,unseen_eval

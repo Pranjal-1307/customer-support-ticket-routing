@@ -1,0 +1,58 @@
+=========================================================
+ CUSTOMER SUPPORT TICKET DATASET ANALYSIS REPORT
+=========================================================
+
+1. DATASET OVERVIEW
+   - Total Raw Combined Records: 5357
+   - Total Cleaned Processed Records: 820
+   - Duplicates & Non-Unique Templates Removed: 4537 (84.7% reduction)
+   - Missing Values in Cleaned Dataset: 0
+
+2. SOURCE DISTRIBUTION (Cleaned Dataset)
+   - synthetic: 673 (82.1%)
+   - manual: 82 (10.0%)
+   - external: 65 (7.9%)
+
+3. CATEGORY DISTRIBUTION
+   - Technical Support   : 121 (14.8%)
+   - Billing             : 118 (14.4%)
+   - Shipping            : 99 (12.1%)
+   - Refund              : 99 (12.1%)
+   - Account             : 97 (11.8%)
+   - Product Inquiry     : 96 (11.7%)
+   - Complaint           : 95 (11.6%)
+   - Cancellation        : 95 (11.6%)
+
+4. PRIORITY DISTRIBUTION
+   - Medium    : 285 (34.8%)
+   - High      : 282 (34.4%)
+   - Low       : 160 (19.5%)
+   - Critical  : 93 (11.3%)
+
+5. CATEGORY x PRIORITY MATRIX
+priority           Critical  High  Low  Medium
+category                                      
+Account                   8    52   13      24
+Billing                  16    52    8      42
+Cancellation              7    24   16      48
+Complaint                16    43    5      31
+Product Inquiry           0     7   70      19
+Refund                    8    34   15      42
+Shipping                 12    17   23      47
+Technical Support        26    53   10      32
+
+6. TICKET TEXT LENGTH METRICS
+   - Word Count -> Mean: 13.9, Min: 2, Max: 21, Median: 15.0
+   - Character Count -> Mean: 90.1, Min: 14, Max: 126
+   - Shortest Ticket Sample: 'Charged twice.'
+   - Longest Ticket Sample: 'I am being billed for a service that was supposed to be free during trial. Contact me via email or p...'
+
+7. SPLITS BREAKDOWN & LEAKAGE PREVENTION
+   - Training Set (train.csv): 574 rows (70.0%)
+   - Validation Set (validation.csv): 123 rows (15.0%)
+   - Test Set (test.csv): 123 rows (15.0%)
+   - Dedicated Unseen Evaluation Set (unseen_test.csv): 15 rows
+   - Dedicated Hinglish Evaluation Set (hinglish_test.csv): 10 rows
+   - Exact Train / Test Text Overlap Count: 0 (Target: 0)
+
+=========================================================
