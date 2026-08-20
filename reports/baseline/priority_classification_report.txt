@@ -1,0 +1,77 @@
+# Priority Classification Report (Milestone 1 Baseline)
+
+**Generated:** 2026-08-20T06:13:10.972664
+
+**Model:** Logistic Regression (random_state=42)
+
+**Train samples:** 994  |  **Test samples:** 227
+
+## Metrics
+
+- Accuracy: **0.7137**
+- Weighted Precision: 0.7538
+- Weighted Recall: 0.7137
+- Weighted F1: **0.7087**
+- Macro Precision: 0.7440
+- Macro Recall: 0.6878
+- Macro F1: **0.6913**
+
+## Classification Report
+
+```
+              precision    recall  f1-score   support
+
+    Critical       0.96      0.47      0.63        55
+        High       0.62      0.82      0.71        74
+         Low       0.63      0.67      0.65        18
+      Medium       0.76      0.79      0.77        80
+
+    accuracy                           0.71       227
+   macro avg       0.74      0.69      0.69       227
+weighted avg       0.75      0.71      0.71       227
+
+```
+
+## Confusion Matrix
+
+```
+Predicted →  Critical      High       Low    Medium
+Critical         26        28         0         1
+High              0        61         0        13
+Low               0         0        12         6
+Medium            1         9         7        63
+```
+
+## Priority Distribution (Train vs Test)
+
+| Priority | Train Count | Train % | Test Count | Test % |
+|----------|-------------|---------|------------|--------|
+| Critical | 172 | 17.3% | 55 | 24.2% |
+| High | 326 | 32.8% | 74 | 32.6% |
+| Low | 173 | 17.4% | 18 | 7.9% |
+| Medium | 323 | 32.5% | 80 | 35.2% |
+
+## Representative Misclassified Examples
+
+| Ticket Text (truncated) | True Priority | Predicted Priority |
+|-------------------------|---------------|-------------------|
+| Is this product compatible with macOS Sequoia and Apple Silicon? Thank you for y | Low | Medium |
+| I accidentally purchased the wrong subscription tier and need money back. Urgent | Medium | Low |
+| What are the hardware specifications required to run this software? Urgent atten | Medium | Critical |
+| Charged after cancellation request, need immediate reimbursement. Urgent attenti | Critical | High |
+| Does your enterprise plan support custom API integrations? Please advise as soon | Medium | High |
+| My profile settings fail to save changes. Please advise as soon as possible. | Medium | High |
+| International shipment stuck at distribution center for over a week. Please advi | High | Medium |
+| Escalating issue: product failed during critical presentation. Urgent attention  | Critical | High |
+| Formal complaint regarding poor product build quality and support delay. Please  | High | Medium |
+| Package arrived with crushed outer box and broken contents. Please advise as soo | Critical | High |
+
+## Root Cause Analysis
+
+Priority classification shows moderate performance because:
+1. **Partial textual signal** — Priority is deterministically derived from template base-priority + urgency suffix upgrade. Templates carry semantic severity, and urgency suffixes ('Urgent attention required.', 'Please advise as soon as possible.') upgrade priority by 1 level.
+2. **Class imbalance** — Medium and High dominate, while Critical and Low are less represented. This creates prediction bias toward majority classes.
+3. **Coarse signal** — While priority correlates with template semantics, the TF-IDF features primarily capture category-level vocabulary rather than fine-grained severity indicators.
+4. **Template overlap** — Some templates share similar vocabulary across priority levels within the same category, limiting discriminability.
+
+**This is expected M1 baseline behavior.** Improving priority prediction further requires richer text features, more diverse data, or priority-specific feature engineering.

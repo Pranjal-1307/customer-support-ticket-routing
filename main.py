@@ -20,13 +20,15 @@ def main():
     print(" CUSTOMER SUPPORT TICKET ROUTING SYSTEM USING NLP")
     print("=" * 70)
 
-    # 1. Ensure dataset exists
+    # 1. Ensure dataset and splits exist
     tickets_path = os.path.join(PROJECT_ROOT, "dataset", "tickets.csv")
-    if not os.path.exists(tickets_path):
-        print("\n[INFO] Dataset not found. Generating synthetic dataset (5,000+ tickets)...")
+    train_path = os.path.join(PROJECT_ROOT, "dataset", "train.csv")
+    test_path = os.path.join(PROJECT_ROOT, "dataset", "test.csv")
+    if not os.path.exists(tickets_path) or not os.path.exists(train_path) or not os.path.exists(test_path):
+        print("\n[INFO] Dataset or splits not found. Generating and preparing synthetic dataset...")
         generate_dataset()
     else:
-        print(f"\n[OK] Dataset found at {tickets_path}")
+        print(f"\n[OK] Dataset and splits found at {tickets_path}")
 
     # 2. Ensure trained models exist
     model_path = os.path.join(PROJECT_ROOT, "models", "ticket_classifier.pkl")

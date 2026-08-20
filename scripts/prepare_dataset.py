@@ -27,7 +27,7 @@ ALLOWED_PRIORITIES = ["Low", "Medium", "High", "Critical"]
 def normalize_text_pattern(text: str) -> str:
     """
     Normalizes dynamic entities (amounts, IDs, hex codes, IP addresses, numbers)
-    in ticket text to create a template signature for near-duplicate detection.
+    and removes noise suffixes to create a template signature for group-based split.
     """
     if not isinstance(text, str):
         return ""
@@ -39,10 +39,30 @@ def normalize_text_pattern(text: str) -> str:
     pattern_text = re.sub(r'#?[A-Z0-9]{4,12}\b', '<ID>', pattern_text, flags=re.IGNORECASE)
     # Mask IP addresses
     pattern_text = re.sub(r'\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b', '<IP>', pattern_text)
+    # Mask system error codes
+    pattern_text = re.sub(r'\b(ERR_\w+|NULL_POINTER_EXC|SOCKET_TIMEOUT|AUTH_DENIED)\b', '<ERR>', pattern_text, flags=re.IGNORECASE)
+    # Mask periods
+    pattern_text = re.sub(r'\b(jan|feb|q1)\s+\d{4}\b', '<PERIOD>', pattern_text, flags=re.IGNORECASE)
+    # Mask models
+    pattern_text = re.sub(r'pro-\d+', '<MODEL>', pattern_text, flags=re.IGNORECASE)
     # Mask standalone numbers
     pattern_text = re.sub(r'\b\d+\b', '<NUM>', pattern_text)
     # Normalize whitespace
-    pattern_text = re.sub(r'\s+', ' ', pattern_text)
+    pattern_text = re.sub(r'\s+', ' ', pattern_text).strip()
+    
+    # Strip the 7 noise suffixes
+    noise_phrases = [
+        "please advise as soon as possible.",
+        "thank you for your assistance.",
+        "urgent attention required.",
+        "contact me via email or phone.",
+        "appreciate a quick update on this.",
+        "kindly look into this matter promptly.",
+        "looking forward to your prompt response.",
+    ]
+    for phrase in noise_phrases:
+        pattern_text = pattern_text.replace(phrase, "").strip()
+        
     return pattern_text
 
 
@@ -118,42 +138,66 @@ def prepare_data():
     exact_dups_removed = before_exact_dedup - len(cleaned_df)
     print(f"Exact duplicates removed: {exact_dups_removed}")
 
-    # 4. Near-duplicate / Template-based deduplication for leakage prevention
-    print("\n--- STEP 3: Data Leakage Prevention (Template Deduplication) ---")
+    # 4. Near-duplicate / Template-based group split for leakage prevention
+    print("\n--- STEP 3: Data Leakage Prevention (Stratified Group Splitting) ---")
     cleaned_df["norm_pattern"] = cleaned_df["ticket_text"].apply(normalize_text_pattern)
     
-    # Prioritize 'manual' and 'external' sources over 'synthetic' during template deduplication
-    source_priority_map = {"manual": 0, "external": 1, "synthetic": 2}
-    cleaned_df["src_rank"] = cleaned_df["source"].map(lambda s: source_priority_map.get(str(s).lower(), 3))
+    # Group by norm_pattern and get the first category for each group
+    group_df = cleaned_df.groupby("norm_pattern").agg({"category": "first"}).reset_index()
     
-    cleaned_df = cleaned_df.sort_values(by="src_rank").drop_duplicates(subset=["norm_pattern"]).copy()
-    cleaned_df = cleaned_df.drop(columns=["norm_pattern", "src_rank"])
+    train_patterns = []
+    val_patterns = []
+    test_patterns = []
     
-    print(f"Records after template pattern deduplication: {len(cleaned_df)}")
+    for category, cat_df in group_df.groupby("category"):
+        # Sort to ensure deterministic ordering before shuffling
+        cat_df = cat_df.sort_values(by="norm_pattern")
+        patterns = cat_df["norm_pattern"].tolist()
+        
+        # Shuffle deterministically
+        import random
+        rng = random.Random(42)
+        rng.shuffle(patterns)
+        
+        n_patterns = len(patterns)
+        n_train = max(1, int(round(0.70 * n_patterns)))
+        n_val = max(1, int(round(0.15 * n_patterns)))
+        n_test = n_patterns - n_train - n_val
+        
+        # Adjust if rounding causes issues
+        if n_test < 0:
+            n_test = 0
+            n_val = n_patterns - n_train
+            
+        train_p = patterns[:n_train]
+        val_p = patterns[n_train:n_train+n_val]
+        test_p = patterns[n_train+n_val:]
+        
+        train_patterns.extend(train_p)
+        val_patterns.extend(val_p)
+        test_patterns.extend(test_p)
+        
+    # Split the original cleaned_df based on the assigned groups
+    train_df = cleaned_df[cleaned_df["norm_pattern"].isin(train_patterns)].copy()
+    val_df = cleaned_df[cleaned_df["norm_pattern"].isin(val_patterns)].copy()
+    test_df = cleaned_df[cleaned_df["norm_pattern"].isin(test_patterns)].copy()
+    
+    # Remove temporary norm_pattern column from splits
+    train_df = train_df.drop(columns=["norm_pattern"])
+    val_df = val_df.drop(columns=["norm_pattern"])
+    test_df = test_df.drop(columns=["norm_pattern"])
+    cleaned_df = cleaned_df.drop(columns=["norm_pattern"])
+    
+    print(f"Records after template group splitting: Train={len(train_df)}, Val={len(val_df)}, Test={len(test_df)}")
 
     # 5. Generate clean unique Ticket IDs
     cleaned_df["ticket_id"] = [f"T{i+1:05d}" for i in range(len(cleaned_df))]
+    # Re-assign splits index-based IDs if needed, but keeping them as is is fine.
 
     # Save cleaned processed dataset
     processed_path = os.path.join(processed_dir, "cleaned_tickets.csv")
     cleaned_df.to_csv(processed_path, index=False)
     print(f"Saved processed clean dataset to {processed_path} ({len(cleaned_df)} records)")
-
-    print("\n--- STEP 4: Stratified Train / Validation / Test Splitting ---")
-    # Split 70% Train, 15% Validation, 15% Test (or 70% Train, 30% Temp -> 15% Val, 15% Test)
-    train_df, temp_df = train_test_split(
-        cleaned_df,
-        test_size=0.30,
-        random_state=42,
-        stratify=cleaned_df["category"]
-    )
-
-    val_df, test_df = train_test_split(
-        temp_df,
-        test_size=0.50,
-        random_state=42,
-        stratify=temp_df["category"]
-    )
 
     # Verify no overlap between splits
     train_texts = set(train_df["ticket_text"])

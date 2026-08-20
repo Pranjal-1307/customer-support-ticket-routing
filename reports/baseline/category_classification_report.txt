@@ -1,0 +1,171 @@
+# Category Classification Report (Milestone 1 Baseline)
+
+**Generated:** 2026-08-20T06:13:07.075580
+
+**Train samples:** 994  |  **Test samples:** 227
+
+**TF-IDF:** max_features=5000, ngram_range=(1,2), fitted on train only
+
+
+## Logistic Regression
+
+- Accuracy: **0.9692**
+- Weighted Precision: 0.9697
+- Weighted Recall: 0.9692
+- Weighted F1: **0.9691**
+- Macro F1: **0.9676**
+
+```
+                   precision    recall  f1-score   support
+
+          Account       0.93      0.93      0.93        15
+          Billing       0.95      0.98      0.96        55
+     Cancellation       0.97      0.97      0.97        29
+        Complaint       1.00      1.00      1.00        14
+  Product Inquiry       0.94      1.00      0.97        15
+           Refund       1.00      0.94      0.97        36
+         Shipping       1.00      1.00      1.00        38
+Technical Support       0.96      0.92      0.94        25
+
+         accuracy                           0.97       227
+        macro avg       0.97      0.97      0.97       227
+     weighted avg       0.97      0.97      0.97       227
+
+```
+
+### Confusion Matrix
+
+```
+Predicted →  Accoun  Billin  Cancel  Compla  Produc  Refund  Shippi  Techni
+Account          14       0       1       0       0       0       0       0
+Billing           0      54       0       0       1       0       0       0
+Cancellation      0       1      28       0       0       0       0       0
+Complaint         0       0       0      14       0       0       0       0
+Product Inqu      0       0       0       0      15       0       0       0
+Refund            0       1       0       0       0      34       0       1
+Shipping          0       0       0       0       0       0      38       0
+Technical Su      1       1       0       0       0       0       0      23
+```
+
+
+## Naive Bayes
+
+- Accuracy: **0.9604**
+- Weighted Precision: 0.9626
+- Weighted Recall: 0.9604
+- Weighted F1: **0.9600**
+- Macro F1: **0.9555**
+
+```
+                   precision    recall  f1-score   support
+
+          Account       1.00      0.80      0.89        15
+          Billing       0.95      0.98      0.96        55
+     Cancellation       0.93      0.97      0.95        29
+        Complaint       1.00      1.00      1.00        14
+  Product Inquiry       0.88      1.00      0.94        15
+           Refund       1.00      0.94      0.97        36
+         Shipping       0.95      1.00      0.97        38
+Technical Support       1.00      0.92      0.96        25
+
+         accuracy                           0.96       227
+        macro avg       0.96      0.95      0.96       227
+     weighted avg       0.96      0.96      0.96       227
+
+```
+
+### Confusion Matrix
+
+```
+Predicted →  Accoun  Billin  Cancel  Compla  Produc  Refund  Shippi  Techni
+Account          12       0       2       0       0       0       1       0
+Billing           0      54       0       0       1       0       0       0
+Cancellation      0       1      28       0       0       0       0       0
+Complaint         0       0       0      14       0       0       0       0
+Product Inqu      0       0       0       0      15       0       0       0
+Refund            0       1       0       0       0      34       1       0
+Shipping          0       0       0       0       0       0      38       0
+Technical Su      0       1       0       0       1       0       0      23
+```
+
+
+## Random Forest
+
+- Accuracy: **0.9736**
+- Weighted Precision: 0.9749
+- Weighted Recall: 0.9736
+- Weighted F1: **0.9738**
+- Macro F1: **0.9701**
+
+```
+                   precision    recall  f1-score   support
+
+          Account       0.94      1.00      0.97        15
+          Billing       0.98      0.98      0.98        55
+     Cancellation       1.00      0.97      0.98        29
+        Complaint       1.00      1.00      1.00        14
+  Product Inquiry       0.88      1.00      0.94        15
+           Refund       1.00      0.94      0.97        36
+         Shipping       1.00      1.00      1.00        38
+Technical Support       0.92      0.92      0.92        25
+
+         accuracy                           0.97       227
+        macro avg       0.97      0.98      0.97       227
+     weighted avg       0.97      0.97      0.97       227
+
+```
+
+### Confusion Matrix
+
+```
+Predicted →  Accoun  Billin  Cancel  Compla  Produc  Refund  Shippi  Techni
+Account          15       0       0       0       0       0       0       0
+Billing           1      54       0       0       0       0       0       0
+Cancellation      0       1      28       0       0       0       0       0
+Complaint         0       0       0      14       0       0       0       0
+Product Inqu      0       0       0       0      15       0       0       0
+Refund            0       0       0       0       0      34       0       2
+Shipping          0       0       0       0       0       0      38       0
+Technical Su      0       0       0       0       2       0       0      23
+```
+
+
+## Linear SVM
+
+- Accuracy: **0.9692**
+- Weighted Precision: 0.9697
+- Weighted Recall: 0.9692
+- Weighted F1: **0.9691**
+- Macro F1: **0.9644**
+
+```
+                   precision    recall  f1-score   support
+
+          Account       0.93      0.93      0.93        15
+          Billing       0.96      0.98      0.97        55
+     Cancellation       0.97      0.97      0.97        29
+        Complaint       0.93      1.00      0.97        14
+  Product Inquiry       0.94      1.00      0.97        15
+           Refund       1.00      0.94      0.97        36
+         Shipping       1.00      1.00      1.00        38
+Technical Support       0.96      0.92      0.94        25
+
+         accuracy                           0.97       227
+        macro avg       0.96      0.97      0.96       227
+     weighted avg       0.97      0.97      0.97       227
+
+```
+
+### Confusion Matrix
+
+```
+Predicted →  Accoun  Billin  Cancel  Compla  Produc  Refund  Shippi  Techni
+Account          14       0       1       0       0       0       0       0
+Billing           0      54       0       0       1       0       0       0
+Cancellation      0       1      28       0       0       0       0       0
+Complaint         0       0       0      14       0       0       0       0
+Product Inqu      0       0       0       0      15       0       0       0
+Refund            0       1       0       0       0      34       0       1
+Shipping          0       0       0       0       0       0      38       0
+Technical Su      1       0       0       1       0       0       0      23
+```

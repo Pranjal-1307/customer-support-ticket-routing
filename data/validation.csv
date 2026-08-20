@@ -1,124 +1,301 @@
 ticket_id,ticket_text,category,priority,source
-T00520,There is a billing discrepancy on my recent statement for billing period Jan 2026. Urgent attention required.,Billing,Medium,synthetic
-T00587,The web application keeps throwing 500 internal server errors when submitting forms. Kindly look into this matter promptly.,Technical Support,High,synthetic
-T00581,Service was down during our event. Requesting credit refund to account. Looking forward to your prompt response.,Refund,Medium,synthetic
-T00686,Single Sign-On (SSO) integration is failing for company domain. Kindly look into this matter promptly.,Account,High,synthetic
-T00467,Formal complaint regarding poor product build quality and support delay.,Complaint,High,synthetic
-T00073,Are there discount options for non-profit organizations or universities?,Product Inquiry,Low,manual
-T00046,API response time is over 12 seconds for /v1/data endpoint. Server timeout.,Technical Support,High,manual
-T00612,Need assistance closing and permanently deleting my account. Kindly look into this matter promptly.,Cancellation,Medium,synthetic
-T00816,I am being billed for a service that was supposed to be free during trial. Thank you for your assistance.,Billing,High,synthetic
-T00207,Double charge observed on my bank statement for invoice 15286. Looking forward to your prompt response.,Billing,High,synthetic
-T00372,Can you provide information on bulk licensing discounts for 500+ users? Thank you for your assistance.,Product Inquiry,Low,synthetic
-T00714,I cannot log into my account despite entering correct password. Urgent attention required.,Account,High,synthetic
-T00132,"Partial order shipment arrived, remaining items missing from package.",Shipping,High,external
-T00437,"Express shipping paid, but package sent via standard economy post. Kindly look into this matter promptly.",Shipping,Critical,synthetic
-T00665,System crashed completely during export task showing error code SOCKET_TIMEOUT. Looking forward to your prompt response.,Technical Support,High,synthetic
-T00154,Estimated delivery date has passed but package has not arrived. Appreciate a quick update on this.,Shipping,Medium,synthetic
-T00412,Partial refund missing from my previous dispute case 28156. Thank you for your assistance.,Refund,Critical,synthetic
-T00608,Package arrived with crushed outer box and broken contents. Looking forward to your prompt response.,Shipping,Low,synthetic
-T00209,Service was down during our event. Requesting credit refund to account. Urgent attention required.,Refund,High,synthetic
-T00212,I need to change shipping address for order 62044 before dispatch. Please advise as soon as possible.,Shipping,Medium,synthetic
-T00798,System crashed completely during export task showing error code AUTH_DENIED. Looking forward to your prompt response.,Technical Support,High,synthetic
-T00743,System crashed completely during export task showing error code NULL_POINTER_EXC. Kindly look into this matter promptly.,Technical Support,High,synthetic
-T00777,Returned package was delivered to warehouse. When will refund be processed? Urgent attention required.,Refund,Low,synthetic
-T00221,Order was canceled by system but refund has not posted to my account. Kindly look into this matter promptly.,Refund,Critical,synthetic
-T00754,Account permissions are misconfigured and user cannot access dashboard. Contact me via email or phone.,Account,High,synthetic
-T00455,Mobile app keeps crashing on launch after updating to latest iOS/Android version.,Technical Support,High,synthetic
-T00094,Does the system support multi-currency transactions and reporting?,Product Inquiry,Low,external
-T00454,Bluetooth sync is failing between the hardware device and dashboard. Appreciate a quick update on this.,Technical Support,High,synthetic
-T00235,Repeatedly transferred between agents without any resolution. Appreciate a quick update on this.,Complaint,High,synthetic
-T00279,I need to change shipping address for order 27427 before dispatch. Looking forward to your prompt response.,Shipping,Medium,synthetic
-T00694,Customs clearance is delaying package shipment at border transit. Please advise as soon as possible.,Shipping,Medium,synthetic
-T00236,Unable to connect to remote database server from IP address 192.168.168.5. Please advise as soon as possible.,Technical Support,Medium,synthetic
-T00014,How do I change my primary account email address?,Account,Low,manual
-T00329,Partial refund missing from my previous dispute case 57917. Contact me via email or phone.,Refund,Low,synthetic
-T00120,Password reset verification email not arriving in inbox.,Account,High,external
-T00394,Escalating issue: product failed during critical presentation. Looking forward to your prompt response.,Complaint,High,synthetic
-T00626,My credit card was charged twice for transaction 89689. Thank you for your assistance.,Billing,High,synthetic
-T00572,Agent closed my support ticket without resolving the actual issue. Kindly look into this matter promptly.,Complaint,High,synthetic
-T00075,Is user training included with team plan onboard?,Product Inquiry,Low,manual
-T00481,Does your enterprise plan support custom API integrations?,Product Inquiry,Low,synthetic
-T00610,Closing subscription due to missing essential features. Please advise as soon as possible.,Cancellation,Low,synthetic
-T00808,I want to cancel my subscription effective immediately. Thank you for your assistance.,Cancellation,Medium,synthetic
-T00601,There is a billing discrepancy on my recent statement for billing period Q1 2026. Appreciate a quick update on this.,Billing,High,synthetic
-T00513,Misleading advertising regarding feature capabilities on sales page. Looking forward to your prompt response.,Complaint,High,synthetic
-T00085,Terminate trial period and remove credit card details.,Cancellation,Medium,external
-T00079,I have been waiting on hold for over 45 minutes without any agent answering.,Complaint,Medium,manual
-T00449,Does your enterprise plan support custom API integrations? Kindly look into this matter promptly.,Product Inquiry,Low,synthetic
-T00058,Why did u guys charge me again??,Billing,High,manual
-T00323,Need assistance closing and permanently deleting my account. Thank you for your assistance.,Cancellation,High,synthetic
-T00144,Webhook endpoint returning HTTP 403 Forbidden on payload POST.,Technical Support,High,external
-T00466,Double charge observed on my bank statement for invoice 35485. Please advise as soon as possible.,Billing,High,synthetic
-T00744,Escalating issue: product failed during critical presentation. Urgent attention required.,Complaint,Medium,synthetic
-T00561,"Express shipping paid, but package sent via standard economy post. Thank you for your assistance.",Shipping,Low,synthetic
-T00112,Is SOC2 Type II compliance documentation available upon NDA?,Product Inquiry,Low,external
-T00693,Can I try out premium features during a free trial demo? Please advise as soon as possible.,Product Inquiry,Low,synthetic
-T00059,"This is ridiculous, I have been charged twice and nobody is helping me!",Billing,Critical,manual
-T00216,I requested a refund for order 64511 two weeks ago but haven't received it. Appreciate a quick update on this.,Refund,High,synthetic
-T00392,International shipment stuck at distribution center for over a week. Thank you for your assistance.,Shipping,Critical,synthetic
-T00182,Account permissions are misconfigured and user cannot access dashboard. Looking forward to your prompt response.,Account,High,synthetic
-T00233,No response to urgent tickets for 72 hours despite premium support SLA. Kindly look into this matter promptly.,Complaint,High,synthetic
-T00543,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Appreciate a quick update on this.,Technical Support,Critical,synthetic
-T00350,Returned package was delivered to warehouse. When will refund be processed? Thank you for your assistance.,Refund,Medium,synthetic
-T00062,Incorrect tax amount added to invoice #INV-99201. Plz fix.,Billing,Medium,manual
-T00735,My account has been locked due to multiple failed login attempts. Contact me via email or phone.,Account,Critical,synthetic
-T00183,Bluetooth sync is failing between the hardware device and dashboard. Urgent attention required.,Technical Support,High,synthetic
-T00031,System charged me after trial ended even though I opted out. Money back immediately.,Refund,Critical,manual
-T00483,How do I cancel my order before it enters fulfillment phase? Thank you for your assistance.,Cancellation,Medium,synthetic
-T00068,Does the enterprise tier support single sign-on (SSO) via SAML 2.0?,Product Inquiry,Low,manual
-T00414,Closing subscription due to missing essential features. Looking forward to your prompt response.,Cancellation,Low,synthetic
-T00242,"Charged after cancellation request, need immediate reimbursement. Kindly look into this matter promptly.",Refund,High,synthetic
-T00288,Is this product compatible with macOS Sequoia and Apple Silicon?,Product Inquiry,Medium,synthetic
-T00237,"My payment failed yesterday, but money was deducted from my bank account.",Billing,High,synthetic
-T00322,"My payment failed yesterday, but money was deducted from my bank account. Looking forward to your prompt response.",Billing,Medium,synthetic
-T00319,Please turn off auto-renewal for my annual membership plan. Thank you for your assistance.,Cancellation,High,synthetic
-T00294,We are switching to an alternative solution and wish to terminate service. Contact me via email or phone.,Cancellation,Low,synthetic
-T00750,Can you provide information on bulk licensing discounts for 500+ users? Please advise as soon as possible.,Product Inquiry,Low,synthetic
-T00524,Where can I find user manuals and documentation for model PRO-555? Kindly look into this matter promptly.,Product Inquiry,Low,synthetic
-T00480,The product quality is sub-par and does not match description. Please refund.,Refund,Medium,synthetic
-T00778,The web application keeps throwing 500 internal server errors when submitting forms. Looking forward to your prompt response.,Technical Support,Medium,synthetic
-T00164,Formal complaint regarding poor product build quality and support delay. Urgent attention required.,Complaint,High,synthetic
-T00314,Can you update my credit card billing address and tax ID for billing?,Billing,Medium,synthetic
-T00359,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Urgent attention required.,Technical Support,High,synthetic
-T00499,I need to update my registered email address and phone number. Urgent attention required.,Account,High,synthetic
-T00189,Returned package was delivered to warehouse. When will refund be processed? Please advise as soon as possible.,Refund,Medium,synthetic
-T00023,Unable to sync offline offline records to server once online.,Technical Support,High,manual
-T00126,User authentication token expiring prematurely causing frequent re-logins.,Technical Support,Medium,external
-T00703,Unable to reset password via email link; link expired immediately. Contact me via email or phone.,Account,High,synthetic
-T00041,"Got a message saying payment failed, but my account balance decreased.",Billing,High,manual
-T00196,Subscription cancellation button is missing from account settings page. Please advise as soon as possible.,Cancellation,Medium,synthetic
-T00439,What is the warranty period and coverage for international orders? Looking forward to your prompt response.,Product Inquiry,Low,synthetic
-T00464,My account has been locked due to multiple failed login attempts. Kindly look into this matter promptly.,Account,High,synthetic
-T00215,Appalled by lack of response to critical security vulnerability report. Urgent attention required.,Complaint,Medium,synthetic
-T00755,The web application keeps throwing 500 internal server errors when submitting forms. Thank you for your assistance.,Technical Support,High,synthetic
-T00330,I cannot log into my account despite entering correct password. Please advise as soon as possible.,Account,High,synthetic
-T00752,Worst service experience ever! Unprofessional support team. Contact me via email or phone.,Complaint,High,synthetic
-T00050,Dashboard metrics showing 0 despite active data ingestion streams.,Technical Support,Medium,manual
-T00567,Why was I billed $499.0 when my plan is $79.99? Kindly look into this matter promptly.,Billing,High,synthetic
-T00498,I need to update my registered email address and phone number.,Account,Medium,synthetic
-T00410,My order 50376 was shipped to wrong delivery address. Appreciate a quick update on this.,Shipping,Medium,synthetic
-T00671,Subscription cancellation button is missing from account settings page. Kindly look into this matter promptly.,Cancellation,Low,synthetic
-T00702,Customs clearance is delaying package shipment at border transit. Kindly look into this matter promptly.,Shipping,Medium,synthetic
-T00256,I received a late payment penalty charge even though I paid on time.,Billing,Medium,synthetic
-T00149,"My payment failed yesterday, but money was deducted from my bank account. Please advise as soon as possible.",Billing,Critical,synthetic
-T00312,Misleading advertising regarding feature capabilities on sales page. Thank you for your assistance.,Complaint,High,synthetic
-T00191,Service was down during our event. Requesting credit refund to account. Contact me via email or phone.,Refund,Medium,synthetic
-T00082,Worst experience ever. System has been down 3 times this month!,Complaint,High,manual
-T00595,Where is my package? Tracking number 64835 shows no movement for 5 days. Urgent attention required.,Shipping,Low,synthetic
-T00617,Unable to reset password via email link; link expired immediately. Appreciate a quick update on this.,Account,High,synthetic
-T00544,My account has been locked due to multiple failed login attempts. Thank you for your assistance.,Account,High,synthetic
-T00707,Package arrived with crushed outer box and broken contents. Appreciate a quick update on this.,Shipping,High,synthetic
-T00708,I demand a prompt refund for defective goods received yesterday. Please advise as soon as possible.,Refund,Medium,synthetic
-T00152,I want to cancel my subscription effective immediately. Appreciate a quick update on this.,Cancellation,Medium,synthetic
-T00337,Please turn off auto-renewal for my annual membership plan.,Cancellation,Low,synthetic
-T00638,Please turn off auto-renewal for my annual membership plan. Urgent attention required.,Cancellation,Medium,synthetic
-T00223,Where is my package? Tracking number 65311 shows no movement for 5 days. Appreciate a quick update on this.,Shipping,High,synthetic
-T00403,System downtime caused business revenue loss for our team. Contact me via email or phone.,Complaint,Critical,synthetic
-T00782,What are the hardware specifications required to run this software? Urgent attention required.,Product Inquiry,Low,synthetic
-T00281,Delivery courier left parcel in rain without notification. Contact me via email or phone.,Shipping,Low,synthetic
-T00538,There is a billing discrepancy on my recent statement for billing period Feb 2026. Contact me via email or phone.,Billing,High,synthetic
-T00051,SSL certificate expired warning when accessing client portal.,Technical Support,Critical,manual
-T00478,Looking for comparison between standard and professional tiers.,Product Inquiry,Low,synthetic
-T00287,Service was down during our event. Requesting credit refund to account. Please advise as soon as possible.,Refund,Medium,synthetic
-T00172,I noticed an unauthorized charge of $49.0 on my monthly invoice. Thank you for your assistance.,Billing,Medium,synthetic
+TICK-005407,Looking for comparison between standard and professional tiers. Kindly look into this matter promptly.,Product Inquiry,Low,synthetic
+TICK-001880,My internet is not working and the router LED is blinking red.,Technical Support,High,synthetic
+TICK-006075,I want to cancel my subscription effective immediately. Thank you for your assistance.,Cancellation,High,synthetic
+TICK-002043,Mobile app keeps crashing on launch after updating to latest iOS/Android version. Looking forward to your prompt response.,Technical Support,High,synthetic
+TICK-005422,Is this product compatible with macOS Sequoia and Apple Silicon? Looking forward to your prompt response.,Product Inquiry,Low,synthetic
+TICK-004999,Can you provide information on bulk licensing discounts for 500+ users? Looking forward to your prompt response.,Product Inquiry,Medium,synthetic
+TICK-003245,International shipment stuck at distribution center for over a week. Appreciate a quick update on this.,Shipping,Medium,synthetic
+TICK-005881,Please confirm cancellation of recurring billing for account 79529. Urgent attention required.,Cancellation,High,synthetic
+TICK-002305,Order was canceled by system but refund has not posted to my account. Contact me via email or phone.,Refund,Medium,synthetic
+TICK-004783,Repeatedly transferred between agents without any resolution. Please advise as soon as possible.,Complaint,High,synthetic
+TICK-001628,My credit card was charged twice for transaction 36486. Looking forward to your prompt response.,Billing,High,synthetic
+TICK-001972,The web application keeps throwing 500 internal server errors when submitting forms. Looking forward to your prompt response.,Technical Support,High,synthetic
+TICK-004761,Appalled by lack of response to critical security vulnerability report. Looking forward to your prompt response.,Complaint,Critical,synthetic
+TICK-004182,Single Sign-On (SSO) integration is failing for company domain. Please advise as soon as possible.,Account,Critical,synthetic
+TICK-003615,My account has been locked due to multiple failed login attempts. Thank you for your assistance.,Account,High,synthetic
+TICK-005057,Where can I find user manuals and documentation for model PRO-690?,Product Inquiry,Low,synthetic
+TICK-003336,Where is my package? Tracking number 90008 shows no movement for 5 days. Thank you for your assistance.,Shipping,Medium,synthetic
+TICK-003921,Single Sign-On (SSO) integration is failing for company domain. Kindly look into this matter promptly.,Account,High,synthetic
+TICK-001282,I received a late payment penalty charge even though I paid on time. Thank you for your assistance.,Billing,Medium,synthetic
+TICK-002608,I requested a refund for order 23295 two weeks ago but haven't received it. Appreciate a quick update on this.,Refund,Medium,synthetic
+TICK-005788,Subscription cancellation button is missing from account settings page. Kindly look into this matter promptly.,Cancellation,High,synthetic
+TICK-001300,I noticed an unauthorized charge of $249.5 on my monthly invoice. Contact me via email or phone.,Billing,Critical,synthetic
+TICK-001390,I am being billed for a service that was supposed to be free during trial. Thank you for your assistance.,Billing,Medium,synthetic
+TICK-002525,I accidentally purchased the wrong subscription tier and need money back. Looking forward to your prompt response.,Refund,Low,synthetic
+TICK-002849,The product quality is sub-par and does not match description. Please refund. Appreciate a quick update on this.,Refund,Low,synthetic
+TICK-005420,Where can I find user manuals and documentation for model PRO-739? Appreciate a quick update on this.,Product Inquiry,Low,synthetic
+TICK-001516,I am being billed for a service that was supposed to be free during trial. Kindly look into this matter promptly.,Billing,Medium,synthetic
+TICK-003135,Customs clearance is delaying package shipment at border transit. Urgent attention required.,Shipping,Medium,synthetic
+TICK-005616,How do I cancel my order before it enters fulfillment phase? Urgent attention required.,Cancellation,High,synthetic
+TICK-003988,I need to update my registered email address and phone number. Thank you for your assistance.,Account,Low,synthetic
+TICK-001440,My credit card was charged twice for transaction 77537. Please advise as soon as possible.,Billing,Critical,synthetic
+TICK-002580,The product quality is sub-par and does not match description. Please refund. Kindly look into this matter promptly.,Refund,Low,synthetic
+TICK-003435,Estimated delivery date has passed but package has not arrived. Looking forward to your prompt response.,Shipping,Medium,synthetic
+TICK-003461,Package arrived with crushed outer box and broken contents.,Shipping,High,synthetic
+TICK-005558,Subscription cancellation button is missing from account settings page. Contact me via email or phone.,Cancellation,High,synthetic
+TICK-001960,The web application keeps throwing 500 internal server errors when submitting forms. Urgent attention required.,Technical Support,Critical,synthetic
+TICK-002910,The product quality is sub-par and does not match description. Please refund. Looking forward to your prompt response.,Refund,Low,synthetic
+TICK-005878,I want to cancel my subscription effective immediately. Contact me via email or phone.,Cancellation,High,synthetic
+TICK-006127,We are switching to an alternative solution and wish to terminate service. Looking forward to your prompt response.,Cancellation,High,synthetic
+TICK-004537,No response to urgent tickets for 72 hours despite premium support SLA. Urgent attention required.,Complaint,Critical,synthetic
+TICK-005535,Are there any upcoming features planned for mobile tablet views? Contact me via email or phone.,Product Inquiry,Low,synthetic
+TICK-002677,Item arrived damaged in transit. I want an immediate full refund. Looking forward to your prompt response.,Refund,High,synthetic
+TICK-005402,Can I try out premium features during a free trial demo? Please advise as soon as possible.,Product Inquiry,Medium,synthetic
+TICK-002941,I demand a prompt refund for defective goods received yesterday. Urgent attention required.,Refund,Critical,synthetic
+TICK-003283,I need to change shipping address for order 39881 before dispatch. Please advise as soon as possible.,Shipping,Critical,synthetic
+TICK-003396,Where is my package? Tracking number 55145 shows no movement for 5 days. Thank you for your assistance.,Shipping,Medium,synthetic
+TICK-005636,Please confirm cancellation of recurring billing for account 36740.,Cancellation,Medium,synthetic
+TICK-004282,Escalating issue: product failed during critical presentation. Looking forward to your prompt response.,Complaint,High,synthetic
+TICK-002192,Unable to connect to remote database server from IP address 192.168.103.10. Contact me via email or phone.,Technical Support,Critical,synthetic
+TICK-001899,VPN connection drops every 5 minutes unexpectedly. Urgent attention required.,Technical Support,Critical,synthetic
+TICK-005195,Where can I find user manuals and documentation for model PRO-582?,Product Inquiry,Low,synthetic
+TICK-001905,Bluetooth sync is failing between the hardware device and dashboard. Please advise as soon as possible.,Technical Support,High,synthetic
+TICK-001354,My credit card was charged twice for transaction 23051. Looking forward to your prompt response.,Billing,High,synthetic
+TICK-002323,I requested a refund for order 37849 two weeks ago but haven't received it.,Refund,Medium,synthetic
+TICK-003424,Where is my package? Tracking number 80013 shows no movement for 5 days. Thank you for your assistance.,Shipping,Medium,synthetic
+TICK-003149,Where is my package? Tracking number 56381 shows no movement for 5 days.,Shipping,Medium,synthetic
+TICK-002861,Item arrived damaged in transit. I want an immediate full refund. Urgent attention required.,Refund,Critical,synthetic
+TICK-003870,Two-factor authentication code is not being received on my phone. Looking forward to your prompt response.,Account,High,synthetic
+TICK-004821,No response to urgent tickets for 72 hours despite premium support SLA. Looking forward to your prompt response.,Complaint,High,synthetic
+TICK-005510,Where can I find user manuals and documentation for model PRO-537? Appreciate a quick update on this.,Product Inquiry,Low,synthetic
+TICK-001262,My credit card was charged twice for transaction 97528. Appreciate a quick update on this.,Billing,High,synthetic
+TICK-005573,We are switching to an alternative solution and wish to terminate service. Urgent attention required.,Cancellation,Critical,synthetic
+TICK-002197,Unable to connect to remote database server from IP address 192.168.111.48.,Technical Support,Critical,synthetic
+TICK-001598,My credit card was charged twice for transaction 62037. Looking forward to your prompt response.,Billing,High,synthetic
+TICK-005194,Where can I find user manuals and documentation for model PRO-802? Thank you for your assistance.,Product Inquiry,Low,synthetic
+TICK-001316,Can you update my credit card billing address and tax ID for billing? Contact me via email or phone.,Billing,Low,synthetic
+TICK-003302,Customs clearance is delaying package shipment at border transit. Contact me via email or phone.,Shipping,Low,synthetic
+TICK-003490,Estimated delivery date has passed but package has not arrived. Urgent attention required.,Shipping,High,synthetic
+TICK-005509,Where can I find user manuals and documentation for model PRO-594? Appreciate a quick update on this.,Product Inquiry,Low,synthetic
+TICK-002797,I requested a refund for order 13777 two weeks ago but haven't received it.,Refund,Medium,synthetic
+TICK-003457,International shipment stuck at distribution center for over a week.,Shipping,Medium,synthetic
+TICK-003533,Where is my package? Tracking number 45731 shows no movement for 5 days. Thank you for your assistance.,Shipping,Medium,synthetic
+TICK-006023,Please turn off auto-renewal for my annual membership plan. Urgent attention required.,Cancellation,High,synthetic
+TICK-001576,There is a billing discrepancy on my recent statement for billing period Feb 2026. Contact me via email or phone.,Billing,Medium,synthetic
+TICK-002349,Service was down during our event. Requesting credit refund to account. Please advise as soon as possible.,Refund,High,synthetic
+TICK-002185,The web application keeps throwing 500 internal server errors when submitting forms. Please advise as soon as possible.,Technical Support,Critical,synthetic
+TICK-001527,Why was I billed $49.0 when my plan is $79.99? Please advise as soon as possible.,Billing,High,synthetic
+TICK-003530,My order 67133 was shipped to wrong delivery address. Appreciate a quick update on this.,Shipping,High,synthetic
+TICK-003555,Estimated delivery date has passed but package has not arrived.,Shipping,Medium,synthetic
+TICK-001049,My credit card was charged twice for transaction 25118. Looking forward to your prompt response.,Billing,High,synthetic
+TICK-003244,I need to change shipping address for order 59464 before dispatch. Please advise as soon as possible.,Shipping,Critical,synthetic
+TICK-001106,My credit card was charged twice for transaction 36680.,Billing,High,synthetic
+TICK-003866,My account has been locked due to multiple failed login attempts. Urgent attention required.,Account,Critical,synthetic
+TICK-001890,Unable to connect to remote database server from IP address 192.168.55.249.,Technical Support,Critical,synthetic
+TICK-004135,I need to update my registered email address and phone number.,Account,Low,synthetic
+TICK-002979,Where is my package? Tracking number 47375 shows no movement for 5 days. Thank you for your assistance.,Shipping,Medium,synthetic
+TICK-001608,I received a late payment penalty charge even though I paid on time.,Billing,Medium,synthetic
+TICK-001460,My credit card was charged twice for transaction 10617.,Billing,High,synthetic
+TICK-005491,Where can I find user manuals and documentation for model PRO-975? Thank you for your assistance.,Product Inquiry,Low,synthetic
+TICK-001944,VPN connection drops every 5 minutes unexpectedly. Looking forward to your prompt response.,Technical Support,High,synthetic
+TICK-005187,Is this product compatible with macOS Sequoia and Apple Silicon?,Product Inquiry,Low,synthetic
+TICK-002947,I requested a refund for order 57737 two weeks ago but haven't received it. Appreciate a quick update on this.,Refund,Medium,synthetic
+TICK-002708,I requested a refund for order 72970 two weeks ago but haven't received it. Looking forward to your prompt response.,Refund,Medium,synthetic
+TICK-004373,Formal complaint regarding poor product build quality and support delay.,Complaint,Medium,synthetic
+TICK-005526,Where can I find user manuals and documentation for model PRO-201? Thank you for your assistance.,Product Inquiry,Low,synthetic
+TICK-006116,Please confirm cancellation of recurring billing for account 28415.,Cancellation,Medium,synthetic
+TICK-003254,I need to change shipping address for order 82914 before dispatch. Please advise as soon as possible.,Shipping,Critical,synthetic
+TICK-001524,Why was I billed $49.0 when my plan is $9.99? Appreciate a quick update on this.,Billing,Medium,synthetic
+TICK-003829,I cannot log into my account despite entering correct password. Kindly look into this matter promptly.,Account,High,synthetic
+TICK-005068,Where can I find user manuals and documentation for model PRO-411?,Product Inquiry,Low,synthetic
+TICK-005379,Where can I find user manuals and documentation for model PRO-214? Thank you for your assistance.,Product Inquiry,Low,synthetic
+TICK-002443,I requested a refund for order 74011 two weeks ago but haven't received it. Looking forward to your prompt response.,Refund,Medium,synthetic
+TICK-002418,Service was down during our event. Requesting credit refund to account. Thank you for your assistance.,Refund,Medium,synthetic
+TICK-003229,My order 32832 was shipped to wrong delivery address. Appreciate a quick update on this.,Shipping,High,synthetic
+TICK-005944,Please confirm cancellation of recurring billing for account 14841.,Cancellation,Medium,synthetic
+TICK-002201,Unable to connect to remote database server from IP address 192.168.78.186. Contact me via email or phone.,Technical Support,Critical,synthetic
+TICK-001795,VPN connection drops every 5 minutes unexpectedly. Contact me via email or phone.,Technical Support,High,synthetic
+TICK-003006,My order 34559 was shipped to wrong delivery address. Appreciate a quick update on this.,Shipping,High,synthetic
+TICK-002966,Where is my package? Tracking number 41398 shows no movement for 5 days. Thank you for your assistance.,Shipping,Medium,synthetic
+TICK-001143,Why was I billed $19.99 when my plan is $9.99? Kindly look into this matter promptly.,Billing,Medium,synthetic
+TICK-005423,Where can I find user manuals and documentation for model PRO-836? Thank you for your assistance.,Product Inquiry,Low,synthetic
+TICK-003036,I need to change shipping address for order 59734 before dispatch. Please advise as soon as possible.,Shipping,Critical,synthetic
+TICK-003825,Two-factor authentication code is not being received on my phone. Urgent attention required.,Account,Critical,synthetic
+TICK-005952,Please confirm cancellation of recurring billing for account 82867.,Cancellation,Medium,synthetic
+TICK-001341,My credit card was charged twice for transaction 46025.,Billing,High,synthetic
+TICK-001478,There is a billing discrepancy on my recent statement for billing period Feb 2026. Looking forward to your prompt response.,Billing,Medium,synthetic
+TICK-001459,Why was I billed $49.0 when my plan is $9.99? Kindly look into this matter promptly.,Billing,Medium,synthetic
+TICK-004073,How do I transfer account ownership to another administrator? Contact me via email or phone.,Account,Low,synthetic
+TICK-005185,Where can I find user manuals and documentation for model PRO-460?,Product Inquiry,Low,synthetic
+TICK-005397,Where can I find user manuals and documentation for model PRO-918? Thank you for your assistance.,Product Inquiry,Low,synthetic
+TICK-004408,Agent closed my support ticket without resolving the actual issue. Appreciate a quick update on this.,Complaint,Medium,synthetic
+TICK-003515,Where is my package? Tracking number 73534 shows no movement for 5 days. Thank you for your assistance.,Shipping,Medium,synthetic
+TICK-001391,Why was I billed $99.99 when my plan is $79.99? Kindly look into this matter promptly.,Billing,Medium,synthetic
+TICK-003376,My order 27836 was shipped to wrong delivery address. Kindly look into this matter promptly.,Shipping,High,synthetic
+TICK-005006,Where can I find user manuals and documentation for model PRO-607?,Product Inquiry,Low,synthetic
+TICK-001031,Why was I billed $99.99 when my plan is $9.99? Please advise as soon as possible.,Billing,High,synthetic
+TICK-005957,Please confirm cancellation of recurring billing for account 64568.,Cancellation,Medium,synthetic
+TICK-003377,International shipment stuck at distribution center for over a week. Looking forward to your prompt response.,Shipping,Medium,synthetic
+TICK-003668,My profile settings fail to save changes. Appreciate a quick update on this.,Account,Low,synthetic
+TICK-004144,Two-factor authentication code is not being received on my phone. Appreciate a quick update on this.,Account,High,synthetic
+TICK-005531,Is this product compatible with macOS Sequoia and Apple Silicon? Contact me via email or phone.,Product Inquiry,Low,synthetic
+TICK-003337,Where is my package? Tracking number 57543 shows no movement for 5 days.,Shipping,Medium,synthetic
+TICK-001600,My credit card was charged twice for transaction 14607. Appreciate a quick update on this.,Billing,High,synthetic
+TICK-002879,I requested a refund for order 18722 two weeks ago but haven't received it. Appreciate a quick update on this.,Refund,Medium,synthetic
+TICK-001420,Why was I billed $19.99 when my plan is $29.99? Appreciate a quick update on this.,Billing,Medium,synthetic
+TICK-002377,Item arrived damaged in transit. I want an immediate full refund. Contact me via email or phone.,Refund,High,synthetic
+TICK-004729,Repeatedly transferred between agents without any resolution. Kindly look into this matter promptly.,Complaint,Medium,synthetic
+TICK-001275,My credit card was charged twice for transaction 96533. Please advise as soon as possible.,Billing,Critical,synthetic
+TICK-001476,My credit card was charged twice for transaction 48085. Please advise as soon as possible.,Billing,Critical,synthetic
+TICK-003182,Where is my package? Tracking number 44774 shows no movement for 5 days.,Shipping,Medium,synthetic
+TICK-003100,My order 93558 was shipped to wrong delivery address. Appreciate a quick update on this.,Shipping,High,synthetic
+TICK-001710,Unable to connect to remote database server from IP address 192.168.137.82.,Technical Support,Critical,synthetic
+TICK-003410,My order 50781 was shipped to wrong delivery address. Kindly look into this matter promptly.,Shipping,High,synthetic
+TICK-001473,Why was I billed $499.0 when my plan is $29.99? Please advise as soon as possible.,Billing,High,synthetic
+TICK-002458,I requested a refund for order 83696 two weeks ago but haven't received it.,Refund,Medium,synthetic
+TICK-003151,My order 77404 was shipped to wrong delivery address. Kindly look into this matter promptly.,Shipping,High,synthetic
+TICK-005167,Where can I find user manuals and documentation for model PRO-828? Thank you for your assistance.,Product Inquiry,Low,synthetic
+TICK-005398,Does the cloud platform comply with SOC2 and HIPAA standards? Contact me via email or phone.,Product Inquiry,Medium,synthetic
+TICK-004831,Very dissatisfied with rude customer service representative on call. Please advise as soon as possible.,Complaint,Medium,synthetic
+TICK-002996,My order 61014 was shipped to wrong delivery address. Looking forward to your prompt response.,Shipping,High,synthetic
+TICK-001374,Why was I billed $49.0 when my plan is $79.99? Kindly look into this matter promptly.,Billing,Medium,synthetic
+TICK-002096,Unable to connect to remote database server from IP address 192.168.80.43. Contact me via email or phone.,Technical Support,Critical,synthetic
+TICK-001037,Why was I billed $19.99 when my plan is $9.99? Appreciate a quick update on this.,Billing,Medium,synthetic
+TICK-001783,Unable to connect to remote database server from IP address 192.168.221.195. Contact me via email or phone.,Technical Support,Critical,synthetic
+TICK-005961,Please confirm cancellation of recurring billing for account 89595. Urgent attention required.,Cancellation,High,synthetic
+TICK-003121,Where is my package? Tracking number 53915 shows no movement for 5 days. Thank you for your assistance.,Shipping,Medium,synthetic
+TICK-005991,Please confirm cancellation of recurring billing for account 78286.,Cancellation,Medium,synthetic
+TICK-002247,Unable to connect to remote database server from IP address 192.168.145.253.,Technical Support,Critical,synthetic
+TICK-001942,Unable to connect to remote database server from IP address 192.168.167.62. Contact me via email or phone.,Technical Support,Critical,synthetic
+TICK-003129,Where is my package? Tracking number 90685 shows no movement for 5 days.,Shipping,Medium,synthetic
+TICK-003334,My order 21808 was shipped to wrong delivery address. Kindly look into this matter promptly.,Shipping,High,synthetic
+TICK-005759,Please confirm cancellation of recurring billing for account 51964.,Cancellation,Medium,synthetic
+TICK-003030,I need to change shipping address for order 70410 before dispatch. Please advise as soon as possible.,Shipping,Critical,synthetic
+TICK-005055,Does your enterprise plan support custom API integrations?,Product Inquiry,Low,synthetic
+TICK-003266,My order 88119 was shipped to wrong delivery address. Looking forward to your prompt response.,Shipping,High,synthetic
+TICK-003024,Where is my package? Tracking number 35725 shows no movement for 5 days. Thank you for your assistance.,Shipping,Medium,synthetic
+TICK-001429,My credit card was charged twice for transaction 75811.,Billing,High,synthetic
+TICK-001630,My credit card was charged twice for transaction 37359. Looking forward to your prompt response.,Billing,High,synthetic
+TICK-001292,Why was I billed $19.99 when my plan is $79.99? Please advise as soon as possible.,Billing,High,synthetic
+TICK-001110,I need an official tax invoice and payment receipt for order 88561. Looking forward to your prompt response.,Billing,Low,synthetic
+TICK-002175,Unable to connect to remote database server from IP address 192.168.156.115. Contact me via email or phone.,Technical Support,Critical,synthetic
+TICK-001008,I noticed an unauthorized charge of $99.99 on my monthly invoice. Contact me via email or phone.,Billing,Critical,synthetic
+TICK-002157,Unable to connect to remote database server from IP address 192.168.246.35. Contact me via email or phone.,Technical Support,Critical,synthetic
+TICK-002636,I requested a refund for order 13385 two weeks ago but haven't received it. Looking forward to your prompt response.,Refund,Medium,synthetic
+TICK-003298,My order 94364 was shipped to wrong delivery address. Appreciate a quick update on this.,Shipping,High,synthetic
+TICK-002407,I requested a refund for order 89788 two weeks ago but haven't received it. Looking forward to your prompt response.,Refund,Medium,synthetic
+TICK-001605,My credit card was charged twice for transaction 66418. Looking forward to your prompt response.,Billing,High,synthetic
+TICK-005811,I want to cancel my subscription effective immediately. Urgent attention required.,Cancellation,Critical,synthetic
+TICK-001534,Why was I billed $49.0 when my plan is $29.99? Please advise as soon as possible.,Billing,High,synthetic
+TICK-001224,Why was I billed $499.0 when my plan is $79.99? Please advise as soon as possible.,Billing,High,synthetic
+TICK-002607,I requested a refund for order 96431 two weeks ago but haven't received it. Looking forward to your prompt response.,Refund,Medium,synthetic
+TICK-001823,Unable to connect to remote database server from IP address 192.168.250.132. Contact me via email or phone.,Technical Support,Critical,synthetic
+TICK-006131,Please confirm cancellation of recurring billing for account 41917.,Cancellation,Medium,synthetic
+TICK-003500,I need to change shipping address for order 62595 before dispatch. Please advise as soon as possible.,Shipping,Critical,synthetic
+TICK-002957,I need to change shipping address for order 87449 before dispatch. Please advise as soon as possible.,Shipping,Critical,synthetic
+TICK-001160,My credit card was charged twice for transaction 30392. Looking forward to your prompt response.,Billing,High,synthetic
+TICK-001685,Bluetooth sync is failing between the hardware device and dashboard. Thank you for your assistance.,Technical Support,Medium,synthetic
+TICK-001095,Why was I billed $249.5 when my plan is $29.99? Appreciate a quick update on this.,Billing,Medium,synthetic
+TICK-005486,Where can I find user manuals and documentation for model PRO-116? Thank you for your assistance.,Product Inquiry,Low,synthetic
+TICK-005352,Where can I find user manuals and documentation for model PRO-653? Appreciate a quick update on this.,Product Inquiry,Low,synthetic
+TICK-003237,Where is my package? Tracking number 80660 shows no movement for 5 days.,Shipping,Medium,synthetic
+TICK-002514,I requested a refund for order 86706 two weeks ago but haven't received it. Appreciate a quick update on this.,Refund,Medium,synthetic
+TICK-005184,Where can I find user manuals and documentation for model PRO-496? Thank you for your assistance.,Product Inquiry,Low,synthetic
+TICK-003379,Where is my package? Tracking number 28542 shows no movement for 5 days.,Shipping,Medium,synthetic
+TICK-001383,Why was I billed $249.5 when my plan is $9.99? Please advise as soon as possible.,Billing,High,synthetic
+TICK-002593,I requested a refund for order 42997 two weeks ago but haven't received it.,Refund,Medium,synthetic
+TICK-003031,Where is my package? Tracking number 97147 shows no movement for 5 days. Thank you for your assistance.,Shipping,Medium,synthetic
+TICK-006071,Please confirm cancellation of recurring billing for account 92810. Urgent attention required.,Cancellation,High,synthetic
+TICK-001056,I noticed an unauthorized charge of $499.0 on my monthly invoice. Contact me via email or phone.,Billing,Critical,synthetic
+TICK-001377,I need an official tax invoice and payment receipt for order 76692. Looking forward to your prompt response.,Billing,Low,synthetic
+TICK-006098,Please confirm cancellation of recurring billing for account 49064.,Cancellation,Medium,synthetic
+TICK-002224,Unable to connect to remote database server from IP address 192.168.126.44. Contact me via email or phone.,Technical Support,Critical,synthetic
+TICK-002866,I requested a refund for order 35245 two weeks ago but haven't received it.,Refund,Medium,synthetic
+TICK-001519,My credit card was charged twice for transaction 70191. Appreciate a quick update on this.,Billing,High,synthetic
+TICK-005740,Please confirm cancellation of recurring billing for account 52423. Urgent attention required.,Cancellation,High,synthetic
+TICK-006170,Please confirm cancellation of recurring billing for account 79402.,Cancellation,Medium,synthetic
+TICK-003219,My order 89555 was shipped to wrong delivery address. Looking forward to your prompt response.,Shipping,High,synthetic
+TICK-005260,Where can I find user manuals and documentation for model PRO-614? Appreciate a quick update on this.,Product Inquiry,Low,synthetic
+TICK-001372,My credit card was charged twice for transaction 42044. Appreciate a quick update on this.,Billing,High,synthetic
+TICK-003185,My order 60836 was shipped to wrong delivery address. Kindly look into this matter promptly.,Shipping,High,synthetic
+TICK-002097,Unable to connect to remote database server from IP address 192.168.74.148. Contact me via email or phone.,Technical Support,Critical,synthetic
+TICK-003475,My order 65910 was shipped to wrong delivery address. Kindly look into this matter promptly.,Shipping,High,synthetic
+TICK-002976,I need to change shipping address for order 42248 before dispatch. Please advise as soon as possible.,Shipping,Critical,synthetic
+TICK-001025,I need an official tax invoice and payment receipt for order 71993. Looking forward to your prompt response.,Billing,Low,synthetic
+TICK-001901,Unable to connect to remote database server from IP address 192.168.203.241.,Technical Support,Critical,synthetic
+TICK-003097,Where is my package? Tracking number 16280 shows no movement for 5 days. Thank you for your assistance.,Shipping,Medium,synthetic
+TICK-001077,My credit card was charged twice for transaction 65057.,Billing,High,synthetic
+TICK-005641,Please confirm cancellation of recurring billing for account 87053.,Cancellation,Medium,synthetic
+TICK-001173,Why was I billed $19.99 when my plan is $29.99? Please advise as soon as possible.,Billing,High,synthetic
+TICK-003008,My order 52561 was shipped to wrong delivery address. Kindly look into this matter promptly.,Shipping,High,synthetic
+TICK-002451,I requested a refund for order 66927 two weeks ago but haven't received it. Looking forward to your prompt response.,Refund,Medium,synthetic
+TICK-002383,I requested a refund for order 57128 two weeks ago but haven't received it.,Refund,Medium,synthetic
+TICK-003487,My order 70485 was shipped to wrong delivery address. Kindly look into this matter promptly.,Shipping,High,synthetic
+TICK-003026,Where is my package? Tracking number 77889 shows no movement for 5 days. Thank you for your assistance.,Shipping,Medium,synthetic
+TICK-003504,My order 86247 was shipped to wrong delivery address. Appreciate a quick update on this.,Shipping,High,synthetic
+TICK-003344,My order 99732 was shipped to wrong delivery address. Kindly look into this matter promptly.,Shipping,High,synthetic
+TICK-001641,Why was I billed $99.99 when my plan is $29.99? Appreciate a quick update on this.,Billing,Medium,synthetic
+TICK-001182,Why was I billed $499.0 when my plan is $9.99? Kindly look into this matter promptly.,Billing,Medium,synthetic
+TICK-003440,My order 65473 was shipped to wrong delivery address. Looking forward to your prompt response.,Shipping,High,synthetic
+TICK-002824,I requested a refund for order 24756 two weeks ago but haven't received it. Appreciate a quick update on this.,Refund,Medium,synthetic
+TICK-003047,My order 65023 was shipped to wrong delivery address. Appreciate a quick update on this.,Shipping,High,synthetic
+TICK-001033,I noticed an unauthorized charge of $19.99 on my monthly invoice. Contact me via email or phone.,Billing,Critical,synthetic
+TICK-005216,Where can I find user manuals and documentation for model PRO-113? Thank you for your assistance.,Product Inquiry,Low,synthetic
+TICK-003206,Where is my package? Tracking number 42728 shows no movement for 5 days.,Shipping,Medium,synthetic
+TICK-003333,Where is my package? Tracking number 17656 shows no movement for 5 days.,Shipping,Medium,synthetic
+TICK-001589,My credit card was charged twice for transaction 38241. Appreciate a quick update on this.,Billing,High,synthetic
+TICK-003529,My order 15510 was shipped to wrong delivery address. Looking forward to your prompt response.,Shipping,High,synthetic
+TICK-002466,I requested a refund for order 45711 two weeks ago but haven't received it. Appreciate a quick update on this.,Refund,Medium,synthetic
+TICK-003253,My order 72273 was shipped to wrong delivery address. Appreciate a quick update on this.,Shipping,High,synthetic
+TICK-002959,My order 68884 was shipped to wrong delivery address. Appreciate a quick update on this.,Shipping,High,synthetic
+TICK-002968,I need to change shipping address for order 22062 before dispatch. Please advise as soon as possible.,Shipping,Critical,synthetic
+TICK-005071,Where can I find user manuals and documentation for model PRO-377?,Product Inquiry,Low,synthetic
+TICK-001081,Why was I billed $49.0 when my plan is $29.99? Appreciate a quick update on this.,Billing,Medium,synthetic
+TICK-002774,I requested a refund for order 18229 two weeks ago but haven't received it. Looking forward to your prompt response.,Refund,Medium,synthetic
+TICK-003278,I need to change shipping address for order 75976 before dispatch. Please advise as soon as possible.,Shipping,Critical,synthetic
+TICK-003518,My order 38876 was shipped to wrong delivery address. Appreciate a quick update on this.,Shipping,High,synthetic
+TICK-005329,Where can I find user manuals and documentation for model PRO-141? Thank you for your assistance.,Product Inquiry,Low,synthetic
+TICK-003484,I need to change shipping address for order 54129 before dispatch. Please advise as soon as possible.,Shipping,Critical,synthetic
+TICK-003412,My order 42181 was shipped to wrong delivery address. Kindly look into this matter promptly.,Shipping,High,synthetic
+TICK-006194,Please confirm cancellation of recurring billing for account 47410. Urgent attention required.,Cancellation,High,synthetic
+TICK-005562,Please confirm cancellation of recurring billing for account 25441. Urgent attention required.,Cancellation,High,synthetic
+TICK-004918,Where can I find user manuals and documentation for model PRO-316?,Product Inquiry,Low,synthetic
+TICK-002179,Unable to connect to remote database server from IP address 192.168.15.92.,Technical Support,Critical,synthetic
+TICK-003350,I need to change shipping address for order 62044 before dispatch. Please advise as soon as possible.,Shipping,Critical,synthetic
+TICK-001210,My credit card was charged twice for transaction 26545. Please advise as soon as possible.,Billing,Critical,synthetic
+TICK-006154,Please confirm cancellation of recurring billing for account 46712.,Cancellation,Medium,synthetic
+TICK-001225,My credit card was charged twice for transaction 20646. Looking forward to your prompt response.,Billing,High,synthetic
+TICK-003184,My order 93548 was shipped to wrong delivery address. Appreciate a quick update on this.,Shipping,High,synthetic
+TICK-002895,I requested a refund for order 60969 two weeks ago but haven't received it.,Refund,Medium,synthetic
+TICK-005316,Where can I find user manuals and documentation for model PRO-331?,Product Inquiry,Low,synthetic
+TICK-002394,I requested a refund for order 82416 two weeks ago but haven't received it. Looking forward to your prompt response.,Refund,Medium,synthetic
+TICK-002869,I requested a refund for order 58433 two weeks ago but haven't received it. Appreciate a quick update on this.,Refund,Medium,synthetic
+TICK-001241,My credit card was charged twice for transaction 88238.,Billing,High,synthetic
+TICK-001952,Unable to connect to remote database server from IP address 192.168.242.127. Contact me via email or phone.,Technical Support,Critical,synthetic
+TICK-006126,Please confirm cancellation of recurring billing for account 78248. Urgent attention required.,Cancellation,High,synthetic
+TICK-001373,Why was I billed $19.99 when my plan is $79.99? Appreciate a quick update on this.,Billing,Medium,synthetic
+TICK-005970,Please confirm cancellation of recurring billing for account 70928.,Cancellation,Medium,synthetic
+TICK-001650,I need an official tax invoice and payment receipt for order 19390. Looking forward to your prompt response.,Billing,Low,synthetic
+TICK-002001,Unable to connect to remote database server from IP address 192.168.163.67.,Technical Support,Critical,synthetic
+TICK-002008,Unable to connect to remote database server from IP address 192.168.127.232. Contact me via email or phone.,Technical Support,Critical,synthetic
+TICK-001469,My credit card was charged twice for transaction 16322.,Billing,High,synthetic
+TICK-001243,I need an official tax invoice and payment receipt for order 12482. Looking forward to your prompt response.,Billing,Low,synthetic
+TICK-001701,My internet is not working and the router LED is blinking red. Contact me via email or phone.,Technical Support,High,synthetic
+TICK-001446,My credit card was charged twice for transaction 72140. Appreciate a quick update on this.,Billing,High,synthetic
+TICK-001379,There is a billing discrepancy on my recent statement for billing period Feb 2026. Urgent attention required.,Billing,High,synthetic
+TICK-001064,I need an official tax invoice and payment receipt for order 18418. Looking forward to your prompt response.,Billing,Low,synthetic
+TICK-001140,I noticed an unauthorized charge of $49.0 on my monthly invoice. Contact me via email or phone.,Billing,Critical,synthetic
+EXT_T004,File conversion utility hanging at 99% progress bar indefinitely.,Technical Support,Medium,external
+EXT_A003,Account locked after automated security audit flagged anomaly.,Account,High,external
+EXT_A006,Deactivate former employee user access from corporate domain.,Account,High,external
+EXT_A010,Concurrent session limit error blocking valid user login.,Account,Medium,external
+EXT_C001,Unacceptable response time from Tier 1 support team.,Complaint,High,external
+EXT_C005,Poor communication regarding planned system maintenance window.,Complaint,Medium,external
+EXT_C006,Unexpected price structure changes without prior advisory notice.,Complaint,High,external
+EXT_C008,Inconsistent information provided by different support reps.,Complaint,Medium,external
+EXT_X008,Account closure request following vendor consolidation.,Cancellation,High,external
+MAN_B001,My bank statement indicates that the same transaction was processed twice.,Billing,High,manual
+MAN_T001,The app crashes whenever I try to upload a file.,Technical Support,High,manual
+MAN_T005,Cant connect database error sqlite3.OperationalError database locked.,Technical Support,High,manual
+MAN_T008,Dashboard metrics showing 0 despite active data ingestion streams.,Technical Support,Medium,manual
+MAN_T009,SSL certificate expired warning when accessing client portal.,Technical Support,Critical,manual
+MAN_R007,Partial refund received ($20) instead of promised full refund ($100).,Refund,High,manual
+MAN_A007,Verification code SMS not reaching my mobile phone number.,Account,High,manual
+MAN_A100,SSO Google login fails with OAuth redirect URI mismatch.,Account,High,manual
+MAN_C003,I have been waiting on hold for over 45 minutes without any agent answering.,Complaint,Medium,manual
+MAN_C008,Data privacy concern: shared workspace showing other client's file names.,Complaint,Critical,manual
+MAN_P006,Are there discount options for non-profit organizations or universities?,Product Inquiry,Low,manual
+MAN_P008,Is user training included with team plan onboard?,Product Inquiry,Low,manual
+MAN_X001,Please cancel my subscription immediately before next billing cycle.,Cancellation,High,manual
+MAN_X007,Unsubscribe me from all paid services and emails right now.,Cancellation,High,manual

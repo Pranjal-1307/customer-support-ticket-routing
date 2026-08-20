@@ -17,6 +17,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import LinearSVC
+from sklearn.calibration import CalibratedClassifierCV
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support, classification_report, confusion_matrix
 
 from utils.preprocess import preprocess_text
@@ -66,7 +67,7 @@ def train_and_evaluate_models():
         "Logistic Regression": LogisticRegression(max_iter=1000, random_state=42),
         "Naive Bayes": MultinomialNB(),
         "Random Forest": RandomForestClassifier(n_estimators=100, random_state=42),
-        "Linear SVM": LinearSVC(random_state=42)
+        "Linear SVM": CalibratedClassifierCV(estimator=LinearSVC(random_state=42), cv=5)
     }
 
     model_metrics = {}

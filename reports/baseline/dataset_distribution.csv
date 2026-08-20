@@ -1,0 +1,33 @@
+category,priority,count
+Billing,Low,52
+Billing,Medium,90
+Billing,High,133
+Billing,Critical,65
+Shipping,Low,11
+Shipping,Medium,91
+Shipping,High,132
+Shipping,Critical,44
+Refund,Low,18
+Refund,Medium,112
+Refund,High,63
+Refund,Critical,8
+Technical Support,Low,2
+Technical Support,Medium,27
+Technical Support,High,46
+Technical Support,Critical,110
+Product Inquiry,Low,117
+Product Inquiry,Medium,45
+Product Inquiry,High,4
+Product Inquiry,Critical,0
+Cancellation,Low,0
+Cancellation,Medium,87
+Cancellation,High,58
+Cancellation,Critical,10
+Account,Low,21
+Account,Medium,18
+Account,High,40
+Account,Critical,21
+Complaint,Low,18
+Complaint,Medium,28
+Complaint,High,27
+Complaint,Critical,23

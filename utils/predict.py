@@ -81,14 +81,16 @@ class TicketPredictor:
             # 2. Extract Features
             vec_input = self.vectorizer.transform([processed])
 
-            # 3. Category Prediction & Confidence Calculation
+            # 3. Category Prediction & Confidence Calculation (Estimated Class Probability)
             if hasattr(self.ticket_classifier, "predict_proba"):
+                # Natively supports predict_proba (including Logistic Regression, Naive Bayes,
+                # Random Forest, and CalibratedClassifierCV-wrapped LinearSVC)
                 probs = self.ticket_classifier.predict_proba(vec_input)[0]
                 pred_idx = np.argmax(probs)
                 confidence = float(probs[pred_idx])
             elif hasattr(self.ticket_classifier, "decision_function"):
+                # Fallback for uncalibrated models with decision function (non-calibrated confidence score)
                 dec = self.ticket_classifier.decision_function(vec_input)[0]
-                # Apply Softmax for LinearSVC / Decision Function confidence
                 exp_dec = np.exp(dec - np.max(dec))
                 probs = exp_dec / exp_dec.sum()
                 pred_idx = np.argmax(probs)
