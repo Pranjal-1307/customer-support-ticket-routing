@@ -1,75 +1,78 @@
-ticket_id,ticket_text,category,priority,source
-EXT_B001,Received billing notification for unknown monthly service charge.,Billing,High,external
-EXT_B002,Updated my payment method but automated billing still shows expired card.,Billing,Medium,external
-EXT_B003,Requesting refund of duplicate charge on transaction statement #9928.,Billing,High,external
-EXT_B004,Invoice generated without our corporate tax identification number.,Billing,Low,external
-EXT_B005,Credit card failed error during checkout process.,Billing,High,external
-EXT_B006,Billed standard rate instead of contracted enterprise discount rate.,Billing,High,external
-EXT_B007,Need billing contact updated for accounts payable department.,Billing,Low,external
-EXT_B008,Annual invoice shows wrong seat count for active user licenses.,Billing,Medium,external
-EXT_B009,Payment confirmation email not received after successful wire transfer.,Billing,Low,external
-EXT_B010,Discrepancy between quote provided by sales rep and billed invoice total.,Billing,High,external
-EXT_T001,Database connector throwing connection reset by peer error.,Technical Support,Critical,external
-EXT_T002,User authentication token expiring prematurely causing frequent re-logins.,Technical Support,Medium,external
-EXT_T003,Web portal rendering blank white page on Safari browser version 17.,Technical Support,High,external
-EXT_T004,File conversion utility hanging at 99% progress bar indefinitely.,Technical Support,Medium,external
-EXT_T005,High latency reported on regional server node us-east-1.,Technical Support,High,external
-EXT_T006,Memory leak observed in desktop daemon process background worker.,Technical Support,High,external
-EXT_T007,Webhook endpoint returning HTTP 403 Forbidden on payload POST.,Technical Support,High,external
-EXT_T008,Search indexing engine failed to update new product listings.,Technical Support,Medium,external
-EXT_T009,Client side validation error preventing form submission on checkout.,Technical Support,Medium,external
-EXT_T010,System audit log export truncating records older than 30 days.,Technical Support,Low,external
-EXT_R001,Requesting full reimbursement for cancelled conference ticket.,Refund,Medium,external
-EXT_R002,"Returned goods delivered to facility on 12th, awaiting credit posting.",Refund,Medium,external
-EXT_R003,Product hardware malfunctioning within 14-day return window.,Refund,High,external
-EXT_R004,Overcharge refund agreed by support representative not reflected on card.,Refund,High,external
-EXT_R005,Cancelled order refund status inquiry for order reference #77291.,Refund,Medium,external
-EXT_R006,Subscription cancelled during money-back guarantee period.,Refund,High,external
-EXT_R007,"Defective shipment returned, please credit back original payment source.",Refund,High,external
-EXT_R008,Service SLA breach credit refund request for downtime incident.,Refund,High,external
-EXT_R009,Double payment deduction refund for transaction ID #10492.,Refund,Critical,external
-EXT_R010,"Order items damaged during transport, demanding store credit or refund.",Refund,High,external
-EXT_S001,Carrier notification indicates delivery delay due to severe weather conditions.,Shipping,Low,external
-EXT_S002,Package tracking details not updated for past 72 hours.,Shipping,Medium,external
-EXT_S003,Shipment delivered to wrong zip code according to tracking link.,Shipping,High,external
-EXT_S004,Request to hold parcel at local depot for self pickup.,Shipping,Low,external
-EXT_S005,International freight shipment stuck in customs inspection.,Shipping,Medium,external
-EXT_S006,Dispatch confirmation received but shipping label show pending pickup.,Shipping,Low,external
-EXT_S007,"Partial order shipment arrived, remaining items missing from package.",Shipping,High,external
-EXT_S008,Address correction required prior to courier dispatch.,Shipping,High,external
-EXT_S009,Damaged packaging container reported upon freight arrival.,Shipping,Medium,external
-EXT_S010,Express delivery deadline missed by courier service provider.,Shipping,Medium,external
-EXT_A001,Multi-factor authentication reset required for admin profile.,Account,Critical,external
-EXT_A002,Unable to modify account owner email in security settings panel.,Account,Medium,external
-EXT_A003,Account locked after automated security audit flagged anomaly.,Account,High,external
-EXT_A004,Password reset verification email not arriving in inbox.,Account,High,external
-EXT_A005,User permission escalation request for team manager profile.,Account,Medium,external
-EXT_A006,Deactivate former employee user access from corporate domain.,Account,High,external
-EXT_A007,Single Sign-On integration failing with identity provider metadata error.,Account,High,external
-EXT_A008,Profile contact phone number update request.,Account,Low,external
-EXT_A009,GDPR account deletion request and data erasure.,Account,Medium,external
-EXT_A010,Concurrent session limit error blocking valid user login.,Account,Medium,external
-EXT_C001,Unacceptable response time from Tier 1 support team.,Complaint,High,external
-EXT_C002,Repeated platform outages impacting critical business operations.,Complaint,Critical,external
-EXT_C003,Feature promised during sales call is absent from released product.,Complaint,High,external
-EXT_C004,Unresolved software defect open for over six weeks.,Complaint,High,external
-EXT_C005,Poor communication regarding planned system maintenance window.,Complaint,Medium,external
-EXT_C006,Unexpected price structure changes without prior advisory notice.,Complaint,High,external
-EXT_C007,Support ticket marked resolved without customer confirmation.,Complaint,High,external
-EXT_C008,Inconsistent information provided by different support reps.,Complaint,Medium,external
-EXT_P001,Inquiring about compatibility with PostgreSQL 15 database engines.,Product Inquiry,Low,external
-EXT_P002,What encryption standards are utilized for data at rest?,Product Inquiry,Low,external
-EXT_P003,Are custom API rate limits available for enterprise contracts?,Product Inquiry,Low,external
-EXT_P004,Does the system support multi-currency transactions and reporting?,Product Inquiry,Low,external
-EXT_P005,Inquiry regarding roadmap for native mobile tablet application.,Product Inquiry,Low,external
-EXT_P006,What is the maximum number of concurrent users supported on Pro plan?,Product Inquiry,Low,external
-EXT_P007,Requesting hardware specification guide for on-premise installation.,Product Inquiry,Low,external
-EXT_P008,Is SOC2 Type II compliance documentation available upon NDA?,Product Inquiry,Low,external
-EXT_X001,Formal notice of contract non-renewal effective at term end.,Cancellation,High,external
-EXT_X002,Request to cancel automatic monthly plan renewal.,Cancellation,Medium,external
-EXT_X003,Immediate account termination and billing cancellation requested.,Cancellation,High,external
-EXT_X004,Subscription cancellation due to business acquisition.,Cancellation,Medium,external
-EXT_X005,Downgrading from Premium to Free plan before billing cycle.,Cancellation,Medium,external
-EXT_X006,Terminate trial period and remove credit card details.,Cancellation,Medium,external
-EXT_X007,Cancelling membership due to budget constraints.,Cancellation,Medium,external
-EXT_X008,Account closure request following vendor consolidation.,Cancellation,High,external
+ticket_id,ticket_text,category,priority,source,created_at,validation_status
+EXT_B001,Received billing notification for unknown monthly service charge.,Billing,High,external,,
+EXT_B002,Updated my payment method but automated billing still shows expired card.,Billing,Medium,external,,
+EXT_B003,Requesting refund of duplicate charge on transaction statement #9928.,Billing,High,external,,
+EXT_B004,Invoice generated without our corporate tax identification number.,Billing,Low,external,,
+EXT_B005,Credit card failed error during checkout process.,Billing,High,external,,
+EXT_B006,Billed standard rate instead of contracted enterprise discount rate.,Billing,High,external,,
+EXT_B007,Need billing contact updated for accounts payable department.,Billing,Low,external,,
+EXT_B008,Annual invoice shows wrong seat count for active user licenses.,Billing,Medium,external,,
+EXT_B009,Payment confirmation email not received after successful wire transfer.,Billing,Low,external,,
+EXT_B010,Discrepancy between quote provided by sales rep and billed invoice total.,Billing,High,external,,
+EXT_T001,Database connector throwing connection reset by peer error.,Technical Support,Critical,external,,
+EXT_T002,User authentication token expiring prematurely causing frequent re-logins.,Technical Support,Medium,external,,
+EXT_T003,Web portal rendering blank white page on Safari browser version 17.,Technical Support,High,external,,
+EXT_T004,File conversion utility hanging at 99% progress bar indefinitely.,Technical Support,Medium,external,,
+EXT_T005,High latency reported on regional server node us-east-1.,Technical Support,High,external,,
+EXT_T006,Memory leak observed in desktop daemon process background worker.,Technical Support,High,external,,
+EXT_T007,Webhook endpoint returning HTTP 403 Forbidden on payload POST.,Technical Support,High,external,,
+EXT_T008,Search indexing engine failed to update new product listings.,Technical Support,Medium,external,,
+EXT_T009,Client side validation error preventing form submission on checkout.,Technical Support,Medium,external,,
+EXT_T010,System audit log export truncating records older than 30 days.,Technical Support,Low,external,,
+EXT_R001,Requesting full reimbursement for cancelled conference ticket.,Refund,Medium,external,,
+EXT_R002,"Returned goods delivered to facility on 12th, awaiting credit posting.",Refund,Medium,external,,
+EXT_R003,Product hardware malfunctioning within 14-day return window.,Refund,High,external,,
+EXT_R004,Overcharge refund agreed by support representative not reflected on card.,Refund,High,external,,
+EXT_R005,Cancelled order refund status inquiry for order reference #77291.,Refund,Medium,external,,
+EXT_R006,Subscription cancelled during money-back guarantee period.,Refund,High,external,,
+EXT_R007,"Defective shipment returned, please credit back original payment source.",Refund,High,external,,
+EXT_R008,Service SLA breach credit refund request for downtime incident.,Refund,High,external,,
+EXT_R009,Double payment deduction refund for transaction ID #10492.,Refund,Critical,external,,
+EXT_R010,"Order items damaged during transport, demanding store credit or refund.",Refund,High,external,,
+EXT_S001,Carrier notification indicates delivery delay due to severe weather conditions.,Shipping,Low,external,,
+EXT_S002,Package tracking details not updated for past 72 hours.,Shipping,Medium,external,,
+EXT_S003,Shipment delivered to wrong zip code according to tracking link.,Shipping,High,external,,
+EXT_S004,Request to hold parcel at local depot for self pickup.,Shipping,Low,external,,
+EXT_S005,International freight shipment stuck in customs inspection.,Shipping,Medium,external,,
+EXT_S006,Dispatch confirmation received but shipping label show pending pickup.,Shipping,Low,external,,
+EXT_S007,"Partial order shipment arrived, remaining items missing from package.",Shipping,High,external,,
+EXT_S008,Address correction required prior to courier dispatch.,Shipping,High,external,,
+EXT_S009,Damaged packaging container reported upon freight arrival.,Shipping,Medium,external,,
+EXT_S010,Express delivery deadline missed by courier service provider.,Shipping,Medium,external,,
+EXT_A001,Multi-factor authentication reset required for admin profile.,Account,Critical,external,,
+EXT_A002,Unable to modify account owner email in security settings panel.,Account,Medium,external,,
+EXT_A003,Account locked after automated security audit flagged anomaly.,Account,High,external,,
+EXT_A004,Password reset verification email not arriving in inbox.,Account,High,external,,
+EXT_A005,User permission escalation request for team manager profile.,Account,Medium,external,,
+EXT_A006,Deactivate former employee user access from corporate domain.,Account,High,external,,
+EXT_A007,Single Sign-On integration failing with identity provider metadata error.,Account,High,external,,
+EXT_A008,Profile contact phone number update request.,Account,Low,external,,
+EXT_A009,GDPR account deletion request and data erasure.,Account,Medium,external,,
+EXT_A010,Concurrent session limit error blocking valid user login.,Account,Medium,external,,
+EXT_C001,Unacceptable response time from Tier 1 support team.,Complaint,High,external,,
+EXT_C002,Repeated platform outages impacting critical business operations.,Complaint,Critical,external,,
+EXT_C003,Feature promised during sales call is absent from released product.,Complaint,High,external,,
+EXT_C004,Unresolved software defect open for over six weeks.,Complaint,High,external,,
+EXT_C005,Poor communication regarding planned system maintenance window.,Complaint,Medium,external,,
+EXT_C006,Unexpected price structure changes without prior advisory notice.,Complaint,High,external,,
+EXT_C007,Support ticket marked resolved without customer confirmation.,Complaint,High,external,,
+EXT_C008,Inconsistent information provided by different support reps.,Complaint,Medium,external,,
+EXT_P001,Inquiring about compatibility with PostgreSQL 15 database engines.,Product Inquiry,Low,external,,
+EXT_P002,What encryption standards are utilized for data at rest?,Product Inquiry,Low,external,,
+EXT_P003,Are custom API rate limits available for enterprise contracts?,Product Inquiry,Low,external,,
+EXT_P004,Does the system support multi-currency transactions and reporting?,Product Inquiry,Low,external,,
+EXT_P005,Inquiry regarding roadmap for native mobile tablet application.,Product Inquiry,Low,external,,
+EXT_P006,What is the maximum number of concurrent users supported on Pro plan?,Product Inquiry,Low,external,,
+EXT_P007,Requesting hardware specification guide for on-premise installation.,Product Inquiry,Low,external,,
+EXT_P008,Is SOC2 Type II compliance documentation available upon NDA?,Product Inquiry,Low,external,,
+EXT_X001,Formal notice of contract non-renewal effective at term end.,Cancellation,High,external,,
+EXT_X002,Request to cancel automatic monthly plan renewal.,Cancellation,Medium,external,,
+EXT_X003,Immediate account termination and billing cancellation requested.,Cancellation,High,external,,
+EXT_X004,Subscription cancellation due to business acquisition.,Cancellation,Medium,external,,
+EXT_X005,Downgrading from Premium to Free plan before billing cycle.,Cancellation,Medium,external,,
+EXT_X006,Terminate trial period and remove credit card details.,Cancellation,Medium,external,,
+EXT_X007,Cancelling membership due to budget constraints.,Cancellation,Medium,external,,
+EXT_X008,Account closure request following vendor consolidation.,Cancellation,High,external,,
+INC_001,Why am I seeing two charges on my account statement for order #99201?,Billing,High,external,2026-08-20T07:00:00,approved
+INC_002,App crashes when opening settings on iOS 17.5.1,Technical Support,Medium,external,2026-08-20T07:05:00,approved
+INC_006,Mera payment deduction ho gaya par order process nahi hua,Billing,High,external,2026-08-20T07:25:00,approved

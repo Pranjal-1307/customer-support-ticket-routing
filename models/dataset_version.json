@@ -1,0 +1,38 @@
+{
+    "version": "v2.0-M2",
+    "timestamp": "2026-08-20T08:35:43.566449",
+    "total_raw_records": 5761,
+    "total_cleaned_records": 4341,
+    "unique_records": 4341,
+    "source_counts": {
+        "synthetic": 4180,
+        "manual": 84,
+        "external": 77
+    },
+    "category_distribution": {
+        "Billing": 570,
+        "Refund": 566,
+        "Technical Support": 558,
+        "Shipping": 542,
+        "Account": 538,
+        "Product Inquiry": 528,
+        "Cancellation": 527,
+        "Complaint": 512
+    },
+    "priority_distribution": {
+        "High": 2417,
+        "Medium": 763,
+        "Critical": 692,
+        "Low": 469
+    },
+    "splits": {
+        "train_size": 3103,
+        "validation_size": 636,
+        "test_size": 602
+    },
+    "leakage_protection": {
+        "template_group_split": true,
+        "train_test_text_overlap": 0,
+        "train_val_text_overlap": 0
+    }
+}

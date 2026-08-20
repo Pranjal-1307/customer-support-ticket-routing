@@ -82,6 +82,16 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/api/predict', methods=['POST'])
+def api_predict():
+    data = request.get_json() or {}
+    ticket_text = data.get('ticket_text', '').strip()
+    if not ticket_text:
+        return jsonify({"status": "error", "message": "Ticket text is required."}), 400
+    pred = predict_ticket(ticket_text)
+    return jsonify(pred)
+
+
 @app.route('/api/tickets/submit', methods=['POST'])
 def submit_ticket():
     data = request.get_json() or {}

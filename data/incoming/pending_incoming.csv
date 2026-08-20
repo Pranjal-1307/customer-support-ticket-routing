@@ -1,0 +1,7 @@
+ticket_id,ticket_text,category,priority,source,created_at
+INC_001,Why am I seeing two charges on my account statement for order #99201?,Billing,High,external,2026-08-20T07:00:00
+INC_002,App crashes when opening settings on iOS 17.5.1,Technical Support,Medium,external,2026-08-20T07:05:00
+INC_003,Please email me at user@example.com or call 555-123-4567 regarding my refund,Refund,High,external,2026-08-20T07:10:00
+INC_004,bad,Billing,Low,external,2026-08-20T07:15:00
+INC_005,Need to change shipping address before package is sent out,Shipping,High,manual,2026-08-20T07:20:00
+INC_006,Mera payment deduction ho gaya par order process nahi hua,Billing,High,external,2026-08-20T07:25:00

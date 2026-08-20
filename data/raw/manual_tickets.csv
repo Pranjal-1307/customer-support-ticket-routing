@@ -1,84 +1,85 @@
-ticket_id,ticket_text,category,priority,source
-MAN_B001,My bank statement indicates that the same transaction was processed twice.,Billing,High,manual
-MAN_B002,Why did u guys charge me again??,Billing,High,manual
-MAN_B003,"This is ridiculous, I have been charged twice and nobody is helping me!",Billing,Critical,manual
-MAN_B004,Charged twice.,Billing,High,manual
-MAN_B005,"I purchased the annual subscription yesterday, but my credit card statement now shows two separate charges for the same order.",Billing,High,manual
-MAN_B006,Need vat invoice for last month subscription fee.,Billing,Low,manual
-MAN_B007,Auto renewal billed me $99 even though I sent cancellation request last week.,Billing,High,manual
-MAN_B008,Incorrect tax amount added to invoice #INV-99201. Plz fix.,Billing,Medium,manual
-MAN_B009,Payment went through on my bank app but portal says payment pending.,Billing,Medium,manual
-MAN_B100,Can you send the PDF receipt for my team subscription to accounting@company.org?,Billing,Low,manual
-MAN_B101,Overcharged by 50 dollars on month end billing statement.,Billing,High,manual
-MAN_B102,I was charged currency conversion fee when purchase was in USD. Why?,Billing,Medium,manual
-MAN_B103,Promo code PROMO2024 was applied but full price was charged to my card.,Billing,Medium,manual
-MAN_B104,"Got a message saying payment failed, but my account balance decreased.",Billing,High,manual
-MAN_B105,Why is there an additional $15 maintenance charge on my bill?,Billing,Medium,manual
-MAN_T001,The app crashes whenever I try to upload a file.,Technical Support,High,manual
-MAN_T002,Getting 500 error when clicking submit.,Technical Support,Medium,manual
-MAN_T003,"Hey, your website is completely down on Chrome. White screen showing up.",Technical Support,Critical,manual
-MAN_T004,API response time is over 12 seconds for /v1/data endpoint. Server timeout.,Technical Support,High,manual
-MAN_T005,Cant connect database error sqlite3.OperationalError database locked.,Technical Support,High,manual
-MAN_T006,Export to CSV button does nothing when clicked in Firefox browser.,Technical Support,Medium,manual
-MAN_T007,App stuck on loading screen after latest 2.4.1 update.,Technical Support,High,manual
-MAN_T008,Dashboard metrics showing 0 despite active data ingestion streams.,Technical Support,Medium,manual
-MAN_T009,SSL certificate expired warning when accessing client portal.,Technical Support,Critical,manual
-MAN_T100,Mobile app logout spontaneously every 5 minutes.,Technical Support,Medium,manual
-MAN_T101,Dark mode toggle is glitching and flickering constantly.,Technical Support,Low,manual
-MAN_T102,Desktop software crash dump attached - exit code 0xC0000005.,Technical Support,High,manual
-MAN_T103,Unable to sync offline offline records to server once online.,Technical Support,High,manual
-MAN_T104,Notification push messages are not arriving on Android 14 devices.,Technical Support,Medium,manual
-MAN_R001,Item arrived damaged in transit. I want an immediate full refund.,Refund,High,manual
-MAN_R002,I requested refund 10 days ago. Still no update on status???,Refund,High,manual
-MAN_R003,Product did not match the website description at all. Returning product for money back.,Refund,Medium,manual
-MAN_R004,Accidentally bought 2 licenses instead of 1. Refund the extra one please.,Refund,Medium,manual
-MAN_R005,"Order cancelled by seller due to out of stock, but money not refunded yet.",Refund,High,manual
-MAN_R006,Where is my refund?,Refund,Medium,manual
-MAN_R007,Partial refund received ($20) instead of promised full refund ($100).,Refund,High,manual
-MAN_R008,System charged me after trial ended even though I opted out. Money back immediately.,Refund,Critical,manual
-MAN_R009,Service quality was unacceptable during webinar event. Requesting subscription refund.,Refund,Medium,manual
-MAN_R100,Returned item received at warehouse per carrier tracking #8821. Process reimbursement.,Refund,Medium,manual
-MAN_S001,Where can I track my delivery?,Shipping,Low,manual
-MAN_S002,Package marked delivered by courier but I did not receive anything at my door.,Shipping,Critical,manual
-MAN_S003,Delivery is 4 days late and tracking status has not updated since Monday.,Shipping,High,manual
-MAN_S004,Need to change shipping address to Apartment 4B before order dispatches.,Shipping,High,manual
-MAN_S005,Item shipped to old residential address by mistake.,Shipping,High,manual
-MAN_S006,Parcel box arrived completely crushed and open.,Shipping,High,manual
-MAN_S007,"Paid extra for next-day priority shipping, but it's taking standard 5 days.",Shipping,Medium,manual
-MAN_S008,Customs holding shipment at port demanding additional clearance documentation.,Shipping,Medium,manual
-MAN_S009,Wrong tracking code sent in email confirmation.,Shipping,Low,manual
-MAN_S100,Courier driver left package in heavy rain without ringing doorbell.,Shipping,Medium,manual
-MAN_A001,Locked out of my admin account due to forgotten 2FA device.,Account,Critical,manual
-MAN_A002,Password reset link is giving 'expired' error immediately upon arrival.,Account,High,manual
-MAN_A003,How do I change my primary account email address?,Account,Low,manual
-MAN_A004,Suspicious login attempt detected from unrecognized location. Deactivate account temporarily.,Account,Critical,manual
-MAN_A005,Cannot update profile picture or display name in settings page.,Account,Low,manual
-MAN_A006,Please transfer account owner privileges to user user2@org.com.,Account,Medium,manual
-MAN_A007,Verification code SMS not reaching my mobile phone number.,Account,High,manual
-MAN_A008,Account deactivated message showing when logging in. Why?,Account,High,manual
-MAN_A009,Want to delete my profile and purge all stored user personal data.,Account,Medium,manual
-MAN_A100,SSO Google login fails with OAuth redirect URI mismatch.,Account,High,manual
-MAN_C001,Your customer service rep on phone was extremely rude and unhelpful.,Complaint,High,manual
-MAN_C002,Worst experience ever. System has been down 3 times this month!,Complaint,High,manual
-MAN_C003,I have been waiting on hold for over 45 minutes without any agent answering.,Complaint,Medium,manual
-MAN_C004,Misleading marketing claims regarding features included in standard plan.,Complaint,Medium,manual
-MAN_C005,Escalating this issue to management. Unresolved bug open for 30 days.,Complaint,Critical,manual
-MAN_C006,Prices increased by 30% without prior email notification to subscribers.,Complaint,High,manual
-MAN_C007,Support ticket #4401 closed automatically without providing solution.,Complaint,High,manual
-MAN_C008,Data privacy concern: shared workspace showing other client's file names.,Complaint,Critical,manual
-MAN_P001,Does the enterprise tier support single sign-on (SSO) via SAML 2.0?,Product Inquiry,Low,manual
-MAN_P002,Is there an iOS tablet version available for download?,Product Inquiry,Low,manual
-MAN_P003,What is the maximum file upload size limit per attachment?,Product Inquiry,Low,manual
-MAN_P004,Can I integrate this platform with Zapier or Webhooks?,Product Inquiry,Low,manual
-MAN_P005,Looking for detailed documentation on REST API rate limits.,Product Inquiry,Low,manual
-MAN_P006,Are there discount options for non-profit organizations or universities?,Product Inquiry,Low,manual
-MAN_P007,Does product support dark theme and custom CSS styling?,Product Inquiry,Low,manual
-MAN_P008,Is user training included with team plan onboard?,Product Inquiry,Low,manual
-MAN_X001,Please cancel my subscription immediately before next billing cycle.,Cancellation,High,manual
-MAN_X002,How do I terminate my account subscription?,Cancellation,Medium,manual
-MAN_X003,Cancel auto-renewal for my annual membership plan.,Cancellation,Medium,manual
-MAN_X004,Want to end contract early due to company restructuring.,Cancellation,High,manual
-MAN_X005,Stop my subscription at end of current billing period.,Cancellation,Medium,manual
-MAN_X006,I am closing my business and need to cancel all associated services.,Cancellation,High,manual
-MAN_X007,Unsubscribe me from all paid services and emails right now.,Cancellation,High,manual
-MAN_X008,"Switched to alternative product, please cancel plan effective today.",Cancellation,Medium,manual
+ticket_id,ticket_text,category,priority,source,created_at,validation_status
+MAN_B001,My bank statement indicates that the same transaction was processed twice.,Billing,High,manual,,
+MAN_B002,Why did u guys charge me again??,Billing,High,manual,,
+MAN_B003,"This is ridiculous, I have been charged twice and nobody is helping me!",Billing,Critical,manual,,
+MAN_B004,Charged twice.,Billing,High,manual,,
+MAN_B005,"I purchased the annual subscription yesterday, but my credit card statement now shows two separate charges for the same order.",Billing,High,manual,,
+MAN_B006,Need vat invoice for last month subscription fee.,Billing,Low,manual,,
+MAN_B007,Auto renewal billed me $99 even though I sent cancellation request last week.,Billing,High,manual,,
+MAN_B008,Incorrect tax amount added to invoice #INV-99201. Plz fix.,Billing,Medium,manual,,
+MAN_B009,Payment went through on my bank app but portal says payment pending.,Billing,Medium,manual,,
+MAN_B100,Can you send the PDF receipt for my team subscription to accounting@company.org?,Billing,Low,manual,,
+MAN_B101,Overcharged by 50 dollars on month end billing statement.,Billing,High,manual,,
+MAN_B102,I was charged currency conversion fee when purchase was in USD. Why?,Billing,Medium,manual,,
+MAN_B103,Promo code PROMO2024 was applied but full price was charged to my card.,Billing,Medium,manual,,
+MAN_B104,"Got a message saying payment failed, but my account balance decreased.",Billing,High,manual,,
+MAN_B105,Why is there an additional $15 maintenance charge on my bill?,Billing,Medium,manual,,
+MAN_T001,The app crashes whenever I try to upload a file.,Technical Support,High,manual,,
+MAN_T002,Getting 500 error when clicking submit.,Technical Support,Medium,manual,,
+MAN_T003,"Hey, your website is completely down on Chrome. White screen showing up.",Technical Support,Critical,manual,,
+MAN_T004,API response time is over 12 seconds for /v1/data endpoint. Server timeout.,Technical Support,High,manual,,
+MAN_T005,Cant connect database error sqlite3.OperationalError database locked.,Technical Support,High,manual,,
+MAN_T006,Export to CSV button does nothing when clicked in Firefox browser.,Technical Support,Medium,manual,,
+MAN_T007,App stuck on loading screen after latest 2.4.1 update.,Technical Support,High,manual,,
+MAN_T008,Dashboard metrics showing 0 despite active data ingestion streams.,Technical Support,Medium,manual,,
+MAN_T009,SSL certificate expired warning when accessing client portal.,Technical Support,Critical,manual,,
+MAN_T100,Mobile app logout spontaneously every 5 minutes.,Technical Support,Medium,manual,,
+MAN_T101,Dark mode toggle is glitching and flickering constantly.,Technical Support,Low,manual,,
+MAN_T102,Desktop software crash dump attached - exit code 0xC0000005.,Technical Support,High,manual,,
+MAN_T103,Unable to sync offline offline records to server once online.,Technical Support,High,manual,,
+MAN_T104,Notification push messages are not arriving on Android 14 devices.,Technical Support,Medium,manual,,
+MAN_R001,Item arrived damaged in transit. I want an immediate full refund.,Refund,High,manual,,
+MAN_R002,I requested refund 10 days ago. Still no update on status???,Refund,High,manual,,
+MAN_R003,Product did not match the website description at all. Returning product for money back.,Refund,Medium,manual,,
+MAN_R004,Accidentally bought 2 licenses instead of 1. Refund the extra one please.,Refund,Medium,manual,,
+MAN_R005,"Order cancelled by seller due to out of stock, but money not refunded yet.",Refund,High,manual,,
+MAN_R006,Where is my refund?,Refund,Medium,manual,,
+MAN_R007,Partial refund received ($20) instead of promised full refund ($100).,Refund,High,manual,,
+MAN_R008,System charged me after trial ended even though I opted out. Money back immediately.,Refund,Critical,manual,,
+MAN_R009,Service quality was unacceptable during webinar event. Requesting subscription refund.,Refund,Medium,manual,,
+MAN_R100,Returned item received at warehouse per carrier tracking #8821. Process reimbursement.,Refund,Medium,manual,,
+MAN_S001,Where can I track my delivery?,Shipping,Low,manual,,
+MAN_S002,Package marked delivered by courier but I did not receive anything at my door.,Shipping,Critical,manual,,
+MAN_S003,Delivery is 4 days late and tracking status has not updated since Monday.,Shipping,High,manual,,
+MAN_S004,Need to change shipping address to Apartment 4B before order dispatches.,Shipping,High,manual,,
+MAN_S005,Item shipped to old residential address by mistake.,Shipping,High,manual,,
+MAN_S006,Parcel box arrived completely crushed and open.,Shipping,High,manual,,
+MAN_S007,"Paid extra for next-day priority shipping, but it's taking standard 5 days.",Shipping,Medium,manual,,
+MAN_S008,Customs holding shipment at port demanding additional clearance documentation.,Shipping,Medium,manual,,
+MAN_S009,Wrong tracking code sent in email confirmation.,Shipping,Low,manual,,
+MAN_S100,Courier driver left package in heavy rain without ringing doorbell.,Shipping,Medium,manual,,
+MAN_A001,Locked out of my admin account due to forgotten 2FA device.,Account,Critical,manual,,
+MAN_A002,Password reset link is giving 'expired' error immediately upon arrival.,Account,High,manual,,
+MAN_A003,How do I change my primary account email address?,Account,Low,manual,,
+MAN_A004,Suspicious login attempt detected from unrecognized location. Deactivate account temporarily.,Account,Critical,manual,,
+MAN_A005,Cannot update profile picture or display name in settings page.,Account,Low,manual,,
+MAN_A006,Please transfer account owner privileges to user user2@org.com.,Account,Medium,manual,,
+MAN_A007,Verification code SMS not reaching my mobile phone number.,Account,High,manual,,
+MAN_A008,Account deactivated message showing when logging in. Why?,Account,High,manual,,
+MAN_A009,Want to delete my profile and purge all stored user personal data.,Account,Medium,manual,,
+MAN_A100,SSO Google login fails with OAuth redirect URI mismatch.,Account,High,manual,,
+MAN_C001,Your customer service rep on phone was extremely rude and unhelpful.,Complaint,High,manual,,
+MAN_C002,Worst experience ever. System has been down 3 times this month!,Complaint,High,manual,,
+MAN_C003,I have been waiting on hold for over 45 minutes without any agent answering.,Complaint,Medium,manual,,
+MAN_C004,Misleading marketing claims regarding features included in standard plan.,Complaint,Medium,manual,,
+MAN_C005,Escalating this issue to management. Unresolved bug open for 30 days.,Complaint,Critical,manual,,
+MAN_C006,Prices increased by 30% without prior email notification to subscribers.,Complaint,High,manual,,
+MAN_C007,Support ticket #4401 closed automatically without providing solution.,Complaint,High,manual,,
+MAN_C008,Data privacy concern: shared workspace showing other client's file names.,Complaint,Critical,manual,,
+MAN_P001,Does the enterprise tier support single sign-on (SSO) via SAML 2.0?,Product Inquiry,Low,manual,,
+MAN_P002,Is there an iOS tablet version available for download?,Product Inquiry,Low,manual,,
+MAN_P003,What is the maximum file upload size limit per attachment?,Product Inquiry,Low,manual,,
+MAN_P004,Can I integrate this platform with Zapier or Webhooks?,Product Inquiry,Low,manual,,
+MAN_P005,Looking for detailed documentation on REST API rate limits.,Product Inquiry,Low,manual,,
+MAN_P006,Are there discount options for non-profit organizations or universities?,Product Inquiry,Low,manual,,
+MAN_P007,Does product support dark theme and custom CSS styling?,Product Inquiry,Low,manual,,
+MAN_P008,Is user training included with team plan onboard?,Product Inquiry,Low,manual,,
+MAN_X001,Please cancel my subscription immediately before next billing cycle.,Cancellation,High,manual,,
+MAN_X002,How do I terminate my account subscription?,Cancellation,Medium,manual,,
+MAN_X003,Cancel auto-renewal for my annual membership plan.,Cancellation,Medium,manual,,
+MAN_X004,Want to end contract early due to company restructuring.,Cancellation,High,manual,,
+MAN_X005,Stop my subscription at end of current billing period.,Cancellation,Medium,manual,,
+MAN_X006,I am closing my business and need to cancel all associated services.,Cancellation,High,manual,,
+MAN_X007,Unsubscribe me from all paid services and emails right now.,Cancellation,High,manual,,
+MAN_X008,"Switched to alternative product, please cancel plan effective today.",Cancellation,Medium,manual,,
+INC_005,Need to change shipping address before package is sent out,Shipping,High,manual,2026-08-20T07:20:00,approved

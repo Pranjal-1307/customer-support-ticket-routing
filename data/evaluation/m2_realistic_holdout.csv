@@ -1,0 +1,61 @@
+ticket_id,ticket_text,category,priority,source
+HOLDOUT_001,"Why is there an extra $25 charge on my monthly bill when I am on the basic plan?",Billing,Medium,manual
+HOLDOUT_002,"My credit card was debited twice for order #88412 but invoice shows payment pending.",Billing,High,manual
+HOLDOUT_003,"Need tax GST receipt for invoice #INV-2026-09 immediately.",Billing,Low,manual
+HOLDOUT_004,"Mera bank account se 500 rupees extra deduct ho gaya billing cycle mein.",Billing,High,manual
+HOLDOUT_005,"Billing statement ma wrong amount print thayo che.",Billing,Medium,manual
+HOLDOUT_006,"Charged full price despite applying promotional coupon code SAVE50.",Billing,Medium,manual
+HOLDOUT_007,"Received unauthorized transaction alert for $299 on closed account.",Billing,Critical,manual
+HOLDOUT_008,"Plz update billing credit card expiration date to 08/29.",Billing,Low,manual
+HOLDOUT_009,"Why was auto renewal enabled without my explicit consent?",Billing,High,manual
+HOLDOUT_010,"Double payment deduction error on checkout page.",Billing,High,manual
+HOLDOUT_011,"The web application displays HTTP 500 Internal Server Error when submitting forms.",Technical Support,High,manual
+HOLDOUT_012,"Entire team is unable to connect to remote database server at 10.0.0.1.",Technical Support,Critical,manual
+HOLDOUT_013,"Mobile app crashes continuously on iOS 17 after latest updates.",Technical Support,High,manual
+HOLDOUT_014,"Page loading takes more than 30 seconds and API requests time out.",Technical Support,Medium,manual
+HOLDOUT_015,"Dark theme toggle is not saving preference in settings portal.",Technical Support,Low,manual
+HOLDOUT_016,"App chalte chalte band ho jata hai crash log 0x8849 ke saath.",Technical Support,High,manual
+HOLDOUT_017,"System crash thayo che data export karti vakhte.",Technical Support,High,manual
+HOLDOUT_018,"Bluetooth sync fails between sensor hardware and dashboard.",Technical Support,Medium,manual
+HOLDOUT_019,"SSL certificate expired warning on corporate domain portal.",Technical Support,Critical,manual
+HOLDOUT_020,"Cannot upload PDF files larger than 5MB.",Technical Support,Medium,manual
+HOLDOUT_021,"I returned the damaged package 10 days ago but no refund received yet.",Refund,High,manual
+HOLDOUT_022,"Item received was completely different from website description. Want full refund.",Refund,Medium,manual
+HOLDOUT_023,"Accidentally purchased 2 annual subscriptions instead of 1. Refund duplicate.",Refund,Medium,manual
+HOLDOUT_024,"Order cancelled by seller due to out of stock, refund my money immediately.",Refund,High,manual
+HOLDOUT_025,"Refund process nahi hua abhi tak, 2 hafte ho gaye.",Refund,High,manual
+HOLDOUT_026,"Where is my refund for returned order #77123?",Refund,Medium,manual
+HOLDOUT_027,"Service downtime ruined our event. Requesting subscription credit refund.",Refund,Medium,manual
+HOLDOUT_028,"Partial refund received instead of full amount promised by agent.",Refund,High,manual
+HOLDOUT_029,"Parcel tracking status has not updated for 7 days. Where is my item?",Shipping,Medium,manual
+HOLDOUT_030,"Package marked as delivered on doorstep but nothing arrived.",Shipping,Critical,manual
+HOLDOUT_031,"Need to change delivery address before order leaves distribution warehouse.",Shipping,High,manual
+HOLDOUT_032,"Box arrived totally crushed with broken fragile contents inside.",Shipping,High,manual
+HOLDOUT_033,"Paid extra for express 1-day shipping but parcel is taking standard 5 days.",Shipping,Medium,manual
+HOLDOUT_034,"Courier status check karo, package border customs clearing pe stuck hai.",Shipping,Medium,manual
+HOLDOUT_035,"Parcel wrong delivery address pe bhej diya gaya hai.",Shipping,High,manual
+HOLDOUT_036,"Customs clearance documents required for international parcel #9910.",Shipping,Low,manual
+HOLDOUT_037,"Unable to log in to master admin account due to lost 2FA device.",Account,Critical,manual
+HOLDOUT_038,"Password reset email link shows expired error immediately on click.",Account,High,manual
+HOLDOUT_039,"Suspicious login attempt from unknown IP address detected.",Account,Critical,manual
+HOLDOUT_040,"How do I change the owner email address on our workspace?",Account,Low,manual
+HOLDOUT_041,"Mera account lock ho gaya hai wrong password dalne par.",Account,High,manual
+HOLDOUT_042,"Account deletion request and purge all stored profile data.",Account,Medium,manual
+HOLDOUT_043,"Single Sign-On (SSO) login failing with SAML response error.",Account,High,manual
+HOLDOUT_044,"Verification SMS code is not arriving on mobile phone.",Account,High,manual
+HOLDOUT_045,"Customer support phone representative was rude and unhelpful.",Complaint,Low,manual
+HOLDOUT_046,"Agent closed my support ticket without resolving the open issue.",Complaint,Medium,manual
+HOLDOUT_047,"System downtime caused severe business revenue loss during launch.",Complaint,Critical,manual
+HOLDOUT_048,"No response to urgent support ticket for over 48 hours SLA breach.",Complaint,High,manual
+HOLDOUT_049,"Bina kisi response ke ticket close kar diya gaya.",Complaint,Medium,manual
+HOLDOUT_050,"Misleading marketing claims regarding API capabilities on sales page.",Complaint,Low,manual
+HOLDOUT_051,"Does your enterprise plan support custom webhook integration?",Product Inquiry,Low,manual
+HOLDOUT_052,"What are the minimum server hardware specs required for installation?",Product Inquiry,Low,manual
+HOLDOUT_053,"Do you offer bulk educational discount licenses for universities?",Product Inquiry,Low,manual
+HOLDOUT_054,"Is there an Android tablet native app available for download?",Product Inquiry,Low,manual
+HOLDOUT_055,"Is product SOC2 and HIPAA compliant?",Product Inquiry,Medium,manual
+HOLDOUT_056,"Please cancel my annual subscription effective before next billing date.",Cancellation,Medium,manual
+HOLDOUT_057,"Turn off automatic renewal for account #ACCT-9912 immediately.",Cancellation,Medium,manual
+HOLDOUT_058,"Close and permanently delete my workspace account today.",Cancellation,High,manual
+HOLDOUT_059,"We are switching to a competitor solution and wish to terminate plan.",Cancellation,High,manual
+HOLDOUT_060,"Subscription cancellation button is missing from profile settings.",Cancellation,High,manual
