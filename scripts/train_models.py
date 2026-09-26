@@ -121,10 +121,10 @@ def train_and_evaluate_models():
 
     print("\n--- PRIORITY CLASSIFICATION EVALUATION ---")
     pri_models = {
-        "Logistic Regression": LogisticRegression(max_iter=1000, random_state=42),
+        "Logistic Regression": LogisticRegression(max_iter=1000, class_weight='balanced', random_state=42),
         "Naive Bayes": MultinomialNB(),
-        "Random Forest": RandomForestClassifier(n_estimators=100, random_state=42),
-        "Calibrated Linear SVM": CalibratedClassifierCV(estimator=LinearSVC(random_state=42), cv=5)
+        "Random Forest": RandomForestClassifier(n_estimators=100, class_weight='balanced', random_state=42),
+        "Calibrated Linear SVM": CalibratedClassifierCV(estimator=LinearSVC(class_weight='balanced', random_state=42), cv=5)
     }
 
     for name, clf in pri_models.items():

@@ -1,7 +1,7 @@
 # Dataset Versioning Report — Milestone 2 (v2.0-M2)
 
 **Version:** `v2.0-M2`  
-**Build Timestamp:** `2026-08-20T08:35:43.566449`  
+**Build Timestamp:** `2026-08-20T11:06:19.922582`  
 
 ---
 
@@ -41,10 +41,10 @@
 
 | Priority | Count | Percentage |
 |---|---|---|
-| High | 2417 | 55.7% |
-| Medium | 763 | 17.6% |
-| Critical | 692 | 15.9% |
-| Low | 469 | 10.8% |
+| Medium | 1682 | 38.7% |
+| High | 1230 | 28.3% |
+| Low | 893 | 20.6% |
+| Critical | 536 | 12.3% |
 
 ## 5. Leakage Verification
 

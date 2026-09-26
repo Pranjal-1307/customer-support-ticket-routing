@@ -6,6 +6,7 @@ Reports Category and Priority metrics separately and generates reports/m2/realis
 
 import os
 import sys
+import json
 import pandas as pd
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support, classification_report
 
@@ -117,6 +118,32 @@ def evaluate_realistic_holdout():
         f.write(report_md)
     print(f"Saved realistic holdout report to {out_path}")
 
+    # Also update models/model_metrics.json with truthful holdout metrics
+    metrics_path = os.path.join(base_dir, "models", "model_metrics.json")
+    model_metrics = {}
+    if os.path.exists(metrics_path):
+        try:
+            with open(metrics_path, "r", encoding="utf-8") as f:
+                model_metrics = json.load(f)
+        except Exception:
+            model_metrics = {}
+
+    model_metrics["m2_holdout_metrics"] = {
+        "dataset": "data/evaluation/m2_realistic_holdout.csv",
+        "sample_count": total_samples,
+        "category_accuracy": round(float(cat_acc), 4),
+        "category_weighted_f1": round(float(cat_f1), 4),
+        "category_macro_f1": round(float(cat_macro_f1), 4),
+        "priority_accuracy": round(float(pri_acc), 4),
+        "priority_weighted_f1": round(float(pri_f1), 4),
+        "priority_macro_f1": round(float(pri_macro_f1), 4)
+    }
+
+    with open(metrics_path, "w", encoding="utf-8") as f:
+        json.dump(model_metrics, f, indent=4)
+    print(f"Updated {metrics_path} with M2 realistic holdout metrics")
+
 
 if __name__ == "__main__":
     evaluate_realistic_holdout()
+

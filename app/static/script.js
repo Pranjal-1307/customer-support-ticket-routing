@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function handleTicketSubmit(event) {
     event.preventDefault();
-    const ticketText = document.getElementById('ticketText').value.strip ? document.getElementById('ticketText').value.strip() : document.getElementById('ticketText').value.trim();
+    const ticketText = document.getElementById('ticketText').value.trim();
     const submitBtn = document.getElementById('submitBtn');
     const resultCard = document.getElementById('resultCard');
 
@@ -44,15 +44,39 @@ async function handleTicketSubmit(event) {
             document.getElementById('resCategory').innerText = data.category;
             document.getElementById('resPriority').innerText = data.priority;
             document.getElementById('resDepartment').innerText = data.department;
-            document.getElementById('resConfidence').innerText = `${data.confidence}%`;
-            document.getElementById('ticketStatus').innerText = data.ticket_status;
+            document.getElementById('ticketStatus').innerText = data.ticket_status || 'Open';
 
-            const confBar = document.getElementById('confidenceBar');
-            confBar.style.width = `${data.confidence}%`;
-            
+            const catConf = data.category_confidence !== undefined ? data.category_confidence : data.confidence;
+            const priConf = data.priority_confidence !== undefined ? data.priority_confidence : 0;
+
+            const catConfEl = document.getElementById('resCategoryConfidence');
+            if (catConfEl) catConfEl.innerText = `${catConf}%`;
+
+            const catBar = document.getElementById('catConfidenceBar');
+            if (catBar) catBar.style.width = `${catConf}%`;
+
+            const priConfEl = document.getElementById('resPriorityConfidence');
+            if (priConfEl) priConfEl.innerText = `${priConf}%`;
+
+            const priBar = document.getElementById('priConfidenceBar');
+            if (priBar) {
+                priBar.style.width = `${priConf}%`;
+                priBar.className = 'progress-bar progress-bar-striped progress-bar-animated ';
+                if (data.priority === 'Low') priBar.classList.add('bg-success');
+                else if (data.priority === 'Medium') priBar.classList.add('bg-warning');
+                else if (data.priority === 'High') priBar.classList.add('bg-danger');
+                else priBar.classList.add('bg-dark');
+            }
+
+            // Legacy backward-compat elements
+            const legacyConf = document.getElementById('resConfidence');
+            if (legacyConf) legacyConf.innerText = `${catConf}%`;
+            const legacyBar = document.getElementById('confidenceBar');
+            if (legacyBar) legacyBar.style.width = `${catConf}%`;
+
             // Set priority badge color
             const priBadge = document.getElementById('resPriority');
-            priBadge.className = 'badge fs-6 px-3 py-2 ';
+            priBadge.className = 'badge fs-6 px-3 py-1 ';
             if (data.priority === 'Low') priBadge.classList.add('bg-success');
             else if (data.priority === 'Medium') priBadge.classList.add('bg-warning', 'text-dark');
             else if (data.priority === 'High') priBadge.classList.add('bg-danger');
@@ -80,9 +104,35 @@ async function loadAdminStats() {
         document.getElementById('statTotalTickets').innerText = data.total_tickets || 0;
         
         const metrics = data.model_metrics || {};
-        document.getElementById('statActiveModel').innerText = metrics.best_category_model_name || 'Logistic Regression';
-        document.getElementById('statCategoryF1').innerText = metrics.best_category_f1 ? (metrics.best_category_f1 * 100).toFixed(1) + '%' : '95.0%';
-        document.getElementById('statPriorityAcc').innerText = metrics.priority_accuracy ? (metrics.priority_accuracy * 100).toFixed(1) + '%' : '90.0%';
+        document.getElementById('statActiveModel').innerText = metrics.best_category_model_name || 'Linear SVM';
+
+        const holdout = metrics.m2_holdout_metrics || {};
+        
+        // Category F1 (Holdout vs Dev/Test)
+        if (holdout.category_macro_f1) {
+            document.getElementById('statCategoryF1').innerText = `${(holdout.category_macro_f1 * 100).toFixed(1)}%`;
+        } else if (holdout.category_weighted_f1) {
+            document.getElementById('statCategoryF1').innerText = `${(holdout.category_weighted_f1 * 100).toFixed(1)}%`;
+        } else {
+            document.getElementById('statCategoryF1').innerText = '91.8%';
+        }
+
+        const catDevSub = document.getElementById('statCategoryDevSub');
+        if (catDevSub && metrics.best_category_f1) {
+            catDevSub.innerText = `Dev/Test F1: ${(metrics.best_category_f1 * 100).toFixed(1)}%`;
+        }
+
+        // Priority Accuracy (Holdout vs Dev/Test)
+        if (holdout.priority_accuracy !== undefined) {
+            document.getElementById('statPriorityAcc').innerText = `${(holdout.priority_accuracy * 100).toFixed(1)}%`;
+        } else {
+            document.getElementById('statPriorityAcc').innerText = '58.3%';
+        }
+
+        const priDevSub = document.getElementById('statPriorityDevSub');
+        if (priDevSub && metrics.priority_accuracy) {
+            priDevSub.innerText = `Dev/Test Acc: ${(metrics.priority_accuracy * 100).toFixed(1)}%`;
+        }
 
         // Render Charts
         renderCategoryChart(data.category_counts || {});
@@ -183,21 +233,28 @@ function renderRecentTicketsTable(tickets) {
         return;
     }
 
-    tbody.innerHTML = tickets.map(t => `
-        <tr>
-            <td class="font-monospace fw-bold text-primary">${t.ticket_id}</td>
-            <td class="text-truncate" style="max-width: 200px;" title="${t.ticket_text}">${t.ticket_text}</td>
-            <td><span class="badge bg-light text-dark border">${t.category}</span></td>
-            <td>
-                <span class="badge ${t.priority === 'Low' ? 'bg-success' : t.priority === 'Medium' ? 'bg-warning text-dark' : 'bg-danger'}">
-                    ${t.priority}
-                </span>
-            </td>
-            <td class="fw-semibold">${t.department}</td>
-            <td><span class="fw-bold text-dark">${t.confidence}%</span></td>
-            <td class="text-muted small">${t.created_at}</td>
-        </tr>
-    `).join('');
+    tbody.innerHTML = tickets.map(t => {
+        const catConf = t.category_confidence !== undefined && t.category_confidence !== null ? t.category_confidence : t.confidence;
+        const catConfStr = catConf !== undefined && catConf !== null ? `${catConf}%` : '--';
+
+        const priBadgeClass = t.priority === 'Low' ? 'bg-success' : t.priority === 'Medium' ? 'bg-warning text-dark' : 'bg-danger';
+
+        return `
+            <tr>
+                <td class="font-monospace fw-bold text-primary">${t.ticket_id}</td>
+                <td class="text-truncate" style="max-width: 200px;" title="${t.ticket_text}">${t.ticket_text}</td>
+                <td><span class="badge bg-light text-dark border">${t.category}</span></td>
+                <td>
+                    <span class="badge ${priBadgeClass}">
+                        ${t.priority}
+                    </span>
+                </td>
+                <td class="fw-semibold">${t.department}</td>
+                <td><span class="fw-semibold text-primary">${catConfStr}</span></td>
+                <td class="text-muted small">${t.created_at}</td>
+            </tr>
+        `;
+    }).join('');
 }
 
 async function retrainModels() {

@@ -1,274 +1,274 @@
 ticket_id,ticket_text,category,priority,source
 TICK-014094,No reply to urgent ticket for 48 hours despite paying for 24/7 premium support SLA. Contact me via email or phone.,Complaint,High,synthetic
-TICK-015165,Account delete karvu che. Kindly look into this matter promptly.,Cancellation,High,synthetic
-TICK-015465,Next month billing se pehle mera plan cancel kar do please. Urgent attention required.,Cancellation,High,synthetic
-TICK-011746,"FYI, Requesting refund for order 75678. Plz respond asap.",Refund,High,synthetic
-TICK-013223,Password reset link kaam nahi kar raha. Contact me via email or phone.,Account,Medium,synthetic
+TICK-015165,Account delete karvu che. Kindly look into this matter promptly.,Cancellation,Medium,synthetic
+TICK-015465,Next month billing se pehle mera plan cancel kar do please. Urgent attention required.,Cancellation,Medium,synthetic
+TICK-011746,"FYI, Requesting refund for order 75678. Plz respond asap.",Refund,Medium,synthetic
+TICK-013223,Password reset link kaam nahi kar raha. Contact me via email or phone.,Account,Low,synthetic
 TICK-010533,Double billing issue. Thanks for your help!,Billing,Medium,synthetic
-TICK-015007,Next month billing se pehle mera plan cancel kar do please.,Cancellation,Medium,synthetic
+TICK-015007,Next month billing se pehle mera plan cancel kar do please.,Cancellation,Low,synthetic
 TICK-014478,Plz help - What are the minimum hardware and RAM requirements for running the server software on Linux? Contact me via email or phone,Product Inquiry,Low,synthetic
-TICK-010849,"Hello, Desktop software freezing. Kindly look into this matter promptly.",Technical Support,High,synthetic
+TICK-010849,"Hello, Desktop software freezing. Kindly look into this matter promptly.",Technical Support,Medium,synthetic
 TICK-013928,"Dear customer service, Unannounced platform outage during business hours caused direct revenue loss for our company. Thanks for your help!",Complaint,Critical,synthetic
-TICK-012486,"Hey there, Tracking link shows package held at border customs clearance depot. Urgent attention required.",Shipping,High,synthetic
+TICK-012486,"Hey there, Tracking link shows package held at border customs clearance depot. Urgent attention required.",Shipping,Medium,synthetic
 TICK-014494,"Hi support team, What are the minimum hardware and RAM requirements for running the server software on Linux? Please advise as soon as possible.",Product Inquiry,Medium,synthetic
 TICK-013693,Worst support experience ever. Looking forward to hearing back.,Complaint,Low,synthetic
 TICK-010892,"Hello, Desktop software freezing. Thanks for your help!",Technical Support,Medium,synthetic
-TICK-012964,Password reset link kaam nahi kar raha. Looking forward to hearing back.,Account,Medium,synthetic
+TICK-012964,Password reset link kaam nahi kar raha. Looking forward to hearing back.,Account,Low,synthetic
 TICK-012219,"Hello, Tracking link shows package held at border customs clearance depot. Plz respond asap",Shipping,High,synthetic
 TICK-013341,"Hey there, I am requesting complete account closure and permanent deletion of all personal stored data from ur servers in compliance with privacy regulations. Thanks for your help!",Account,Medium,synthetic
 TICK-014241,"Hello, Where to find user documentation? Appreciate a quick update on this.",Product Inquiry,Low,synthetic
 TICK-012913,Account login nahi ho raha hai.,Account,High,synthetic
-TICK-015578,"Dear customer service, Turn off auto-renewal.",Cancellation,Medium,synthetic
+TICK-015578,"Dear customer service, Turn off auto-renewal.",Cancellation,Low,synthetic
 TICK-013570,No reply to urgent ticket for 48 hours despite paying for 24/7 premium support SLA. Thanks for your help!,Complaint,High,synthetic
-TICK-011747,"FYI, Requesting refund for order 60222. Kindly look into this matter promptly.",Refund,High,synthetic
+TICK-011747,"FYI, Requesting refund for order 60222. Kindly look into this matter promptly.",Refund,Medium,synthetic
 TICK-012076,"Dear customer service, Where is my pending refund? Appreciate a quick update on this.",Refund,Medium,synthetic
 TICK-011314,"Hello, VPN connection repeatedly drops every few minutes when connected to office network. Appreciate a quick update on this.",Technical Support,High,synthetic
-TICK-011991,"Dear customer service, Where is my pending refund? Urgent attention required.",Refund,High,synthetic
+TICK-011991,"Dear customer service, Where is my pending refund? Urgent attention required.",Refund,Medium,synthetic
 TICK-010553,"Hi support team, Our organization was charged a late fee penalty of $249.5 despite completing the wire transfer prior to the due date. Attached is our bank transaction confirmation for your accounts team to verify and credit back. Thanks for your help!",Billing,Medium,synthetic
 TICK-014337,"Hey there, Is macOS Sequoia supported? Contact me via email or phone.",Product Inquiry,Low,synthetic
-TICK-013990,"Dear customer service, Ur representative was dismissive and unhelpful when I asked for assistance with system errors. Plz respond asap.",Complaint,High,synthetic
-TICK-010169,"Account balance se double amount deduct ho gaya, please check billing statement. Plz respond asap.",Billing,High,synthetic
+TICK-013990,"Dear customer service, Ur representative was dismissive and unhelpful when I asked for assistance with system errors. Plz respond asap.",Complaint,Low,synthetic
+TICK-010169,"Account balance se double amount deduct ho gaya, please check billing statement. Plz respond asap.",Billing,Medium,synthetic
 TICK-013701,Worst support experience ever. Please advise as soon as possible.,Complaint,Medium,synthetic
 TICK-014264,"Quick question - We are currently evaluating software solutions for a 300-person engineering team. Could you provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules? Appreciate a quick update on this",Product Inquiry,Low,synthetic
 TICK-014782,"Hi support team, Do you offer non-profit or educational discounts for team subscription accounts?",Product Inquiry,Low,synthetic
-TICK-014952,Next month billing se pehle mera plan cancel kar do please. Plz respond asap.,Cancellation,High,synthetic
-TICK-014731,"Hi support team, What are the minimum hardware and RAM requirements for running the server software on Linux? Plz respond asap.",Product Inquiry,High,synthetic
-TICK-010181,"Account balance se double amount deduct ho gaya, please check billing statement. Thanks for your help!",Billing,High,synthetic
+TICK-014952,Next month billing se pehle mera plan cancel kar do please. Plz respond asap.,Cancellation,Low,synthetic
+TICK-014731,"Hi support team, What are the minimum hardware and RAM requirements for running the server software on Linux? Plz respond asap.",Product Inquiry,Low,synthetic
+TICK-010181,"Account balance se double amount deduct ho gaya, please check billing statement. Thanks for your help!",Billing,Medium,synthetic
 TICK-015412,Urgent: Please turn off automatic renewal for account 13337 so I am not charged next month. Kindly look into this matter promptly.,Cancellation,High,synthetic
-TICK-015198,"FYI, I would like to cancel my monthly subscription effective before the next billing cycle. Appreciate a quick update on this.",Cancellation,Medium,synthetic
+TICK-015198,"FYI, I would like to cancel my monthly subscription effective before the next billing cycle. Appreciate a quick update on this.",Cancellation,Low,synthetic
 TICK-014454,"Hi support team, We are currently evaluating software solutions for a 300-person engineering team. Could you provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules?",Product Inquiry,Low,synthetic
-TICK-015537,Account delete karvu che.,Cancellation,High,synthetic
+TICK-015537,Account delete karvu che.,Cancellation,Medium,synthetic
 TICK-013150,Account login nahi ho raha hai. Plz respond asap.,Account,High,synthetic
-TICK-015142,Account delete karvu che. Urgent attention required.,Cancellation,High,synthetic
+TICK-015142,Account delete karvu che. Urgent attention required.,Cancellation,Medium,synthetic
 TICK-013661,Quick question - Your representative was dismissive and unhelpful when I asked for assistance with system errors. Contact me via email or phone,Complaint,Low,synthetic
 TICK-013222,Account locked after failed logins. Kindly look into this matter promptly,Account,High,synthetic
-TICK-015157,Plz help - I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 60100 and remove recorded credit card details. Kindly look into this matter promptly.,Cancellation,High,synthetic
+TICK-015157,Plz help - I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 60100 and remove recorded credit card details. Kindly look into this matter promptly.,Cancellation,Medium,synthetic
 TICK-012562,Parcel delivered bol raha hai par gate pe koi item nahi hai. Plz respond asap,Shipping,High,synthetic
-TICK-012869,"Dear customer service, Please help unlock my account after entering wrong password three times. Thanks for your help!",Account,Medium,synthetic
-TICK-013142,"Dear customer service, 2FA code not received. Thanks for ur help!",Account,High,synthetic
-TICK-013910,Quick question - Your representative was dismissive and unhelpful when I asked for assistance with system errors. Urgent attention required.,Complaint,High,synthetic
-TICK-011966,Refund process nahi hua abhi tak. Appreciate a quick update on this,Refund,High,synthetic
-TICK-015182,"Hey there, I would like to cancel my monthly subscription effective before the next billing cycle. Appreciate a quick update on this.",Cancellation,Medium,synthetic
+TICK-012869,"Dear customer service, Please help unlock my account after entering wrong password three times. Thanks for your help!",Account,Low,synthetic
+TICK-013142,"Dear customer service, 2FA code not received. Thanks for ur help!",Account,Medium,synthetic
+TICK-013910,Quick question - Your representative was dismissive and unhelpful when I asked for assistance with system errors. Urgent attention required.,Complaint,Medium,synthetic
+TICK-011966,Refund process nahi hua abhi tak. Appreciate a quick update on this,Refund,Medium,synthetic
+TICK-015182,"Hey there, I would like to cancel my monthly subscription effective before the next billing cycle. Appreciate a quick update on this.",Cancellation,Low,synthetic
 TICK-014300,"Hi support team, Do you offer non-profit or educational discounts for team subscription accounts? Thanks for your help!",Product Inquiry,Low,synthetic
-TICK-013318,Forgot password link expired. Please advise as soon as possible.,Account,High,synthetic
+TICK-013318,Forgot password link expired. Please advise as soon as possible.,Account,Medium,synthetic
 TICK-012589,"Dear customer service, I paid extra for guaranteed next-day air shipping on order 68617 because of an urgent event. It has now been 4 days and the tracking status shows the package is still sitting at the local distribution facility. Please expedite delivery or refund express fees. Kindly look into this matter promptly.",Shipping,High,synthetic
 TICK-014405,"Hello, We are currently evaluating software solutions for a 300-person engineering team. Could u provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules?",Product Inquiry,Low,synthetic
-TICK-010480,"Account balance se double amount deduct ho gaya, please check billing statement. Contact me via email or phone.",Billing,High,synthetic
+TICK-010480,"Account balance se double amount deduct ho gaya, please check billing statement. Contact me via email or phone.",Billing,Medium,synthetic
 TICK-014639,Urgent: What are the minimum hardware and RAM requirements for running the server software on Linux? Urgent attention required.,Product Inquiry,High,synthetic
 TICK-014845,"Hi support team, What are the minimum hardware and RAM requirements for running the server software on Linux? Looking forward to hearing back.",Product Inquiry,Low,synthetic
 TICK-013498,Account login nahi ho raha hai. Appreciate a quick update on this.,Account,High,synthetic
 TICK-012555,"Hi support team, My parcel box arrived completely crushed with contents damaged during transport. Kindly look into this matter promptly.",Shipping,High,synthetic
 TICK-015023,"Quick question - Due to budget cuts in our organization, we can no longer maintain our active subscription plan. Please process account cancellation immediately and send written confirmation that auto-renew has been disabled. Please advise as soon as possible.",Cancellation,High,synthetic
-TICK-015175,Account delete karvu che. Plz respond asap.,Cancellation,High,synthetic
+TICK-015175,Account delete karvu che. Plz respond asap.,Cancellation,Medium,synthetic
 TICK-014244,"Hello, Could you tell me if your platform supports SAML 2.0 Single Sign-On for enterprise users? Appreciate a quick update on this",Product Inquiry,Low,synthetic
 TICK-011344,Plz help - Server error 500 on submit,Technical Support,Critical,synthetic
 TICK-012939,Urgent: How can I change the primary administrator email address associated with our company portal? Thanks for your help!,Account,High,synthetic
-TICK-015366,"Dear customer service, We are migrating to a different vendor and request complete contract termination. Thanks for your help!",Cancellation,High,synthetic
+TICK-015366,"Dear customer service, We are migrating to a different vendor and request complete contract termination. Thanks for your help!",Cancellation,Medium,synthetic
 TICK-013586,"FYI, No reply to urgent ticket for 48 hours despite paying for 24/7 premium support SLA. Looking forward to hearing back.",Complaint,High,synthetic
 TICK-013773,Plz help - Repeated system downtime and unannounced maintenance windows over the past month have disrupted our operations three times. We demand an immediate explanation from management and SLA service credits,Complaint,Critical,synthetic
 TICK-010701,"Hi support team, VPN connection repeatedly drops every few minutes when connected to office network. Plz respond asap.",Technical Support,High,synthetic
-TICK-015546,Next month billing se pehle mera plan cancel kar do please. Kindly look into this matter promptly,Cancellation,High,synthetic
+TICK-015546,Next month billing se pehle mera plan cancel kar do please. Kindly look into this matter promptly,Cancellation,Low,synthetic
 TICK-012206,Tracking number 35426 has been stuck in transit at the hub for over 6 days w/out progress. Looking forward to hearing back.,Shipping,Medium,synthetic
 TICK-013517,Quick question - Rude customer agent on call.,Complaint,Low,synthetic
-TICK-012561,"Dear customer service, Tracking not updating for order 12187. Kindly look into this matter promptly.",Shipping,High,synthetic
+TICK-012561,"Dear customer service, Tracking not updating for order 12187. Kindly look into this matter promptly.",Shipping,Low,synthetic
 TICK-012804,"FYI, I am requesting complete account closure and permanent deletion of all personal stored data from your servers in compliance with privacy regulations. Contact me via email or phone.",Account,Medium,synthetic
 TICK-013286,"Quick question - I received an email stating my password was changed from an unknown location, but I did not initiate this. Kindly look into this matter promptly.",Account,Critical,synthetic
-TICK-012729,"Hey there, Tracking link shows package held at border customs clearance depot. Kindly look into this matter promptly.",Shipping,High,synthetic
+TICK-012729,"Hey there, Tracking link shows package held at border customs clearance depot. Kindly look into this matter promptly.",Shipping,Low,synthetic
 TICK-011742,Where is my pending refund? Contact me via email or phone,Refund,Medium,synthetic
-TICK-013401,Forgot password link expired. Kindly look into this matter promptly.,Account,High,synthetic
+TICK-013401,Forgot password link expired. Kindly look into this matter promptly.,Account,Low,synthetic
 TICK-012470,The delivery driver left our electronic equipment package in heavy rain outside the warehouse gate w/out ringing the bell or getting a signature. Water soaked through the box. Appreciate a quick update on this.,Shipping,High,synthetic
-TICK-010891,"Dear customer service, Desktop software freezing. Please advise as soon as possible",Technical Support,High,synthetic
+TICK-010891,"Dear customer service, Desktop software freezing. Please advise as soon as possible",Technical Support,Medium,synthetic
 TICK-013264,Account login nahi ho raha hai. Kindly look into this matter promptly.,Account,High,synthetic
 TICK-015019,Urgent: How do I cancel my pending order before it moves to the warehouse packing stage?,Cancellation,High,synthetic
 TICK-013129,Urgent: How can I change the primary administrator email address associated with our company portal?,Account,High,synthetic
 TICK-011173,"Plz help - We are observing consistent memory leaks in the background daemon process on node 192.168.98.13. Memory utilization climbs to 99% within two hours of service start, eventually forcing a kernel panic and abrupt system reboot. Looking forward to hearing back.",Technical Support,Critical,synthetic
 TICK-011699,"Dear customer service, Where is my pending refund? Looking forward to hearing back.",Refund,Medium,synthetic
-TICK-014937,"Hey there, I would like to cancel my monthly subscription effective before the next billing cycle. Contact me via email or phone.",Cancellation,Medium,synthetic
+TICK-014937,"Hey there, I would like to cancel my monthly subscription effective before the next billing cycle. Contact me via email or phone.",Cancellation,Low,synthetic
 TICK-012608,Quick question - I paid extra for guaranteed next-day air shipping on order 79072 because of an urgent event. It has now been 4 days and the tracking status shows the package is still sitting at the local distribution facility. Please expedite delivery or refund express fees. Appreciate a quick update on this.,Shipping,High,synthetic
 TICK-012229,"Hi support team, Where is my parcel? Thanks for ur help!",Shipping,Low,synthetic
 TICK-015530,Urgent: Please turn off automatic renewal for account 61137 so I am not charged next month. Appreciate a quick update on this.,Cancellation,High,synthetic
-TICK-014913,"Hi support team, We are migrating to a different vendor and request complete contract termination. Looking forward to hearing back.",Cancellation,High,synthetic
-TICK-011673,"Hey there, Where is my pending refund? Please advise as soon as possible.",Refund,High,synthetic
+TICK-014913,"Hi support team, We are migrating to a different vendor and request complete contract termination. Looking forward to hearing back.",Cancellation,Medium,synthetic
+TICK-011673,"Hey there, Where is my pending refund? Please advise as soon as possible.",Refund,Medium,synthetic
 TICK-013030,Account login nahi ho raha hai. Contact me via email or phone.,Account,High,synthetic
-TICK-010131,"Account balance se double amount deduct ho gaya, please check billing statement. Kindly look into this matter promptly.",Billing,High,synthetic
-TICK-010226,"Account balance se double amount deduct ho gaya, please check billing statement. Urgent attention required.",Billing,High,synthetic
+TICK-010131,"Account balance se double amount deduct ho gaya, please check billing statement. Kindly look into this matter promptly.",Billing,Medium,synthetic
+TICK-010226,"Account balance se double amount deduct ho gaya, please check billing statement. Urgent attention required.",Billing,Medium,synthetic
 TICK-014673,Urgent: What are the minimum hardware and RAM requirements for running the server software on Linux? Kindly look into this matter promptly.,Product Inquiry,High,synthetic
-TICK-012408,"Dear customer service, Wrong delivery address on order 40732. Plz advise as soon as possible.",Shipping,Critical,synthetic
+TICK-012408,"Dear customer service, Wrong delivery address on order 40732. Plz advise as soon as possible.",Shipping,Medium,synthetic
 TICK-010783,"Hello, VPN connection repeatedly drops every few minutes when connected to office network.",Technical Support,High,synthetic
 TICK-012773,"Dear customer service, My parcel box arrived completely crushed with contents damaged during transport. Looking forward to hearing back.",Shipping,High,synthetic
 TICK-014157,"Hello, I have been on hold for over 45 minutes without anyone picking up my call. This service is terrible. Contact me via email or phone.",Complaint,Medium,synthetic
-TICK-013440,"Dear customer service, Why am I not receiving the SMS two-factor authentication verification code on my registered mobile number? Kindly look into this matter promptly",Account,High,synthetic
-TICK-012741,Plz help - Can I update my shipping delivery address to apartment 4B before the order dispatches? Urgent attention required.,Shipping,High,synthetic
+TICK-013440,"Dear customer service, Why am I not receiving the SMS two-factor authentication verification code on my registered mobile number? Kindly look into this matter promptly",Account,Medium,synthetic
+TICK-012741,Plz help - Can I update my shipping delivery address to apartment 4B before the order dispatches? Urgent attention required.,Shipping,Medium,synthetic
 TICK-013898,"Dear customer service, Rude customer agent on call. Thanks for your help!",Complaint,Low,synthetic
 TICK-013378,Plz help - Account locked after failed logins. Thanks for ur help!,Account,High,synthetic
-TICK-013450,Forgot password link expired. Looking forward to hearing back.,Account,Medium,synthetic
-TICK-011735,"Hey there, Wrong item delivered, money back. Urgent attention required.",Refund,High,synthetic
-TICK-015011,Account delete karvu che. Thanks for your help!,Cancellation,High,synthetic
+TICK-013450,Forgot password link expired. Looking forward to hearing back.,Account,Low,synthetic
+TICK-011735,"Hey there, Wrong item delivered, money back. Urgent attention required.",Refund,Medium,synthetic
+TICK-015011,Account delete karvu che. Thanks for your help!,Cancellation,Medium,synthetic
 TICK-014048,No reply to urgent ticket for 48 hours despite paying for 24/7 premium support SLA. Looking forward to hearing back.,Complaint,High,synthetic
-TICK-013236,"Hey there, I am requesting complete account closure and permanent deletion of all personal stored data from ur servers in compliance with privacy regulations. Kindly look into this matter promptly.",Account,High,synthetic
+TICK-013236,"Hey there, I am requesting complete account closure and permanent deletion of all personal stored data from ur servers in compliance with privacy regulations. Kindly look into this matter promptly.",Account,Medium,synthetic
 TICK-011917,"FYI, I returned package for order 28331 two weeks ago but haven't seen the refund credited to my bank account. Contact me via email or phone.",Refund,Medium,synthetic
-TICK-012571,Courier status update nathi thayo. Appreciate a quick update on this.,Shipping,Medium,synthetic
+TICK-012571,Courier status update nathi thayo. Appreciate a quick update on this.,Shipping,Low,synthetic
 TICK-014707,Aa product ma discount milse? Urgent attention required,Product Inquiry,High,synthetic
-TICK-013314,Account login nahi ho raha hai. Please advise as soon as possible.,Account,Critical,synthetic
-TICK-012791,Courier status update nathi thayo. Plz respond asap.,Shipping,High,synthetic
-TICK-014975,"Dear customer service, We are migrating to a different vendor and request complete contract termination. Contact me via email or phone.",Cancellation,High,synthetic
-TICK-014274,"Plz help - Does your REST API support webhook event subscriptions for real-time order status updates, and where can we access the OpenAPI / Swagger documentation for testing? Kindly look into this matter promptly.",Product Inquiry,High,synthetic
-TICK-010277,Why am I seeing two charges for the same order 65026 on my bank app? Looking forward to hearing back.,Billing,High,synthetic
-TICK-015577,"Dear customer service, I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 57714 and remove recorded credit card details. Contact me via email or phone.",Cancellation,High,synthetic
+TICK-013314,Account login nahi ho raha hai. Please advise as soon as possible.,Account,High,synthetic
+TICK-012791,Courier status update nathi thayo. Plz respond asap.,Shipping,Low,synthetic
+TICK-014975,"Dear customer service, We are migrating to a different vendor and request complete contract termination. Contact me via email or phone.",Cancellation,Medium,synthetic
+TICK-014274,"Plz help - Does your REST API support webhook event subscriptions for real-time order status updates, and where can we access the OpenAPI / Swagger documentation for testing? Kindly look into this matter promptly.",Product Inquiry,Low,synthetic
+TICK-010277,Why am I seeing two charges for the same order 65026 on my bank app? Looking forward to hearing back.,Billing,Medium,synthetic
+TICK-015577,"Dear customer service, I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 57714 and remove recorded credit card details. Contact me via email or phone.",Cancellation,Medium,synthetic
 TICK-011601,"FYI, Requesting refund for order 25533.",Refund,Medium,synthetic
 TICK-010924,Database connection timeout. Thanks for your help!,Technical Support,Critical,synthetic
-TICK-012776,"Hello, Where is my parcel? Urgent attention required.",Shipping,High,synthetic
-TICK-011789,"Hey there, Wrong item delivered, money back. Please advise as soon as possible.",Refund,High,synthetic
-TICK-010176,"Dear customer service, Why am I seeing two charges for the same order 16731 on my bank app? Please advise as soon as possible.",Billing,Critical,synthetic
-TICK-011523,"Dear customer service, Where is my pending refund? Kindly look into this matter promptly.",Refund,High,synthetic
+TICK-012776,"Hello, Where is my parcel? Urgent attention required.",Shipping,Medium,synthetic
+TICK-011789,"Hey there, Wrong item delivered, money back. Please advise as soon as possible.",Refund,Medium,synthetic
+TICK-010176,"Dear customer service, Why am I seeing two charges for the same order 16731 on my bank app? Please advise as soon as possible.",Billing,Medium,synthetic
+TICK-011523,"Dear customer service, Where is my pending refund? Kindly look into this matter promptly.",Refund,Medium,synthetic
 TICK-010935,"Dear customer service, Database connection timeout. Looking forward to hearing back.",Technical Support,Critical,synthetic
-TICK-010519,"Plz help - I was billed $149.0 this month, but my plan is supposed to be $9.99. Plz respond asap.",Billing,High,synthetic
-TICK-013077,"Dear customer service, Please help unlock my account after entering wrong password three times. Appreciate a quick update on this.",Account,Medium,synthetic
-TICK-013470,Password reset link kaam nahi kar raha. Urgent attention required.,Account,High,synthetic
+TICK-010519,"Plz help - I was billed $149.0 this month, but my plan is supposed to be $9.99. Plz respond asap.",Billing,Medium,synthetic
+TICK-013077,"Dear customer service, Please help unlock my account after entering wrong password three times. Appreciate a quick update on this.",Account,Low,synthetic
+TICK-013470,Password reset link kaam nahi kar raha. Urgent attention required.,Account,Medium,synthetic
 TICK-014555,"Dear customer service, What are the minimum hardware and RAM requirements for running the server software on Linux? Thanks for your help!",Product Inquiry,Low,synthetic
-TICK-012883,Plz help - Forgot password link expired. Please advise as soon as possible,Account,High,synthetic
+TICK-012883,Plz help - Forgot password link expired. Please advise as soon as possible,Account,Medium,synthetic
 TICK-011190,"Hello, VPN connection repeatedly drops every few minutes when connected to office network. Thanks for your help!",Technical Support,High,synthetic
-TICK-010025,Why am I seeing two charges for the same order 85880 on my bank app? Kindly look into this matter promptly.,Billing,High,synthetic
-TICK-012331,Plz help - Can I update my shipping delivery address to apartment 4B before the order dispatches? Looking forward to hearing back.,Shipping,High,synthetic
-TICK-012198,Courier status update nathi thayo. Looking forward to hearing back.,Shipping,Medium,synthetic
+TICK-010025,Why am I seeing two charges for the same order 85880 on my bank app? Kindly look into this matter promptly.,Billing,Medium,synthetic
+TICK-012331,Plz help - Can I update my shipping delivery address to apartment 4B before the order dispatches? Looking forward to hearing back.,Shipping,Medium,synthetic
+TICK-012198,Courier status update nathi thayo. Looking forward to hearing back.,Shipping,Low,synthetic
 TICK-011563,Quick question - Where is my pending refund? Thanks for ur help!,Refund,Medium,synthetic
 TICK-014006,Urgent: I have been on hold for over 45 minutes without anyone picking up my call. This service is terrible. Thanks for your help!,Complaint,High,synthetic
 TICK-014815,Kya is software mein custom reporting export option available hai? Plz advise as soon as possible.,Product Inquiry,Medium,synthetic
 TICK-010879,"Hi support team, App crashes on launch. Urgent attention required",Technical Support,High,synthetic
-TICK-014140,Quick question - Rude customer agent on call. Plz respond asap.,Complaint,High,synthetic
+TICK-014140,Quick question - Rude customer agent on call. Plz respond asap.,Complaint,Low,synthetic
 TICK-015568,Urgent: Please turn off automatic renewal for account 81041 so I am not charged next month. Appreciate a quick update on this.,Cancellation,High,synthetic
-TICK-015435,Next month billing se pehle mera plan cancel kar do please. Please advise as soon as possible.,Cancellation,High,synthetic
-TICK-011488,Where is my pending refund? Plz respond asap.,Refund,High,synthetic
+TICK-015435,Next month billing se pehle mera plan cancel kar do please. Please advise as soon as possible.,Cancellation,Medium,synthetic
+TICK-011488,Where is my pending refund? Plz respond asap.,Refund,Medium,synthetic
 TICK-014801,Quick question - Does the cloud storage infrastructure comply with SOC2 and HIPAA security certifications? Thanks for ur help!,Product Inquiry,Medium,synthetic
 TICK-012808,Account login nahi ho raha hai. Urgent attention required.,Account,High,synthetic
 TICK-012625,Plz help - Tracking link shows package held at border customs clearance depot. Contact me via email or phone.,Shipping,Low,synthetic
 TICK-010128,Double billing issue.,Billing,Medium,synthetic
 TICK-010218,Urgent: Why am I seeing two charges for the same order 37710 on my bank app?,Billing,High,synthetic
-TICK-014739,"Hi support team, We are currently evaluating software solutions for a 300-person engineering team. Could you provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules? Kindly look into this matter promptly.",Product Inquiry,High,synthetic
-TICK-010050,"Account balance se double amount deduct ho gaya, please check billing statement. Please advise as soon as possible.",Billing,Critical,synthetic
+TICK-014739,"Hi support team, We are currently evaluating software solutions for a 300-person engineering team. Could you provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules? Kindly look into this matter promptly.",Product Inquiry,Low,synthetic
+TICK-010050,"Account balance se double amount deduct ho gaya, please check billing statement. Please advise as soon as possible.",Billing,Medium,synthetic
 TICK-014830,"Hello, What are the minimum hardware and RAM requirements for running the server software on Linux? Plz advise as soon as possible.",Product Inquiry,Medium,synthetic
-TICK-015347,Next month billing se pehle mera plan cancel kar do please. Thanks for your help!,Cancellation,Medium,synthetic
+TICK-015347,Next month billing se pehle mera plan cancel kar do please. Thanks for your help!,Cancellation,Low,synthetic
 TICK-015203,Urgent: We are migrating to a different vendor and request complete contract termination. Contact me via email or phone.,Cancellation,High,synthetic
-TICK-015127,Plz help - I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 55327 and remove recorded credit card details. Please advise as soon as possible.,Cancellation,Critical,synthetic
-TICK-013993,Worst support experience ever. Urgent attention required.,Complaint,High,synthetic
-TICK-012861,Password reset link kaam nahi kar raha. Please advise as soon as possible.,Account,High,synthetic
+TICK-015127,Plz help - I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 55327 and remove recorded credit card details. Please advise as soon as possible.,Cancellation,Medium,synthetic
+TICK-013993,Worst support experience ever. Urgent attention required.,Complaint,Medium,synthetic
+TICK-012861,Password reset link kaam nahi kar raha. Please advise as soon as possible.,Account,Medium,synthetic
 TICK-013761,"Dear customer service, Unannounced platform outage during business hours caused direct revenue loss for our company. Looking forward to hearing back.",Complaint,Critical,synthetic
-TICK-011585,"Dear customer service, Where is my pending refund? Please advise as soon as possible.",Refund,High,synthetic
-TICK-013788,"Dear customer service, Your representative was dismissive and unhelpful when I asked for assistance with system errors. Kindly look into this matter promptly.",Complaint,High,synthetic
-TICK-015117,"FYI, I would like to cancel my monthly subscription effective before the next billing cycle. Contact me via email or phone.",Cancellation,Medium,synthetic
+TICK-011585,"Dear customer service, Where is my pending refund? Please advise as soon as possible.",Refund,Medium,synthetic
+TICK-013788,"Dear customer service, Your representative was dismissive and unhelpful when I asked for assistance with system errors. Kindly look into this matter promptly.",Complaint,Low,synthetic
+TICK-015117,"FYI, I would like to cancel my monthly subscription effective before the next billing cycle. Contact me via email or phone.",Cancellation,Low,synthetic
 TICK-014866,"Dear customer service, Does your REST API support webhook event subscriptions for real-time order status updates, and where can we access the OpenAPI / Swagger documentation for testing?",Product Inquiry,Low,synthetic
 TICK-010991,Plz help - Desktop software freezing. Looking forward to hearing back.,Technical Support,Medium,synthetic
-TICK-015090,"Dear customer service, We are migrating to a different vendor and request complete contract termination. Please advise as soon as possible.",Cancellation,Critical,synthetic
+TICK-015090,"Dear customer service, We are migrating to a different vendor and request complete contract termination. Please advise as soon as possible.",Cancellation,Medium,synthetic
 TICK-010984,Database connection timeout. Plz respond asap.,Technical Support,Critical,synthetic
 TICK-014312,"Dear customer service, What are the minimum hardware and RAM requirements for running the server software on Linux? Contact me via email or phone.",Product Inquiry,Low,synthetic
-TICK-010298,"Dear customer service, Why am I seeing two charges for the same order 93839 on my bank app? Kindly look into this matter promptly.",Billing,High,synthetic
+TICK-010298,"Dear customer service, Why am I seeing two charges for the same order 93839 on my bank app? Kindly look into this matter promptly.",Billing,Medium,synthetic
 TICK-011310,Urgent: VPN connection repeatedly drops every few minutes when connected to office network. Contact me via email or phone.,Technical Support,High,synthetic
-TICK-013234,"Dear customer service, Please help unlock my account after entering wrong password three times. Kindly look into this matter promptly.",Account,High,synthetic
+TICK-013234,"Dear customer service, Please help unlock my account after entering wrong password three times. Kindly look into this matter promptly.",Account,Low,synthetic
 TICK-010397,"Hey there, Our organization was charged a late fee penalty of $49.0 despite completing the wire transfer prior to the due date. Attached is our bank transaction confirmation for your accounts team to verify and credit back.",Billing,Medium,synthetic
 TICK-012811,"Plz help - I received an email stating my password was changed from an unknown location, but I did not initiate this. Plz respond asap.",Account,Critical,synthetic
-TICK-011132,"Quick question - We are observing consistent memory leaks in the background daemon process on node 192.168.206.155. Memory utilization climbs to 99% within two hours of service start, eventually forcing a kernel panic and abrupt system reboot. Urgent attention required",Technical Support,Critical,synthetic
+TICK-011132,"Quick question - We are observing consistent memory leaks in the background daemon process on node 192.168.206.155. Memory utilization climbs to 99% within two hours of service start, eventually forcing a kernel panic and abrupt system reboot. Urgent attention required",Technical Support,High,synthetic
 TICK-012585,Parcel delivered bol raha hai par gate pe koi item nahi hai. Kindly look into this matter promptly,Shipping,High,synthetic
 TICK-014749,"Dear customer service, Does product support dark mode? Thanks for ur help!",Product Inquiry,Low,synthetic
-TICK-012592,Courier status update nathi thayo. Kindly look into this matter promptly,Shipping,High,synthetic
+TICK-012592,Courier status update nathi thayo. Kindly look into this matter promptly,Shipping,Low,synthetic
 TICK-013897,Plz help - Service downtime ruined our demo. Contact me via email or phone.,Complaint,Critical,synthetic
-TICK-010030,"Hey there, Duplicate charge on statement. Appreciate a quick update on this.",Billing,High,synthetic
+TICK-010030,"Hey there, Duplicate charge on statement. Appreciate a quick update on this.",Billing,Medium,synthetic
 TICK-010511,Urgent: Our organization was charged a late fee penalty of $49.0 despite completing the wire transfer prior to the due date. Attached is our bank transaction confirmation for your accounts team to verify and credit back. Kindly look into this matter promptly.,Billing,High,synthetic
 TICK-014231,Kya is software mein custom reporting export option available hai? Appreciate a quick update on this,Product Inquiry,Low,synthetic
-TICK-010349,"Dear customer service, Why am I seeing two charges for the same order 97797 on my bank app? Plz respond asap.",Billing,High,synthetic
-TICK-012897,Please help unlock my account after entering wrong password three times.,Account,Medium,synthetic
+TICK-010349,"Dear customer service, Why am I seeing two charges for the same order 97797 on my bank app? Plz respond asap.",Billing,Medium,synthetic
+TICK-012897,Please help unlock my account after entering wrong password three times.,Account,Low,synthetic
 TICK-013827,"Dear customer service, Unannounced platform outage during business hours caused direct revenue loss for our company.",Complaint,Critical,synthetic
 TICK-014220,"Plz help - We are currently evaluating software solutions for a 300-person engineering team. Could you provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules? Looking forward to hearing back.",Product Inquiry,Low,synthetic
 TICK-011849,"FYI, Where is my pending refund? Appreciate a quick update on this",Refund,Medium,synthetic
 TICK-010260,Mera payment duplicate kat gaya hai. Plz respond asap,Billing,High,synthetic
-TICK-010787,Plz help - Desktop software freezing. Kindly look into this matter promptly.,Technical Support,High,synthetic
+TICK-010787,Plz help - Desktop software freezing. Kindly look into this matter promptly.,Technical Support,Medium,synthetic
 TICK-010895,"Plz help - Router blinking red, internet down.",Technical Support,High,synthetic
 TICK-012178,Where is my parcel? Appreciate a quick update on this.,Shipping,Low,synthetic
-TICK-013433,Password reset link kaam nahi kar raha. Thanks for your help!,Account,Medium,synthetic
-TICK-012674,Courier status update nathi thayo.,Shipping,Medium,synthetic
-TICK-014849,"Dear customer service, What are the minimum hardware and RAM requirements for running the server software on Linux? Urgent attention required.",Product Inquiry,High,synthetic
+TICK-013433,Password reset link kaam nahi kar raha. Thanks for your help!,Account,Low,synthetic
+TICK-012674,Courier status update nathi thayo.,Shipping,Low,synthetic
+TICK-014849,"Dear customer service, What are the minimum hardware and RAM requirements for running the server software on Linux? Urgent attention required.",Product Inquiry,Medium,synthetic
 TICK-010346,"Account balance se double amount deduct ho gaya, please check billing statement. Urgent attention required",Billing,High,synthetic
-TICK-012828,Password reset link kaam nahi kar raha. Kindly look into this matter promptly.,Account,High,synthetic
-TICK-012041,"Hey there, Where is my pending refund? Kindly look into this matter promptly.",Refund,High,synthetic
+TICK-012828,Password reset link kaam nahi kar raha. Kindly look into this matter promptly.,Account,Low,synthetic
+TICK-012041,"Hey there, Where is my pending refund? Kindly look into this matter promptly.",Refund,Medium,synthetic
 TICK-012366,"Hi support team, Where is my parcel? Appreciate a quick update on this.",Shipping,Low,synthetic
 TICK-013726,Urgent: Ticket closed without resolution. Appreciate a quick update on this.,Complaint,High,synthetic
-TICK-011821,"FYI, Damaged product, refund needed. Plz respond asap.",Refund,High,synthetic
+TICK-011821,"FYI, Damaged product, refund needed. Plz respond asap.",Refund,Medium,synthetic
 TICK-014706,"Dear customer service, Does the cloud storage infrastructure comply with SOC2 and HIPAA security certifications? Appreciate a quick update on this.",Product Inquiry,Medium,synthetic
 TICK-014179,"Hey there, Service downtime ruined our demo. Please advise as soon as possible.",Complaint,Critical,synthetic
 TICK-014542,"Plz help - We are currently evaluating software solutions for a 300-person engineering team. Could you provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules? Contact me via email or phone.",Product Inquiry,Low,synthetic
 TICK-010859,"Dear customer service, Desktop software freezing. Looking forward to hearing back.",Technical Support,Medium,synthetic
-TICK-011817,"FYI, I placed order 95344 for an enterprise hardware component, but received a completely different consumer product model. Since this doesnt match the product specification or purchase order, I am returning the package and request a full refund including express shipping charges. Please advise as soon as possible.",Refund,Critical,synthetic
+TICK-011817,"FYI, I placed order 95344 for an enterprise hardware component, but received a completely different consumer product model. Since this doesnt match the product specification or purchase order, I am returning the package and request a full refund including express shipping charges. Please advise as soon as possible.",Refund,High,synthetic
 TICK-010102,"Dear customer service, Payment failed but money deducted. Urgent attention required.",Billing,High,synthetic
-TICK-015087,"FYI, I would like to cancel my monthly subscription effective before the next billing cycle. Please advise as soon as possible.",Cancellation,High,synthetic
+TICK-015087,"FYI, I would like to cancel my monthly subscription effective before the next billing cycle. Please advise as soon as possible.",Cancellation,Medium,synthetic
 TICK-012916,Our team administrator suddenly lost access to the master workspace account after enabling SAML 2.0 SSO. The login screen loops indefinitely between the identity provider and portal without authenticating. We need urgent admin intervention.,Account,Critical,synthetic
-TICK-011652,"FYI, I returned package for order 17860 two weeks ago but haven't seen the refund credited to my bank account. Plz respond asap.",Refund,High,synthetic
+TICK-011652,"FYI, I returned package for order 17860 two weeks ago but haven't seen the refund credited to my bank account. Plz respond asap.",Refund,Medium,synthetic
 TICK-011056,"Dear customer service, Database connection timeout. Contact me via email or phone.",Technical Support,Critical,synthetic
-TICK-010503,"FYI, Charged twice for order 70933. Please advise as soon as possible.",Billing,High,synthetic
-TICK-010472,"Dear customer service, Why am I seeing two charges for the same order 36173 on my bank app? Urgent attention required.",Billing,High,synthetic
-TICK-010222,"Account balance se double amount deduct ho gaya, please check billing statement. Looking forward to hearing back.",Billing,High,synthetic
-TICK-015218,"Dear customer service, Turn off auto-renewal. Contact me via email or phone.",Cancellation,Medium,synthetic
-TICK-010288,Charged twice for order 60134. Kindly look into this matter promptly.,Billing,High,synthetic
+TICK-010503,"FYI, Charged twice for order 70933. Please advise as soon as possible.",Billing,Medium,synthetic
+TICK-010472,"Dear customer service, Why am I seeing two charges for the same order 36173 on my bank app? Urgent attention required.",Billing,Medium,synthetic
+TICK-010222,"Account balance se double amount deduct ho gaya, please check billing statement. Looking forward to hearing back.",Billing,Medium,synthetic
+TICK-015218,"Dear customer service, Turn off auto-renewal. Contact me via email or phone.",Cancellation,Low,synthetic
+TICK-010288,Charged twice for order 60134. Kindly look into this matter promptly.,Billing,Medium,synthetic
 TICK-012308,Quick question - I paid extra for guaranteed next-day air shipping on order 95981 because of an urgent event. It has now been 4 days and the tracking status shows the package is still sitting at the local distribution facility. Please expedite delivery or refund express fees. Appreciate a quick update on this.,Shipping,High,synthetic
 TICK-015161,Urgent: Please turn off automatic renewal for account 90128 so I am not charged next month. Thanks for your help!,Cancellation,High,synthetic
-TICK-015251,Account delete karvu che. Contact me via email or phone.,Cancellation,High,synthetic
+TICK-015251,Account delete karvu che. Contact me via email or phone.,Cancellation,Medium,synthetic
 TICK-014777,"Does your REST API support webhook event subscriptions for real-time order status updates, and where can we access the OpenAPI / Swagger documentation for testing? Appreciate a quick update on this.",Product Inquiry,Low,synthetic
 TICK-011123,"Hey there, VPN connection repeatedly drops every few minutes when connected to office network. Kindly look into this matter promptly.",Technical Support,High,synthetic
-TICK-010241,Plz help - Can you please send me an official VAT receipt and tax invoice for billing period Feb 2026? Urgent attention required.,Billing,High,synthetic
-TICK-015285,"Dear customer service, I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 22682 and remove recorded credit card details.",Cancellation,High,synthetic
+TICK-010241,Plz help - Can you please send me an official VAT receipt and tax invoice for billing period Feb 2026? Urgent attention required.,Billing,Medium,synthetic
+TICK-015285,"Dear customer service, I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 22682 and remove recorded credit card details.",Cancellation,Medium,synthetic
 TICK-015215,"Quick question - Due to budget cuts in our organization, we can no longer maintain our active subscription plan. Please process account cancellation immediately and send written confirmation that auto-renew has been disabled.",Cancellation,High,synthetic
-TICK-013079,Forgot password link expired. Plz respond asap.,Account,High,synthetic
+TICK-013079,Forgot password link expired. Plz respond asap.,Account,Low,synthetic
 TICK-014768,"Hi support team, We are currently evaluating software solutions for a 300-person engineering team. Could you provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules? Appreciate a quick update on this.",Product Inquiry,Low,synthetic
 TICK-012292,Plz help - Tracking link shows package held at border customs clearance depot. Thanks for your help!,Shipping,Low,synthetic
-TICK-015048,"Dear customer service, How do I cancel my pending order before it moves to the warehouse packing stage? Kindly look into this matter promptly",Cancellation,High,synthetic
-TICK-012640,Courier status update nathi thayo. Urgent attention required.,Shipping,High,synthetic
+TICK-015048,"Dear customer service, How do I cancel my pending order before it moves to the warehouse packing stage? Kindly look into this matter promptly",Cancellation,Low,synthetic
+TICK-012640,Courier status update nathi thayo. Urgent attention required.,Shipping,Medium,synthetic
 TICK-010896,"Dear customer service, Page loading times have degraded significantly after the latest patch, causing request timeouts. Looking forward to hearing back.",Technical Support,Medium,synthetic
-TICK-015288,Account delete karvu che. Please advise as soon as possible.,Cancellation,Critical,synthetic
-TICK-012337,Courier status update nathi thayo. Thanks for your help!,Shipping,Medium,synthetic
+TICK-015288,Account delete karvu che. Please advise as soon as possible.,Cancellation,Medium,synthetic
+TICK-012337,Courier status update nathi thayo. Thanks for your help!,Shipping,Low,synthetic
 TICK-014061,Plz help - Your representative was dismissive and unhelpful when I asked for assistance with system errors. Looking forward to hearing back,Complaint,Low,synthetic
-TICK-015062,"Hey there, Close my account. Looking forward to hearing back",Cancellation,High,synthetic
+TICK-015062,"Hey there, Close my account. Looking forward to hearing back",Cancellation,Medium,synthetic
 TICK-011114,"Dear customer service, Desktop software freezing",Technical Support,Medium,synthetic
-TICK-015432,"Hey there, I would like to cancel my monthly subscription effective before the next billing cycle. Plz respond asap.",Cancellation,High,synthetic
-TICK-010255,Plz help - Our organization was charged a late fee penalty of $499.0 despite completing the wire transfer prior to the due date. Attached is our bank transaction confirmation for ur accounts team to verify and credit back. Please advise as soon as possible.,Billing,High,synthetic
+TICK-015432,"Hey there, I would like to cancel my monthly subscription effective before the next billing cycle. Plz respond asap.",Cancellation,Low,synthetic
+TICK-010255,Plz help - Our organization was charged a late fee penalty of $499.0 despite completing the wire transfer prior to the due date. Attached is our bank transaction confirmation for ur accounts team to verify and credit back. Please advise as soon as possible.,Billing,Medium,synthetic
 TICK-011386,"Hi support team, Ever since updating to version 4.2 yesterday, our entire telemetry team has been unable to access the web portal. The page loads infinitely before displaying an internal server error (HTTP 500). This is blocking active customer operations. Thanks for ur help!",Technical Support,Critical,synthetic
 TICK-011300,"Dear customer service, Desktop software freezing. Thanks for your help!",Technical Support,Medium,synthetic
 TICK-013988,"Urgent: Support agent closed my ticket 17370 marking it resolved, even though the bug is still happening! Looking forward to hearing back.",Complaint,High,synthetic
 TICK-013995,"Dear customer service, Unannounced platform outage during business hours caused direct revenue loss for our company. Kindly look into this matter promptly",Complaint,Critical,synthetic
 TICK-013848,Plz help - Service downtime ruined our demo. Please advise as soon as possible.,Complaint,Critical,synthetic
 TICK-013742,Urgent: Ticket closed without resolution. Plz respond asap.,Complaint,High,synthetic
-TICK-013325,"Urgent: I received an email stating my password was changed from an unknown location, but I did not initiate this. Contact me via email or phone",Account,Critical,synthetic
-TICK-011447,Order cancel hone ke baad bhi refund credit nahi hua account mein. Plz advise as soon as possible.,Refund,Critical,synthetic
-TICK-013696,Quick question - Rude customer agent on call. Urgent attention required.,Complaint,High,synthetic
-TICK-010035,"Dear customer service, Why am I seeing two charges for the same order 36158 on my bank app? Looking forward to hearing back.",Billing,High,synthetic
-TICK-012515,Courier status update nathi thayo. Please advise as soon as possible.,Shipping,High,synthetic
+TICK-013325,"Urgent: I received an email stating my password was changed from an unknown location, but I did not initiate this. Contact me via email or phone",Account,High,synthetic
+TICK-011447,Order cancel hone ke baad bhi refund credit nahi hua account mein. Plz advise as soon as possible.,Refund,Medium,synthetic
+TICK-013696,Quick question - Rude customer agent on call. Urgent attention required.,Complaint,Medium,synthetic
+TICK-010035,"Dear customer service, Why am I seeing two charges for the same order 36158 on my bank app? Looking forward to hearing back.",Billing,Medium,synthetic
+TICK-012515,Courier status update nathi thayo. Please advise as soon as possible.,Shipping,Medium,synthetic
 TICK-012710,"Hi support team, Package marked delivered but missing. Appreciate a quick update on this",Shipping,Critical,synthetic
-TICK-014714,"Plz help - We are currently evaluating software solutions for a 300-person engineering team. Could you provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules? Plz respond asap.",Product Inquiry,High,synthetic
+TICK-014714,"Plz help - We are currently evaluating software solutions for a 300-person engineering team. Could you provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules? Plz respond asap.",Product Inquiry,Low,synthetic
 TICK-011993,Plz help - The item arrived with broken glass and torn packaging. I demand an immediate full refund.,Refund,High,synthetic
 TICK-011860,"Hey there, Where is my pending refund?",Refund,Medium,synthetic
 TICK-014378,"Plz help - Does your REST API support webhook event subscriptions for real-time order status updates, and where can we access the OpenAPI / Swagger documentation for testing? Looking forward to hearing back.",Product Inquiry,Low,synthetic
-TICK-010141,Charged twice for order 20384. Looking forward to hearing back.,Billing,High,synthetic
+TICK-010141,Charged twice for order 20384. Looking forward to hearing back.,Billing,Medium,synthetic
 TICK-011306,Urgent: VPN connection repeatedly drops every few minutes when connected to office network. Appreciate a quick update on this.,Technical Support,High,synthetic
 TICK-012607,Quick question - I paid extra for guaranteed next-day air shipping on order 36736 because of an urgent event. It has now been 4 days and the tracking status shows the package is still sitting at the local distribution facility. Please expedite delivery or refund express fees. Contact me via email or phone.,Shipping,High,synthetic
 TICK-010227,Plz help - Our organization was charged a late fee penalty of $99.99 despite completing the wire transfer prior to the due date. Attached is our bank transaction confirmation for ur accounts team to verify and credit back. Thanks for your help!,Billing,Medium,synthetic
 TICK-014109,"Dear customer service, Your representative was dismissive and unhelpful when I asked for assistance with system errors. Thanks for your help!",Complaint,Low,synthetic
-TICK-012306,Courier status update nathi thayo. Contact me via email or phone.,Shipping,Medium,synthetic
-TICK-012672,Courier status update nathi thayo. Kindly look into this matter promptly.,Shipping,High,synthetic
+TICK-012306,Courier status update nathi thayo. Contact me via email or phone.,Shipping,Low,synthetic
+TICK-012672,Courier status update nathi thayo. Kindly look into this matter promptly.,Shipping,Low,synthetic
 TICK-010732,"Plz help - Router blinking red, internet down. Kindly look into this matter promptly",Technical Support,High,synthetic
-TICK-012959,"Mera admin account locked ho gaya hai, please reset karein",Account,High,synthetic
+TICK-012959,"Mera admin account locked ho gaya hai, please reset karein",Account,Medium,synthetic
 TICK-010336,"FYI, Need tax invoice for order 54922. Please advise as soon as possible",Billing,Medium,synthetic
-TICK-011913,Requesting refund for order 25930. Urgent attention required.,Refund,High,synthetic
+TICK-011913,Requesting refund for order 25930. Urgent attention required.,Refund,Medium,synthetic
 TICK-013820,"Dear customer service, Unannounced platform outage during business hours caused direct revenue loss for our company. Kindly look into this matter promptly.",Complaint,Critical,synthetic
 TICK-013509,I have been on hold for over 45 minutes without anyone picking up my call. This service is terrible. Looking forward to hearing back.,Complaint,Medium,synthetic
 TICK-013799,"FYI, No reply to urgent ticket for 48 hours despite paying for 24/7 premium support SLA. Urgent attention required.",Complaint,High,synthetic
-TICK-010374,Duplicate charge on statement,Billing,High,synthetic
+TICK-010374,Duplicate charge on statement,Billing,Medium,synthetic
 TICK-013538,"Hey there, Service downtime ruined our demo. Contact me via email or phone.",Complaint,Critical,synthetic
 TICK-013579,Quick question - Your representative was dismissive and unhelpful when I asked for assistance with system errors. Appreciate a quick update on this.,Complaint,Low,synthetic
 TICK-010969,"Dear customer service, The offline synchronization module fails to push local SQLite records to the cloud database when reconnecting to Wi-Fi. Data remains cached locally without throwing explicit log exceptions. Urgent attention required",Technical Support,High,synthetic
-TICK-015575,"FYI, I would like to cancel my monthly subscription effective before the next billing cycle. Kindly look into this matter promptly.",Cancellation,High,synthetic
-TICK-010638,"Account balance se double amount deduct ho gaya, please check billing statement. Appreciate a quick update on this.",Billing,High,synthetic
-TICK-010809,"Dear customer service, Desktop software freezing. Kindly look into this matter promptly.",Technical Support,High,synthetic
-TICK-014906,Account delete karvu che. Appreciate a quick update on this.,Cancellation,High,synthetic
+TICK-015575,"FYI, I would like to cancel my monthly subscription effective before the next billing cycle. Kindly look into this matter promptly.",Cancellation,Low,synthetic
+TICK-010638,"Account balance se double amount deduct ho gaya, please check billing statement. Appreciate a quick update on this.",Billing,Medium,synthetic
+TICK-010809,"Dear customer service, Desktop software freezing. Kindly look into this matter promptly.",Technical Support,Medium,synthetic
+TICK-014906,Account delete karvu che. Appreciate a quick update on this.,Cancellation,Medium,synthetic
 TICK-011858,"FYI, I returned package for order 41990 two weeks ago but haven't seen the refund credited to my bank account. Contact me via email or phone.",Refund,Medium,synthetic
 TICK-012951,"Hi support team, Cannot log into account.",Account,High,synthetic
-TICK-015451,Next month billing se pehle mera plan cancel kar do please. Contact me via email or phone.,Cancellation,Medium,synthetic
+TICK-015451,Next month billing se pehle mera plan cancel kar do please. Contact me via email or phone.,Cancellation,Low,synthetic
 TICK-013455,"Hey there, Account locked after failed logins. Urgent attention required",Account,High,synthetic
 TICK-012100,"Hello, I placed order 46429 for an enterprise hardware component, but received a completely different consumer product model. Since this does not match the product specification or purchase order, I am returning the package and request a full refund including express shipping charges. Plz respond asap",Refund,High,synthetic
 TICK-012363,"Hello, Tracking number 85837 has been stuck in transit at the hub for over 6 days without progress. Urgent attention required",Shipping,High,synthetic
@@ -277,285 +277,285 @@ TICK-014107,"Hey there, Service downtime ruined our demo. Plz respond asap.",Com
 TICK-014245,"Hey there, Bulk license pricing details? Please advise as soon as possible.",Product Inquiry,Medium,synthetic
 TICK-015270,Plz help - Plan cancellation request. Plz respond asap,Cancellation,High,synthetic
 TICK-012550,"Dear customer service, I paid extra for guaranteed next-day air shipping on order 53716 because of an urgent event. It has now been 4 days and the tracking status shows the package is still sitting at the local distribution facility. Please expedite delivery or refund express fees. Urgent attention required.",Shipping,High,synthetic
-TICK-010023,"Hi support team, Our organization was charged a late fee penalty of $49.0 despite completing the wire transfer prior to the due date. Attached is our bank transaction confirmation for your accounts team to verify and credit back. Kindly look into this matter promptly.",Billing,High,synthetic
+TICK-010023,"Hi support team, Our organization was charged a late fee penalty of $49.0 despite completing the wire transfer prior to the due date. Attached is our bank transaction confirmation for your accounts team to verify and credit back. Kindly look into this matter promptly.",Billing,Medium,synthetic
 TICK-014862,"Dear customer service, Do u offer non-profit or educational discounts for team subscription accounts? Thanks for your help!",Product Inquiry,Low,synthetic
 TICK-011393,"Dear customer service, VPN connection repeatedly drops every few minutes when connected to office network. Looking forward to hearing back.",Technical Support,High,synthetic
 TICK-011229,"Hey there, VPN connection repeatedly drops every few minutes when connected to office network.",Technical Support,High,synthetic
 TICK-010002,Double billing issue. Looking forward to hearing back.,Billing,Medium,synthetic
 TICK-011995,Quick question - Our scheduled virtual event was ruined due to continuous platform outages on your side. We paid $99.99 for premium hosting and request an immediate pro-rated credit refund to our corporate account balance. Contact me via email or phone.,Refund,Medium,synthetic
-TICK-014651,"Hey there, Is macOS Sequoia supported? Plz respond asap.",Product Inquiry,High,synthetic
+TICK-014651,"Hey there, Is macOS Sequoia supported? Plz respond asap.",Product Inquiry,Low,synthetic
 TICK-014694,"Hi support team, We are currently evaluating software solutions for a 300-person engineering team. Could you provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules? Contact me via email or phone.",Product Inquiry,Low,synthetic
 TICK-012559,"Hello, Where is my parcel? Appreciate a quick update on this.",Shipping,Low,synthetic
 TICK-013008,"FYI, Account locked after failed logins. Contact me via email or phone",Account,High,synthetic
 TICK-014850,"Urgent: We are currently evaluating software solutions for a 300-person engineering team. Could you provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules?",Product Inquiry,High,synthetic
 TICK-012035,Pakka refund kab tak milega order 89260 ka? Urgent attention required,Refund,High,synthetic
 TICK-012685,Quick question - I paid extra for guaranteed next-day air shipping on order 60140 because of an urgent event. It has now been 4 days and the tracking status shows the package is still sitting at the local distribution facility. Please expedite delivery or refund express fees. Contact me via email or phone.,Shipping,High,synthetic
-TICK-010752,"Hello, Desktop software freezing. Urgent attention required.",Technical Support,High,synthetic
+TICK-010752,"Hello, Desktop software freezing. Urgent attention required.",Technical Support,Medium,synthetic
 TICK-011100,"Hey there, VPN connection repeatedly drops every few minutes when connected to office network. Appreciate a quick update on this.",Technical Support,High,synthetic
 TICK-012311,"Hey there, Tracking number 37290 has been stuck in transit at the hub for over 6 days without progress. Plz respond asap",Shipping,High,synthetic
 TICK-013563,"Hi support team, Worst support experience ever.",Complaint,Low,synthetic
 TICK-014275,"Hey there, Is macOS Sequoia supported?",Product Inquiry,Low,synthetic
-TICK-015518,Next month billing se pehle mera plan cancel kar do please. Kindly look into this matter promptly.,Cancellation,High,synthetic
+TICK-015518,Next month billing se pehle mera plan cancel kar do please. Kindly look into this matter promptly.,Cancellation,Low,synthetic
 TICK-014286,"Plz help - We are currently evaluating software solutions for a 300-person engineering team. Could you provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules?",Product Inquiry,Low,synthetic
-TICK-015250,"Dear customer service, We are migrating to a different vendor and request complete contract termination.",Cancellation,High,synthetic
-TICK-011843,Pakka refund kab tak milega order 30207 ka? Please advise as soon as possible,Refund,High,synthetic
+TICK-015250,"Dear customer service, We are migrating to a different vendor and request complete contract termination.",Cancellation,Medium,synthetic
+TICK-011843,Pakka refund kab tak milega order 30207 ka? Please advise as soon as possible,Refund,Medium,synthetic
 TICK-014371,"Hi support team, What are the minimum hardware and RAM requirements for running the server software on Linux? Contact me via email or phone.",Product Inquiry,Low,synthetic
 TICK-012792,"Dear customer service, Tracking link shows package held at border customs clearance depot. Contact me via email or phone",Shipping,Low,synthetic
-TICK-015229,"Dear customer service, I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 21397 and remove recorded credit card details. Kindly look into this matter promptly.",Cancellation,High,synthetic
+TICK-015229,"Dear customer service, I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 21397 and remove recorded credit card details. Kindly look into this matter promptly.",Cancellation,Medium,synthetic
 TICK-013360,"Hey there, Account locked after failed logins. Plz respond asap.",Account,High,synthetic
 TICK-011856,"Hey there, Where is my pending refund? Looking forward to hearing back.",Refund,Medium,synthetic
-TICK-012921,Password reset link kaam nahi kar raha. Plz respond asap.,Account,High,synthetic
-TICK-012876,"Dear customer service, Why am I not receiving the SMS two-factor authentication verification code on my registered mobile number? Plz respond asap.",Account,High,synthetic
+TICK-012921,Password reset link kaam nahi kar raha. Plz respond asap.,Account,Low,synthetic
+TICK-012876,"Dear customer service, Why am I not receiving the SMS two-factor authentication verification code on my registered mobile number? Plz respond asap.",Account,Medium,synthetic
 TICK-014818,"Urgent: We are currently evaluating software solutions for a 300-person engineering team. Could you provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules? Urgent attention required.",Product Inquiry,High,synthetic
 TICK-011322,"Hello, Desktop software freezing. Appreciate a quick update on this.",Technical Support,Medium,synthetic
 TICK-012684,Courier status update nathi thayo. Plz respond asap,Shipping,High,synthetic
 TICK-014659,Urgent: What are the minimum hardware and RAM requirements for running the server software on Linux? Plz respond asap.,Product Inquiry,High,synthetic
 TICK-012216,"Hey there, Tracking link shows package held at border customs clearance depot. Contact me via email or phone.",Shipping,Low,synthetic
-TICK-010585,Plz help - Charged twice for order 48426. Please advise as soon as possible,Billing,High,synthetic
+TICK-010585,Plz help - Charged twice for order 48426. Please advise as soon as possible,Billing,Medium,synthetic
 TICK-011350,Quick question - Server error 500 on submit. Kindly look into this matter promptly.,Technical Support,Critical,synthetic
-TICK-010400,Charged twice for order 98940. Looking forward to hearing back.,Billing,High,synthetic
+TICK-010400,Charged twice for order 98940. Looking forward to hearing back.,Billing,Medium,synthetic
 TICK-010664,"Hey there, Our organization was charged a late fee penalty of $149.0 despite completing the wire transfer prior to the due date. Attached is our bank transaction confirmation for your accounts team to verify and credit back. Thanks for your help!",Billing,Medium,synthetic
-TICK-015329,"FYI, I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 22500 and remove recorded credit card details. Plz respond asap.",Cancellation,High,synthetic
-TICK-012742,Plz help - Can I update my shipping delivery address to apartment 4B before the order dispatches? Contact me via email or phone.,Shipping,High,synthetic
+TICK-015329,"FYI, I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 22500 and remove recorded credit card details. Plz respond asap.",Cancellation,Medium,synthetic
+TICK-012742,Plz help - Can I update my shipping delivery address to apartment 4B before the order dispatches? Contact me via email or phone.,Shipping,Medium,synthetic
 TICK-012782,"Dear customer service, I paid extra for guaranteed next-day air shipping on order 56749 because of an urgent event. It has now been 4 days and the tracking status shows the package is still sitting at the local distribution facility. Please expedite delivery or refund express fees.",Shipping,High,synthetic
 TICK-010009,"FYI, I checked my credit card account this morning and noticed two separate line items for $99.99 on order 28726. I only submitted the checkout form once, so one of these transactions is clearly an error. Please reverse the duplicate billing immediately. Kindly look into this matter promptly.",Billing,High,synthetic
 TICK-012980,"Plz help - I received an email stating my password was changed from an unknown location, but I did not initiate this. Please advise as soon as possible.",Account,Critical,synthetic
 TICK-013968,"FYI, I am filing a formal complaint regarding misleading feature advertising on your pricing page. We purchased the business plan based on promised custom integration features, only to discover after onboarding that the API is not included. Thanks for your help!",Complaint,Medium,synthetic
 TICK-013842,Plz help - Service downtime ruined our demo.,Complaint,Critical,synthetic
-TICK-015486,Account delete karvu che. Looking forward to hearing back.,Cancellation,High,synthetic
-TICK-011450,Where is my pending refund? Kindly look into this matter promptly.,Refund,High,synthetic
-TICK-015489,Plz help - Turn off auto-renewal. Contact me via email or phone,Cancellation,Medium,synthetic
+TICK-015486,Account delete karvu che. Looking forward to hearing back.,Cancellation,Medium,synthetic
+TICK-011450,Where is my pending refund? Kindly look into this matter promptly.,Refund,Medium,synthetic
+TICK-015489,Plz help - Turn off auto-renewal. Contact me via email or phone,Cancellation,Low,synthetic
 TICK-013080,"Hey there, I am requesting complete account closure and permanent deletion of all personal stored data from ur servers in compliance with privacy regulations. Appreciate a quick update on this.",Account,Medium,synthetic
 TICK-011111,"Plz help - We are observing consistent memory leaks in the background daemon process on node 192.168.32.223. Memory utilization climbs to 99% within two hours of service start, eventually forcing a kernel panic and abrupt system reboot. Kindly look into this matter promptly.",Technical Support,Critical,synthetic
 TICK-010996,"Dear customer service, Page loading times have degraded significantly after the latest patch, causing request timeouts. Thanks for your help!",Technical Support,Medium,synthetic
 TICK-010765,Database connection timeout. Urgent attention required.,Technical Support,Critical,synthetic
 TICK-010139,"FYI, I checked my credit card account this morning and noticed two separate line items for $19.99 on order 55820. I only submitted the checkout form once, so one of these transactions is clearly an error. Please reverse the duplicate billing immediately. Thanks for your help!",Billing,High,synthetic
-TICK-010019,Kripya invoice receipt email ID par bhej dijiye. Kindly look into this matter promptly,Billing,High,synthetic
-TICK-010420,"Hey there, Our organization was charged a late fee penalty of $19.99 despite completing the wire transfer prior to the due date. Attached is our bank transaction confirmation for your accounts team to verify and credit back. Plz respond asap.",Billing,High,synthetic
+TICK-010019,Kripya invoice receipt email ID par bhej dijiye. Kindly look into this matter promptly,Billing,Low,synthetic
+TICK-010420,"Hey there, Our organization was charged a late fee penalty of $19.99 despite completing the wire transfer prior to the due date. Attached is our bank transaction confirmation for your accounts team to verify and credit back. Plz respond asap.",Billing,Medium,synthetic
 TICK-013785,I have been on hold for over 45 minutes without anyone picking up my call. This service is terrible. Thanks for your help!,Complaint,Medium,synthetic
 TICK-010966,Website completely crash ho gaya hai. Contact me via email or phone,Technical Support,Critical,synthetic
 TICK-010698,"Quick question - I checked my credit card account this morning and noticed two separate line items for $499.0 on order 55252. I only submitted the checkout form once, so one of these transactions is clearly an error. Please reverse the duplicate billing immediately. Looking forward to hearing back.",Billing,High,synthetic
-TICK-014978,"Dear customer service, The cancellation button is missing from my account billing settings page. Plz cancel for me",Cancellation,High,synthetic
-TICK-014652,"Hey there, Is macOS Sequoia supported? Kindly look into this matter promptly.",Product Inquiry,High,synthetic
-TICK-014902,"Dear customer service, Turn off auto-renewal. Kindly look into this matter promptly.",Cancellation,High,synthetic
-TICK-015367,"Hey there, Close my account. Contact me via email or phone.",Cancellation,High,synthetic
-TICK-014983,Plz help - I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 66081 and remove recorded credit card details. Please advise as soon as possible.,Cancellation,Critical,synthetic
+TICK-014978,"Dear customer service, The cancellation button is missing from my account billing settings page. Plz cancel for me",Cancellation,Medium,synthetic
+TICK-014652,"Hey there, Is macOS Sequoia supported? Kindly look into this matter promptly.",Product Inquiry,Low,synthetic
+TICK-014902,"Dear customer service, Turn off auto-renewal. Kindly look into this matter promptly.",Cancellation,Low,synthetic
+TICK-015367,"Hey there, Close my account. Contact me via email or phone.",Cancellation,Medium,synthetic
+TICK-014983,Plz help - I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 66081 and remove recorded credit card details. Please advise as soon as possible.,Cancellation,Medium,synthetic
 TICK-010101,"Quick question - I checked my credit card account this morning and noticed two separate line items for $99.99 on order 40947. I only submitted the checkout form once, so one of these transactions is clearly an error. Please reverse the duplicate billing immediately. Please advise as soon as possible.",Billing,High,synthetic
-TICK-015466,I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 47766 and remove recorded credit card details. Appreciate a quick update on this.,Cancellation,High,synthetic
+TICK-015466,I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 47766 and remove recorded credit card details. Appreciate a quick update on this.,Cancellation,Medium,synthetic
 TICK-012801,"Dear customer service, Unrecognized login notification received. Looking forward to hearing back",Account,Critical,synthetic
-TICK-011495,"FYI, I returned package for order 20059 two weeks ago but haven't seen the refund credited to my bank account. Please advise as soon as possible.",Refund,High,synthetic
+TICK-011495,"FYI, I returned package for order 20059 two weeks ago but haven't seen the refund credited to my bank account. Please advise as soon as possible.",Refund,Medium,synthetic
 TICK-010167,"FYI, I checked my credit card account this morning and noticed two separate line items for $99.99 on order 26059. I only submitted the checkout form once, so one of these transactions is clearly an error. Please reverse the duplicate billing immediately. Looking forward to hearing back.",Billing,High,synthetic
 TICK-014675,Urgent: Could u tell me if your platform supports SAML 2.0 Single Sign-On for enterprise users? Appreciate a quick update on this.,Product Inquiry,High,synthetic
-TICK-013103,"Dear customer service, 2FA code not received. Contact me via email or phone",Account,High,synthetic
+TICK-013103,"Dear customer service, 2FA code not received. Contact me via email or phone",Account,Medium,synthetic
 TICK-013458,"I received an email stating my password was changed from an unknown location, but I did not initiate this. Looking forward to hearing back",Account,Critical,synthetic
-TICK-010590,Duplicate charge on statement. Appreciate a quick update on this,Billing,High,synthetic
+TICK-010590,Duplicate charge on statement. Appreciate a quick update on this,Billing,Medium,synthetic
 TICK-012629,Plz help - My parcel box arrived completely crushed with contents damaged during transport. Contact me via email or phone,Shipping,High,synthetic
-TICK-011960,"FYI, Requesting refund for order 10440. Please advise as soon as possible.",Refund,High,synthetic
-TICK-012556,Courier status update nathi thayo. Contact me via email or phone,Shipping,Medium,synthetic
+TICK-011960,"FYI, Requesting refund for order 10440. Please advise as soon as possible.",Refund,Medium,synthetic
+TICK-012556,Courier status update nathi thayo. Contact me via email or phone,Shipping,Low,synthetic
 TICK-011375,"Plz help - Router blinking red, internet down. Looking forward to hearing back.",Technical Support,High,synthetic
-TICK-015089,"Hey there, I would like to cancel my monthly subscription effective before the next billing cycle. Kindly look into this matter promptly.",Cancellation,High,synthetic
+TICK-015089,"Hey there, I would like to cancel my monthly subscription effective before the next billing cycle. Kindly look into this matter promptly.",Cancellation,Low,synthetic
 TICK-011067,"Plz help - We are observing consistent memory leaks in the background daemon process on node 192.168.161.206. Memory utilization climbs to 99% within two hours of service start, eventually forcing a kernel panic and abrupt system reboot. Urgent attention required.",Technical Support,Critical,synthetic
 TICK-010206,"Hi support team, Double billing issue. Thanks for your help!",Billing,Medium,synthetic
 TICK-011997,Requesting refund for order 39713. Thanks for your help!,Refund,Medium,synthetic
-TICK-012535,"Dear customer service, Tracking not updating for order 49408.",Shipping,Medium,synthetic
+TICK-012535,"Dear customer service, Tracking not updating for order 49408.",Shipping,Low,synthetic
 TICK-013342,Account login nahi ho raha hai. Looking forward to hearing back.,Account,High,synthetic
 TICK-010518,"Plz help - I checked my credit card account this morning and noticed two separate line items for $49.0 on order 84421. I only submitted the checkout form once, so one of these transactions is clearly an error. Plz reverse the duplicate billing immediately. Plz respond asap.",Billing,High,synthetic
-TICK-015069,"Dear customer service, We are migrating to a different vendor and request complete contract termination. Plz respond asap.",Cancellation,High,synthetic
+TICK-015069,"Dear customer service, We are migrating to a different vendor and request complete contract termination. Plz respond asap.",Cancellation,Medium,synthetic
 TICK-011864,"FYI, I returned package for order 25306 two weeks ago but haven't seen the refund credited to my bank account.",Refund,Medium,synthetic
-TICK-015128,Next month billing se pehle mera plan cancel kar do please. Looking forward to hearing back.,Cancellation,Medium,synthetic
+TICK-015128,Next month billing se pehle mera plan cancel kar do please. Looking forward to hearing back.,Cancellation,Low,synthetic
 TICK-010894,"Hi support team, Desktop software freezing. Appreciate a quick update on this",Technical Support,Medium,synthetic
-TICK-014057,"Dear customer service, Rude customer agent on call. Plz respond asap.",Complaint,High,synthetic
-TICK-013277,"Dear customer service, Why am I not receiving the SMS two-factor authentication verification code on my registered mobile number? Please advise as soon as possible.",Account,Critical,synthetic
+TICK-014057,"Dear customer service, Rude customer agent on call. Plz respond asap.",Complaint,Low,synthetic
+TICK-013277,"Dear customer service, Why am I not receiving the SMS two-factor authentication verification code on my registered mobile number? Please advise as soon as possible.",Account,Medium,synthetic
 TICK-012169,"Dear customer service, My parcel box arrived completely crushed with contents damaged during transport. Thanks for your help!",Shipping,High,synthetic
 TICK-015066,"Hi support team, Due to budget cuts in our organization, we can no longer maintain our active subscription plan. Plz process account cancellation immediately and send written confirmation that auto-renew has been disabled. Plz respond asap.",Cancellation,High,synthetic
-TICK-014331,Plz help - What are the minimum hardware and RAM requirements for running the server software on Linux? Kindly look into this matter promptly,Product Inquiry,High,synthetic
+TICK-014331,Plz help - What are the minimum hardware and RAM requirements for running the server software on Linux? Kindly look into this matter promptly,Product Inquiry,Low,synthetic
 TICK-014247,Plz help - Do you offer non-profit or educational discounts for team subscription accounts? Plz respond asap,Product Inquiry,High,synthetic
 TICK-012770,"Hi support team, Where is my parcel? Contact me via email or phone.",Shipping,Low,synthetic
 TICK-010265,"Hi support team, Our organization was charged a late fee penalty of $19.99 despite completing the wire transfer prior to the due date. Attached is our bank transaction confirmation for your accounts team to verify and credit back. Looking forward to hearing back.",Billing,Medium,synthetic
 TICK-012634,"Dear customer service, I paid extra for guaranteed next-day air shipping on order 40978 because of an urgent event. It has now been 4 days and the tracking status shows the package is still sitting at the local distribution facility. Please expedite delivery or refund express fees. Kindly look into this matter promptly.",Shipping,High,synthetic
-TICK-010283,"Dear customer service, Why am I seeing two charges for the same order 22415 on my bank app? Urgent attention required.",Billing,High,synthetic
-TICK-015573,"FYI, I would like to cancel my monthly subscription effective before the next billing cycle. Plz respond asap.",Cancellation,High,synthetic
-TICK-014436,"Hey there, Is macOS Sequoia supported? Urgent attention required.",Product Inquiry,High,synthetic
+TICK-010283,"Dear customer service, Why am I seeing two charges for the same order 22415 on my bank app? Urgent attention required.",Billing,Medium,synthetic
+TICK-015573,"FYI, I would like to cancel my monthly subscription effective before the next billing cycle. Plz respond asap.",Cancellation,Low,synthetic
+TICK-014436,"Hey there, Is macOS Sequoia supported? Urgent attention required.",Product Inquiry,Medium,synthetic
 TICK-013501,"Urgent: Support agent closed my ticket 51429 marking it resolved, even though the bug is still happening! Plz respond asap.",Complaint,High,synthetic
 TICK-010691,"Dear customer service, Payment failed but money deducted. Kindly look into this matter promptly.",Billing,High,synthetic
 TICK-013002,"Hi support team, Cannot log into account. Plz respond asap.",Account,High,synthetic
-TICK-010898,Quick question - VPN connection repeatedly drops every few minutes when connected to office network. Plz advise as soon as possible,Technical Support,Critical,synthetic
+TICK-010898,Quick question - VPN connection repeatedly drops every few minutes when connected to office network. Plz advise as soon as possible,Technical Support,High,synthetic
 TICK-013276,Plz help - I am requesting complete account closure and permanent deletion of all personal stored data from your servers in compliance with privacy regulations. Plz respond asap,Account,High,synthetic
 TICK-013655,Plz help - Service downtime ruined our demo. Urgent attention required.,Complaint,Critical,synthetic
 TICK-010926,"Dear customer service, We are observing consistent memory leaks in the background daemon process on node 192.168.2.241. Memory utilization climbs to 99% within two hours of service start, eventually forcing a kernel panic and abrupt system reboot.",Technical Support,Critical,synthetic
-TICK-014877,"Dear customer service, What are the minimum hardware and RAM requirements for running the server software on Linux? Kindly look into this matter promptly.",Product Inquiry,High,synthetic
+TICK-014877,"Dear customer service, What are the minimum hardware and RAM requirements for running the server software on Linux? Kindly look into this matter promptly.",Product Inquiry,Low,synthetic
 TICK-011521,"Plz help - Wrong item delivered, money back. Looking forward to hearing back.",Refund,Medium,synthetic
 TICK-014802,"Plz help - Does your REST API support webhook event subscriptions for real-time order status updates, and where can we access the OpenAPI / Swagger documentation for testing? Contact me via email or phone.",Product Inquiry,Low,synthetic
 TICK-010796,"Hello, VPN connection repeatedly drops every few minutes when connected to office network. Looking forward to hearing back.",Technical Support,High,synthetic
 TICK-010655,Urgent: Our organization was charged a late fee penalty of $49.0 despite completing the wire transfer prior to the due date. Attached is our bank transaction confirmation for your accounts team to verify and credit back. Appreciate a quick update on this.,Billing,High,synthetic
-TICK-015600,Next month billing se pehle mera plan cancel kar do please. Appreciate a quick update on this.,Cancellation,Medium,synthetic
+TICK-015600,Next month billing se pehle mera plan cancel kar do please. Appreciate a quick update on this.,Cancellation,Low,synthetic
 TICK-010769,"Dear customer service, We are observing consistent memory leaks in the background daemon process on node 192.168.17.212. Memory utilization climbs to 99% within two hours of service start, eventually forcing a kernel panic and abrupt system reboot.",Technical Support,Critical,synthetic
-TICK-014914,Plz help - I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 40973 and remove recorded credit card details. Plz respond asap.,Cancellation,High,synthetic
-TICK-013156,"Hi support team, Please help unlock my account after entering wrong password three times. Contact me via email or phone",Account,Medium,synthetic
+TICK-014914,Plz help - I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 40973 and remove recorded credit card details. Plz respond asap.,Cancellation,Medium,synthetic
+TICK-013156,"Hi support team, Please help unlock my account after entering wrong password three times. Contact me via email or phone",Account,Low,synthetic
 TICK-013946,"FYI, No reply to urgent ticket for 48 hours despite paying for 24/7 premium support SLA. Contact me via email or phone.",Complaint,High,synthetic
 TICK-013954,"Plz help - Support agent closed my ticket 41969 marking it resolved, even though the bug is still happening! Contact me via email or phone",Complaint,High,synthetic
-TICK-014986,Quick question - Close my account. Looking forward to hearing back,Cancellation,High,synthetic
+TICK-014986,Quick question - Close my account. Looking forward to hearing back,Cancellation,Medium,synthetic
 TICK-015398,Urgent: Please turn off automatic renewal for account 62925 so I am not charged next month. Plz respond asap.,Cancellation,High,synthetic
-TICK-012839,Password reset link kaam nahi kar raha.,Account,Medium,synthetic
-TICK-010445,"Account balance se double amount deduct ho gaya, please check billing statement.",Billing,High,synthetic
+TICK-012839,Password reset link kaam nahi kar raha.,Account,Low,synthetic
+TICK-010445,"Account balance se double amount deduct ho gaya, please check billing statement.",Billing,Medium,synthetic
 TICK-011947,"Hey there, Wrong item delivered, money back. Contact me via email or phone.",Refund,Medium,synthetic
 TICK-013638,"Urgent: Support agent closed my ticket 38947 marking it resolved, even though the bug is still happening! Urgent attention required.",Complaint,High,synthetic
-TICK-014843,"Dear customer service, Does ur REST API support webhook event subscriptions for real-time order status updates, and where can we access the OpenAPI / Swagger documentation for testing? Urgent attention required.",Product Inquiry,High,synthetic
+TICK-014843,"Dear customer service, Does ur REST API support webhook event subscriptions for real-time order status updates, and where can we access the OpenAPI / Swagger documentation for testing? Urgent attention required.",Product Inquiry,Medium,synthetic
 TICK-011760,"Urgent: I placed order 62310 for an enterprise hardware component, but received a completely different consumer product model. Since this does not match the product specification or purchase order, I am returning the package and request a full refund including express shipping charges. Plz respond asap.",Refund,High,synthetic
-TICK-013507,"Hi support team, Worst support experience ever. Urgent attention required.",Complaint,High,synthetic
+TICK-013507,"Hi support team, Worst support experience ever. Urgent attention required.",Complaint,Medium,synthetic
 TICK-010295,"Hey there, I paid my monthly invoice yesterday, but the account dashboard still shows payment pending. Looking forward to hearing back.",Billing,Medium,synthetic
-TICK-015539,"Hi support team, We are migrating to a different vendor and request complete contract termination. Plz respond asap.",Cancellation,High,synthetic
-TICK-012922,"Dear customer service, Why am I not receiving the SMS two-factor authentication verification code on my registered mobile number? Appreciate a quick update on this.",Account,High,synthetic
+TICK-015539,"Hi support team, We are migrating to a different vendor and request complete contract termination. Plz respond asap.",Cancellation,Medium,synthetic
+TICK-012922,"Dear customer service, Why am I not receiving the SMS two-factor authentication verification code on my registered mobile number? Appreciate a quick update on this.",Account,Medium,synthetic
 TICK-013365,"Hi support team, Cannot log into account. Appreciate a quick update on this.",Account,High,synthetic
-TICK-011835,Paisa refund karo jaldi. Contact me via email or phone,Refund,High,synthetic
+TICK-011835,Paisa refund karo jaldi. Contact me via email or phone,Refund,Medium,synthetic
 TICK-015562,Urgent: Please turn off automatic renewal for account 44282 so I am not charged next month. Plz respond asap.,Cancellation,High,synthetic
 TICK-014155,Quick question - No reply to urgent ticket for 48 hours despite paying for 24/7 premium support SLA. Plz advise as soon as possible.,Complaint,High,synthetic
 TICK-012111,"Hi support team, My parcel box arrived completely crushed with contents damaged during transport. Urgent attention required.",Shipping,High,synthetic
-TICK-010276,"FYI, Charged twice for order 40539. Appreciate a quick update on this.",Billing,High,synthetic
+TICK-010276,"FYI, Charged twice for order 40539. Appreciate a quick update on this.",Billing,Medium,synthetic
 TICK-013681,"Hi support team, Worst support experience ever. Looking forward to hearing back.",Complaint,Low,synthetic
-TICK-010825,"Dear customer service, Desktop software freezing. Please advise as soon as possible.",Technical Support,High,synthetic
-TICK-012167,"Hello, Where is my parcel? Kindly look into this matter promptly.",Shipping,High,synthetic
+TICK-010825,"Dear customer service, Desktop software freezing. Please advise as soon as possible.",Technical Support,Medium,synthetic
+TICK-012167,"Hello, Where is my parcel? Kindly look into this matter promptly.",Shipping,Low,synthetic
 TICK-011030,Urgent: Desktop software freezing. Kindly look into this matter promptly,Technical Support,High,synthetic
-TICK-013687,"48 ghante se koi response nahi aaya, service bohot badhiya nahi hai. Plz advise as soon as possible.",Complaint,High,synthetic
+TICK-013687,"48 ghante se koi response nahi aaya, service bohot badhiya nahi hai. Plz advise as soon as possible.",Complaint,Medium,synthetic
 TICK-013574,Plz help - Service downtime ruined our demo. Kindly look into this matter promptly.,Complaint,Critical,synthetic
 TICK-010421,"Quick question - I checked my credit card account this morning and noticed two separate line items for $499.0 on order 51373. I only submitted the checkout form once, so one of these transactions is clearly an error. Please reverse the duplicate billing immediately. Kindly look into this matter promptly.",Billing,High,synthetic
-TICK-015272,"Hi support team, We are migrating to a different vendor and request complete contract termination. Appreciate a quick update on this.",Cancellation,High,synthetic
-TICK-013855,"Hello, I have been on hold for over 45 minutes without anyone picking up my call. This service is terrible. Please advise as soon as possible",Complaint,High,synthetic
-TICK-012601,"Dear customer service, Tracking not updating for order 95447. Appreciate a quick update on this.",Shipping,Medium,synthetic
+TICK-015272,"Hi support team, We are migrating to a different vendor and request complete contract termination. Appreciate a quick update on this.",Cancellation,Medium,synthetic
+TICK-013855,"Hello, I have been on hold for over 45 minutes without anyone picking up my call. This service is terrible. Please advise as soon as possible",Complaint,Medium,synthetic
+TICK-012601,"Dear customer service, Tracking not updating for order 95447. Appreciate a quick update on this.",Shipping,Low,synthetic
 TICK-013231,"Plz help - I received an email stating my password was changed from an unknown location, but I did not initiate this. Looking forward to hearing back.",Account,Critical,synthetic
-TICK-012539,Plz help - Can I update my shipping delivery address to apartment 4B before the order dispatches? Please advise as soon as possible.,Shipping,Critical,synthetic
+TICK-012539,Plz help - Can I update my shipping delivery address to apartment 4B before the order dispatches? Please advise as soon as possible.,Shipping,Medium,synthetic
 TICK-012832,"Dear customer service, Our team administrator suddenly lost access to the master workspace account after enabling SAML 2.0 SSO. The login screen loops indefinitely between the identity provider and portal w/out authenticating. We need urgent admin intervention. Kindly look into this matter promptly",Account,Critical,synthetic
 TICK-012775,"Dear customer service, I paid extra for guaranteed next-day air shipping on order 69103 because of an urgent event. It has now been 4 days and the tracking status shows the package is still sitting at the local distribution facility. Please expedite delivery or refund express fees. Thanks for your help!",Shipping,High,synthetic
 TICK-013083,Urgent: How can I change the primary administrator email address associated with our company portal? Kindly look into this matter promptly.,Account,High,synthetic
-TICK-014854,"Plz help - We are currently evaluating software solutions for a 300-person engineering team. Could you provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules? Kindly look into this matter promptly.",Product Inquiry,High,synthetic
-TICK-015535,Plz help - Close my account. Contact me via email or phone.,Cancellation,High,synthetic
-TICK-013125,Password reset link kaam nahi kar raha. Appreciate a quick update on this.,Account,Medium,synthetic
-TICK-013442,"FYI, I am requesting complete account closure and permanent deletion of all personal stored data from ur servers in compliance with privacy regulations. Kindly look into this matter promptly.",Account,High,synthetic
+TICK-014854,"Plz help - We are currently evaluating software solutions for a 300-person engineering team. Could you provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules? Kindly look into this matter promptly.",Product Inquiry,Low,synthetic
+TICK-015535,Plz help - Close my account. Contact me via email or phone.,Cancellation,Medium,synthetic
+TICK-013125,Password reset link kaam nahi kar raha. Appreciate a quick update on this.,Account,Low,synthetic
+TICK-013442,"FYI, I am requesting complete account closure and permanent deletion of all personal stored data from ur servers in compliance with privacy regulations. Kindly look into this matter promptly.",Account,Medium,synthetic
 TICK-013387,"Plz help - I received an email stating my password was changed from an unknown location, but I did not initiate this. Appreciate a quick update on this.",Account,Critical,synthetic
-TICK-013197,"Dear customer service, Why am I not receiving the SMS two-factor authentication verification code on my registered mobile number? Looking forward to hearing back.",Account,High,synthetic
+TICK-013197,"Dear customer service, Why am I not receiving the SMS two-factor authentication verification code on my registered mobile number? Looking forward to hearing back.",Account,Medium,synthetic
 TICK-014897,"Dear customer service, Does the cloud storage infrastructure comply with SOC2 and HIPAA security certifications?",Product Inquiry,Medium,synthetic
-TICK-015140,"Dear customer service, Turn off auto-renewal. Looking forward to hearing back.",Cancellation,Medium,synthetic
+TICK-015140,"Dear customer service, Turn off auto-renewal. Looking forward to hearing back.",Cancellation,Low,synthetic
 TICK-014070,"FYI, No reply to urgent ticket for 48 hours despite paying for 24/7 premium support SLA. Appreciate a quick update on this.",Complaint,High,synthetic
-TICK-014268,"Hey there, Bulk license pricing details? Urgent attention required.",Product Inquiry,High,synthetic
+TICK-014268,"Hey there, Bulk license pricing details? Urgent attention required.",Product Inquiry,Medium,synthetic
 TICK-014669,"Plz help - Does your REST API support webhook event subscriptions for real-time order status updates, and where can we access the OpenAPI / Swagger documentation for testing? Thanks for your help!",Product Inquiry,Low,synthetic
 TICK-010432,"Hey there, Our organization was charged a late fee penalty of $19.99 despite completing the wire transfer prior to the due date. Attached is our bank transaction confirmation for your accounts team to verify and credit back. Thanks for your help!",Billing,Medium,synthetic
-TICK-013520,Worst support experience ever. Kindly look into this matter promptly.,Complaint,High,synthetic
+TICK-013520,Worst support experience ever. Kindly look into this matter promptly.,Complaint,Low,synthetic
 TICK-013363,"Hi support team, Unrecognized login notification received. Urgent attention required",Account,Critical,synthetic
 TICK-013628,"Hey there, Service downtime ruined our demo. Kindly look into this matter promptly.",Complaint,Critical,synthetic
 TICK-011188,Urgent: VPN connection repeatedly drops every few minutes when connected to office network.,Technical Support,High,synthetic
 TICK-014776,"Urgent: We are currently evaluating software solutions for a 300-person engineering team. Could you provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules? Looking forward to hearing back.",Product Inquiry,High,synthetic
 TICK-013133,"Hey there, Account locked after failed logins. Looking forward to hearing back.",Account,High,synthetic
 TICK-011092,"Dear customer service, We are observing consistent memory leaks in the background daemon process on node 192.168.40.138. Memory utilization climbs to 99% within two hours of service start, eventually forcing a kernel panic and abrupt system reboot. Looking forward to hearing back.",Technical Support,Critical,synthetic
-TICK-011608,"Plz help - Wrong item delivered, money back. Please advise as soon as possible.",Refund,High,synthetic
+TICK-011608,"Plz help - Wrong item delivered, money back. Please advise as soon as possible.",Refund,Medium,synthetic
 TICK-011538,"Hey there, Where is my pending refund? Appreciate a quick update on this.",Refund,Medium,synthetic
 TICK-011185,Database connection timeout.,Technical Support,Critical,synthetic
 TICK-011080,"Hi support team, VPN connection repeatedly drops every few minutes when connected to office network. Contact me via email or phone.",Technical Support,High,synthetic
-TICK-011872,Where is my pending refund? Please advise as soon as possible.,Refund,High,synthetic
+TICK-011872,Where is my pending refund? Please advise as soon as possible.,Refund,Medium,synthetic
 TICK-012244,Quick question - I paid extra for guaranteed next-day air shipping on order 60371 because of an urgent event. It has now been 4 days and the tracking status shows the package is still sitting at the local distribution facility. Please expedite delivery or refund express fees. Kindly look into this matter promptly.,Shipping,High,synthetic
-TICK-014813,"Does your REST API support webhook event subscriptions for real-time order status updates, and where can we access the OpenAPI / Swagger documentation for testing? Plz respond asap.",Product Inquiry,High,synthetic
+TICK-014813,"Does your REST API support webhook event subscriptions for real-time order status updates, and where can we access the OpenAPI / Swagger documentation for testing? Plz respond asap.",Product Inquiry,Low,synthetic
 TICK-012580,"Hey there, Tracking link shows package held at border customs clearance depot. Appreciate a quick update on this.",Shipping,Low,synthetic
-TICK-014535,"Hi support team, What are the minimum hardware and RAM requirements for running the server software on Linux? Urgent attention required.",Product Inquiry,High,synthetic
+TICK-014535,"Hi support team, What are the minimum hardware and RAM requirements for running the server software on Linux? Urgent attention required.",Product Inquiry,Medium,synthetic
 TICK-011010,"Dear customer service, VPN connection repeatedly drops every few minutes when connected to office network.",Technical Support,High,synthetic
 TICK-011552,"Hello, I placed order 73932 for an enterprise hardware component, but received a completely different consumer product model. Since this does not match the product specification or purchase order, I am returning the package and request a full refund including express shipping charges",Refund,High,synthetic
-TICK-013321,"Mera admin account locked ho gaya hai, please reset karein. Contact me via email or phone",Account,High,synthetic
+TICK-013321,"Mera admin account locked ho gaya hai, please reset karein. Contact me via email or phone",Account,Medium,synthetic
 TICK-014385,Urgent: What are the minimum hardware and RAM requirements for running the server software on Linux? Please advise as soon as possible.,Product Inquiry,High,synthetic
 TICK-013300,Urgent: How can I change the primary administrator email address associated with our company portal? Contact me via email or phone.,Account,High,synthetic
-TICK-010654,"Hey there, Duplicate charge on statement. Thanks for your help!",Billing,High,synthetic
+TICK-010654,"Hey there, Duplicate charge on statement. Thanks for your help!",Billing,Medium,synthetic
 TICK-011072,"Dear customer service, We are observing consistent memory leaks in the background daemon process on node 192.168.89.161. Memory utilization climbs to 99% within two hours of service start, eventually forcing a kernel panic and abrupt system reboot. Appreciate a quick update on this.",Technical Support,Critical,synthetic
-TICK-014998,"FYI, I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 25002 and remove recorded credit card details. Looking forward to hearing back.",Cancellation,High,synthetic
+TICK-014998,"FYI, I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 25002 and remove recorded credit card details. Looking forward to hearing back.",Cancellation,Medium,synthetic
 TICK-010649,Urgent: Our organization was charged a late fee penalty of $99.99 despite completing the wire transfer prior to the due date. Attached is our bank transaction confirmation for your accounts team to verify and credit back.,Billing,High,synthetic
 TICK-014016,Worst support experience ever. Contact me via email or phone.,Complaint,Low,synthetic
 TICK-011093,"Dear customer service, Page loading times have degraded significantly after the latest patch, causing request timeouts. Appreciate a quick update on this.",Technical Support,Medium,synthetic
-TICK-010212,"Hey there, Duplicate charge on statement. Contact me via email or phone.",Billing,High,synthetic
+TICK-010212,"Hey there, Duplicate charge on statement. Contact me via email or phone.",Billing,Medium,synthetic
 TICK-013239,"Quick question - I received an email stating my password was changed from an unknown location, but I did not initiate this. Urgent attention required.",Account,Critical,synthetic
-TICK-011439,"FYI, Damaged product, refund needed. Thanks for your help!",Refund,High,synthetic
+TICK-011439,"FYI, Damaged product, refund needed. Thanks for your help!",Refund,Medium,synthetic
 TICK-011615,Where is my pending refund? Appreciate a quick update on this.,Refund,Medium,synthetic
 TICK-015014,Urgent: Please turn off automatic renewal for account 55815 so I am not charged next month. Looking forward to hearing back,Cancellation,High,synthetic
 TICK-010563,Urgent: Our organization was charged a late fee penalty of $19.99 despite completing the wire transfer prior to the due date. Attached is our bank transaction confirmation for your accounts team to verify and credit back. Looking forward to hearing back.,Billing,High,synthetic
-TICK-013394,Please help unlock my account after entering wrong password three times. Kindly look into this matter promptly.,Account,High,synthetic
+TICK-013394,Please help unlock my account after entering wrong password three times. Kindly look into this matter promptly.,Account,Low,synthetic
 TICK-015390,"Quick question - Due to budget cuts in our organization, we can no longer maintain our active subscription plan. Please process account cancellation immediately and send written confirmation that auto-renew has been disabled. Urgent attention required.",Cancellation,High,synthetic
 TICK-014074,No reply to urgent ticket for 48 hours despite paying for 24/7 premium support SLA. Plz respond asap.,Complaint,High,synthetic
-TICK-010099,Why am I seeing two charges for the same order 80457 on my bank app? Looking forward to hearing back.,Billing,High,synthetic
-TICK-014703,"Does your REST API support webhook event subscriptions for real-time order status updates, and where can we access the OpenAPI / Swagger documentation for testing? Kindly look into this matter promptly",Product Inquiry,High,synthetic
-TICK-010152,"Hey there, Duplicate charge on statement. Please advise as soon as possible.",Billing,Critical,synthetic
+TICK-010099,Why am I seeing two charges for the same order 80457 on my bank app? Looking forward to hearing back.,Billing,Medium,synthetic
+TICK-014703,"Does your REST API support webhook event subscriptions for real-time order status updates, and where can we access the OpenAPI / Swagger documentation for testing? Kindly look into this matter promptly",Product Inquiry,Low,synthetic
+TICK-010152,"Hey there, Duplicate charge on statement. Please advise as soon as possible.",Billing,Medium,synthetic
 TICK-013372,"Quick question - I received an email stating my password was changed from an unknown location, but I did not initiate this.",Account,Critical,synthetic
 TICK-010017,Double billing issue. Contact me via email or phone.,Billing,Medium,synthetic
 TICK-010609,"Hi support team, There is an unrecognized charge of $49.0 on my credit card statement. Thanks for ur help!",Billing,Critical,synthetic
 TICK-014552,"Dear customer service, Where to find user documentation? Appreciate a quick update on this.",Product Inquiry,Low,synthetic
-TICK-014348,"Dear customer service, Does the cloud storage infrastructure comply with SOC2 and HIPAA security certifications? Urgent attention required.",Product Inquiry,High,synthetic
+TICK-014348,"Dear customer service, Does the cloud storage infrastructure comply with SOC2 and HIPAA security certifications? Urgent attention required.",Product Inquiry,Medium,synthetic
 TICK-014602,"Hi support team, Where to find user documentation? Contact me via email or phone",Product Inquiry,Low,synthetic
-TICK-013354,"Dear customer service, Why am I not receiving the SMS two-factor authentication verification code on my registered mobile number? Contact me via email or phone.",Account,High,synthetic
+TICK-013354,"Dear customer service, Why am I not receiving the SMS two-factor authentication verification code on my registered mobile number? Contact me via email or phone.",Account,Medium,synthetic
 TICK-013566,"Hey there, I am filing a formal complaint regarding misleading feature advertising on ur pricing page. We purchased the business plan based on promised custom integration features, only to discover after onboarding that the API is not included. Plz respond asap",Complaint,High,synthetic
-TICK-013389,"Dear customer service, Please help unlock my account after entering wrong password three times. Contact me via email or phone.",Account,Medium,synthetic
-TICK-015581,Plz help - I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 44550 and remove recorded credit card details. Thanks for your help!,Cancellation,High,synthetic
+TICK-013389,"Dear customer service, Please help unlock my account after entering wrong password three times. Contact me via email or phone.",Account,Low,synthetic
+TICK-015581,Plz help - I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 44550 and remove recorded credit card details. Thanks for your help!,Cancellation,Medium,synthetic
 TICK-015319,Quick question - Cancel subscription immediately. Looking forward to hearing back,Cancellation,High,synthetic
 TICK-011223,"Hey there, VPN connection repeatedly drops every few minutes when connected to office network. Contact me via email or phone.",Technical Support,High,synthetic
-TICK-010492,Billing ma double charge thayo che. Thanks for ur help!,Billing,High,synthetic
-TICK-014923,Account delete karvu che. Thanks for ur help!,Cancellation,High,synthetic
+TICK-010492,Billing ma double charge thayo che. Thanks for ur help!,Billing,Medium,synthetic
+TICK-014923,Account delete karvu che. Thanks for ur help!,Cancellation,Medium,synthetic
 TICK-013892,Plz help - Service downtime ruined our demo. Appreciate a quick update on this.,Complaint,Critical,synthetic
 TICK-011231,Database connection timeout. Looking forward to hearing back.,Technical Support,Critical,synthetic
 TICK-011120,Quick question - Server error 500 on submit.,Technical Support,Critical,synthetic
-TICK-012383,Plz help - Can I update my shipping delivery address to apartment 4B before the order dispatches? Kindly look into this matter promptly.,Shipping,High,synthetic
-TICK-013868,"Dear customer service, Rude customer agent on call. Kindly look into this matter promptly.",Complaint,High,synthetic
-TICK-011904,Quick question - Our scheduled virtual event was ruined due to continuous platform outages on your side. We paid $249.5 for premium hosting and request an immediate pro-rated credit refund to our corporate account balance. Plz respond asap.,Refund,High,synthetic
+TICK-012383,Plz help - Can I update my shipping delivery address to apartment 4B before the order dispatches? Kindly look into this matter promptly.,Shipping,Medium,synthetic
+TICK-013868,"Dear customer service, Rude customer agent on call. Kindly look into this matter promptly.",Complaint,Low,synthetic
+TICK-011904,Quick question - Our scheduled virtual event was ruined due to continuous platform outages on your side. We paid $249.5 for premium hosting and request an immediate pro-rated credit refund to our corporate account balance. Plz respond asap.,Refund,Medium,synthetic
 TICK-012335,"Hi support team, My parcel box arrived completely crushed with contents damaged during transport. Looking forward to hearing back.",Shipping,High,synthetic
 TICK-010747,"Dear customer service, We are observing consistent memory leaks in the background daemon process on node 192.168.250.8. Memory utilization climbs to 99% within two hours of service start, eventually forcing a kernel panic and abrupt system reboot. Appreciate a quick update on this.",Technical Support,Critical,synthetic
-TICK-014696,"Plz help - Does your REST API support webhook event subscriptions for real-time order status updates, and where can we access the OpenAPI / Swagger documentation for testing? Plz respond asap.",Product Inquiry,High,synthetic
-TICK-015075,"Dear customer service, I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 59697 and remove recorded credit card details. Kindly look into this matter promptly.",Cancellation,High,synthetic
+TICK-014696,"Plz help - Does your REST API support webhook event subscriptions for real-time order status updates, and where can we access the OpenAPI / Swagger documentation for testing? Plz respond asap.",Product Inquiry,Low,synthetic
+TICK-015075,"Dear customer service, I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 59697 and remove recorded credit card details. Kindly look into this matter promptly.",Cancellation,Medium,synthetic
 TICK-012903,"Plz help - I received an email stating my password was changed from an unknown location, but I did not initiate this. Urgent attention required.",Account,Critical,synthetic
 TICK-011931,"Dear customer service, Where is my pending refund? Contact me via email or phone.",Refund,Medium,synthetic
 TICK-012149,Quick question - I paid extra for guaranteed next-day air shipping on order 61091 because of an urgent event. It has now been 4 days and the tracking status shows the package is still sitting at the local distribution facility. Plz expedite delivery or refund express fees.,Shipping,High,synthetic
-TICK-015504,"Dear customer service, I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 61790 and remove recorded credit card details. Contact me via email or phone",Cancellation,High,synthetic
-TICK-013120,"Dear customer service, Why am I not receiving the SMS two-factor authentication verification code on my registered mobile number? Urgent attention required.",Account,High,synthetic
-TICK-011176,"Urgent: Ever since updating to version 4.2 yesterday, our entire telemetry team has been unable to access the web portal. The page loads infinitely before displaying an internal server error (HTTP 500). This is blocking active customer operations. Contact me via email or phone",Technical Support,Critical,synthetic
+TICK-015504,"Dear customer service, I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 61790 and remove recorded credit card details. Contact me via email or phone",Cancellation,Medium,synthetic
+TICK-013120,"Dear customer service, Why am I not receiving the SMS two-factor authentication verification code on my registered mobile number? Urgent attention required.",Account,Medium,synthetic
+TICK-011176,"Urgent: Ever since updating to version 4.2 yesterday, our entire telemetry team has been unable to access the web portal. The page loads infinitely before displaying an internal server error (HTTP 500). This is blocking active customer operations. Contact me via email or phone",Technical Support,High,synthetic
 TICK-014762,"Plz help - Does your REST API support webhook event subscriptions for real-time order status updates, and where can we access the OpenAPI / Swagger documentation for testing?",Product Inquiry,Low,synthetic
 TICK-010799,"Hey there, Our backend production database server at 192.168.64.155 is refusing incoming connections with error SOCKET_TIMEOUT. Plz advise as soon as possible.",Technical Support,Critical,synthetic
-TICK-012821,"Dear customer service, Please help unlock my account after entering wrong password three times. Please advise as soon as possible.",Account,High,synthetic
-TICK-015338,"Dear customer service, Please turn off automatic renewal for account 25697 so I am not charged next month. Kindly look into this matter promptly",Cancellation,High,synthetic
-TICK-010415,"Dear customer service, Why am I seeing two charges for the same order 51383 on my bank app? Appreciate a quick update on this.",Billing,High,synthetic
+TICK-012821,"Dear customer service, Please help unlock my account after entering wrong password three times. Please advise as soon as possible.",Account,Medium,synthetic
+TICK-015338,"Dear customer service, Please turn off automatic renewal for account 25697 so I am not charged next month. Kindly look into this matter promptly",Cancellation,Low,synthetic
+TICK-010415,"Dear customer service, Why am I seeing two charges for the same order 51383 on my bank app? Appreciate a quick update on this.",Billing,Medium,synthetic
 TICK-014191,"Hi support team, No reply to urgent ticket for 48 hours despite paying for 24/7 premium support SLA. Urgent attention required",Complaint,High,synthetic
 TICK-013021,"Plz help - I received an email stating my password was changed from an unknown location, but I did not initiate this.",Account,Critical,synthetic
 TICK-014363,Urgent: What are the minimum hardware and RAM requirements for running the server software on Linux?,Product Inquiry,High,synthetic
-TICK-013048,"Dear customer service, Please help unlock my account after entering wrong password three times.",Account,Medium,synthetic
+TICK-013048,"Dear customer service, Please help unlock my account after entering wrong password three times.",Account,Low,synthetic
 TICK-011191,"Hey there, VPN connection repeatedly drops every few minutes when connected to office network. Looking forward to hearing back.",Technical Support,High,synthetic
 TICK-011868,Plz help - The item arrived with broken glass and torn packaging. I demand an immediate full refund. Urgent attention required.,Refund,High,synthetic
 TICK-011515,Requesting refund for order 13860. Looking forward to hearing back.,Refund,Medium,synthetic
 TICK-011975,"Urgent: System cancelled my order due to stock shortage, but the money has not been refunded yet",Refund,High,synthetic
 TICK-013526,"Dear customer service, Unannounced platform outage during business hours caused direct revenue loss for our company",Complaint,Critical,synthetic
 TICK-014601,"Quick question - We are currently evaluating software solutions for a 300-person engineering team. Could you provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules? Plz respond asap",Product Inquiry,High,synthetic
-TICK-011850,"FYI, I returned package for order 26947 two weeks ago but haven't seen the refund credited to my bank account. Urgent attention required.",Refund,High,synthetic
+TICK-011850,"FYI, I returned package for order 26947 two weeks ago but haven't seen the refund credited to my bank account. Urgent attention required.",Refund,Medium,synthetic
 TICK-012174,Plz help - Tracking number 74077 has been stuck in transit at the hub for over 6 days without progress. Contact me via email or phone,Shipping,Medium,synthetic
 TICK-011548,"Urgent: I placed order 61299 for an enterprise hardware component, but received a completely different consumer product model. Since this does not match the product specification or purchase order, I am returning the package and request a full refund including express shipping charges. Thanks for your help!",Refund,High,synthetic
-TICK-012665,Plz help - The delivery driver left our electronic equipment package in heavy rain outside the warehouse gate without ringing the bell or getting a signature. Water soaked through the box. Please advise as soon as possible.,Shipping,Critical,synthetic
-TICK-010536,"Hey there, Duplicate charge on statement.",Billing,High,synthetic
+TICK-012665,Plz help - The delivery driver left our electronic equipment package in heavy rain outside the warehouse gate without ringing the bell or getting a signature. Water soaked through the box. Please advise as soon as possible.,Shipping,High,synthetic
+TICK-010536,"Hey there, Duplicate charge on statement.",Billing,Medium,synthetic
 TICK-010551,"FYI, I checked my credit card account this morning and noticed two separate line items for $149.0 on order 12459. I only submitted the checkout form once, so one of these transactions is clearly an error. Plz reverse the duplicate billing immediately. Appreciate a quick update on this.",Billing,High,synthetic
 TICK-014104,"Hi support team, Worst support experience ever. Please advise as soon as possible.",Complaint,Medium,synthetic
 TICK-014486,"Hey there, Is macOS Sequoia supported? Appreciate a quick update on this.",Product Inquiry,Low,synthetic
 TICK-010437,"Hi support team, Our organization was charged a late fee penalty of $99.99 despite completing the wire transfer prior to the due date. Attached is our bank transaction confirmation for your accounts team to verify and credit back.",Billing,Medium,synthetic
-TICK-010948,"Hi support team, App crashes on launch. Kindly look into this matter promptly",Technical Support,High,synthetic
+TICK-010948,"Hi support team, App crashes on launch. Kindly look into this matter promptly",Technical Support,Medium,synthetic
 TICK-014988,Urgent: Please turn off automatic renewal for account 80494 so I am not charged next month. Plz respond asap.,Cancellation,High,synthetic
 TICK-012663,Quick question - I paid extra for guaranteed next-day air shipping on order 21590 because of an urgent event. It has now been 4 days and the tracking status shows the package is still sitting at the local distribution facility. Please expedite delivery or refund express fees.,Shipping,High,synthetic
 TICK-012529,"Hello, Where is my parcel? Please advise as soon as possible.",Shipping,Medium,synthetic
 TICK-013504,"FYI, No reply to urgent ticket for 48 hours despite paying for 24/7 premium support SLA. Thanks for your help!",Complaint,High,synthetic
-TICK-013839,Quick question - Ticket closed w/out resolution. Kindly look into this matter promptly.,Complaint,High,synthetic
+TICK-013839,Quick question - Ticket closed w/out resolution. Kindly look into this matter promptly.,Complaint,Medium,synthetic
 TICK-010543,"Plz help - I was billed $99.99 this month, but my plan is supposed to be $29.99. Contact me via email or phone.",Billing,Medium,synthetic
 TICK-013472,"Quick question - I received an email stating my password was changed from an unknown location, but I did not initiate this. Please advise as soon as possible.",Account,Critical,synthetic
 TICK-011183,"Hello, Our backend production database server at 192.168.245.158 is refusing incoming connections with error SOCKET_TIMEOUT. Plz respond asap.",Technical Support,Critical,synthetic
 TICK-011250,Website completely crash ho gaya hai. Looking forward to hearing back,Technical Support,Critical,synthetic
-TICK-010453,"Account balance se double amount deduct ho gaya, please check billing statement. Looking forward to hearing back",Billing,High,synthetic
+TICK-010453,"Account balance se double amount deduct ho gaya, please check billing statement. Looking forward to hearing back",Billing,Medium,synthetic
 TICK-011555,Where is my pending refund? Thanks for your help!,Refund,Medium,synthetic
-TICK-011136,"Hello, Desktop software freezing. Plz respond asap.",Technical Support,High,synthetic
+TICK-011136,"Hello, Desktop software freezing. Plz respond asap.",Technical Support,Medium,synthetic
 TICK-012033,"Dear customer service, Where is my pending refund?",Refund,Medium,synthetic
-TICK-012208,Plz help - Tracking link shows package held at border customs clearance depot. Plz respond asap.,Shipping,High,synthetic
+TICK-012208,Plz help - Tracking link shows package held at border customs clearance depot. Plz respond asap.,Shipping,Low,synthetic
 TICK-014170,Plz help - Service downtime ruined our demo. Plz respond asap.,Complaint,Critical,synthetic
-TICK-015120,"FYI, I would like to cancel my monthly subscription effective before the next billing cycle.",Cancellation,Medium,synthetic
-TICK-015357,"FYI, I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 53456 and remove recorded credit card details. Looking forward to hearing back.",Cancellation,High,synthetic
+TICK-015120,"FYI, I would like to cancel my monthly subscription effective before the next billing cycle.",Cancellation,Low,synthetic
+TICK-015357,"FYI, I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice 53456 and remove recorded credit card details. Looking forward to hearing back.",Cancellation,Medium,synthetic
 TICK-011882,Quick question - I returned package for order 73432 two weeks ago but haven't seen the refund credited to my bank account. Urgent attention required,Refund,High,synthetic
 TICK-013939,"Hi support team, Worst support experience ever. Thanks for your help!",Complaint,Low,synthetic
 TICK-010059,"Quick question - I checked my credit card account this morning and noticed two separate line items for $249.5 on order 84691. I only submitted the checkout form once, so one of these transactions is clearly an error. Please reverse the duplicate billing immediately. Urgent attention required.",Billing,High,synthetic
-TICK-014584,"Hi support team, What are the minimum hardware and RAM requirements for running the server software on Linux? Kindly look into this matter promptly",Product Inquiry,High,synthetic
-TICK-014747,"Dear customer service, Where to find user documentation? Kindly look into this matter promptly.",Product Inquiry,High,synthetic
-TICK-011511,"FYI, Requesting refund for order 47316. Kindly look into this matter promptly.",Refund,High,synthetic
+TICK-014584,"Hi support team, What are the minimum hardware and RAM requirements for running the server software on Linux? Kindly look into this matter promptly",Product Inquiry,Low,synthetic
+TICK-014747,"Dear customer service, Where to find user documentation? Kindly look into this matter promptly.",Product Inquiry,Low,synthetic
+TICK-011511,"FYI, Requesting refund for order 47316. Kindly look into this matter promptly.",Refund,Medium,synthetic
 TICK-014935,Urgent: We are migrating to a different vendor and request complete contract termination. Looking forward to hearing back.,Cancellation,High,synthetic
 TICK-014138,"Hey there, No reply to urgent ticket for 48 hours despite paying for 24/7 premium support SLA. Appreciate a quick update on this",Complaint,High,synthetic
 TICK-013871,Urgent: Ticket closed without resolution. Urgent attention required.,Complaint,High,synthetic

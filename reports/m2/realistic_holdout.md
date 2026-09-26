@@ -1,6 +1,6 @@
 # Realistic Holdout Evaluation Report — Milestone 2
 
-**Evaluation Date:** `2026-08-20T08:46:07.132977`  
+**Evaluation Date:** `2026-08-20T11:32:45.484358`  
 **Holdout Dataset:** `data/evaluation/m2_realistic_holdout.csv`  
 **Total Holdout Records:** 60 (Manually Curated, Out-of-Distribution)  
 
@@ -21,10 +21,10 @@
 
 | Metric | Weighted Score | Macro Score |
 |---|---|---|
-| **Accuracy** | `0.5833` | `0.5833` |
-| **Precision** | `0.6567` | `0.6643` |
-| **Recall** | `0.5833` | `0.5253` |
-| **F1-Score** | `0.5776` | `0.5472` |
+| **Accuracy** | `0.5167` | `0.5167` |
+| **Precision** | `0.5625` | `0.6057` |
+| **Recall** | `0.5167` | `0.5598` |
+| **F1-Score** | `0.5169` | `0.5646` |
 
 ---
 
@@ -53,5 +53,5 @@ Technical Support       1.00      0.80      0.89        10
 ## 4. Key Performance Insights & Out-of-Distribution Generalization
 
 1. **Category Robustness:** Category classification achieves `91.7%` accuracy on out-of-distribution realistic tickets, proving that TF-IDF bigram features generalize well beyond training templates.
-2. **Priority Generalization:** Priority classification achieves `58.3%` accuracy on unseen real-world queries containing informal phrasing and Hinglish cues.
+2. **Priority Generalization:** Priority classification achieves `51.7%` accuracy on unseen real-world queries containing informal phrasing and Hinglish cues.
 3. **No Contamination Guarantee:** This holdout set contains 0 template overlap with training templates and was strictly excluded from training and validation splits.

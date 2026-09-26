@@ -81,39 +81,55 @@ class TicketPredictor:
             # 2. Extract Features
             vec_input = self.vectorizer.transform([processed])
 
-            # 3. Category Prediction & Confidence Calculation (Estimated Class Probability)
+            # 3. Category Prediction & Confidence Calculation
             if hasattr(self.ticket_classifier, "predict_proba"):
-                # Natively supports predict_proba (including Logistic Regression, Naive Bayes,
-                # Random Forest, and CalibratedClassifierCV-wrapped LinearSVC)
                 probs = self.ticket_classifier.predict_proba(vec_input)[0]
                 pred_idx = np.argmax(probs)
-                confidence = float(probs[pred_idx])
+                cat_confidence = float(probs[pred_idx])
             elif hasattr(self.ticket_classifier, "decision_function"):
-                # Fallback for uncalibrated models with decision function (non-calibrated confidence score)
                 dec = self.ticket_classifier.decision_function(vec_input)[0]
                 exp_dec = np.exp(dec - np.max(dec))
                 probs = exp_dec / exp_dec.sum()
                 pred_idx = np.argmax(probs)
-                confidence = float(probs[pred_idx])
+                cat_confidence = float(probs[pred_idx])
             else:
                 pred_idx = self.ticket_classifier.predict(vec_input)[0]
-                confidence = 1.0
+                cat_confidence = 1.0
 
             predicted_category = str(self.label_encoder.inverse_transform([pred_idx])[0])
 
-            # 4. Priority Prediction
-            predicted_priority = str(self.priority_classifier.predict(vec_input)[0])
+            # 4. Priority Prediction & Confidence Calculation
+            if hasattr(self.priority_classifier, "predict_proba"):
+                pri_probs = self.priority_classifier.predict_proba(vec_input)[0]
+                pri_idx = np.argmax(pri_probs)
+                predicted_priority = str(self.priority_classifier.classes_[pri_idx])
+                pri_confidence = float(pri_probs[pri_idx])
+            elif hasattr(self.priority_classifier, "decision_function"):
+                pri_dec = self.priority_classifier.decision_function(vec_input)[0]
+                exp_dec = np.exp(pri_dec - np.max(pri_dec))
+                pri_probs = exp_dec / exp_dec.sum()
+                pri_idx = np.argmax(pri_probs)
+                predicted_priority = str(self.priority_classifier.classes_[pri_idx])
+                pri_confidence = float(pri_probs[pri_idx])
+            else:
+                predicted_priority = str(self.priority_classifier.predict(vec_input)[0])
+                pri_confidence = 1.0
 
             # 5. Department Routing
             department = get_department_for_category(predicted_category)
+
+            cat_conf_pct = round(cat_confidence * 100, 2)
+            pri_conf_pct = round(pri_confidence * 100, 2)
 
             return {
                 "status": "success",
                 "ticket_text": ticket_text,
                 "category": predicted_category,
+                "category_confidence": cat_conf_pct,
                 "priority": predicted_priority,
+                "priority_confidence": pri_conf_pct,
                 "department": department,
-                "confidence": round(confidence * 100, 2),
+                "confidence": cat_conf_pct,
                 "error": None
             }
         except Exception as e:
@@ -121,7 +137,9 @@ class TicketPredictor:
                 "status": "error",
                 "error": f"Prediction failed: {str(e)}",
                 "category": "Unclassified",
+                "category_confidence": 0.0,
                 "priority": "Medium",
+                "priority_confidence": 0.0,
                 "department": "General Support Team",
                 "confidence": 0.0
             }

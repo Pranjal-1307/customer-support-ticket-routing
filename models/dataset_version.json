@@ -1,6 +1,6 @@
 {
     "version": "v2.0-M2",
-    "timestamp": "2026-08-20T08:35:43.566449",
+    "timestamp": "2026-08-20T11:06:19.922582",
     "total_raw_records": 5761,
     "total_cleaned_records": 4341,
     "unique_records": 4341,
@@ -20,10 +20,10 @@
         "Complaint": 512
     },
     "priority_distribution": {
-        "High": 2417,
-        "Medium": 763,
-        "Critical": 692,
-        "Low": 469
+        "Medium": 1682,
+        "High": 1230,
+        "Low": 893,
+        "Critical": 536
     },
     "splits": {
         "train_size": 3103,

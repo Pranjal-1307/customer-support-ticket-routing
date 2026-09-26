@@ -40,10 +40,21 @@ def init_db():
             priority TEXT NOT NULL,
             department TEXT NOT NULL,
             confidence REAL NOT NULL,
+            category_confidence REAL,
+            priority_confidence REAL,
             status TEXT DEFAULT 'Open',
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )
     """)
+    conn.commit()
+
+    # Automatic schema migration for existing databases
+    cursor.execute("PRAGMA table_info(tickets)")
+    existing_cols = [row[1] for row in cursor.fetchall()]
+    if "category_confidence" not in existing_cols:
+        cursor.execute("ALTER TABLE tickets ADD COLUMN category_confidence REAL")
+    if "priority_confidence" not in existing_cols:
+        cursor.execute("ALTER TABLE tickets ADD COLUMN priority_confidence REAL")
     conn.commit()
 
     # Pre-populate database with dataset sample if database is newly created
@@ -60,21 +71,27 @@ def init_db():
             for _, row in df.iterrows():
                 pred = predictor.predict(str(row['ticket_text']))
                 cursor.execute("""
-                    INSERT INTO tickets (ticket_id, ticket_text, category, priority, department, confidence, status, created_at)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                    INSERT INTO tickets (ticket_id, ticket_text, category, priority, department, confidence, category_confidence, priority_confidence, status, created_at)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """, (
                     str(row['ticket_id']),
                     str(row['ticket_text']),
                     pred.get('category', str(row['category'])),
                     pred.get('priority', str(row['priority'])),
                     pred.get('department', str(row['department'])),
-                    pred.get('confidence', 95.0),
+                    pred.get('category_confidence', pred.get('confidence', 95.0)),
+                    pred.get('category_confidence', 95.0),
+                    pred.get('priority_confidence', 80.0),
                     'Open',
                     datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 ))
             conn.commit()
 
     conn.close()
+
+
+# Ensure DB schema is initialized on import/startup
+init_db()
 
 
 @app.route('/')
@@ -110,19 +127,24 @@ def submit_ticket():
     ticket_id = f"TICK-{uuid.uuid4().hex[:6].upper()}"
     created_at = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
+    cat_conf = pred.get('category_confidence', pred.get('confidence', 0.0))
+    pri_conf = pred.get('priority_confidence', 0.0)
+
     # Save to SQLite Database
     conn = get_db_connection()
     cursor = conn.cursor()
     cursor.execute("""
-        INSERT INTO tickets (ticket_id, ticket_text, category, priority, department, confidence, status, created_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        INSERT INTO tickets (ticket_id, ticket_text, category, priority, department, confidence, category_confidence, priority_confidence, status, created_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     """, (
         ticket_id,
         ticket_text,
         pred['category'],
         pred['priority'],
         pred['department'],
-        pred['confidence'],
+        cat_conf,
+        cat_conf,
+        pri_conf,
         'Open',
         created_at
     ))
@@ -134,9 +156,11 @@ def submit_ticket():
         "ticket_id": ticket_id,
         "ticket_text": ticket_text,
         "category": pred['category'],
+        "category_confidence": cat_conf,
         "priority": pred['priority'],
+        "priority_confidence": pri_conf,
         "department": pred['department'],
-        "confidence": pred['confidence'],
+        "confidence": cat_conf,
         "created_at": created_at,
         "ticket_status": "Open"
     })
