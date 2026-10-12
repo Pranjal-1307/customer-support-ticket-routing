@@ -1,8 +1,15 @@
 let categoryChartInstance = null;
 let priorityChartInstance = null;
 let departmentChartInstance = null;
+let feedbackModalInstance = null;
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Modal
+    const modalEl = document.getElementById('feedbackModal');
+    if (modalEl && typeof bootstrap !== 'undefined') {
+        feedbackModalInstance = new bootstrap.Modal(modalEl);
+    }
+
     // Quick Sample Prompts listener
     document.querySelectorAll('.sample-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -15,6 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const ticketForm = document.getElementById('ticketForm');
     if (ticketForm) {
         ticketForm.addEventListener('submit', handleTicketSubmit);
+    }
+
+    // Feedback Form listener
+    const feedbackForm = document.getElementById('feedbackForm');
+    if (feedbackForm) {
+        feedbackForm.addEventListener('submit', handleFeedbackSubmit);
     }
 });
 
@@ -68,12 +81,6 @@ async function handleTicketSubmit(event) {
                 else priBar.classList.add('bg-dark');
             }
 
-            // Legacy backward-compat elements
-            const legacyConf = document.getElementById('resConfidence');
-            if (legacyConf) legacyConf.innerText = `${catConf}%`;
-            const legacyBar = document.getElementById('confidenceBar');
-            if (legacyBar) legacyBar.style.width = `${catConf}%`;
-
             // Set priority badge color
             const priBadge = document.getElementById('resPriority');
             priBadge.className = 'badge fs-6 px-3 py-1 ';
@@ -81,6 +88,52 @@ async function handleTicketSubmit(event) {
             else if (data.priority === 'Medium') priBadge.classList.add('bg-warning', 'text-dark');
             else if (data.priority === 'High') priBadge.classList.add('bg-danger');
             else priBadge.classList.add('bg-dark');
+
+            // Render Priority Intelligence Signals (M3)
+            const explanationEl = document.getElementById('resExplanationText');
+            if (explanationEl && data.priority_explanation) {
+                explanationEl.innerText = data.priority_explanation;
+            }
+
+            const signalsListEl = document.getElementById('resSignalsList');
+            if (signalsListEl && data.priority_signals) {
+                const sigs = data.priority_signals;
+                const sigKeys = [
+                    { key: 'urgency', label: 'Urgency', icon: 'fa-bolt' },
+                    { key: 'severity', label: 'Severity', icon: 'fa-triangle-exclamation' },
+                    { key: 'financial_impact', label: 'Financial Impact', icon: 'fa-dollar-sign' },
+                    { key: 'security_risk', label: 'Security Risk', icon: 'fa-shield-halved' },
+                    { key: 'service_impact', label: 'Service Impact', icon: 'fa-server' },
+                    { key: 'time_sensitivity', label: 'Time Sensitivity', icon: 'fa-clock' }
+                ];
+
+                signalsListEl.innerHTML = sigKeys.map(s => {
+                    const score = sigs[s.key] !== undefined ? sigs[s.key] : 0.0;
+                    const pct = Math.round(score * 100);
+                    const colorClass = score >= 0.7 ? 'text-danger' : score >= 0.4 ? 'text-warning' : 'text-secondary';
+                    const barColor = score >= 0.7 ? 'bg-danger' : score >= 0.4 ? 'bg-warning' : 'bg-primary';
+
+                    return `
+                        <div class="col-md-4 col-6">
+                            <div class="p-2 bg-white rounded border small">
+                                <div class="d-flex justify-content-between align-items-center mb-1">
+                                    <span class="text-truncate fw-semibold"><i class="fa-solid ${s.icon} ${colorClass} me-1"></i>${s.label}</span>
+                                    <span class="fw-bold ${colorClass}">${pct}%</span>
+                                </div>
+                                <div class="progress" style="height: 4px;">
+                                    <div class="progress-bar ${barColor}" style="width: ${pct}%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            }
+
+            // Legacy backward-compat elements
+            const legacyConf = document.getElementById('resConfidence');
+            if (legacyConf) legacyConf.innerText = `${catConf}%`;
+            const legacyBar = document.getElementById('confidenceBar');
+            if (legacyBar) legacyBar.style.width = `${catConf}%`;
 
             resultCard.classList.remove('d-none');
             resultCard.scrollIntoView({ behavior: 'smooth' });
@@ -103,36 +156,15 @@ async function loadAdminStats() {
         // Stats Overview
         document.getElementById('statTotalTickets').innerText = data.total_tickets || 0;
         
-        const metrics = data.model_metrics || {};
-        document.getElementById('statActiveModel').innerText = metrics.best_category_model_name || 'Linear SVM';
-
-        const holdout = metrics.m2_holdout_metrics || {};
+        const fbStats = data.feedback_stats || {};
+        const valCount = fbStats.validated_feedback_count || 0;
+        const pendCount = fbStats.pending_validation_count || 0;
         
-        // Category F1 (Holdout vs Dev/Test)
-        if (holdout.category_macro_f1) {
-            document.getElementById('statCategoryF1').innerText = `${(holdout.category_macro_f1 * 100).toFixed(1)}%`;
-        } else if (holdout.category_weighted_f1) {
-            document.getElementById('statCategoryF1').innerText = `${(holdout.category_weighted_f1 * 100).toFixed(1)}%`;
-        } else {
-            document.getElementById('statCategoryF1').innerText = '91.8%';
-        }
+        const valEl = document.getElementById('statValidatedFeedback');
+        if (valEl) valEl.innerText = valCount;
 
-        const catDevSub = document.getElementById('statCategoryDevSub');
-        if (catDevSub && metrics.best_category_f1) {
-            catDevSub.innerText = `Dev/Test F1: ${(metrics.best_category_f1 * 100).toFixed(1)}%`;
-        }
-
-        // Priority Accuracy (Holdout vs Dev/Test)
-        if (holdout.priority_accuracy !== undefined) {
-            document.getElementById('statPriorityAcc').innerText = `${(holdout.priority_accuracy * 100).toFixed(1)}%`;
-        } else {
-            document.getElementById('statPriorityAcc').innerText = '58.3%';
-        }
-
-        const priDevSub = document.getElementById('statPriorityDevSub');
-        if (priDevSub && metrics.priority_accuracy) {
-            priDevSub.innerText = `Dev/Test Acc: ${(metrics.priority_accuracy * 100).toFixed(1)}%`;
-        }
+        const pendEl = document.getElementById('statPendingFeedback');
+        if (pendEl) pendEl.innerText = `Pending: ${pendCount}`;
 
         // Render Charts
         renderCategoryChart(data.category_counts || {});
@@ -141,6 +173,9 @@ async function loadAdminStats() {
 
         // Render Recent Tickets Table
         renderRecentTicketsTable(data.recent_tickets || []);
+
+        // Render Feedback Table
+        renderFeedbackTable(fbStats.recent_feedback || []);
     } catch (err) {
         console.error("Error loading admin stats:", err);
     }
@@ -237,24 +272,134 @@ function renderRecentTicketsTable(tickets) {
         const catConf = t.category_confidence !== undefined && t.category_confidence !== null ? t.category_confidence : t.confidence;
         const catConfStr = catConf !== undefined && catConf !== null ? `${catConf}%` : '--';
 
-        const priBadgeClass = t.priority === 'Low' ? 'bg-success' : t.priority === 'Medium' ? 'bg-warning text-dark' : 'bg-danger';
+        const priBadgeClass = t.priority === 'Low' ? 'bg-success' : t.priority === 'Medium' ? 'bg-warning text-dark' : t.priority === 'High' ? 'bg-danger' : 'bg-dark';
+
+        const escapedText = (t.ticket_text || '').replace(/"/g, '&quot;');
 
         return `
             <tr>
                 <td class="font-monospace fw-bold text-primary">${t.ticket_id}</td>
-                <td class="text-truncate" style="max-width: 200px;" title="${t.ticket_text}">${t.ticket_text}</td>
+                <td class="text-truncate" style="max-width: 200px;" title="${escapedText}">${t.ticket_text}</td>
                 <td><span class="badge bg-light text-dark border">${t.category}</span></td>
-                <td>
-                    <span class="badge ${priBadgeClass}">
-                        ${t.priority}
-                    </span>
-                </td>
+                <td><span class="badge ${priBadgeClass}">${t.priority}</span></td>
                 <td class="fw-semibold">${t.department}</td>
                 <td><span class="fw-semibold text-primary">${catConfStr}</span></td>
-                <td class="text-muted small">${t.created_at}</td>
+                <td>
+                    <button class="btn btn-sm btn-outline-primary rounded-pill px-3" onclick="openFeedbackModal('${t.ticket_id}', '${escapedText}', '${t.priority}')">
+                        <i class="fa-solid fa-pen-to-square me-1"></i>Correct
+                    </button>
+                </td>
             </tr>
         `;
     }).join('');
+}
+
+function renderFeedbackTable(feedbackList) {
+    const tbody = document.getElementById('feedbackTableBody');
+    if (!tbody) return;
+
+    if (!feedbackList || feedbackList.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="8" class="text-center text-muted">No feedback recorded yet.</td></tr>`;
+        return;
+    }
+
+    tbody.innerHTML = feedbackList.map(fb => {
+        const isValidated = fb.validated === 1;
+        const statusBadge = isValidated 
+            ? `<span class="badge bg-success"><i class="fa-solid fa-check me-1"></i>Validated</span>`
+            : `<span class="badge bg-warning text-dark"><i class="fa-solid fa-clock me-1"></i>Pending Review</span>`;
+
+        const actionBtn = isValidated
+            ? `<span class="text-muted small">Ready for Gate</span>`
+            : `<button class="btn btn-sm btn-success rounded-pill px-2" onclick="validateFeedback('${fb.feedback_id}')"><i class="fa-solid fa-check me-1"></i>Validate</button>`;
+
+        return `
+            <tr>
+                <td class="font-monospace small">${fb.feedback_id}</td>
+                <td class="font-monospace fw-bold text-primary">${fb.ticket_id}</td>
+                <td><span class="badge bg-secondary">${fb.original_priority}</span></td>
+                <td><span class="badge bg-primary">${fb.corrected_priority}</span></td>
+                <td class="small text-muted">${fb.reason || '--'}</td>
+                <td class="small">${fb.reviewer || 'agent'}</td>
+                <td>${statusBadge}</td>
+                <td>${actionBtn}</td>
+            </tr>
+        `;
+    }).join('');
+}
+
+function openFeedbackModal(ticketId, ticketText, originalPriority) {
+    document.getElementById('modalTicketId').value = ticketId;
+    document.getElementById('modalDisplayTicketId').innerText = ticketId;
+    document.getElementById('modalTicketText').innerText = ticketText;
+    document.getElementById('modalOriginalPriority').innerText = originalPriority;
+    document.getElementById('modalCorrectedPriority').value = originalPriority === 'High' ? 'Medium' : 'High';
+    document.getElementById('modalReason').value = '';
+
+    if (feedbackModalInstance) {
+        feedbackModalInstance.show();
+    } else {
+        const modalEl = document.getElementById('feedbackModal');
+        feedbackModalInstance = new bootstrap.Modal(modalEl);
+        feedbackModalInstance.show();
+    }
+}
+
+async function handleFeedbackSubmit(e) {
+    e.preventDefault();
+    const ticketId = document.getElementById('modalTicketId').value;
+    const correctedPriority = document.getElementById('modalCorrectedPriority').value;
+    const reason = document.getElementById('modalReason').value.trim();
+    const reviewer = document.getElementById('modalReviewer').value.trim() || 'admin_supervisor';
+    const submitBtn = document.getElementById('modalSubmitBtn');
+
+    submitBtn.disabled = true;
+    submitBtn.innerText = 'Saving...';
+
+    try {
+        const res = await fetch('/api/feedback/priority', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                ticket_id: ticketId,
+                corrected_priority: correctedPriority,
+                reason: reason,
+                reviewer: reviewer,
+                validated: 0
+            })
+        });
+        const data = await res.json();
+        if (res.ok && data.status === 'success') {
+            if (feedbackModalInstance) feedbackModalInstance.hide();
+            alert(`Priority correction saved! Feedback ID: ${data.feedback_id}`);
+            loadAdminStats();
+        } else {
+            alert(`Error: ${data.message || 'Failed to submit feedback.'}`);
+        }
+    } catch (err) {
+        alert(`Error: ${err.message}`);
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerText = 'Save Feedback';
+    }
+}
+
+async function validateFeedback(feedbackId) {
+    try {
+        const res = await fetch('/api/feedback/priority/validate', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ feedback_id: feedbackId, validated: 1 })
+        });
+        const data = await res.json();
+        if (res.ok && data.status === 'success') {
+            loadAdminStats();
+        } else {
+            alert(`Failed: ${data.message}`);
+        }
+    } catch (err) {
+        alert(`Error: ${err.message}`);
+    }
 }
 
 async function retrainModels() {

@@ -43,15 +43,21 @@ except Exception:
         "you", "you'd", "you'll", "you're", "you've", "your", "yours", "yourself", "yourselves"
     }
 
+# Retain intent-bearing interrogative words for domain inquiry classification
+STOP_WORDS = STOP_WORDS - {"where", "why", "how", "when", "what", "which", "who", "whom"}
+
 lemmatizer = WordNetLemmatizer()
 
 
 def clean_text(text: str) -> str:
     """
-    Cleans input text by lowercasing, removing URLs, HTML tags, special chars, punctuation, and extra whitespace.
+    Cleans input text by lowercasing, removing URLs, HTML tags, special chars,
+    and punctuation while preserving Unicode/Indic characters and whitespace.
     """
     if not isinstance(text, str) or not text.strip():
         return ""
+
+    import unicodedata
 
     # 1. Lowercase
     text = text.lower()
@@ -62,8 +68,14 @@ def clean_text(text: str) -> str:
     # 3. Remove HTML tags
     text = re.sub(r'<.*?>', '', text)
 
-    # 4. Remove special characters and digits
-    text = re.sub(r'[^a-z\s]', ' ', text)
+    # 4. Remove special characters and digits while preserving all Unicode letters, marks (Indic matras), and spaces
+    cleaned_chars = []
+    for c in text:
+        if (c.isalnum() or unicodedata.category(c).startswith('M') or c.isspace()) and not c.isdigit():
+            cleaned_chars.append(c)
+        else:
+            cleaned_chars.append(' ')
+    text = ''.join(cleaned_chars)
 
     # 5. Collapse multiple whitespaces
     text = re.sub(r'\s+', ' ', text).strip()

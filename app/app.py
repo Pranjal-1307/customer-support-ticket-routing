@@ -46,6 +46,21 @@ def init_db():
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )
     """)
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS priority_feedback (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            feedback_id TEXT UNIQUE NOT NULL,
+            ticket_id TEXT NOT NULL,
+            ticket_text TEXT,
+            original_priority TEXT NOT NULL,
+            corrected_priority TEXT NOT NULL,
+            original_priority_confidence REAL,
+            reason TEXT,
+            reviewer TEXT DEFAULT 'agent',
+            validated INTEGER DEFAULT 0,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        )
+    """)
     conn.commit()
 
     # Automatic schema migration for existing databases
@@ -192,6 +207,16 @@ def admin_stats():
     recent_rows = cursor.fetchall()
     recent_tickets = [dict(r) for r in recent_rows]
 
+    # Feedback statistics
+    cursor.execute("SELECT COUNT(*) FROM priority_feedback")
+    total_feedback = cursor.fetchone()[0]
+
+    cursor.execute("SELECT COUNT(*) FROM priority_feedback WHERE validated = 1")
+    validated_feedback_count = cursor.fetchone()[0]
+
+    cursor.execute("SELECT * FROM priority_feedback ORDER BY id DESC LIMIT 10")
+    recent_feedback = [dict(r) for r in cursor.fetchall()]
+
     conn.close()
 
     # Load Model Metrics
@@ -208,7 +233,115 @@ def admin_stats():
         "priority_counts": priority_counts,
         "department_counts": department_counts,
         "recent_tickets": recent_tickets,
+        "feedback_stats": {
+            "total_feedback": total_feedback,
+            "validated_feedback_count": validated_feedback_count,
+            "pending_validation_count": total_feedback - validated_feedback_count,
+            "recent_feedback": recent_feedback
+        },
         "model_metrics": model_metrics
+    })
+
+
+@app.route('/api/feedback/priority', methods=['POST'])
+def submit_priority_feedback():
+    data = request.get_json() or {}
+    ticket_id = data.get('ticket_id', '').strip()
+    corrected_priority = data.get('corrected_priority', '').strip()
+    reason = data.get('reason', '').strip()
+    reviewer = data.get('reviewer', 'agent').strip() or 'agent'
+    validated = 1 if data.get('validated') in [1, True, '1', 'true'] else 0
+
+    if not ticket_id:
+        return jsonify({"status": "error", "message": "ticket_id is required."}), 400
+
+    valid_priorities = ['Low', 'Medium', 'High', 'Critical']
+    if corrected_priority not in valid_priorities:
+        return jsonify({"status": "error", "message": f"corrected_priority must be one of {valid_priorities}."}), 400
+
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM tickets WHERE ticket_id = ?", (ticket_id,))
+    ticket = cursor.fetchone()
+
+    if not ticket:
+        conn.close()
+        return jsonify({"status": "error", "message": f"Ticket '{ticket_id}' not found."}), 404
+
+    feedback_id = f"FB-{uuid.uuid4().hex[:6].upper()}"
+    orig_priority = ticket['priority']
+    orig_conf = ticket['priority_confidence'] if 'priority_confidence' in ticket.keys() else ticket['confidence']
+    ticket_text = ticket['ticket_text']
+
+    cursor.execute("""
+        INSERT INTO priority_feedback (feedback_id, ticket_id, ticket_text, original_priority, corrected_priority, original_priority_confidence, reason, reviewer, validated)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    """, (
+        feedback_id,
+        ticket_id,
+        ticket_text,
+        orig_priority,
+        corrected_priority,
+        orig_conf,
+        reason,
+        reviewer,
+        validated
+    ))
+    conn.commit()
+    conn.close()
+
+    return jsonify({
+        "status": "success",
+        "message": "Priority feedback submitted successfully.",
+        "feedback_id": feedback_id,
+        "ticket_id": ticket_id,
+        "original_priority": orig_priority,
+        "corrected_priority": corrected_priority,
+        "validated": validated
+    }), 201
+
+
+@app.route('/api/feedback/priority', methods=['GET'])
+def get_priority_feedback():
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM priority_feedback ORDER BY id DESC")
+    rows = cursor.fetchall()
+    feedback_list = [dict(r) for r in rows]
+    conn.close()
+    return jsonify({
+        "status": "success",
+        "count": len(feedback_list),
+        "feedback": feedback_list
+    })
+
+
+@app.route('/api/feedback/priority/validate', methods=['POST'])
+def validate_priority_feedback():
+    data = request.get_json() or {}
+    feedback_id = data.get('feedback_id', '').strip()
+    validated = 1 if data.get('validated', True) in [1, True, '1', 'true'] else 0
+
+    if not feedback_id:
+        return jsonify({"status": "error", "message": "feedback_id is required."}), 400
+
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM priority_feedback WHERE feedback_id = ?", (feedback_id,))
+    row = cursor.fetchone()
+    if not row:
+        conn.close()
+        return jsonify({"status": "error", "message": f"Feedback '{feedback_id}' not found."}), 404
+
+    cursor.execute("UPDATE priority_feedback SET validated = ? WHERE feedback_id = ?", (validated, feedback_id))
+    conn.commit()
+    conn.close()
+
+    return jsonify({
+        "status": "success",
+        "message": f"Feedback '{feedback_id}' validation status updated to {validated}.",
+        "feedback_id": feedback_id,
+        "validated": validated
     })
 
 
@@ -232,3 +365,4 @@ def retrain_models():
 if __name__ == '__main__':
     init_db()
     app.run(host='0.0.0.0', port=5000, debug=True)
+

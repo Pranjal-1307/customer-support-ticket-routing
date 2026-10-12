@@ -37,178 +37,221 @@ PRIORITIES = ["Low", "Medium", "High", "Critical"]
 # Structures: (phrase_template, base_priority, length_type, language)
 TICKET_PATTERNS = {
     "Billing": [
-        # Short
+        # English
         ("Charged twice for order {id}.", "Medium", "short", "en"),
         ("Duplicate charge on statement.", "Medium", "short", "en"),
         ("Double billing issue.", "Medium", "short", "en"),
         ("Payment failed but money deducted.", "High", "short", "en"),
         ("Need tax invoice for order {id}.", "Low", "short", "en"),
-        ("Mera payment duplicate kat gaya hai.", "Medium", "short", "hinglish"),
-        ("Billing ma double charge thayo che.", "Medium", "short", "gujarati"),
-
-        # Medium / Conversational / Questions
+        ("I was charged twice.", "Medium", "short", "en"),
         ("Why am I seeing two charges for the same order {id} on my bank app?", "Medium", "medium", "en"),
         ("I was billed ${amount} this month, but my plan is supposed to be ${plan_amount}.", "Medium", "medium", "en"),
         ("There is an unrecognized charge of ${amount} on my credit card statement.", "Critical", "medium", "en"),
         ("Can you please send me an official VAT receipt and tax invoice for billing period {period}?", "Low", "medium", "en"),
-        ("I paid my monthly invoice yesterday, but the account dashboard still shows payment pending.", "Medium", "medium", "en"),
+        ("I checked my credit card account and noticed two separate line items for ${amount} on order {id}. Please reverse the duplicate billing immediately.", "High", "long", "en"),
+        # Hinglish
+        ("Mera payment duplicate kat gaya hai.", "Medium", "short", "hinglish"),
+        ("Mujhse do baar payment li gayi.", "Medium", "short", "hinglish"),
         ("Account balance se double amount deduct ho gaya, please check billing statement.", "Medium", "medium", "hinglish"),
-        ("Kripya invoice receipt email ID par bhej dijiye.", "Low", "medium", "hindi"),
-
-        # Long / Detailed / Indirect Wording
-        ("I checked my credit card account this morning and noticed two separate line items for ${amount} on order {id}. I only submitted the checkout form once, so one of these transactions is clearly an error. Please reverse the duplicate billing immediately.", "High", "long", "en"),
-        ("Our organization was charged a late fee penalty of ${amount} despite completing the wire transfer prior to the due date. Attached is our bank transaction confirmation for your accounts team to verify and credit back.", "Medium", "long", "en"),
-        ("We signed up under a free trial promotional banner, yet our company credit card was billed ${amount} on day one. We expect a full reversal of this unauthorized charge and correction of our subscription tier.", "Critical", "long", "en")
+        ("Kripya invoice receipt email ID par bhej dijiye.", "Low", "medium", "hinglish"),
+        ("Do baar paise cut gaye order {id} ke liye.", "Medium", "short", "hinglish"),
+        ("Payment fail ho gaya lekin bank se paise cut gaye.", "High", "short", "hinglish"),
+        # Gujarati
+        ("Billing ma double charge thayo che.", "Medium", "short", "gujarati"),
+        ("મારા પાસેથી બે વાર પૈસા લેવામાં આવ્યા છે.", "Medium", "short", "gujarati"),
+        ("ખાતામાંથી બે વાર પૈસા કપાઈ ગયા છે.", "Medium", "short", "gujarati"),
+        ("ટેક્સ ઇનવોઇસ અને બિલિંગ રસીદ મોકલો.", "Low", "short", "gujarati"),
+        ("પેમેન્ટ ફેલ થયું પણ પૈસા કપાઈ ગયા છે.", "High", "short", "gujarati"),
+        ("ઓર્ડર {id} માટે ડબલ બિલિંગ થયું છે તાત્કાલિક સુધારો કરો.", "High", "medium", "gujarati")
     ],
     "Technical Support": [
-        # Short
+        # English
         ("App crashes on launch.", "Medium", "short", "en"),
+        ("The mobile app keeps crashing.", "Medium", "short", "en"),
         ("Router blinking red, internet down.", "High", "short", "en"),
         ("Server error 500 on submit.", "High", "short", "en"),
         ("Database connection timeout.", "Critical", "short", "en"),
         ("Desktop software freezing.", "Medium", "short", "en"),
-        ("Website completely crash ho gaya hai.", "Critical", "short", "hinglish"),
-        ("App chalne ma problem aave che.", "Medium", "short", "gujarati"),
-
-        # Medium / Conversational / Questions
         ("Why does the mobile application crash every time I try to open the camera or upload a document?", "Medium", "medium", "en"),
         ("Our backend production database server at {ip} is refusing incoming connections with error {err_code}.", "Critical", "medium", "en"),
         ("Page loading times have degraded significantly after the latest patch, causing request timeouts.", "Medium", "medium", "en"),
-        ("Can someone help resolve the DLL loading error on Windows 11 when starting the client application?", "Medium", "medium", "en"),
         ("VPN connection repeatedly drops every few minutes when connected to office network.", "High", "medium", "en"),
+        ("The application throws internal server error 500 continuously blocking all users.", "Critical", "long", "en"),
+        # Hinglish
+        ("Website completely crash ho gaya hai.", "Critical", "short", "hinglish"),
+        ("App baar baar crash ho raha hai.", "Medium", "short", "hinglish"),
+        ("App open nahi ho raha aur freeze ho jata hai.", "Medium", "short", "hinglish"),
+        ("Internet connection error aur router red light blink kar raha hai.", "High", "short", "hinglish"),
         ("System crash ho raha hai export click karte hi error code {err_code} ke saath.", "Medium", "medium", "hinglish"),
-
-        # Long / Detailed / Indirect Wording
-        ("Ever since updating to version 4.2 yesterday, our entire telemetry team has been unable to access the web portal. The page loads infinitely before displaying an internal server error (HTTP 500). This is blocking active customer operations.", "Critical", "long", "en"),
-        ("We are observing consistent memory leaks in the background daemon process on node {ip}. Memory utilization climbs to 99% within two hours of service start, eventually forcing a kernel panic and abrupt system reboot.", "Critical", "long", "en"),
-        ("The offline synchronization module fails to push local SQLite records to the cloud database when reconnecting to Wi-Fi. Data remains cached locally without throwing explicit log exceptions.", "Medium", "long", "en")
+        ("Server 500 error aa raha hai submit karte waqt.", "High", "short", "hinglish"),
+        # Gujarati
+        ("App chalne ma problem aave che.", "Medium", "short", "gujarati"),
+        ("એપ વારંવાર ક્રેશ થઈ રહી છે.", "Medium", "short", "gujarati"),
+        ("મોબાઇલ એપ ખુલતી જ નથી અને ક્રેશ થાય છે.", "Medium", "short", "gujarati"),
+        ("ઇન્ટરનેટ રાઉટર લાલ લાઇટ બ્લિંક કરે છે અને કનેક્શન બંધ છે.", "High", "short", "gujarati"),
+        ("સર્વર એરર 500 આવી રહી છે અને પેજ લોડ થતું નથી.", "High", "medium", "gujarati"),
+        ("ડેટાબેઝ કનેક્શન ટાઇમઆઉટ એરર {err_code} સાથે સિસ્ટમ બંધ થઈ ગઈ છે.", "Critical", "medium", "gujarati")
     ],
     "Refund": [
-        # Short
+        # English
         ("Requesting refund for order {id}.", "Medium", "short", "en"),
         ("Damaged product, refund needed.", "Medium", "short", "en"),
         ("Wrong item delivered, money back.", "Medium", "short", "en"),
         ("Where is my pending refund?", "Medium", "short", "en"),
-        ("Refund process nahi hua abhi tak.", "Medium", "short", "hinglish"),
-        ("Paisa refund karo jaldi.", "Medium", "short", "hindi"),
-
-        # Medium / Conversational / Questions
+        ("I want a refund for my order.", "Medium", "short", "en"),
         ("I returned package for order {id} two weeks ago but haven't seen the refund credited to my bank account.", "Medium", "medium", "en"),
         ("The item arrived with broken glass and torn packaging. I demand an immediate full refund.", "High", "medium", "en"),
         ("I accidentally renewed the wrong tier subscription yesterday. Is it possible to get a refund?", "Low", "medium", "en"),
         ("System cancelled my order due to stock shortage, but the money has not been refunded yet.", "Medium", "medium", "en"),
+        ("I am returning the damaged shipment and request an expedited money back refund to original card.", "High", "long", "en"),
+        # Hinglish
+        ("Refund process nahi hua abhi tak.", "Medium", "short", "hinglish"),
+        ("Mujhe mere order ka refund chahiye.", "Medium", "short", "hinglish"),
+        ("Paisa refund karo jaldi order {id} ka.", "Medium", "short", "hinglish"),
         ("Order cancel hone ke baad bhi refund credit nahi hua account mein.", "Medium", "medium", "hinglish"),
-        ("Pakka refund kab tak milega order {id} ka?", "Medium", "medium", "hinglish"),
-
-        # Long / Detailed / Indirect Wording
-        ("I placed order {id} for an enterprise hardware component, but received a completely different consumer product model. Since this does not match the product specification or purchase order, I am returning the package and request a full refund including express shipping charges.", "High", "long", "en"),
-        ("Our scheduled virtual event was ruined due to continuous platform outages on your side. We paid ${amount} for premium hosting and request an immediate pro-rated credit refund to our corporate account balance.", "Medium", "long", "en")
+        ("Damaged item deliver hua hai, mera paisa wapas refund karein.", "High", "medium", "hinglish"),
+        ("Mera refund kab tak credit hoga bank account mein?", "Low", "short", "hinglish"),
+        # Gujarati
+        ("રિફંડ હજુ સુધી મળ્યું નથી.", "Medium", "short", "gujarati"),
+        ("મને મારા ઓર્ડરનું રિફંડ જોઈએ છે.", "Medium", "short", "gujarati"),
+        ("ખરાબ પ્રોડક્ટ આવી છે તેથી પૈસા પાછા રિફંડ કરો.", "High", "short", "gujarati"),
+        ("ઓર્ડર {id} રદ થયા પછી પણ રિફંડ ખાતામાં જમા થયું નથી.", "Medium", "medium", "gujarati"),
+        ("ઓર્ડર રિટર્ન કર્યાને બે અઠવાડિયા થઈ ગયા છે પણ રિફંડ નથી આવ્યું.", "Medium", "medium", "gujarati"),
+        ("તાત્કાલિક મારા કાર્ડ પર પૂરેપૂરું રિફંડ જમા કરો.", "High", "short", "gujarati")
     ],
     "Shipping": [
-        # Short
+        # English
+        ("Where is my order?", "Low", "short", "en"),
+        ("Where is my package?", "Low", "short", "en"),
         ("Where is my parcel?", "Low", "short", "en"),
         ("Tracking not updating for order {id}.", "Low", "short", "en"),
         ("Package marked delivered but missing.", "Critical", "short", "en"),
         ("Wrong delivery address on order {id}.", "Medium", "short", "en"),
-        ("Delivery kab tak aayegi?", "Low", "short", "hinglish"),
-        ("Courier status update nathi thayo.", "Low", "short", "gujarati"),
-
-        # Medium / Conversational / Questions
+        ("When will my order arrive?", "Low", "short", "en"),
         ("Tracking number {id} has been stuck in transit at the hub for over 6 days without progress.", "Medium", "medium", "en"),
         ("The courier marked my parcel as delivered on the porch, but there is no package outside my house.", "High", "medium", "en"),
         ("Can I update my shipping delivery address to apartment 4B before the order dispatches?", "Medium", "medium", "en"),
-        ("My parcel box arrived completely crushed with contents damaged during transport.", "High", "medium", "en"),
-        ("Tracking link shows package held at border customs clearance depot.", "Low", "medium", "en"),
+        ("I paid extra for guaranteed next-day air shipping on order {id}, but tracking shows it is delayed.", "Medium", "long", "en"),
+        # Hinglish
+        ("Mera order kaha hai?", "Low", "short", "hinglish"),
+        ("Mera package kahan hai?", "Low", "short", "hinglish"),
+        ("Delivery kab tak aayegi?", "Low", "short", "hinglish"),
+        ("Order {id} ka tracking status update nahi ho raha hai.", "Low", "short", "hinglish"),
         ("Parcel delivered bol raha hai par gate pe koi item nahi hai.", "High", "medium", "hinglish"),
-
-        # Long / Detailed / Indirect Wording
-        ("I paid extra for guaranteed next-day air shipping on order {id} because of an urgent event. It has now been 4 days and the tracking status shows the package is still sitting at the local distribution facility. Please expedite delivery or refund express fees.", "Medium", "long", "en"),
-        ("The delivery driver left our electronic equipment package in heavy rain outside the warehouse gate without ringing the bell or getting a signature. Water soaked through the box.", "High", "long", "en")
+        ("Mera parcel kab deliver hoga courier se?", "Low", "short", "hinglish"),
+        # Gujarati
+        ("મારું ઓર્ડર ક્યાં છે?", "Low", "short", "gujarati"),
+        ("મારું પેકેજ ક્યાં છે?", "Low", "short", "gujarati"),
+        ("મારું પાર્સલ ક્યારે આવશે?", "Low", "short", "gujarati"),
+        ("Courier status update nathi thayo.", "Low", "short", "gujarati"),
+        ("ઓર્ડર {id} નું ટ્રેકિંગ સ્ટેટસ અપડેટ થતું નથી.", "Low", "short", "gujarati"),
+        ("ડિલિવરી બતાવે છે પણ પેકેજ મળ્યું નથી.", "High", "short", "gujarati"),
+        ("ઓર્ડર કુરિયર ટ્રાન્ઝિટમાં અટવાઈ ગયું છે ડિલિવરી ક્યારે થશે?", "Medium", "medium", "gujarati")
     ],
     "Account": [
-        # Short
+        # English
         ("Cannot log into account.", "High", "short", "en"),
+        ("My account has been hacked.", "Critical", "short", "en"),
         ("Forgot password link expired.", "Low", "short", "en"),
         ("2FA code not received.", "Medium", "short", "en"),
         ("Account locked after failed logins.", "High", "short", "en"),
         ("Unrecognized login notification received.", "Critical", "short", "en"),
-        ("Account login nahi ho raha hai.", "High", "short", "hinglish"),
-        ("Password reset link kaam nahi kar raha.", "Low", "short", "hinglish"),
-
-        # Medium / Conversational / Questions
         ("Why am I not receiving the SMS two-factor authentication verification code on my registered mobile number?", "Medium", "medium", "en"),
         ("I received an email stating my password was changed from an unknown location, but I did not initiate this.", "Critical", "medium", "en"),
         ("How can I change the primary administrator email address associated with our company portal?", "Low", "medium", "en"),
         ("Single Sign-On (SSO) authentication is throwing a redirect URI error for domain users.", "High", "medium", "en"),
-        ("Please help unlock my account after entering wrong password three times.", "Low", "medium", "en"),
+        ("Our administrator lost access to the workspace account after unauthorized login attempts.", "Critical", "long", "en"),
+        # Hinglish
+        ("Mera account hack ho gaya hai.", "Critical", "short", "hinglish"),
+        ("Account login nahi ho raha hai.", "High", "short", "hinglish"),
+        ("Password reset link kaam nahi kar raha.", "Low", "short", "hinglish"),
+        ("2FA OTP code phone pe receive nahi ho raha.", "Medium", "short", "hinglish"),
         ("Mera admin account locked ho gaya hai, please reset karein.", "Medium", "medium", "hinglish"),
-
-        # Long / Detailed / Indirect Wording
-        ("Our team administrator suddenly lost access to the master workspace account after enabling SAML 2.0 SSO. The login screen loops indefinitely between the identity provider and portal without authenticating. We need urgent admin intervention.", "Critical", "long", "en"),
-        ("I am requesting complete account closure and permanent deletion of all personal stored data from your servers in compliance with privacy regulations.", "Medium", "long", "en")
+        ("Kisi unknown device se mera account login hua hai, please secure karein.", "Critical", "medium", "hinglish"),
+        # Gujarati
+        ("મારું એકાઉન્ટ હેક થઈ ગયું છે.", "Critical", "short", "gujarati"),
+        ("એકાઉન્ટમાં લોગિન થતું નથી.", "High", "short", "gujarati"),
+        ("પાસવર્ડ રીસેટ લિંક કામ કરતી નથી.", "Low", "short", "gujarati"),
+        ("ઓટીપી અને 2FA કોડ મોબાઈલ પર મળતો નથી.", "Medium", "short", "gujarati"),
+        ("મારું એકાઉન્ટ લોક થઈ ગયું છે અનલોક કરો.", "High", "short", "gujarati"),
+        ("અજાણ્યા લોકેશનથી એકાઉન્ટ એક્સેસ થયું છે તાત્કાલિક સુરક્ષિત કરો.", "Critical", "medium", "gujarati")
     ],
     "Complaint": [
-        # Short
+        # English
         ("Rude customer agent on call.", "Low", "short", "en"),
         ("Worst support experience ever.", "Low", "short", "en"),
+        ("Worst customer service.", "Low", "short", "en"),
         ("Ticket closed without resolution.", "Medium", "short", "en"),
         ("Service downtime ruined our demo.", "Critical", "short", "en"),
-        ("Agent ne bina answer kiye ticket close kar diya.", "Medium", "short", "hinglish"),
-        ("Kharaab service experience che.", "Low", "short", "gujarati"),
-
-        # Medium / Conversational / Questions
         ("I have been on hold for over 45 minutes without anyone picking up my call. This service is terrible.", "Medium", "medium", "en"),
         ("Support agent closed my ticket {id} marking it resolved, even though the bug is still happening!", "High", "medium", "en"),
         ("Your representative was dismissive and unhelpful when I asked for assistance with system errors.", "Low", "medium", "en"),
-        ("Unannounced platform outage during business hours caused direct revenue loss for our company.", "Critical", "medium", "en"),
         ("No reply to urgent ticket for 48 hours despite paying for 24/7 premium support SLA.", "High", "medium", "en"),
-        ("48 ghante se koi response nahi aaya, service bohot badhiya nahi hai.", "Medium", "medium", "hinglish"),
-
-        # Long / Detailed / Indirect Wording
-        ("I am filing a formal complaint regarding misleading feature advertising on your pricing page. We purchased the business plan based on promised custom integration features, only to discover after onboarding that the API is not included.", "Medium", "long", "en"),
-        ("Repeated system downtime and unannounced maintenance windows over the past month have disrupted our operations three times. We demand an immediate explanation from management and SLA service credits.", "High", "long", "en")
+        ("I am filing a formal complaint regarding misleading features and terrible customer support response.", "Medium", "long", "en"),
+        # Hinglish
+        ("Worst customer experience hai.", "Low", "short", "hinglish"),
+        ("Bohot hi kharab customer service hai.", "Low", "short", "hinglish"),
+        ("Agent ne bina answer kiye ticket close kar diya.", "Medium", "short", "hinglish"),
+        ("48 ghante se koi response nahi aaya, service bohot bekar hai.", "Medium", "medium", "hinglish"),
+        ("Customer care representative ka behavior bohot rude tha.", "Low", "short", "hinglish"),
+        ("Support team koi help nahi kar rahi, complaint register karo.", "Medium", "short", "hinglish"),
+        # Gujarati
+        ("Kharaab service experience che.", "Low", "short", "gujarati"),
+        ("ખૂબ જ ખરાબ ગ્રાહક સેવા છે.", "Low", "short", "gujarati"),
+        ("કસ્ટમર કેર એજન્ટે ખૂબ જ ખરાબ વર્તન કર્યું.", "Low", "short", "gujarati"),
+        ("સમસ્યાનું નિરાકરણ કર્યા વગર ટિકિટ બંધ કરી દીધી.", "Medium", "short", "gujarati"),
+        ("બે દિવસથી કોઈ જવાબ નથી આપતું, સેવાની ગુણવત્તા અત્યંત નબળી છે.", "Medium", "medium", "gujarati"),
+        ("મારી ફરિયાદ પર તાત્કાલિક ધ્યાન આપો અને સિનિયર મેનેજર સાથે વાત કરાવો.", "High", "medium", "gujarati")
     ],
     "Product Inquiry": [
-        # Short
+        # English
         ("Does product support dark mode?", "Low", "short", "en"),
         ("Is macOS Sequoia supported?", "Low", "short", "en"),
         ("Bulk license pricing details?", "Low", "short", "en"),
         ("Where to find user documentation?", "Low", "short", "en"),
-        ("API documentation link chahiye.", "Low", "short", "hinglish"),
-        ("Aa product ma discount milse?", "Low", "short", "gujarati"),
-
-        # Medium / Conversational / Questions
         ("Could you tell me if your platform supports SAML 2.0 Single Sign-On for enterprise users?", "Low", "medium", "en"),
         ("What are the minimum hardware and RAM requirements for running the server software on Linux?", "Low", "medium", "en"),
         ("Do you offer non-profit or educational discounts for team subscription accounts?", "Low", "medium", "en"),
         ("Can I request a live demo session with a product specialist for model {model}?", "Low", "medium", "en"),
-        ("Does the cloud storage infrastructure comply with SOC2 and HIPAA security certifications?", "Medium", "medium", "en"),
+        ("Could you provide pricing options and specifications for enterprise plan?", "Low", "long", "en"),
+        # Hinglish
+        ("API documentation link chahiye.", "Low", "short", "hinglish"),
+        ("Kya is product mein dark mode support hai?", "Low", "short", "hinglish"),
         ("Kya is software mein custom reporting export option available hai?", "Low", "medium", "hinglish"),
-
-        # Long / Detailed / Indirect Wording
-        ("We are currently evaluating software solutions for a 300-person engineering team. Could you provide a comprehensive comparison document outlining feature differences between the Professional and Enterprise plans, along with volume discount schedules?", "Low", "long", "en"),
-        ("Does your REST API support webhook event subscriptions for real-time order status updates, and where can we access the OpenAPI / Swagger documentation for testing?", "Low", "long", "en")
+        ("Enterprise license pricing aur discounts ki jankari chahiye.", "Low", "short", "hinglish"),
+        ("Kya ye model Windows 11 pe compatible hai?", "Low", "short", "hinglish"),
+        # Gujarati
+        ("Aa product ma discount milse?", "Low", "short", "gujarati"),
+        ("શું આ પ્રોડક્ટ ડાર્ક મોડને સપોર્ટ કરે છે?", "Low", "short", "gujarati"),
+        ("આ સોફ્ટવેર વિન્ડોઝ અને મેક બંનેમાં ચાલે છે?", "Low", "short", "gujarati"),
+        ("પ્રોડક્ટ સ્પેસિફિકેશન અને ભાવ પત્રક મોકલી આપશો?", "Low", "short", "gujarati"),
+        ("કંપની પ્લાન માટે શું ડિસ્કાઉન્ટ મળશે?", "Low", "short", "gujarati"),
+        ("યુઝર ગાઇડ અને ડોક્યુમેન્ટેશન ક્યાંથી મળશે?", "Low", "short", "gujarati")
     ],
     "Cancellation": [
-        # Short
+        # English
         ("Cancel subscription immediately.", "High", "short", "en"),
         ("Turn off auto-renewal.", "Low", "short", "en"),
         ("Close my account.", "Medium", "short", "en"),
-        ("Subscription end karo.", "Low", "short", "hinglish"),
         ("Plan cancellation request.", "Low", "short", "en"),
-        ("Account delete karvu che.", "Medium", "short", "gujarati"),
-
-        # Medium / Conversational / Questions
+        ("I want to cancel my subscription.", "Medium", "short", "en"),
         ("I would like to cancel my monthly subscription effective before the next billing cycle.", "Low", "medium", "en"),
         ("Please turn off automatic renewal for account {id} so I am not charged next month.", "Low", "medium", "en"),
         ("How do I cancel my pending order before it moves to the warehouse packing stage?", "Medium", "medium", "en"),
-        ("We are migrating to a different vendor and request complete contract termination.", "Medium", "medium", "en"),
-        ("The cancellation button is missing from my account billing settings page. Please cancel for me.", "Medium", "medium", "en"),
+        ("The cancellation button is missing from my account settings page. Please cancel for me.", "Medium", "medium", "en"),
+        ("We are discontinuing service and request immediate termination of active subscription.", "Medium", "long", "en"),
+        # Hinglish
+        ("Subscription end karo.", "Low", "short", "hinglish"),
+        ("Mujhe apna subscription cancel karna hai.", "Medium", "short", "hinglish"),
+        ("Mera account cancel aur close kar do please.", "Medium", "short", "hinglish"),
         ("Next month billing se pehle mera plan cancel kar do please.", "Low", "medium", "hinglish"),
-
-        # Long / Detailed / Indirect Wording
-        ("Due to budget cuts in our organization, we can no longer maintain our active subscription plan. Please process account cancellation immediately and send written confirmation that auto-renew has been disabled.", "Medium", "long", "en"),
-        ("I am terminating our contract effective today because key features promised during sales onboarding remain unreleased. Please confirm cancellation of invoice {id} and remove recorded credit card details.", "Medium", "long", "en")
+        ("Auto-renewal band kar do account {id} ka.", "Low", "short", "hinglish"),
+        # Gujarati
+        ("Account delete karvu che.", "Medium", "short", "gujarati"),
+        ("મારે મારું સબ્સ્ક્રિપ્શન રદ કરવું છે.", "Medium", "short", "gujarati"),
+        ("મારું એકાઉન્ટ અને પ્લાન કેન્સલ કરી દો.", "Medium", "short", "gujarati"),
+        ("આવતા મહિનાથી મારું સબ્સ્ક્રિપ્શન બંધ કરો અને ઓટો રિન્યુઅલ રદ કરો.", "Low", "medium", "gujarati"),
+        ("ઓર્ડર પેકિંગ થાય તે પહેલાં કેન્સલ કરો.", "Medium", "short", "gujarati")
     ]
 }
 

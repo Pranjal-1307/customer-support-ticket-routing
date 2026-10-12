@@ -9,6 +9,7 @@ import joblib
 import numpy as np
 from utils.preprocess import preprocess_text
 from utils.route import get_department_for_category
+from utils.priority_signals import extract_priority_signals, generate_priority_explanation
 
 
 class TicketPredictor:
@@ -121,6 +122,10 @@ class TicketPredictor:
             cat_conf_pct = round(cat_confidence * 100, 2)
             pri_conf_pct = round(pri_confidence * 100, 2)
 
+            # 6. Priority Signals & Domain Explanation
+            signals = extract_priority_signals(ticket_text)
+            explanation = generate_priority_explanation(signals, predicted_priority)
+
             return {
                 "status": "success",
                 "ticket_text": ticket_text,
@@ -128,6 +133,8 @@ class TicketPredictor:
                 "category_confidence": cat_conf_pct,
                 "priority": predicted_priority,
                 "priority_confidence": pri_conf_pct,
+                "priority_signals": signals,
+                "priority_explanation": explanation,
                 "department": department,
                 "confidence": cat_conf_pct,
                 "error": None
@@ -140,6 +147,8 @@ class TicketPredictor:
                 "category_confidence": 0.0,
                 "priority": "Medium",
                 "priority_confidence": 0.0,
+                "priority_signals": extract_priority_signals(""),
+                "priority_explanation": "Unable to compute priority explanation.",
                 "department": "General Support Team",
                 "confidence": 0.0
             }

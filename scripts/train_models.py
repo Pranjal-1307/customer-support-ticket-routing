@@ -59,7 +59,7 @@ def train_and_evaluate_models():
 
     # TF-IDF Feature Extraction (Fitted ONLY on train_df)
     print("Extracting TF-IDF features (Fitted strictly on Train set)...")
-    vectorizer = TfidfVectorizer(max_features=5000, ngram_range=(1, 2))
+    vectorizer = TfidfVectorizer(token_pattern=r'(?u)[^\s]+', max_features=10000, ngram_range=(1, 2), sublinear_tf=True)
     X_train = vectorizer.fit_transform(train_df['processed_text'])
     X_test = vectorizer.transform(test_df['processed_text'])
 

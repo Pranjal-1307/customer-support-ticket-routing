@@ -1,0 +1,626 @@
+{
+    "M2 Baseline (Calibrated Linear SVM - TFIDF only)": {
+        "test_accuracy": 0.9053,
+        "test_macro_f1": 0.9145,
+        "test_weighted_f1": 0.9038,
+        "test_per_class": {
+            "Critical": {
+                "precision": 0.95,
+                "recall": 0.9661,
+                "f1": 0.958
+            },
+            "High": {
+                "precision": 0.9333,
+                "recall": 0.7821,
+                "f1": 0.8511
+            },
+            "Low": {
+                "precision": 0.9286,
+                "recall": 0.9489,
+                "f1": 0.9386
+            },
+            "Medium": {
+                "precision": 0.8651,
+                "recall": 0.9604,
+                "f1": 0.9102
+            }
+        },
+        "test_confusion_matrix": [
+            [
+                57,
+                1,
+                0,
+                1
+            ],
+            [
+                3,
+                140,
+                9,
+                27
+            ],
+            [
+                0,
+                1,
+                130,
+                6
+            ],
+            [
+                0,
+                8,
+                1,
+                218
+            ]
+        ],
+        "holdout_accuracy": 0.5,
+        "holdout_macro_f1": 0.5434,
+        "holdout_weighted_f1": 0.5044,
+        "holdout_per_class": {
+            "Critical": {
+                "precision": 0.6667,
+                "recall": 0.5714,
+                "f1": 0.6154
+            },
+            "High": {
+                "precision": 0.5333,
+                "recall": 0.3478,
+                "f1": 0.4211
+            },
+            "Low": {
+                "precision": 0.8571,
+                "recall": 0.5455,
+                "f1": 0.6667
+            },
+            "Medium": {
+                "precision": 0.375,
+                "recall": 0.6316,
+                "f1": 0.4706
+            }
+        },
+        "holdout_confusion_matrix": [
+            [
+                4,
+                2,
+                0,
+                1
+            ],
+            [
+                1,
+                8,
+                0,
+                14
+            ],
+            [
+                0,
+                0,
+                6,
+                5
+            ],
+            [
+                1,
+                5,
+                1,
+                12
+            ]
+        ]
+    },
+    "Logistic Regression (TF-IDF only)": {
+        "test_accuracy": 0.8638,
+        "test_macro_f1": 0.8727,
+        "test_weighted_f1": 0.8564,
+        "test_per_class": {
+            "Critical": {
+                "precision": 0.9344,
+                "recall": 0.9661,
+                "f1": 0.95
+            },
+            "High": {
+                "precision": 0.9487,
+                "recall": 0.6201,
+                "f1": 0.75
+            },
+            "Low": {
+                "precision": 0.8609,
+                "recall": 0.9489,
+                "f1": 0.9028
+            },
+            "Medium": {
+                "precision": 0.8132,
+                "recall": 0.978,
+                "f1": 0.888
+            }
+        },
+        "test_confusion_matrix": [
+            [
+                57,
+                0,
+                0,
+                2
+            ],
+            [
+                4,
+                111,
+                21,
+                43
+            ],
+            [
+                0,
+                1,
+                130,
+                6
+            ],
+            [
+                0,
+                5,
+                0,
+                222
+            ]
+        ],
+        "holdout_accuracy": 0.45,
+        "holdout_macro_f1": 0.464,
+        "holdout_weighted_f1": 0.4478,
+        "holdout_per_class": {
+            "Critical": {
+                "precision": 0.6,
+                "recall": 0.4286,
+                "f1": 0.5
+            },
+            "High": {
+                "precision": 0.5833,
+                "recall": 0.3043,
+                "f1": 0.4
+            },
+            "Low": {
+                "precision": 0.8,
+                "recall": 0.3636,
+                "f1": 0.5
+            },
+            "Medium": {
+                "precision": 0.3421,
+                "recall": 0.6842,
+                "f1": 0.4561
+            }
+        },
+        "holdout_confusion_matrix": [
+            [
+                3,
+                1,
+                0,
+                3
+            ],
+            [
+                1,
+                7,
+                0,
+                15
+            ],
+            [
+                0,
+                0,
+                4,
+                7
+            ],
+            [
+                1,
+                4,
+                1,
+                13
+            ]
+        ]
+    },
+    "Random Forest (TF-IDF only)": {
+        "test_accuracy": 0.8571,
+        "test_macro_f1": 0.8699,
+        "test_weighted_f1": 0.8522,
+        "test_per_class": {
+            "Critical": {
+                "precision": 0.9483,
+                "recall": 0.9322,
+                "f1": 0.9402
+            },
+            "High": {
+                "precision": 0.9062,
+                "recall": 0.648,
+                "f1": 0.7557
+            },
+            "Low": {
+                "precision": 0.8958,
+                "recall": 0.9416,
+                "f1": 0.9181
+            },
+            "Medium": {
+                "precision": 0.7941,
+                "recall": 0.9515,
+                "f1": 0.8657
+            }
+        },
+        "test_confusion_matrix": [
+            [
+                55,
+                0,
+                0,
+                4
+            ],
+            [
+                3,
+                116,
+                15,
+                45
+            ],
+            [
+                0,
+                1,
+                129,
+                7
+            ],
+            [
+                0,
+                11,
+                0,
+                216
+            ]
+        ],
+        "holdout_accuracy": 0.4,
+        "holdout_macro_f1": 0.3943,
+        "holdout_weighted_f1": 0.3487,
+        "holdout_per_class": {
+            "Critical": {
+                "precision": 0.6,
+                "recall": 0.4286,
+                "f1": 0.5
+            },
+            "High": {
+                "precision": 0.5,
+                "recall": 0.087,
+                "f1": 0.1481
+            },
+            "Low": {
+                "precision": 0.4545,
+                "recall": 0.4545,
+                "f1": 0.4545
+            },
+            "Medium": {
+                "precision": 0.35,
+                "recall": 0.7368,
+                "f1": 0.4746
+            }
+        },
+        "holdout_confusion_matrix": [
+            [
+                3,
+                1,
+                0,
+                3
+            ],
+            [
+                2,
+                2,
+                2,
+                17
+            ],
+            [
+                0,
+                0,
+                5,
+                6
+            ],
+            [
+                0,
+                1,
+                4,
+                14
+            ]
+        ]
+    },
+    "Logistic Regression (TF-IDF + Signals)": {
+        "test_accuracy": 0.8771,
+        "test_macro_f1": 0.8885,
+        "test_weighted_f1": 0.8748,
+        "test_per_class": {
+            "Critical": {
+                "precision": 0.9206,
+                "recall": 0.9831,
+                "f1": 0.9508
+            },
+            "High": {
+                "precision": 0.8808,
+                "recall": 0.743,
+                "f1": 0.8061
+            },
+            "Low": {
+                "precision": 0.8828,
+                "recall": 0.9343,
+                "f1": 0.9078
+            },
+            "Medium": {
+                "precision": 0.8601,
+                "recall": 0.9207,
+                "f1": 0.8894
+            }
+        },
+        "test_confusion_matrix": [
+            [
+                58,
+                0,
+                0,
+                1
+            ],
+            [
+                5,
+                133,
+                15,
+                26
+            ],
+            [
+                0,
+                2,
+                128,
+                7
+            ],
+            [
+                0,
+                16,
+                2,
+                209
+            ]
+        ],
+        "holdout_accuracy": 0.5167,
+        "holdout_macro_f1": 0.5267,
+        "holdout_weighted_f1": 0.4736,
+        "holdout_per_class": {
+            "Critical": {
+                "precision": 0.6667,
+                "recall": 0.5714,
+                "f1": 0.6154
+            },
+            "High": {
+                "precision": 0.6667,
+                "recall": 0.1739,
+                "f1": 0.2759
+            },
+            "Low": {
+                "precision": 0.5625,
+                "recall": 0.8182,
+                "f1": 0.6667
+            },
+            "Medium": {
+                "precision": 0.4375,
+                "recall": 0.7368,
+                "f1": 0.549
+            }
+        },
+        "holdout_confusion_matrix": [
+            [
+                4,
+                0,
+                1,
+                2
+            ],
+            [
+                1,
+                4,
+                3,
+                15
+            ],
+            [
+                0,
+                1,
+                9,
+                1
+            ],
+            [
+                1,
+                1,
+                3,
+                14
+            ]
+        ]
+    },
+    "Random Forest (TF-IDF + Signals)": {
+        "test_accuracy": 0.892,
+        "test_macro_f1": 0.9025,
+        "test_weighted_f1": 0.8906,
+        "test_per_class": {
+            "Critical": {
+                "precision": 0.9821,
+                "recall": 0.9322,
+                "f1": 0.9565
+            },
+            "High": {
+                "precision": 0.9026,
+                "recall": 0.7765,
+                "f1": 0.8348
+            },
+            "Low": {
+                "precision": 0.8693,
+                "recall": 0.9708,
+                "f1": 0.9172
+            },
+            "Medium": {
+                "precision": 0.8787,
+                "recall": 0.9251,
+                "f1": 0.9013
+            }
+        },
+        "test_confusion_matrix": [
+            [
+                55,
+                1,
+                0,
+                3
+            ],
+            [
+                1,
+                139,
+                16,
+                23
+            ],
+            [
+                0,
+                1,
+                133,
+                3
+            ],
+            [
+                0,
+                13,
+                4,
+                210
+            ]
+        ],
+        "holdout_accuracy": 0.4167,
+        "holdout_macro_f1": 0.4062,
+        "holdout_weighted_f1": 0.3857,
+        "holdout_per_class": {
+            "Critical": {
+                "precision": 0.6667,
+                "recall": 0.2857,
+                "f1": 0.4
+            },
+            "High": {
+                "precision": 0.5714,
+                "recall": 0.1739,
+                "f1": 0.2667
+            },
+            "Low": {
+                "precision": 0.381,
+                "recall": 0.7273,
+                "f1": 0.5
+            },
+            "Medium": {
+                "precision": 0.3793,
+                "recall": 0.5789,
+                "f1": 0.4583
+            }
+        },
+        "holdout_confusion_matrix": [
+            [
+                2,
+                1,
+                3,
+                1
+            ],
+            [
+                1,
+                4,
+                3,
+                15
+            ],
+            [
+                0,
+                1,
+                8,
+                2
+            ],
+            [
+                0,
+                1,
+                7,
+                11
+            ]
+        ]
+    },
+    "Calibrated Linear SVM (TF-IDF + Signals) [M3 Candidate]": {
+        "test_accuracy": 0.9003,
+        "test_macro_f1": 0.9114,
+        "test_weighted_f1": 0.899,
+        "test_per_class": {
+            "Critical": {
+                "precision": 0.95,
+                "recall": 0.9661,
+                "f1": 0.958
+            },
+            "High": {
+                "precision": 0.9211,
+                "recall": 0.7821,
+                "f1": 0.8459
+            },
+            "Low": {
+                "precision": 0.9353,
+                "recall": 0.9489,
+                "f1": 0.942
+            },
+            "Medium": {
+                "precision": 0.8566,
+                "recall": 0.9471,
+                "f1": 0.8996
+            }
+        },
+        "test_confusion_matrix": [
+            [
+                57,
+                0,
+                0,
+                2
+            ],
+            [
+                3,
+                140,
+                8,
+                28
+            ],
+            [
+                0,
+                1,
+                130,
+                6
+            ],
+            [
+                0,
+                11,
+                1,
+                215
+            ]
+        ],
+        "holdout_accuracy": 0.4833,
+        "holdout_macro_f1": 0.5027,
+        "holdout_weighted_f1": 0.4611,
+        "holdout_per_class": {
+            "Critical": {
+                "precision": 0.6667,
+                "recall": 0.5714,
+                "f1": 0.6154
+            },
+            "High": {
+                "precision": 0.625,
+                "recall": 0.2174,
+                "f1": 0.3226
+            },
+            "Low": {
+                "precision": 0.7143,
+                "recall": 0.4545,
+                "f1": 0.5556
+            },
+            "Medium": {
+                "precision": 0.3846,
+                "recall": 0.7895,
+                "f1": 0.5172
+            }
+        },
+        "holdout_confusion_matrix": [
+            [
+                4,
+                1,
+                0,
+                2
+            ],
+            [
+                1,
+                5,
+                0,
+                17
+            ],
+            [
+                0,
+                1,
+                5,
+                5
+            ],
+            [
+                1,
+                1,
+                2,
+                15
+            ]
+        ]
+    }
+}

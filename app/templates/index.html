@@ -142,6 +142,18 @@
                                     </div>
                                 </div>
 
+                                <!-- Priority Signals & Explainability (M3) -->
+                                <div class="p-3 bg-light rounded-3 border mb-3" id="resSignalsContainer">
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <small class="text-uppercase text-secondary fw-bold"><i class="fa-solid fa-brain me-1 text-primary"></i>Priority Intelligence Signals</small>
+                                        <span class="badge bg-secondary rounded-pill small" id="resExplanationBadge">Explainable NLP</span>
+                                    </div>
+                                    <p class="small text-muted mb-2 fst-italic" id="resExplanationText">Analyzing priority indicators...</p>
+                                    <div class="row g-2" id="resSignalsList">
+                                        <!-- Populated dynamically -->
+                                    </div>
+                                </div>
+
                                 <!-- Hidden backward-compatibility elements -->
                                 <span id="resConfidence" class="d-none">0%</span>
                                 <div id="confidenceBar" class="d-none"></div>
@@ -157,7 +169,7 @@
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <div>
                         <h3 class="fw-bold text-dark mb-0"><i class="fa-solid fa-chart-pie text-primary me-2"></i>Analytics & Model Dashboard</h3>
-                        <p class="text-muted mb-0">Real-time statistics, ticket distribution, and model metrics</p>
+                        <p class="text-muted mb-0">Real-time statistics, ticket distribution, and human-in-the-loop feedback</p>
                     </div>
                     <button class="btn btn-outline-primary rounded-pill fw-semibold" onclick="retrainModels()" id="retrainBtn">
                         <i class="fa-solid fa-arrows-rotate me-2"></i>Retrain ML Models
@@ -168,7 +180,7 @@
                 <div class="alert alert-light border shadow-sm rounded-4 mb-4 py-2 px-3 d-flex align-items-center">
                     <i class="fa-solid fa-shield-halved text-success fs-5 me-3"></i>
                     <div class="small text-muted">
-                        <strong class="text-dark">Realistic Production Evaluation:</strong> Holdout scores below are evaluated on the out-of-distribution curated dataset (<code>data/evaluation/m2_realistic_holdout.csv</code>, 60 samples). Dev/Test scores represent the synthetic template split.
+                        <strong class="text-dark">Realistic Production Evaluation:</strong> Holdout scores below are evaluated on the out-of-distribution curated dataset (<code>data/evaluation/m2_realistic_holdout.csv</code>). Feedback corrections are isolated and require validation before candidate model retraining.
                     </div>
                 </div>
 
@@ -184,21 +196,21 @@
                     <div class="col-md-3">
                         <div class="card border-0 shadow-sm rounded-4 p-3 bg-white border-start border-success border-4">
                             <small class="text-muted fw-bold text-uppercase">Active Model</small>
-                            <h5 class="fw-bold text-dark mb-0 mt-1 text-truncate" id="statActiveModel">Linear SVM</h5>
-                            <small class="text-muted">TF-IDF (1, 2)-grams</small>
+                            <h5 class="fw-bold text-dark mb-0 mt-1 text-truncate" id="statActiveModel">Linear SVM (v2.0)</h5>
+                            <small class="text-muted">TF-IDF + Priority Signals</small>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="card border-0 shadow-sm rounded-4 p-3 bg-white border-start border-info border-4">
-                            <small class="text-muted fw-bold text-uppercase">Category F1 (M2 Holdout)</small>
-                            <h2 class="fw-bold text-dark mb-0 mt-1" id="statCategoryF1">91.8%</h2>
-                            <small class="text-muted" id="statCategoryDevSub">Dev/Test F1: 99.3%</small>
+                            <small class="text-muted fw-bold text-uppercase">Validated Feedback</small>
+                            <h2 class="fw-bold text-dark mb-0 mt-1" id="statValidatedFeedback">0</h2>
+                            <small class="text-muted" id="statPendingFeedback">Pending: 0</small>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="card border-0 shadow-sm rounded-4 p-3 bg-white border-start border-warning border-4">
-                            <small class="text-muted fw-bold text-uppercase">Priority Acc (M2 Holdout)</small>
-                            <h2 class="fw-bold text-dark mb-0 mt-1" id="statPriorityAcc">58.3%</h2>
+                            <small class="text-muted fw-bold text-uppercase">Realistic Accuracy</small>
+                            <h2 class="fw-bold text-dark mb-0 mt-1" id="statPriorityAcc">66.7%</h2>
                             <small class="text-muted" id="statPriorityDevSub">Dev/Test Acc: 90.0%</small>
                         </div>
                     </div>
@@ -234,8 +246,9 @@
 
                 <!-- Recent Tickets Table -->
                 <div class="card border-0 shadow-sm rounded-4 mb-4 bg-white">
-                    <div class="card-header bg-white border-0 p-4 pb-0">
-                        <h5 class="fw-bold text-dark mb-0"><i class="fa-solid fa-clock-rotate-left me-2 text-primary"></i>Recent Submitted Tickets</h5>
+                    <div class="card-header bg-white border-0 p-4 pb-0 d-flex justify-content-between align-items-center">
+                        <h5 class="fw-bold text-dark mb-0"><i class="fa-solid fa-clock-rotate-left me-2 text-primary"></i>Recent Submitted Tickets & Human Feedback</h5>
+                        <small class="text-muted">Click 'Correct' to submit agent priority adjustment</small>
                     </div>
                     <div class="card-body p-4">
                         <div class="table-responsive">
@@ -246,9 +259,9 @@
                                         <th>Description</th>
                                         <th>Category</th>
                                         <th>Priority</th>
-                                        <th>Assigned Department</th>
-                                        <th>Category Confidence</th>
-                                        <th>Submitted At</th>
+                                        <th>Department</th>
+                                        <th>Confidence</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody id="recentTicketsBody">
@@ -259,8 +272,87 @@
                     </div>
                 </div>
 
+                <!-- Human Feedback & Retraining Queue Table (M3) -->
+                <div class="card border-0 shadow-sm rounded-4 mb-4 bg-white">
+                    <div class="card-header bg-white border-0 p-4 pb-0 d-flex justify-content-between align-items-center">
+                        <h5 class="fw-bold text-dark mb-0"><i class="fa-solid fa-user-check me-2 text-success"></i>Human Feedback & Validation Gate</h5>
+                        <button class="btn btn-sm btn-outline-secondary rounded-pill" onclick="loadAdminStats()"><i class="fa-solid fa-rotate me-1"></i>Refresh Feedback</button>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Feedback ID</th>
+                                        <th>Ticket ID</th>
+                                        <th>Original Priority</th>
+                                        <th>Corrected Priority</th>
+                                        <th>Reason / Justification</th>
+                                        <th>Reviewer</th>
+                                        <th>Validation Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="feedbackTableBody">
+                                    <tr><td colspan="8" class="text-center text-muted">No feedback recorded yet.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
+        </div>
+    </div>
+
+    <!-- Human Feedback Correction Modal -->
+    <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0 shadow">
+                <div class="modal-header bg-dark text-white rounded-top-4">
+                    <h5 class="modal-title fw-bold" id="feedbackModalLabel"><i class="fa-solid fa-user-pen me-2 text-primary"></i>Correct Ticket Priority</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form id="feedbackForm">
+                        <input type="hidden" id="modalTicketId">
+                        <div class="mb-3">
+                            <label class="form-label text-muted small fw-bold">TICKET ID</label>
+                            <div class="fw-bold text-primary font-monospace" id="modalDisplayTicketId">--</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small fw-bold">TICKET DESCRIPTION</label>
+                            <p class="small text-dark p-2 bg-light rounded border" id="modalTicketText">--</p>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small fw-bold">ORIGINAL PREDICTED PRIORITY</label>
+                            <div><span class="badge bg-secondary fs-6" id="modalOriginalPriority">--</span></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="modalCorrectedPriority" class="form-label fw-bold">Corrected Priority <span class="text-danger">*</span></label>
+                            <select class="form-select rounded-3" id="modalCorrectedPriority" required>
+                                <option value="Low">Low</option>
+                                <option value="Medium">Medium</option>
+                                <option value="High">High</option>
+                                <option value="Critical">Critical</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="modalReason" class="form-label fw-bold">Reason / Ground-Truth Note (Optional)</label>
+                            <textarea class="form-control rounded-3" id="modalReason" rows="2" placeholder="e.g., Routine informational status inquiry with no operational defect."></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="modalReviewer" class="form-label fw-bold">Reviewer Name</label>
+                            <input type="text" class="form-control rounded-3" id="modalReviewer" value="admin_supervisor">
+                        </div>
+                        <div class="d-flex justify-content-end gap-2 mt-4">
+                            <button type="button" class="btn btn-light rounded-pill px-4" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary rounded-pill px-4" id="modalSubmitBtn">Save Feedback</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 

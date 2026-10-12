@@ -1,34 +1,34 @@
 {
     "version": "v2.0-M2",
-    "timestamp": "2026-08-20T11:06:19.922582",
+    "timestamp": "2026-09-26T20:13:13.749111",
     "total_raw_records": 5761,
-    "total_cleaned_records": 4341,
-    "unique_records": 4341,
+    "total_cleaned_records": 3850,
+    "unique_records": 3850,
     "source_counts": {
-        "synthetic": 4180,
+        "synthetic": 3689,
         "manual": 84,
         "external": 77
     },
     "category_distribution": {
-        "Billing": 570,
-        "Refund": 566,
-        "Technical Support": 558,
-        "Shipping": 542,
-        "Account": 538,
-        "Product Inquiry": 528,
-        "Cancellation": 527,
-        "Complaint": 512
+        "Billing": 533,
+        "Shipping": 514,
+        "Technical Support": 495,
+        "Refund": 489,
+        "Cancellation": 469,
+        "Product Inquiry": 451,
+        "Account": 451,
+        "Complaint": 448
     },
     "priority_distribution": {
-        "Medium": 1682,
-        "High": 1230,
-        "Low": 893,
-        "Critical": 536
+        "Medium": 1547,
+        "High": 985,
+        "Low": 939,
+        "Critical": 379
     },
     "splits": {
-        "train_size": 3103,
-        "validation_size": 636,
-        "test_size": 602
+        "train_size": 2648,
+        "validation_size": 639,
+        "test_size": 563
     },
     "leakage_protection": {
         "template_group_split": true,
