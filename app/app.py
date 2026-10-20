@@ -14,6 +14,7 @@ import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from utils.predict import get_predictor, predict_ticket
+from utils.ticket_validation import validate_ticket_text
 from scripts.train_models import train_and_evaluate_models
 
 app = Flask(__name__)
@@ -114,23 +115,29 @@ def index():
     return render_template('index.html')
 
 
+def _validated_request_ticket_text():
+    data = request.get_json(silent=True)
+    value = data.get('ticket_text') if isinstance(data, dict) else None
+    validation = validate_ticket_text(value)
+    if not validation.is_valid:
+        return None, (jsonify({"status": "error", "message": validation.message}), validation.status_code)
+    return validation.ticket_text, None
+
+
 @app.route('/api/predict', methods=['POST'])
 def api_predict():
-    data = request.get_json() or {}
-    ticket_text = data.get('ticket_text', '').strip()
-    if not ticket_text:
-        return jsonify({"status": "error", "message": "Ticket text is required."}), 400
+    ticket_text, error_response = _validated_request_ticket_text()
+    if error_response:
+        return error_response
     pred = predict_ticket(ticket_text)
     return jsonify(pred)
 
 
 @app.route('/api/tickets/submit', methods=['POST'])
 def submit_ticket():
-    data = request.get_json() or {}
-    ticket_text = data.get('ticket_text', '').strip()
-
-    if not ticket_text:
-        return jsonify({"status": "error", "message": "Ticket text is required."}), 400
+    ticket_text, error_response = _validated_request_ticket_text()
+    if error_response:
+        return error_response
 
     # Execute NLP Classification & Department Routing
     pred = predict_ticket(ticket_text)
@@ -241,6 +248,36 @@ def admin_stats():
         },
         "model_metrics": model_metrics
     })
+
+
+@app.route('/api/admin/tickets/<ticket_id>', methods=['DELETE'])
+def delete_ticket(ticket_id):
+    if not ticket_id.strip():
+        return jsonify({"status": "error", "message": "Ticket ID is required."}), 400
+
+    conn = None
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        cursor.execute("DELETE FROM tickets WHERE ticket_id = ?", (ticket_id,))
+        if cursor.rowcount == 0:
+            conn.rollback()
+            return jsonify({"status": "error", "message": f"Ticket '{ticket_id}' was not found."}), 404
+
+        conn.commit()
+        return jsonify({
+            "status": "success",
+            "message": f"Ticket '{ticket_id}' deleted successfully.",
+            "ticket_id": ticket_id,
+        })
+    except sqlite3.Error:
+        if conn:
+            conn.rollback()
+        app.logger.exception("Database error while deleting ticket %s", ticket_id)
+        return jsonify({"status": "error", "message": "The ticket could not be deleted. Please try again."}), 500
+    finally:
+        if conn:
+            conn.close()
 
 
 @app.route('/api/feedback/priority', methods=['POST'])

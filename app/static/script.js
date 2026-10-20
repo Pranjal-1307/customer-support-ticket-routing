@@ -40,7 +40,10 @@ async function handleTicketSubmit(event) {
     const submitBtn = document.getElementById('submitBtn');
     const resultCard = document.getElementById('resultCard');
 
-    if (!ticketText) return;
+    if (!ticketText) {
+        alert('Please enter a ticket description.');
+        return;
+    }
 
     // Show loading UI
     submitBtn.disabled = true;
@@ -179,8 +182,10 @@ async function loadAdminStats() {
 
         // Render Feedback Table
         renderFeedbackTable(fbStats.recent_feedback || []);
+        return true;
     } catch (err) {
         console.error("Error loading admin stats:", err);
+        return false;
     }
 }
 
@@ -291,10 +296,37 @@ function renderRecentTicketsTable(tickets) {
                     <button class="btn btn-sm btn-outline-primary rounded-pill px-3" onclick="openFeedbackModal('${t.ticket_id}', '${escapedText}', '${t.priority}')">
                         <i class="fa-solid fa-pen-to-square me-1"></i>Correct
                     </button>
+                    <button class="btn btn-sm btn-outline-danger rounded-pill px-3 ms-1" onclick="deleteTicket('${t.ticket_id}')">
+                        <i class="fa-solid fa-trash me-1"></i>Delete
+                    </button>
                 </td>
             </tr>
         `;
     }).join('');
+}
+
+async function deleteTicket(ticketId) {
+    if (!window.confirm(`Delete ticket ${ticketId}? This action cannot be undone.`)) return;
+
+    try {
+        const response = await fetch(`/api/admin/tickets/${encodeURIComponent(ticketId)}`, {
+            method: 'DELETE'
+        });
+        const data = await response.json();
+
+        if (!response.ok || data.status !== 'success') {
+            alert(data.message || `Failed to delete ticket ${ticketId}.`);
+            return;
+        }
+
+        if (await loadAdminStats()) {
+            alert(`Ticket ${ticketId} deleted successfully.`);
+        } else {
+            alert(`Ticket ${ticketId} was deleted, but the table could not be refreshed.`);
+        }
+    } catch (err) {
+        alert(`Could not delete ticket ${ticketId}: ${err.message}`);
+    }
 }
 
 function renderFeedbackTable(feedbackList) {
