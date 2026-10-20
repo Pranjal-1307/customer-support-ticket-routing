@@ -13,8 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Quick Sample Prompts listener
     document.querySelectorAll('.sample-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
-            const promptText = e.target.getAttribute('data-sample');
-            document.getElementById('ticketText').value = promptText;
+            const promptText = e.currentTarget.getAttribute('data-sample');
+            const ticketText = document.getElementById('ticketText');
+            if (ticketText && promptText !== null) {
+                ticketText.value = promptText;
+            }
         });
     });
 

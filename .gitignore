@@ -3,7 +3,7 @@ __pycache__/
 *.pyo
 *.pyd
 
-.venv/
+.venv312/
 venv/
 env/
 
