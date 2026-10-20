@@ -250,7 +250,10 @@
                 <div class="card border-0 shadow-sm rounded-4 mb-4 bg-white">
                     <div class="card-header bg-white border-0 p-4 pb-0 d-flex justify-content-between align-items-center">
                         <h5 class="fw-bold text-dark mb-0"><i class="fa-solid fa-clock-rotate-left me-2 text-primary"></i>Recent Submitted Tickets & Human Feedback</h5>
-                        <small class="text-muted">Click 'Correct' to submit agent priority adjustment</small>
+                        <div class="d-flex align-items-center gap-3">
+                            <a class="btn btn-sm btn-outline-primary rounded-pill" href="{{ url_for('view_all_tickets') }}">View All Tickets</a>
+                            <small class="text-muted">Click 'Correct' to submit agent priority adjustment</small>
+                        </div>
                     </div>
                     <div class="card-body p-4">
                         <div class="table-responsive">

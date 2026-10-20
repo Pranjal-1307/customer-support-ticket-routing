@@ -115,6 +115,19 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/admin/tickets')
+def view_all_tickets():
+    conn = get_db_connection()
+    try:
+        tickets = conn.execute(
+            "SELECT ticket_id, ticket_text, category, priority, department, created_at "
+            "FROM tickets ORDER BY created_at DESC, id DESC"
+        ).fetchall()
+    finally:
+        conn.close()
+    return render_template('tickets.html', tickets=tickets)
+
+
 def _validated_request_ticket_text():
     data = request.get_json(silent=True)
     value = data.get('ticket_text') if isinstance(data, dict) else None
