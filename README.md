@@ -159,7 +159,7 @@ pip install -r requirements.txt
 Run the root entry point:
 ```bash
 python main.py
-```
+
 *`main.py` will automatically check for datasets and trained model artifacts, generate data and train models if missing, set up SQLite database, and launch the web server on `http://127.0.0.1:5000`.*
 
 ---
