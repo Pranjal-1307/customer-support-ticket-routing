@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    document.addEventListener('click', (event) => {
+        const assignButton = event.target.closest('.assign-agent-btn');
+        if (assignButton) assignTicketAgent(assignButton);
+    });
+
     // Form Submit listener
     const ticketForm = document.getElementById('ticketForm');
     if (ticketForm) {
@@ -63,6 +68,7 @@ async function handleTicketSubmit(event) {
             document.getElementById('resCategory').innerText = data.category;
             document.getElementById('resPriority').innerText = data.priority;
             document.getElementById('resDepartment').innerText = data.department;
+            document.getElementById('resAssignedAgent').innerText = data.assigned_agent || 'Unassigned';
             document.getElementById('ticketStatus').innerText = data.ticket_status || 'Open';
 
             const catConf = data.category_confidence !== undefined ? data.category_confidence : data.confidence;
@@ -272,7 +278,7 @@ function renderDepartmentChart(deptData) {
 function renderRecentTicketsTable(tickets) {
     const tbody = document.getElementById('recentTicketsBody');
     if (!tickets || tickets.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="7" class="text-center text-muted">No tickets submitted yet.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="8" class="text-center text-muted">No tickets submitted yet.</td></tr>`;
         return;
     }
 
@@ -281,16 +287,18 @@ function renderRecentTicketsTable(tickets) {
         const catConfStr = catConf !== undefined && catConf !== null ? `${catConf}%` : '--';
 
         const priBadgeClass = t.priority === 'Low' ? 'bg-success' : t.priority === 'Medium' ? 'bg-warning text-dark' : t.priority === 'High' ? 'bg-danger' : 'bg-dark';
+        const assignmentAction = t.assigned_agent && t.assigned_agent !== 'Unassigned' ? 'Reassign Agent' : 'Assign Agent';
 
         const escapedText = (t.ticket_text || '').replace(/"/g, '&quot;');
 
         return `
-            <tr>
+            <tr data-ticket-id="${t.ticket_id}">
                 <td class="font-monospace fw-bold text-primary">${t.ticket_id}</td>
                 <td class="text-truncate" style="max-width: 200px;" title="${escapedText}">${t.ticket_text}</td>
                 <td><span class="badge bg-light text-dark border">${t.category}</span></td>
                 <td><span class="badge ${priBadgeClass}">${t.priority}</span></td>
                 <td class="fw-semibold">${t.department}</td>
+                <td class="assigned-agent">${t.assigned_agent || 'Unassigned'}</td>
                 <td><span class="fw-semibold text-primary">${catConfStr}</span></td>
                 <td>
                     <button class="btn btn-sm btn-outline-primary rounded-pill px-3" onclick="openFeedbackModal('${t.ticket_id}', '${escapedText}', '${t.priority}')">
@@ -299,10 +307,38 @@ function renderRecentTicketsTable(tickets) {
                     <button class="btn btn-sm btn-outline-danger rounded-pill px-3 ms-1" onclick="deleteTicket('${t.ticket_id}')">
                         <i class="fa-solid fa-trash me-1"></i>Delete
                     </button>
+                    <button type="button" class="btn btn-sm btn-outline-success rounded-pill px-2 ms-1 assign-agent-btn" data-ticket-id="${t.ticket_id}">${assignmentAction}</button>
                 </td>
             </tr>
         `;
     }).join('');
+}
+
+async function assignTicketAgent(button) {
+    const ticketId = button.dataset.ticketId;
+    const previousLabel = button.innerText;
+    button.disabled = true;
+    button.innerText = 'Assigning...';
+
+    try {
+        const response = await fetch(`/api/admin/tickets/${encodeURIComponent(ticketId)}/assign`, { method: 'POST' });
+        const data = await response.json();
+        if (!response.ok || data.status !== 'success') {
+            alert(data.message || `Could not assign an agent to ticket ${ticketId}.`);
+            button.innerText = previousLabel;
+            return;
+        }
+
+        const row = button.closest('tr');
+        const agentCell = row && row.querySelector('.assigned-agent');
+        if (agentCell) agentCell.innerText = data.assigned_agent;
+        button.innerText = 'Reassign Agent';
+    } catch (err) {
+        alert(`Could not assign an agent to ticket ${ticketId}: ${err.message}`);
+        button.innerText = previousLabel;
+    } finally {
+        button.disabled = false;
+    }
 }
 
 async function deleteTicket(ticketId) {

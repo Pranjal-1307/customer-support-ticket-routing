@@ -20,11 +20,23 @@ from scripts.train_models import train_and_evaluate_models
 app = Flask(__name__)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB_PATH = os.path.join(BASE_DIR, "tickets.db")
+DEMO_AGENTS = [
+    ("Demo Agent A1", "Billing Team"), ("Demo Agent A2", "Billing Team"),
+    ("Demo Agent B1", "Technical Support Team"), ("Demo Agent B2", "Technical Support Team"),
+    ("Demo Agent C1", "Refund Team"), ("Demo Agent C2", "Refund Team"),
+    ("Demo Agent D1", "Logistics Team"), ("Demo Agent D2", "Logistics Team"),
+    ("Demo Agent E1", "Account Support Team"), ("Demo Agent E2", "Account Support Team"),
+    ("Demo Agent F1", "Customer Care Team"), ("Demo Agent F2", "Customer Care Team"),
+    ("Demo Agent G1", "Product Support Team"), ("Demo Agent G2", "Product Support Team"),
+    ("Demo Agent H1", "Retention Team"), ("Demo Agent H2", "Retention Team"),
+    ("Demo Agent I1", "General Support Team"), ("Demo Agent I2", "General Support Team"),
+]
 
 
 def get_db_connection():
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
+    conn.execute("PRAGMA foreign_keys = ON")
     return conn
 
 
@@ -32,6 +44,15 @@ def init_db():
     """Initializes SQLite database tables and populates initial sample data if empty."""
     conn = get_db_connection()
     cursor = conn.cursor()
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS agents (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            department TEXT NOT NULL,
+            is_active INTEGER NOT NULL DEFAULT 1,
+            UNIQUE(name, department)
+        )
+    """)
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS tickets (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -44,7 +65,8 @@ def init_db():
             category_confidence REAL,
             priority_confidence REAL,
             status TEXT DEFAULT 'Open',
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            assigned_agent_id INTEGER REFERENCES agents(id) ON DELETE SET NULL
         )
     """)
     cursor.execute("""
@@ -71,6 +93,15 @@ def init_db():
         cursor.execute("ALTER TABLE tickets ADD COLUMN category_confidence REAL")
     if "priority_confidence" not in existing_cols:
         cursor.execute("ALTER TABLE tickets ADD COLUMN priority_confidence REAL")
+    if "assigned_agent_id" not in existing_cols:
+        cursor.execute(
+            "ALTER TABLE tickets ADD COLUMN assigned_agent_id INTEGER "
+            "REFERENCES agents(id) ON DELETE SET NULL"
+        )
+    cursor.executemany(
+        "INSERT OR IGNORE INTO agents (name, department, is_active) VALUES (?, ?, 1)",
+        DEMO_AGENTS,
+    )
     conn.commit()
 
     # Pre-populate database with dataset sample if database is newly created
@@ -120,8 +151,10 @@ def view_all_tickets():
     conn = get_db_connection()
     try:
         tickets = conn.execute(
-            "SELECT ticket_id, ticket_text, category, priority, department, created_at "
-            "FROM tickets ORDER BY created_at DESC, id DESC"
+            "SELECT t.ticket_id, t.ticket_text, t.category, t.priority, t.department, "
+            "t.created_at, COALESCE(a.name, 'Unassigned') AS assigned_agent "
+            "FROM tickets AS t LEFT JOIN agents AS a ON a.id = t.assigned_agent_id "
+            "ORDER BY t.created_at DESC, t.id DESC"
         ).fetchall()
     finally:
         conn.close()
@@ -165,26 +198,38 @@ def submit_ticket():
     cat_conf = pred.get('category_confidence', pred.get('confidence', 0.0))
     pri_conf = pred.get('priority_confidence', 0.0)
 
-    # Save to SQLite Database
+    # Select and save the assignment with the ticket in one transaction.
     conn = get_db_connection()
-    cursor = conn.cursor()
-    cursor.execute("""
-        INSERT INTO tickets (ticket_id, ticket_text, category, priority, department, confidence, category_confidence, priority_confidence, status, created_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    """, (
-        ticket_id,
-        ticket_text,
-        pred['category'],
-        pred['priority'],
-        pred['department'],
-        cat_conf,
-        cat_conf,
-        pri_conf,
-        'Open',
-        created_at
-    ))
-    conn.commit()
-    conn.close()
+    try:
+        cursor = conn.cursor()
+        agent = cursor.execute(
+            "SELECT id, name FROM agents WHERE department = ? AND is_active = 1 "
+            "ORDER BY RANDOM() LIMIT 1",
+            (pred['department'],),
+        ).fetchone()
+        cursor.execute("""
+            INSERT INTO tickets (ticket_id, ticket_text, category, priority, department, confidence, category_confidence, priority_confidence, status, created_at, assigned_agent_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            ticket_id,
+            ticket_text,
+            pred['category'],
+            pred['priority'],
+            pred['department'],
+            cat_conf,
+            cat_conf,
+            pri_conf,
+            'Open',
+            created_at,
+            agent['id'] if agent else None,
+        ))
+        conn.commit()
+    except sqlite3.Error:
+        conn.rollback()
+        app.logger.exception("Database error while saving ticket %s", ticket_id)
+        return jsonify({"status": "error", "message": "The ticket could not be saved. Please try again."}), 500
+    finally:
+        conn.close()
 
     return jsonify({
         "status": "success",
@@ -195,6 +240,7 @@ def submit_ticket():
         "priority": pred['priority'],
         "priority_confidence": pri_conf,
         "department": pred['department'],
+        "assigned_agent": agent['name'] if agent else "Unassigned",
         "confidence": cat_conf,
         "created_at": created_at,
         "ticket_status": "Open"
@@ -223,7 +269,12 @@ def admin_stats():
     department_counts = {row['department']: row['count'] for row in cursor.fetchall()}
 
     # Recent tickets
-    cursor.execute("SELECT * FROM tickets ORDER BY id DESC LIMIT 10")
+    cursor.execute("""
+        SELECT t.*, COALESCE(a.name, 'Unassigned') AS assigned_agent
+        FROM tickets AS t
+        LEFT JOIN agents AS a ON a.id = t.assigned_agent_id
+        ORDER BY t.id DESC LIMIT 10
+    """)
     recent_rows = cursor.fetchall()
     recent_tickets = [dict(r) for r in recent_rows]
 
@@ -288,6 +339,74 @@ def delete_ticket(ticket_id):
             conn.rollback()
         app.logger.exception("Database error while deleting ticket %s", ticket_id)
         return jsonify({"status": "error", "message": "The ticket could not be deleted. Please try again."}), 500
+    finally:
+        if conn:
+            conn.close()
+
+
+@app.route('/api/admin/tickets/<ticket_id>/assign', methods=['POST'])
+def assign_ticket_agent(ticket_id):
+    conn = None
+    try:
+        conn = get_db_connection()
+        conn.execute("BEGIN IMMEDIATE")
+        cursor = conn.cursor()
+        ticket = cursor.execute(
+            "SELECT id, department, assigned_agent_id FROM tickets WHERE ticket_id = ?",
+            (ticket_id,),
+        ).fetchone()
+        if not ticket:
+            conn.rollback()
+            return jsonify({"status": "error", "message": f"Ticket '{ticket_id}' was not found."}), 404
+
+        agents = cursor.execute(
+            "SELECT id, name FROM agents WHERE department = ? AND is_active = 1",
+            (ticket['department'],),
+        ).fetchall()
+        if not agents:
+            conn.rollback()
+            return jsonify({
+                "status": "error",
+                "message": f"No active agents are available for department '{ticket['department']}'. The ticket was not changed.",
+            }), 409
+
+        other_agents = [agent for agent in agents if agent['id'] != ticket['assigned_agent_id']]
+        if ticket['assigned_agent_id'] is not None and not other_agents:
+            conn.rollback()
+            return jsonify({
+                "status": "error",
+                "message": f"Ticket '{ticket_id}' is already assigned to the only active agent in '{ticket['department']}' and cannot be reassigned.",
+            }), 409
+
+        eligible_agents = other_agents or agents
+        agent = cursor.execute(
+            "SELECT id, name FROM agents WHERE id IN ("
+            + ",".join("?" for _ in eligible_agents)
+            + ") ORDER BY RANDOM() LIMIT 1",
+            tuple(item['id'] for item in eligible_agents),
+        ).fetchone()
+        if not agent:
+            conn.rollback()
+            return jsonify({"status": "error", "message": "No eligible active agent could be selected. The ticket was not changed."}), 409
+
+        cursor.execute(
+            "UPDATE tickets SET assigned_agent_id = ? WHERE id = ?",
+            (agent['id'], ticket['id']),
+        )
+        conn.commit()
+        return jsonify({
+            "status": "success",
+            "ticket_id": ticket_id,
+            "department": ticket['department'],
+            "assigned_agent_id": agent['id'],
+            "assigned_agent": agent['name'],
+            "message": f"Ticket '{ticket_id}' assigned to {agent['name']}.",
+        })
+    except sqlite3.Error:
+        if conn:
+            conn.rollback()
+        app.logger.exception("Database error while assigning ticket %s", ticket_id)
+        return jsonify({"status": "error", "message": "The ticket could not be assigned. Please try again."}), 500
     finally:
         if conn:
             conn.close()

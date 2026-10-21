@@ -274,6 +274,91 @@ def test_delete_route_handles_missing_ticket_and_database_error(isolated_app, mo
     assert "test failure" not in failed.get_json()["message"]
 
 
+def test_admin_can_assign_and_reassign_without_changing_ticket_fields(isolated_app):
+    app_module, db_path = isolated_app
+    ticket_id = "TICK-ASSIGN-REPEAT"
+    with sqlite3.connect(db_path) as conn:
+        conn.execute(
+            "INSERT INTO tickets (ticket_id,ticket_text,category,priority,department,confidence,created_at) "
+            "VALUES (?, 'billing issue', 'Billing', 'High', 'Billing Team', 88, '2026-10-21 10:00:00')",
+            (ticket_id,),
+        )
+        original = conn.execute(
+            "SELECT ticket_text,category,priority,department,confidence,created_at FROM tickets WHERE ticket_id = ?",
+            (ticket_id,),
+        ).fetchone()
+
+    client = app_module.app.test_client()
+    assigned = client.post(f"/api/admin/tickets/{ticket_id}/assign")
+    assert assigned.status_code == 200
+    first_agent = assigned.get_json()["assigned_agent"]
+    assert first_agent.startswith("Demo Agent A")
+
+    with sqlite3.connect(db_path) as conn:
+        first = conn.execute(
+            "SELECT t.ticket_text,t.category,t.priority,t.department,t.confidence,t.created_at,t.assigned_agent_id,a.name,a.department,a.is_active "
+            "FROM tickets t LEFT JOIN agents a ON a.id=t.assigned_agent_id WHERE t.ticket_id = ?",
+            (ticket_id,),
+        ).fetchone()
+    assert first[:6] == original
+    assert first[7] == first_agent and first[8] == "Billing Team" and first[9] == 1
+
+    reassigned = client.post(f"/api/admin/tickets/{ticket_id}/assign")
+    assert reassigned.status_code == 200
+    second_agent = reassigned.get_json()["assigned_agent"]
+    assert second_agent != first_agent
+    with sqlite3.connect(db_path) as conn:
+        second = conn.execute(
+            "SELECT ticket_text,category,priority,department,confidence,created_at FROM tickets WHERE ticket_id = ?",
+            (ticket_id,),
+        ).fetchone()
+    assert second == original
+
+    recent = client.get("/api/admin/stats").get_json()["recent_tickets"]
+    assert next(row for row in recent if row["ticket_id"] == ticket_id)["assigned_agent"] == second_agent
+    all_tickets = client.get("/admin/tickets").get_data(as_text=True)
+    assert second_agent in all_tickets
+    assert "Reassign Agent" in all_tickets
+    assert "assign-agent-btn" in all_tickets
+
+
+def test_admin_assignment_handles_one_agent_no_agents_and_missing_ticket(isolated_app):
+    app_module, db_path = isolated_app
+    ticket_id = "TICK-ASSIGN-LIMIT"
+    with sqlite3.connect(db_path) as conn:
+        eligible = conn.execute(
+            "SELECT id FROM agents WHERE department='Billing Team' ORDER BY id LIMIT 2"
+        ).fetchall()
+        assert len(eligible) == 2
+        conn.execute(
+            "INSERT INTO tickets (ticket_id,ticket_text,category,priority,department,confidence,assigned_agent_id) "
+            "VALUES (?, 'billing issue', 'Billing', 'Medium', 'Billing Team', 80, ?)",
+            (ticket_id, eligible[0][0]),
+        )
+        conn.execute("UPDATE agents SET is_active=0 WHERE id=?", (eligible[1][0],))
+
+    client = app_module.app.test_client()
+    one_agent = client.post(f"/api/admin/tickets/{ticket_id}/assign")
+    assert one_agent.status_code == 409
+    assert "only active agent" in one_agent.get_json()["message"]
+    with sqlite3.connect(db_path) as conn:
+        assignment = conn.execute(
+            "SELECT assigned_agent_id FROM tickets WHERE ticket_id=?", (ticket_id,)
+        ).fetchone()[0]
+        assert assignment == eligible[0][0]
+        conn.execute("UPDATE agents SET is_active=0 WHERE id=?", (eligible[0][0],))
+
+    no_agents = client.post(f"/api/admin/tickets/{ticket_id}/assign")
+    assert no_agents.status_code == 409
+    assert "No active agents" in no_agents.get_json()["message"]
+    missing = client.post("/api/admin/tickets/TICK-DOES-NOT-EXIST/assign")
+    assert missing.status_code == 404
+    with sqlite3.connect(db_path) as conn:
+        assert conn.execute(
+            "SELECT assigned_agent_id FROM tickets WHERE ticket_id=?", (ticket_id,)
+        ).fetchone()[0] == eligible[0][0]
+
+
 def test_quick_samples_and_existing_error_display_remain_present():
     root = os.path.dirname(os.path.dirname(__file__))
     with open(os.path.join(root, "app", "templates", "index.html"), encoding="utf-8") as file:

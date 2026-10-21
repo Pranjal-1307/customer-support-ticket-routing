@@ -30,18 +30,26 @@
                                 <th>Category</th>
                                 <th>Priority</th>
                                 <th>Department</th>
+                                <th>Assigned Agent</th>
                                 <th>Submitted</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             {% for ticket in tickets %}
-                            <tr>
+                            <tr data-ticket-id="{{ ticket.ticket_id }}">
                                 <td class="font-monospace">{{ ticket.ticket_id }}</td>
                                 <td>{{ ticket.ticket_text }}</td>
                                 <td>{{ ticket.category }}</td>
                                 <td>{{ ticket.priority }}</td>
                                 <td>{{ ticket.department }}</td>
+                                <td class="assigned-agent">{{ ticket.assigned_agent }}</td>
                                 <td>{{ ticket.created_at or '—' }}</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-outline-success rounded-pill assign-agent-btn" data-ticket-id="{{ ticket.ticket_id }}">
+                                        {{ 'Reassign Agent' if ticket.assigned_agent != 'Unassigned' else 'Assign Agent' }}
+                                    </button>
+                                </td>
                             </tr>
                             {% endfor %}
                         </tbody>
@@ -53,5 +61,6 @@
             </div>
         </div>
     </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
