@@ -46,9 +46,12 @@
                                 <td class="assigned-agent">{{ ticket.assigned_agent }}</td>
                                 <td>{{ ticket.created_at or '—' }}</td>
                                 <td>
-                                    <button type="button" class="btn btn-sm btn-outline-success rounded-pill assign-agent-btn" data-ticket-id="{{ ticket.ticket_id }}">
-                                        {{ 'Reassign Agent' if ticket.assigned_agent != 'Unassigned' else 'Assign Agent' }}
-                                    </button>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        <button type="button" class="btn btn-sm btn-outline-success rounded-pill assign-agent-btn" data-ticket-id="{{ ticket.ticket_id }}">
+                                            {{ 'Reassign Agent' if ticket.assigned_agent != 'Unassigned' else 'Assign Agent' }}
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-danger rounded-pill delete-ticket-btn" data-ticket-id="{{ ticket.ticket_id }}">Delete</button>
+                                    </div>
                                 </td>
                             </tr>
                             {% endfor %}

@@ -229,7 +229,17 @@ def test_delete_route_removes_only_selected_ticket_and_keeps_feedback(isolated_a
             "VALUES ('FB-KEEP','TICK-DELETE','target ticket','Medium','High')"
         )
 
-    response = app_module.app.test_client().delete('/api/admin/tickets/TICK-DELETE')
+    client = app_module.app.test_client()
+    tickets_page = client.get('/admin/tickets')
+    assert tickets_page.status_code == 200
+    page_html = tickets_page.get_data(as_text=True)
+    with sqlite3.connect(db_path) as conn:
+        ticket_count = conn.execute("SELECT COUNT(*) FROM tickets").fetchone()[0]
+    assert page_html.count('class="btn btn-sm btn-outline-danger rounded-pill delete-ticket-btn"') == ticket_count
+    assert 'data-ticket-id="TICK-DELETE"' in page_html
+    assert 'data-ticket-id="TICK-KEEP"' in page_html
+
+    response = client.delete('/api/admin/tickets/TICK-DELETE')
 
     assert response.status_code == 200
     assert response.get_json()["status"] == "success"
@@ -255,6 +265,9 @@ def test_delete_route_removes_only_selected_ticket_and_keeps_feedback(isolated_a
     recent_ids = {ticket["ticket_id"] for ticket in stats["recent_tickets"]}
     assert "TICK-DELETE" not in recent_ids
     assert "TICK-KEEP" in recent_ids
+    refreshed_page = client.get('/admin/tickets').get_data(as_text=True)
+    assert 'TICK-DELETE' not in refreshed_page
+    assert 'TICK-KEEP' in refreshed_page
 
 
 def test_delete_route_handles_missing_ticket_and_database_error(isolated_app, monkeypatch):
@@ -272,6 +285,23 @@ def test_delete_route_handles_missing_ticket_and_database_error(isolated_app, mo
     assert failed.status_code == 500
     assert failed.get_json()["status"] == "error"
     assert "test failure" not in failed.get_json()["message"]
+
+
+def test_all_tickets_delete_action_uses_existing_confirmed_delete_flow():
+    root = os.path.dirname(os.path.dirname(__file__))
+    with open(os.path.join(root, "app", "templates", "tickets.html"), encoding="utf-8") as file:
+        template = file.read()
+    with open(os.path.join(root, "app", "static", "script.js"), encoding="utf-8") as file:
+        script = file.read()
+
+    assert 'class="btn btn-sm btn-outline-danger rounded-pill delete-ticket-btn"' in template
+    assert "event.target.closest('.delete-ticket-btn')" in script
+    assert "deleteTicket(deleteButton.dataset.ticketId, deleteButton)" in script
+    delete_start = script.index("async function deleteTicket(")
+    delete_flow = script[delete_start:]
+    assert "window.confirm(`Delete ticket ${ticketId}?" in delete_flow
+    assert "fetch(`/api/admin/tickets/${encodeURIComponent(ticketId)}`" in delete_flow
+    assert delete_flow.index("if (!response.ok || data.status !== 'success')") < delete_flow.index("row.remove()")
 
 
 def test_admin_can_assign_and_reassign_without_changing_ticket_fields(isolated_app):

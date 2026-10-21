@@ -24,6 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', (event) => {
         const assignButton = event.target.closest('.assign-agent-btn');
         if (assignButton) assignTicketAgent(assignButton);
+
+        const deleteButton = event.target.closest('.delete-ticket-btn');
+        if (deleteButton) deleteTicket(deleteButton.dataset.ticketId, deleteButton);
     });
 
     // Form Submit listener
@@ -341,7 +344,7 @@ async function assignTicketAgent(button) {
     }
 }
 
-async function deleteTicket(ticketId) {
+async function deleteTicket(ticketId, deleteButton = null) {
     if (!window.confirm(`Delete ticket ${ticketId}? This action cannot be undone.`)) return;
 
     try {
@@ -355,7 +358,17 @@ async function deleteTicket(ticketId) {
             return;
         }
 
-        if (await loadAdminStats()) {
+        if (deleteButton) {
+            const row = deleteButton.closest('tr');
+            if (row) {
+                const tbody = row.parentElement;
+                row.remove();
+                if (tbody && !tbody.querySelector('tr')) {
+                    tbody.innerHTML = '<tr><td colspan="8" class="text-center text-muted">No tickets have been submitted yet.</td></tr>';
+                }
+            }
+            alert(`Ticket ${ticketId} deleted successfully.`);
+        } else if (await loadAdminStats()) {
             alert(`Ticket ${ticketId} deleted successfully.`);
         } else {
             alert(`Ticket ${ticketId} was deleted, but the table could not be refreshed.`);
