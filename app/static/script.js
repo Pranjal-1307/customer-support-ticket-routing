@@ -304,13 +304,15 @@ function renderRecentTicketsTable(tickets) {
                 <td class="assigned-agent">${t.assigned_agent || 'Unassigned'}</td>
                 <td><span class="fw-semibold text-primary">${catConfStr}</span></td>
                 <td>
-                    <button class="btn btn-sm btn-outline-primary rounded-pill px-3" onclick="openFeedbackModal('${t.ticket_id}', '${escapedText}', '${t.priority}')">
-                        <i class="fa-solid fa-pen-to-square me-1"></i>Correct
+                    <div class="d-flex align-items-center gap-1">
+                    <button type="button" class="btn btn-sm btn-outline-primary rounded-pill ticket-action-icon" aria-label="Correct priority for ${t.ticket_id}" title="Correct priority for ${t.ticket_id}" onclick="openFeedbackModal('${t.ticket_id}', '${escapedText}', '${t.priority}')">
+                        <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
                     </button>
-                    <button class="btn btn-sm btn-outline-danger rounded-pill px-3 ms-1" onclick="deleteTicket('${t.ticket_id}')">
-                        <i class="fa-solid fa-trash me-1"></i>Delete
+                    <button type="button" class="btn btn-sm btn-outline-danger rounded-pill ticket-action-icon" aria-label="Delete ticket ${t.ticket_id}" title="Delete ticket ${t.ticket_id}" onclick="deleteTicket('${t.ticket_id}')">
+                        <i class="fa-solid fa-trash" aria-hidden="true"></i>
                     </button>
-                    <button type="button" class="btn btn-sm btn-outline-success rounded-pill px-2 ms-1 assign-agent-btn" data-ticket-id="${t.ticket_id}">${assignmentAction}</button>
+                    <button type="button" class="btn btn-sm btn-outline-success rounded-pill px-2 assign-agent-btn" data-ticket-id="${t.ticket_id}">${assignmentAction}</button>
+                    </div>
                 </td>
             </tr>
         `;

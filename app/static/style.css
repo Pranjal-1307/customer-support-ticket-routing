@@ -49,6 +49,20 @@ body {
     font-size: 0.9rem;
 }
 
+.ticket-action-icon {
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticket-action-icon:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
 /* Custom Badge Colors */
 .badge-low { background-color: #10b981; color: white; }
 .badge-medium { background-color: #f59e0b; color: white; }

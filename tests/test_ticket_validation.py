@@ -235,7 +235,7 @@ def test_delete_route_removes_only_selected_ticket_and_keeps_feedback(isolated_a
     page_html = tickets_page.get_data(as_text=True)
     with sqlite3.connect(db_path) as conn:
         ticket_count = conn.execute("SELECT COUNT(*) FROM tickets").fetchone()[0]
-    assert page_html.count('class="btn btn-sm btn-outline-danger rounded-pill delete-ticket-btn"') == ticket_count
+    assert page_html.count('delete-ticket-btn') == ticket_count
     assert 'data-ticket-id="TICK-DELETE"' in page_html
     assert 'data-ticket-id="TICK-KEEP"' in page_html
 
@@ -294,7 +294,10 @@ def test_all_tickets_delete_action_uses_existing_confirmed_delete_flow():
     with open(os.path.join(root, "app", "static", "script.js"), encoding="utf-8") as file:
         script = file.read()
 
-    assert 'class="btn btn-sm btn-outline-danger rounded-pill delete-ticket-btn"' in template
+    assert 'delete-ticket-btn' in template
+    assert 'aria-label="Delete ticket {{ ticket.ticket_id }}"' in template
+    assert 'class="fa-solid fa-trash"' in template
+    assert 'font-awesome/6.4.0/css/all.min.css' in template
     assert "event.target.closest('.delete-ticket-btn')" in script
     assert "deleteTicket(deleteButton.dataset.ticketId, deleteButton)" in script
     delete_start = script.index("async function deleteTicket(")
@@ -406,5 +409,9 @@ def test_quick_samples_and_existing_error_display_remain_present():
     assert "fetch(`/api/admin/tickets/${encodeURIComponent(ticketId)}`" in script
     assert "await loadAdminStats()" in script
     assert "openFeedbackModal('${t.ticket_id}'" in script
-    assert ">Correct" in script
+    assert 'class="fa-solid fa-pen-to-square"' in script
+    assert 'aria-label="Correct priority for ${t.ticket_id}"' in script
+    with open(os.path.join(root, "app", "static", "style.css"), encoding="utf-8") as file:
+        styles = file.read()
+    assert ".ticket-action-icon:focus-visible" in styles
     assert "btn-outline-danger" in script
