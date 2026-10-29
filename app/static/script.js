@@ -172,14 +172,15 @@ async function loadAdminStats() {
         document.getElementById('statTotalTickets').innerText = data.total_tickets || 0;
         
         const fbStats = data.feedback_stats || {};
-        const valCount = fbStats.validated_feedback_count || 0;
-        const pendCount = fbStats.pending_validation_count || 0;
-        
-        const valEl = document.getElementById('statValidatedFeedback');
-        if (valEl) valEl.innerText = valCount;
-
-        const pendEl = document.getElementById('statPendingFeedback');
-        if (pendEl) pendEl.innerText = `Pending: ${pendCount}`;
+        const modelMetrics = data.model_metrics || {};
+        renderSavedAccuracy(
+            'statCategoryAccuracy', 'statCategoryAccuracySub',
+            modelMetrics.category_metrics, modelMetrics.best_category_model
+        );
+        renderSavedAccuracy(
+            'statPriorityAccuracy', 'statPriorityAccuracySub',
+            modelMetrics.priority_metrics, modelMetrics.best_priority_model
+        );
 
         // Render Charts
         renderCategoryChart(data.category_counts || {});
@@ -195,6 +196,21 @@ async function loadAdminStats() {
     } catch (err) {
         console.error("Error loading admin stats:", err);
         return false;
+    }
+}
+
+function renderSavedAccuracy(valueId, subtitleId, metricsByModel, bestModel) {
+    const valueEl = document.getElementById(valueId);
+    const subtitleEl = document.getElementById(subtitleId);
+    if (!valueEl || !subtitleEl) return;
+
+    const accuracy = metricsByModel?.[bestModel]?.accuracy;
+    if (typeof accuracy === 'number' && Number.isFinite(accuracy) && accuracy >= 0 && accuracy <= 1) {
+        valueEl.innerText = `${(accuracy * 100).toFixed(2)}%`;
+        subtitleEl.innerText = 'Saved evaluation result';
+    } else {
+        valueEl.innerText = '—';
+        subtitleEl.innerText = 'Saved evaluation unavailable';
     }
 }
 

@@ -293,10 +293,14 @@ def admin_stats():
     # Load Model Metrics
     metrics_path = os.path.join(BASE_DIR, "models", "model_metrics.json")
     model_metrics = {}
-    if os.path.exists(metrics_path):
+    try:
         import json
-        with open(metrics_path, 'r') as f:
-            model_metrics = json.load(f)
+        with open(metrics_path, 'r', encoding='utf-8') as f:
+            loaded_metrics = json.load(f)
+        if isinstance(loaded_metrics, dict):
+            model_metrics = loaded_metrics
+    except (OSError, json.JSONDecodeError):
+        app.logger.warning("Saved model metrics are unavailable or malformed: %s", metrics_path)
 
     return jsonify({
         "total_tickets": total_tickets,
